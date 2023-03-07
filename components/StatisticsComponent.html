@@ -1,0 +1,1183 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>traveller_dashboard documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">traveller_dashboard documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li
+  >
+  StatisticsComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/statistics/statistics.component.ts</code>
+</p>
+
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover metadata">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-statistics</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./statistics.component.css</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./statistics.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Optional</span>
+                                <a href="#activeUsers" >activeUsers</a>
+                            </li>
+                            <li>
+                                <a href="#change" >change</a>
+                            </li>
+                            <li>
+                                <a href="#chart" >chart</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Optional</span>
+                                <a href="#isSmallScreen" >isSmallScreen</a>
+                            </li>
+                            <li>
+                                <a href="#label" >label</a>
+                            </li>
+                            <li>
+                                <a href="#labelSub" >labelSub</a>
+                            </li>
+                            <li>
+                                <a href="#mostActiveZones" >mostActiveZones</a>
+                            </li>
+                            <li>
+                                <a href="#mostActiveZonesData" >mostActiveZonesData</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Optional</span>
+                                <a href="#newUsers" >newUsers</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Optional</span>
+                                <a href="#totalUsers" >totalUsers</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#ngOnInit" >ngOnInit</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(breakpointObserver: BreakpointObserver, statisticsService: <a href="../injectables/StatisticsService.html" target="_self">StatisticsService</a>, http: <a href="https://angular.io/api/common/http/HttpClient" target="_blank">HttpClient</a>, translation: TranslocoService)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="70" class="link-to-prism">src/app/statistics/statistics.component.ts:70</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div class="io-description"><p>The constructor injects the HttpClient and TranslocoService modules to be used in the component</p>
+</div>
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                                    <td>Description</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>breakpointObserver</td>
+                                                  
+                                                        <td>
+                                                                    <code>BreakpointObserver</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                        <td>
+                                                        </td>
+                                                </tr>
+                                                <tr>
+                                                        <td>statisticsService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/StatisticsService.html" target="_self" >StatisticsService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                        <td>
+                                                        </td>
+                                                </tr>
+                                                <tr>
+                                                        <td>http</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/common/http/HttpClient" target="_blank" >HttpClient</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                        <td>
+                                                                <p>HttpClient that can send Http requests, used to communicate with the server.</p>
+
+                                                        </td>
+                                                </tr>
+                                                <tr>
+                                                        <td>translation</td>
+                                                  
+                                                        <td>
+                                                                    <code>TranslocoService</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                        <td>
+                                                        </td>
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <span ><b>ngOnInit</b></span>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="100"
+                            class="link-to-prism">src/app/statistics/statistics.component.ts:100</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>ngOnInit method is called when the component is initialized.
+It retrieves the total and new users data from the API and creates the chart using Chart.js.
+It also subscribes to the translated label and updates the chart accordingly.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="activeUsers"></a>
+                    <span class="name">
+                            <span class="modifier">Optional</span>
+                        <span ><b>activeUsers</b></span>
+                        <a href="#activeUsers"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="31" class="link-to-prism">src/app/statistics/statistics.component.ts:31</a></div>
+                        </td>
+                    </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Variables to store the number of active users</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="change"></a>
+                    <span class="name">
+                        <span ><b>change</b></span>
+                        <a href="#change"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>1</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="70" class="link-to-prism">src/app/statistics/statistics.component.ts:70</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="chart"></a>
+                    <span class="name">
+                        <span ><b>chart</b></span>
+                        <a href="#chart"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="46" class="link-to-prism">src/app/statistics/statistics.component.ts:46</a></div>
+                        </td>
+                    </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>The chart variable is used to store the chart object created using the Chart.js library</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="isSmallScreen"></a>
+                    <span class="name">
+                            <span class="modifier">Optional</span>
+                        <span ><b>isSmallScreen</b></span>
+                        <a href="#isSmallScreen"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="68" class="link-to-prism">src/app/statistics/statistics.component.ts:68</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="label"></a>
+                    <span class="name">
+                        <span ><b>label</b></span>
+                        <a href="#label"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="51" class="link-to-prism">src/app/statistics/statistics.component.ts:51</a></div>
+                        </td>
+                    </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>The label variable is used to store the chart title label</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="labelSub"></a>
+                    <span class="name">
+                        <span ><b>labelSub</b></span>
+                        <a href="#labelSub"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>Subscription</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="56" class="link-to-prism">src/app/statistics/statistics.component.ts:56</a></div>
+                        </td>
+                    </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>The labelSub variable is used to subscribe to the translated label and update the chart</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="mostActiveZones"></a>
+                    <span class="name">
+                        <span ><b>mostActiveZones</b></span>
+                        <a href="#mostActiveZones"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>string[]</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="61" class="link-to-prism">src/app/statistics/statistics.component.ts:61</a></div>
+                        </td>
+                    </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Variables to store the most active zones</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="mostActiveZonesData"></a>
+                    <span class="name">
+                        <span ><b>mostActiveZonesData</b></span>
+                        <a href="#mostActiveZonesData"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>number[]</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="66" class="link-to-prism">src/app/statistics/statistics.component.ts:66</a></div>
+                        </td>
+                    </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Variables to store the most active zones data</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="newUsers"></a>
+                    <span class="name">
+                            <span class="modifier">Optional</span>
+                        <span ><b>newUsers</b></span>
+                        <a href="#newUsers"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="41" class="link-to-prism">src/app/statistics/statistics.component.ts:41</a></div>
+                        </td>
+                    </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Variables to store the number of new users</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="totalUsers"></a>
+                    <span class="name">
+                            <span class="modifier">Optional</span>
+                        <span ><b>totalUsers</b></span>
+                        <a href="#totalUsers"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="36" class="link-to-prism">src/app/statistics/statistics.component.ts:36</a></div>
+                        </td>
+                    </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Variables to store the number of total users</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, AfterViewInit, Injectable, OnInit } from &#x27;@angular/core&#x27;;
+import { HttpClient } from &#x27;@angular/common/http&#x27;;
+import { Chart, registerables } from &#x27;chart.js&#x27;;
+import { TranslocoService } from &#x27;@ngneat/transloco&#x27;;
+import { Subscription } from &#x27;rxjs&#x27;;
+import { StatisticsService } from &#x27;../statistics.service&#x27;;
+import { BreakpointObserver, Breakpoints } from &#x27;@angular/cdk/layout&#x27;;
+
+@Component({
+  selector: &#x27;app-statistics&#x27;,
+  templateUrl: &#x27;./statistics.component.html&#x27;,
+  styleUrls: [&#x27;./statistics.component.css&#x27;]
+})
+
+/**
+ * The component is marked as injectable to allow it to be used as a service
+ */
+
+@Injectable({
+  providedIn: &#x27;root&#x27;
+})
+
+/**
+ * StatisticsComponent class is the main component that implements the OnInit interface
+ */
+
+export class StatisticsComponent implements OnInit {
+  /**
+   * Variables to store the number of active users
+   */
+  activeUsers?: number;
+
+  /**
+   * Variables to store the number of total users
+   */
+  totalUsers?: number;
+
+  /**
+   * Variables to store the number of new users
+   */
+  newUsers?: number;
+
+  /**
+  * The chart variable is used to store the chart object created using the Chart.js library
+  */
+  chart: any &#x3D; [];
+
+  /**
+ * The label variable is used to store the chart title label
+ */
+  label: any;
+
+  /**
+  * The labelSub variable is used to subscribe to the translated label and update the chart
+  */
+  labelSub!: Subscription;
+
+  /**
+   * Variables to store the most active zones
+   */  
+  mostActiveZones: string[] &#x3D; []; 
+
+  /**
+   * Variables to store the most active zones data
+   */
+  mostActiveZonesData: number[] &#x3D; []; 
+
+  isSmallScreen?: boolean;
+
+  change: number &#x3D; 1;
+
+  /**
+ * The constructor injects the HttpClient and TranslocoService modules to be used in the component
+ * @param {HttpClient} http HttpClient that can send Http requests, used to communicate with the server.
+ * @param {TranslocoService} service TranslocoService object in order to change chart label language at runtime.
+ */
+  constructor(private breakpointObserver: BreakpointObserver,private statisticsService: StatisticsService, private http: HttpClient, private translation: TranslocoService) {
+    Chart.register(...registerables);
+    this.breakpointObserver.observe([
+      Breakpoints.Small,
+      Breakpoints.XSmall,
+    ]).subscribe(result &#x3D;&gt; {
+      if (result.matches)
+        this.change &#x3D; 3;
+      else {
+        this.change &#x3D; 1;
+      }
+    });
+  }
+
+
+
+
+
+  /**
+ * ngOnInit method is called when the component is initialized.
+ * It retrieves the total and new users data from the API and creates the chart using Chart.js.
+ * It also subscribes to the translated label and updates the chart accordingly.
+ */
+  ngOnInit(): void {
+
+    this.statisticsService.getActiveUsers().subscribe(data &#x3D;&gt; {
+      this.activeUsers &#x3D; data.activeUsersCount;
+    });
+
+    this.statisticsService.getTotalNumberOfUsers().subscribe(data &#x3D;&gt; {
+      this.totalUsers &#x3D; data.totalUsers;
+    });
+
+    this.statisticsService.getNumberOfNewUsers().subscribe(data &#x3D;&gt; {
+      this.newUsers &#x3D; data.newUsers;
+    });
+
+
+    this.statisticsService.getMostActiveZones().subscribe(data &#x3D;&gt; {
+      this.mostActiveZones &#x3D; Object.keys(data);
+      this.mostActiveZonesData &#x3D; Object.values(data);
+      console.log(this.mostActiveZones);
+      console.log(this.mostActiveZonesData);
+      if (this.chart.data.datasets[0].data.length !&#x3D;&#x3D; this.mostActiveZonesData.length) {
+        this.chart.data.datasets[0].data &#x3D; this.mostActiveZonesData;
+        this.chart.data.labels &#x3D; this.mostActiveZones;
+      }
+      this.chart.update();
+    });
+
+
+
+    this.label &#x3D; this.translation.selectTranslate(&#x27;statistics.list.chart-title&#x27;);
+    this.labelSub &#x3D; this.translation.selectTranslate(&#x27;statistics.list.chart-title&#x27;).subscribe(
+      label &#x3D;&gt; {
+        this.label &#x3D; label;
+        this.chart.data.datasets[0].label &#x3D; this.label;
+        this.chart.update();
+      }
+    );
+
+    const canvas &#x3D; &lt;HTMLCanvasElement&gt;document.getElementById(&#x27;myChart&#x27;);
+    const ctx &#x3D; canvas.getContext(&#x27;2d&#x27;);
+
+    if (ctx) {
+      this.chart &#x3D; new Chart(ctx, {
+        type: &#x27;bar&#x27;,
+        data: {
+          labels: this.mostActiveZones,
+          datasets: [
+            {
+              label: this.label,
+              data: this.mostActiveZonesData, 
+              backgroundColor: [
+                &#x27;rgba(59, 226, 171, 1)&#x27;,
+              ]
+            },
+          ],
+
+        },
+
+        options: {
+          plugins: {  // &#x27;legend&#x27; now within object &#x27;plugins {}&#x27;
+            legend: {
+              labels: {
+                color: &quot;white&quot;
+              }
+            }
+          },
+        },
+      });
+    }
+
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;script src&#x3D;&quot;https://www.gstatic.com/charts/loader.js&quot;&gt;&lt;/script&gt;
+
+&lt;ng-container *transloco&#x3D;&quot;let t; read: &#x27;statistics.list&#x27;;&quot;&gt;
+  &lt;h1&gt;{{ t(&#x27;title&#x27;) }}&lt;/h1&gt;
+&lt;/ng-container&gt;
+
+&lt;mat-grid-list [cols]&#x3D;&quot;3&quot; rowHeight&#x3D;&quot;50px&quot; [gutterSize]&#x3D;&quot;&#x27;80px&#x27;&quot;&gt;
+  &lt;ng-container *transloco&#x3D;&quot;let t; read: &#x27;statistics.list&#x27;;&quot;&gt;
+    &lt;mat-grid-tile [colspan]&#x3D;&quot;change&quot; [rowspan]&#x3D;&quot;3&quot;&gt;
+      &lt;mat-card&gt;
+        &lt;div class&#x3D;&quot;stats-container&quot;&gt;
+          &lt;div class&#x3D;&quot;title&quot;&gt;
+            {{ t(&#x27;active-users&#x27;) }}
+            &lt;mat-icon class&#x3D;&quot;material-symbols-outlined&quot; matTooltip&#x3D;&quot;{{ t(&#x27;active-users-help&#x27;)}}&quot; [matTooltipPosition]&#x3D;&quot;&#x27;above&#x27;&quot;&gt;
+              help
+            &lt;/mat-icon&gt;
+          &lt;/div&gt;
+          &lt;div class&#x3D;&quot;number&quot;&gt;
+            {{ activeUsers }}
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/mat-card&gt;
+    &lt;/mat-grid-tile&gt;
+    &lt;mat-grid-tile [colspan]&#x3D;&quot;change&quot; [rowspan]&#x3D;&quot;3&quot;&gt;
+      &lt;mat-card&gt;
+        &lt;div class&#x3D;&quot;stats-container&quot;&gt;
+          &lt;div class&#x3D;&quot;title&quot;&gt;
+            {{ t(&#x27;total-users&#x27;) }}
+            &lt;mat-icon class&#x3D;&quot;material-symbols-outlined&quot; matTooltip&#x3D;&quot;{{ t(&#x27;total-users-help&#x27;)}}&quot; [matTooltipPosition]&#x3D;&quot;&#x27;above&#x27;&quot;&gt;
+              help
+            &lt;/mat-icon&gt;
+          &lt;/div&gt;
+          &lt;div class&#x3D;&quot;number&quot;&gt;{{ totalUsers }}&lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/mat-card&gt;
+    &lt;/mat-grid-tile&gt;
+    &lt;mat-grid-tile [colspan]&#x3D;&quot;change&quot; [rowspan]&#x3D;&quot;3&quot;&gt;
+      &lt;mat-card&gt;
+        &lt;div class&#x3D;&quot;stats-container&quot;&gt;
+          &lt;div class&#x3D;&quot;title&quot;&gt;
+            {{ t(&#x27;new-users&#x27;) }}
+            &lt;mat-icon class&#x3D;&quot;material-symbols-outlined&quot; matTooltip&#x3D;&quot;{{ t(&#x27;new-users-help&#x27;)}}&quot; [matTooltipPosition]&#x3D;&quot;&#x27;above&#x27;&quot;&gt;
+              help
+            &lt;/mat-icon&gt;
+          &lt;/div&gt;
+          &lt;div class&#x3D;&quot;number&quot;&gt;{{ newUsers }}&lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/mat-card&gt;
+    &lt;/mat-grid-tile&gt;
+  &lt;/ng-container&gt;
+  &lt;mat-grid-tile [colspan]&#x3D;&quot;3&quot; [rowspan]&#x3D;&quot;3&quot;&gt;
+    &lt;mat-card class&#x3D;&quot;mat-card-chart&quot;&gt;
+      &lt;canvas id&#x3D;&quot;myChart&quot;&gt;{{chart}}&lt;/canvas&gt;
+      &lt;ng-container *transloco&#x3D;&quot;let t; read: &#x27;statistics.list&#x27;;&quot;&gt;
+        &lt;mat-icon class&#x3D;&quot;material-symbols-outlined&quot; matTooltip&#x3D;&quot;{{ t(&#x27;chart-help&#x27;)}}&quot; [matTooltipPosition]&#x3D;&quot;&#x27;above&#x27;&quot;&gt;
+          help
+        &lt;/mat-icon&gt;
+      &lt;/ng-container&gt;
+    &lt;/mat-card&gt;
+  &lt;/mat-grid-tile&gt;
+&lt;/mat-grid-list&gt;
+
+
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./statistics.component.css</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">.mat-card {
+  border: 1px solid black;
+  width: 100%;
+  height: 100%;
+  background: #003F91;
+}
+
+.mat-grid-tile {
+  border-radius: 10px;
+  background: #003F91;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+}
+
+.stats-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 100%;
+}
+
+.title {
+  color: #FAFAF9;
+  font-size: 2em;
+  align-self: flex-start;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.number {
+  color: #FAFAF9;
+  font-size: 5em;
+  position: absolute;
+  top: 30%;
+}
+
+.info-icon {
+  height: 20px;
+  cursor: pointer;
+}
+
+.info-message {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.stats-container:hover .info-message {
+  display: block;
+}
+
+
+::ng-deep .mat-tooltip {
+  font-size: 0.9em;
+  border: 1px solid black;
+}
+
+.mat-card-chart {
+  color: #FAFAF9;
+  display: flex;
+  justify-content: center;
+}
+
+#myChart {
+  width: 100%;
+  height: 100% ;
+}
+
+/* Media queries for responsive design */
+@media (max-width: 1160px) {
+  .title {
+    font-size: 1.5em;
+  }
+
+  .number {
+    font-size: 4.5em;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  .title {
+    font-size: 2.5em;
+  }
+
+  .number {
+    font-size: 5em;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .title {
+    font-size: 1.5em;
+  }
+
+  .number {
+    font-size: 4.5em;
+  }
+}
+
+@media only screen and (min-width: 515px) and (max-width: 767px) {
+  .title {
+    font-size: 2em;
+  }
+
+  .number {
+    font-size: 4.5em;
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 514px) {
+  .title {
+    font-size: 1.5em;
+  }
+
+  .number {
+    font-size: 4.5em;
+  }
+}
+
+
+@media only screen and (max-width: 480px) {
+  .title {
+    font-size: 1em;
+  }
+
+  .number {
+    font-size: 4.5em;
+  }
+}
+
+
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><script src="https://www.gstatic.com/charts/loader.js"></script><ng-container *transloco="let t; read: \'statistics.list\';">  <h1>{{ t(\'title\') }}</h1></ng-container><mat-grid-list [cols]="3" rowHeight="50px" [gutterSize]="\'80px\'">  <ng-container *transloco="let t; read: \'statistics.list\';">    <mat-grid-tile [colspan]="change" [rowspan]="3">      <mat-card>        <div class="stats-container">          <div class="title">            {{ t(\'active-users\') }}            <mat-icon class="material-symbols-outlined" matTooltip="{{ t(\'active-users-help\')}}" [matTooltipPosition]="\'above\'">              help            </mat-icon>          </div>          <div class="number">            {{ activeUsers }}          </div>        </div>      </mat-card>    </mat-grid-tile>    <mat-grid-tile [colspan]="change" [rowspan]="3">      <mat-card>        <div class="stats-container">          <div class="title">            {{ t(\'total-users\') }}            <mat-icon class="material-symbols-outlined" matTooltip="{{ t(\'total-users-help\')}}" [matTooltipPosition]="\'above\'">              help            </mat-icon>          </div>          <div class="number">{{ totalUsers }}</div>        </div>      </mat-card>    </mat-grid-tile>    <mat-grid-tile [colspan]="change" [rowspan]="3">      <mat-card>        <div class="stats-container">          <div class="title">            {{ t(\'new-users\') }}            <mat-icon class="material-symbols-outlined" matTooltip="{{ t(\'new-users-help\')}}" [matTooltipPosition]="\'above\'">              help            </mat-icon>          </div>          <div class="number">{{ newUsers }}</div>        </div>      </mat-card>    </mat-grid-tile>  </ng-container>  <mat-grid-tile [colspan]="3" [rowspan]="3">    <mat-card class="mat-card-chart">      <canvas id="myChart">{{chart}}</canvas>      <ng-container *transloco="let t; read: \'statistics.list\';">        <mat-icon class="material-symbols-outlined" matTooltip="{{ t(\'chart-help\')}}" [matTooltipPosition]="\'above\'">          help        </mat-icon>      </ng-container>    </mat-card>  </mat-grid-tile></mat-grid-list></div>'
+    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'CounterComponent', 'selector': 'app-counter-component'},{'name': 'FetchDataComponent', 'selector': 'app-fetch-data'},{'name': 'HomeComponent', 'selector': 'app-home'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'NavMenuComponent', 'selector': 'app-nav-menu'},{'name': 'RouteCreateComponent', 'selector': 'app-route-create'},{'name': 'RouteDetailsComponent', 'selector': 'app-route-details'},{'name': 'RouteEditComponent', 'selector': 'app-route-edit'},{'name': 'RouteManagementComponent', 'selector': 'app-route-management'},{'name': 'StatisticsComponent', 'selector': 'app-statistics'},{'name': 'StopCreateComponent', 'selector': 'app-stop-create'},{'name': 'UserDetailsComponent', 'selector': 'app-user-details'},{'name': 'UsersManagementComponent', 'selector': 'app-users-management'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'StatisticsComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'StatisticsComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

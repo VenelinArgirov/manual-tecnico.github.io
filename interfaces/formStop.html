@@ -1,0 +1,482 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>traveller_dashboard documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">traveller_dashboard documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content interface">
+                   <div class="content-data">
+
+
+
+
+
+
+
+
+
+
+
+
+
+<ol class="breadcrumb">
+  <li>Interfaces</li>
+  <li
+  >
+  formStop</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info">
+        <p class="comment">
+            <h3>File</h3>
+        </p>
+        <p class="comment">
+            <code>src/app/route-create/route-create.component.ts</code>
+        </p>
+
+
+            <p class="comment">
+                <h3>Description</h3>
+            </p>
+            <p class="comment">
+                <p>Interface for the stop form</p>
+
+            </p>
+
+
+        <section>
+            <h3 id="index">Index</h3>
+            <table class="table table-sm table-bordered index-table">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <h6><b>Properties</b></h6>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <ul class="index-list">
+                                <li>
+                                        <a href="#stopId" 
+>
+                                            stopId
+                                        </a>
+                                </li>
+                                <li>
+                                        <a href="#stopTime" 
+>
+                                            stopTime
+                                        </a>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+
+
+            <section>
+                <h3 id="inputs">Properties</h3>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <a name="stopId"></a>
+                                        <span class="name "><b>stopId</b>
+                                            <a href="#stopId">
+                                                <span class="icon ion-ios-link"></span>
+                                            </a>
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <code>stopId:         <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+</code>
+                                    </td>
+                                </tr>
+
+
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                                        </td>
+                                    </tr>
+
+
+
+
+
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <a name="stopTime"></a>
+                                        <span class="name "><b>stopTime</b>
+                                            <a href="#stopTime">
+                                                <span class="icon ion-ios-link"></span>
+                                            </a>
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <code>stopTime:         <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+</code>
+                                    </td>
+                                </tr>
+
+
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                                        </td>
+                                    </tr>
+
+
+
+
+
+                        </tbody>
+                    </table>
+            </section>
+    </div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit } from &#x27;@angular/core&#x27;;
+import { RouteService } from &#x27;../route.service&#x27;;
+import { AbstractControl, FormArray, FormBuilder, FormGroup, Validators } from &#x27;@angular/forms&#x27;;
+import { Route } from &#x27;../route&#x27;;
+import { Stop } from &#x27;../stop&#x27;;
+import { TransportType } from &#x27;../transport-type&#x27;;
+import { StopService } from &#x27;../stop.service&#x27;;
+import { DayType } from &#x27;../day-type&#x27;;
+import { LinkedStop } from &quot;../linked-stop&quot;;
+import { LinkedStopService } from &#x27;../linked-stop.service&#x27;;
+import { Guid } from &#x27;guid-typescript&#x27;;
+import { map, Observable } from &#x27;rxjs&#x27;;
+import { MapDirectionsService } from &#x27;@angular/google-maps&#x27;;
+import { Router } from &#x27;@angular/router&#x27;;
+
+@Component({
+  selector: &#x27;app-route-create&#x27;,
+  templateUrl: &#x27;./route-create.component.html&#x27;,
+  styleUrls: [&#x27;./route-create.component.css&#x27;]
+})
+/**
+ * Class for the component of the page of Route Editing
+ */
+export class RouteCreateComponent implements OnInit {
+  /**
+   * Options to be used by the Google-Map field.
+   */
+  mapOptions: google.maps.MapOptions &#x3D; {
+    mapTypeId: &#x27;roadmap&#x27;,
+    disableDefaultUI: true,
+    zoomControl: true,
+    clickableIcons: false,
+    disableDoubleClickZoom: true,
+    draggable: false,
+  };
+  /**
+   * Options to be used by the Directions-Renderer field.
+   */
+  directionsOptions: google.maps.DirectionsRendererOptions &#x3D; {
+    suppressMarkers: true,
+    suppressInfoWindows: true,
+  };
+  /**
+   * Options to be used by the Map-Marker field.
+   */
+  markerOptions: google.maps.MarkerOptions &#x3D; { draggable: false };
+  /**
+   * Zoom level for the map to use at the start.
+   */
+  zoom &#x3D; 11;
+  /**
+   * Coordinates for the map to be centered on.
+   */
+  center!: google.maps.LatLngLiteral;
+  /**
+   * List of markers that represents the stops of the route to edit.
+   */
+  markers: Array&lt;google.maps.LatLng&gt; &#x3D; new Array&lt;google.maps.LatLng&gt;();
+  /**
+   * Holds the result from the call of the Directions API made from the list of markers.
+   */
+  directionsResults$!: Observable&lt;google.maps.DirectionsResult | undefined&gt;;
+
+  /**
+   * TransportType for reverse mapping in the html.
+   */
+  TransportType &#x3D; TransportType;
+  /**
+   * DayType for reverse mapping in the html.
+   */
+  DayType &#x3D; DayType;
+
+  /**
+   * All the existent stops.
+   */
+  AllStops: Stop[] &#x3D; [];
+  /**
+   * All the values of the TransportType enum.
+   */
+  transports: number[] &#x3D; Object.keys(TransportType).map(v &#x3D;&gt; Number(v)).filter(v &#x3D;&gt; Number.isFinite(v));
+  /**
+   * All the values of the DayType enum.
+   */
+  days: number[] &#x3D; Object.keys(DayType).map(v &#x3D;&gt; Number(v)).filter(v &#x3D;&gt; Number.isFinite(v));
+
+  /**
+   * Form data to be viewed in the page
+   */
+  createRouteForm &#x3D; this.formBuilder.group({
+    transportNumber: this.formBuilder.control&lt;number | null&gt;(null),
+    name: [&#x27;&#x27;, Validators.required],
+    companyName: [&#x27;&#x27;, Validators.required],
+    transportType: this.formBuilder.control&lt;number | null&gt;(null, Validators.required),
+    description: &#x27;&#x27;,
+    stops: this.formBuilder.array([]),
+    day: this.formBuilder.control&lt;number | null&gt;(null, Validators.required)
+  });
+
+  /**
+   * Constructor for the component.
+   * Gets the route whose Id matches the one in the URL and passes its info to the form.
+   * Also gets all the existent stops.
+   * @param {RouteService} routeService Service that communicates with the server and has various operations about Routes.
+   * @param {LinkedStopService} linkedStopService Service that communicates with the server and has various operations about LinkedStops.
+   * @param {StopService} stopService Service that communicates with the server and has various operations about Stops.
+   * @param {MapDirectionsService} mapDirectionsService Google service of the Directions API.
+   * @param {FormBuilder} formBuilder Builds form data.
+   * @param {Router} router Router.
+   */
+  constructor(private routeService: RouteService, private stopService: StopService,
+    private linkedStopService: LinkedStopService, private formBuilder: FormBuilder,
+    private mapDirectionsService: MapDirectionsService, private router: Router) { }
+
+  ngOnInit(): void {
+    this.stopService.getStops().subscribe(result &#x3D;&gt; {
+      this.AllStops &#x3D; result;
+    }, error &#x3D;&gt; console.error(error));
+  }
+
+  /**
+   * Adds a form to the page that lets the user select the details for a stop in the route.
+   */
+  addStop() {
+    const stopForm &#x3D; this.formBuilder.group({
+      stopId: &#x27;&#x27;,
+      stopTime: &#x27;&#x27;
+    });
+
+    this.stops.push(stopForm);
+  }
+
+  /**
+   * Removes the form of one of the route stops.
+   * @param {number} stopIndex The form index to delete.
+   */
+  removeStop(stopIndex: number) {
+    this.stops.removeAt(stopIndex);
+    this.updateMap();
+  }
+
+  /**
+   * Gets all the stop forms in the page.
+   */
+  get stops() {
+    return this.createRouteForm.controls[&quot;stops&quot;] as FormArray;
+  }
+
+  /**
+   * Casts a AbstractControl form to a FormGroup.
+   */
+  toFormGroup &#x3D; (form: AbstractControl) &#x3D;&gt; form as FormGroup;
+
+  /**
+   * Updates the map in the page by adding/removing markers and linking them together in one route.
+   */
+  updateMap() {
+    this.addMarkers();
+    this.linkMarkers();
+  }
+
+  /**
+   * Iterates through the list of stop forms and creates a new marker from the corresponding stop and its coordinates.
+   */
+  private addMarkers() {
+    this.markers.splice(0);
+
+    this.createRouteForm.value.stops?.forEach(s &#x3D;&gt; {
+      var stop &#x3D; (s as formStop);
+      this.AllStops.forEach(compStop &#x3D;&gt; {
+        if (compStop.stopId &#x3D;&#x3D; stop.stopId) this.markers.push(new google.maps.LatLng(compStop.location.latitude, compStop.location.longitude));
+      });
+    });
+    this.center &#x3D; {
+      lat: this.markers[Math.floor(this.markers.length / 2)].lat(),
+      lng: this.markers[Math.floor(this.markers.length / 2)].lng()
+    }
+  }
+
+  /**
+   * Using the Google Directions API, shows the path the route takes using the first and last marker in the route.
+   */
+  private linkMarkers() {
+    const request: google.maps.DirectionsRequest &#x3D; {
+      origin: this.markers[0],
+      destination: this.markers[this.markers.length - 1],
+      travelMode: google.maps.TravelMode.TRANSIT,
+    };
+    this.directionsResults$ &#x3D; this.mapDirectionsService.route(request).pipe(map(response &#x3D;&gt; response.result));
+  }
+
+  /**
+   * Creates a route object and sends it to the database using the routeService
+   */
+  onSubmit(): void {
+    let route: Route &#x3D; new Route(Guid.create().toString(), this.createRouteForm.controls.transportNumber.value!,
+      this.createRouteForm.controls.name.value!, this.createRouteForm.controls.description.value!,
+      Number(this.createRouteForm.controls.transportType.value!), this.createRouteForm.controls.companyName.value!
+    );
+    this.routeService.addRoute(route).subscribe();
+
+    this.createRouteForm.value.stops?.forEach(s &#x3D;&gt; {
+      var stop &#x3D; (s as formStop);
+      var date &#x3D; new Date();
+      date.setHours(Number(stop.stopTime.substring(0, 2)));
+      date.setMinutes(Number(stop.stopTime.substring(3, 5)));
+      let linkedStop: LinkedStop &#x3D; new LinkedStop(Guid.create().toString(), stop.stopId, route.routeId, date, Number(this.createRouteForm.controls.day.value!));
+      this.linkedStopService.addLinkedStop(linkedStop).subscribe();
+    });
+    this.router.navigate([&#x27;/&#x27;, &#x27;route-management&#x27;]);
+  }
+
+  /**
+   * Cancels the creation of a new stop. Redirects back to the previous page.
+   */
+  cancel(): void {
+    window.history.back();
+  }
+}
+
+/**
+ * Interface for the stop form
+ */
+interface formStop {
+  stopId: string,
+  stopTime: string
+}
+</code></pre>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'interface';
+            var COMPODOC_CURRENT_PAGE_URL = 'formStop.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>
