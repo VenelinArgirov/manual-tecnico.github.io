@@ -1,0 +1,8 @@
+digraph "Traveller_Server.Models.DataClasses.LinkedStop"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  Node1 [shape=record,label="{Traveller_Server.Models.\lDataClasses.LinkedStop\n|+ Id\l+ StopId\l+ Stop\l+ RouteId\l+ Route\l+ Time\l+ Day\l|}",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Class to connect stops to routes and give them a time associated. Represents the time where the trans..."];
+}

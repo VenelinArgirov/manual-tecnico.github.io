@@ -1,0 +1,8 @@
+digraph "Traveller_Server.Models.DataClasses.User_Course"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  Node1 [shape=record,label="{Traveller_Server.Models.\lDataClasses.User_Course\n|+ User_CourseId\l+ UserId\l+ CourseId\l+ StartDate\l+ EndDate\l|}",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Alert data class. Represents a many-to-many relationship between the User and Course classes."];
+}

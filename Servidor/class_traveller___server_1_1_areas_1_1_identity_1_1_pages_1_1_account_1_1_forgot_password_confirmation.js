@@ -1,0 +1,4 @@
+var class_traveller___server_1_1_areas_1_1_identity_1_1_pages_1_1_account_1_1_forgot_password_confirmation =
+[
+    [ "OnGet", "class_traveller___server_1_1_areas_1_1_identity_1_1_pages_1_1_account_1_1_forgot_password_confirmation.html#a5615676a1cff4eada864d5c61ad681db", null ]
+];

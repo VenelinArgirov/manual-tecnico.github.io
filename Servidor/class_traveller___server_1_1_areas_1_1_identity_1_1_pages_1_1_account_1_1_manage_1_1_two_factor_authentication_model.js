@@ -1,0 +1,8 @@
+var class_traveller___server_1_1_areas_1_1_identity_1_1_pages_1_1_account_1_1_manage_1_1_two_factor_authentication_model =
+[
+    [ "HasAuthenticator", "class_traveller___server_1_1_areas_1_1_identity_1_1_pages_1_1_account_1_1_manage_1_1_two_factor_authentication_model.html#a028512e1dfe95d7735f4e9a63c0bddc9", null ],
+    [ "Is2faEnabled", "class_traveller___server_1_1_areas_1_1_identity_1_1_pages_1_1_account_1_1_manage_1_1_two_factor_authentication_model.html#aa491c8ff7a54e68d6def81543c1416e3", null ],
+    [ "IsMachineRemembered", "class_traveller___server_1_1_areas_1_1_identity_1_1_pages_1_1_account_1_1_manage_1_1_two_factor_authentication_model.html#a22176d2450260765d3f0861381b978f4", null ],
+    [ "RecoveryCodesLeft", "class_traveller___server_1_1_areas_1_1_identity_1_1_pages_1_1_account_1_1_manage_1_1_two_factor_authentication_model.html#ad0bf7d6ea19da214c7f7bee8c94f9906", null ],
+    [ "StatusMessage", "class_traveller___server_1_1_areas_1_1_identity_1_1_pages_1_1_account_1_1_manage_1_1_two_factor_authentication_model.html#a26b92d2fb32c115d782b7aae38874513", null ]
+];

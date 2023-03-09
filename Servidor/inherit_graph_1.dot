@@ -1,0 +1,29 @@
+digraph "Graphical Class Hierarchy"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node0 [label="ControllerBase",height=0.2,width=0.4,color="grey60", fillcolor="#E0E0E0", style="filled",tooltip=" "];
+  Node0 -> Node1 [dir="back",color="steelblue1",style="solid"];
+  Node1 [label="Traveller_Server.Controllers.\lAlertsApiController",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_traveller___server_1_1_controllers_1_1_alerts_api_controller.html",tooltip=" "];
+  Node0 -> Node2 [dir="back",color="steelblue1",style="solid"];
+  Node2 [label="Traveller_Server.Controllers.\lLinkedStopsApiController",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_traveller___server_1_1_controllers_1_1_linked_stops_api_controller.html",tooltip=" "];
+  Node0 -> Node3 [dir="back",color="steelblue1",style="solid"];
+  Node3 [label="Traveller_Server.Controllers.\lLocationsApiController",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_traveller___server_1_1_controllers_1_1_locations_api_controller.html",tooltip=" "];
+  Node0 -> Node4 [dir="back",color="steelblue1",style="solid"];
+  Node4 [label="Traveller_Server.Controllers.\lRoutesApiController",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_traveller___server_1_1_controllers_1_1_routes_api_controller.html",tooltip=" "];
+  Node0 -> Node5 [dir="back",color="steelblue1",style="solid"];
+  Node5 [label="Traveller_Server.Controllers.\lStatisticsApiController",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_traveller___server_1_1_controllers_1_1_statistics_api_controller.html",tooltip=" "];
+  Node0 -> Node6 [dir="back",color="steelblue1",style="solid"];
+  Node6 [label="Traveller_Server.Controllers.\lStopsApiController",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_traveller___server_1_1_controllers_1_1_stops_api_controller.html",tooltip=" "];
+  Node0 -> Node7 [dir="back",color="steelblue1",style="solid"];
+  Node7 [label="Traveller_Server.Controllers.\lTransportsApiController",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_traveller___server_1_1_controllers_1_1_transports_api_controller.html",tooltip=" "];
+  Node0 -> Node8 [dir="back",color="steelblue1",style="solid"];
+  Node8 [label="Traveller_Server.Controllers.\lUserApiController",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_traveller___server_1_1_controllers_1_1_user_api_controller.html",tooltip=" "];
+  Node0 -> Node9 [dir="back",color="steelblue1",style="solid"];
+  Node9 [label="Traveller_Server.Controllers.\lUserSuspensionsApiController",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_traveller___server_1_1_controllers_1_1_user_suspensions_api_controller.html",tooltip=" "];
+  Node0 -> Node10 [dir="back",color="steelblue1",style="solid"];
+  Node10 [label="Traveller_Server.Controllers.\lUsersApiController",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_traveller___server_1_1_controllers_1_1_users_api_controller.html",tooltip=" "];
+}

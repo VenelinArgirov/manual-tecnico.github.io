@@ -1,0 +1,6 @@
+var class_traveller___server_1_1_areas_1_1_identity_1_1_pages_1_1_account_1_1_manage_1_1_delete_personal_data_model =
+[
+    [ "InputModel", "class_traveller___server_1_1_areas_1_1_identity_1_1_pages_1_1_account_1_1_manage_1_1_delete_personal_data_model_1_1_input_model.html", "class_traveller___server_1_1_areas_1_1_identity_1_1_pages_1_1_account_1_1_manage_1_1_delete_personal_data_model_1_1_input_model" ],
+    [ "Input", "class_traveller___server_1_1_areas_1_1_identity_1_1_pages_1_1_account_1_1_manage_1_1_delete_personal_data_model.html#ae9912868a027dc2afaf92da146ef150c", null ],
+    [ "RequirePassword", "class_traveller___server_1_1_areas_1_1_identity_1_1_pages_1_1_account_1_1_manage_1_1_delete_personal_data_model.html#a0f405764658fee990febe74b2501868a", null ]
+];

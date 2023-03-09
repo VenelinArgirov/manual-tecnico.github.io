@@ -1,0 +1,4 @@
+var class_traveller___server_1_1_areas_1_1_identity_1_1_pages_1_1_account_1_1_manage_1_1_disable2fa_model =
+[
+    [ "StatusMessage", "class_traveller___server_1_1_areas_1_1_identity_1_1_pages_1_1_account_1_1_manage_1_1_disable2fa_model.html#a8bf63d5c405df0a7c101d191d7771f62", null ]
+];

@@ -1,0 +1,5 @@
+var class_traveller___server_1_1_areas_1_1_identity_1_1_pages_1_1_account_1_1_manage_1_1_generate_recovery_codes_model =
+[
+    [ "RecoveryCodes", "class_traveller___server_1_1_areas_1_1_identity_1_1_pages_1_1_account_1_1_manage_1_1_generate_recovery_codes_model.html#a60bfbc6a671aefdb43260bf4c5b4879a", null ],
+    [ "StatusMessage", "class_traveller___server_1_1_areas_1_1_identity_1_1_pages_1_1_account_1_1_manage_1_1_generate_recovery_codes_model.html#aec0575b77e138d4f0fd9d055ea188f82", null ]
+];

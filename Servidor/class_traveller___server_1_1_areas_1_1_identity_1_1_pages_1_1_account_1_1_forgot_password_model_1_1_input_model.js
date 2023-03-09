@@ -1,0 +1,4 @@
+var class_traveller___server_1_1_areas_1_1_identity_1_1_pages_1_1_account_1_1_forgot_password_model_1_1_input_model =
+[
+    [ "Email", "class_traveller___server_1_1_areas_1_1_identity_1_1_pages_1_1_account_1_1_forgot_password_model_1_1_input_model.html#a1c4dcce8a26874a8d119759db71f335c", null ]
+];

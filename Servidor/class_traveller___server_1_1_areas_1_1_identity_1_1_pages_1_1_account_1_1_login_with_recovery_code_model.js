@@ -1,0 +1,6 @@
+var class_traveller___server_1_1_areas_1_1_identity_1_1_pages_1_1_account_1_1_login_with_recovery_code_model =
+[
+    [ "InputModel", "class_traveller___server_1_1_areas_1_1_identity_1_1_pages_1_1_account_1_1_login_with_recovery_code_model_1_1_input_model.html", "class_traveller___server_1_1_areas_1_1_identity_1_1_pages_1_1_account_1_1_login_with_recovery_code_model_1_1_input_model" ],
+    [ "Input", "class_traveller___server_1_1_areas_1_1_identity_1_1_pages_1_1_account_1_1_login_with_recovery_code_model.html#a6a5b8c92b0d4d6d57b9f3e19ca20a638", null ],
+    [ "ReturnUrl", "class_traveller___server_1_1_areas_1_1_identity_1_1_pages_1_1_account_1_1_login_with_recovery_code_model.html#a2a0ce37d021486d0e0a1107092418490", null ]
+];

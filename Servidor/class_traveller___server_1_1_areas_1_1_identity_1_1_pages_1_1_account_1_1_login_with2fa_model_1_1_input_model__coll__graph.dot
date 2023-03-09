@@ -1,0 +1,8 @@
+digraph "Traveller_Server.Areas.Identity.Pages.Account.LoginWith2faModel.InputModel"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  Node1 [shape=record,label="{Traveller_Server.Areas.Identity.\lPages.Account.LoginWith2faModel.InputModel\n|+ TwoFactorCode\l+ RememberMachine\l|}",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used ..."];
+}

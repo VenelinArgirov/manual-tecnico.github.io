@@ -1,0 +1,4 @@
+var class_traveller___server_1_1_areas_1_1_identity_1_1_pages_1_1_account_1_1_login_with_recovery_code_model_1_1_input_model =
+[
+    [ "RecoveryCode", "class_traveller___server_1_1_areas_1_1_identity_1_1_pages_1_1_account_1_1_login_with_recovery_code_model_1_1_input_model.html#a6afac36675527dbb38a337c7b1a84da4", null ]
+];
