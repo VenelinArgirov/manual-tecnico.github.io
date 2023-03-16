@@ -1021,7 +1021,7 @@ export class UsersManagementComponent implements OnInit {
     this.users &#x3D; [];
     this.userService.getUsers().subscribe((usr) &#x3D;&gt; {
       usr.forEach((user) &#x3D;&gt; {
-        this.users.push(new User(user.id, user.userRank, user.userName, user.rating, user.creationDate, user.email));
+        this.users.push(new User(user.id, user.userRank, user.userName, user.rating, user.creationDate, user.email, &quot;null&quot;));
       });
       this.getUsersSuspensionPermanent();
       this.dataSource &#x3D; new MatTableDataSource&lt;User&gt;(this.users);

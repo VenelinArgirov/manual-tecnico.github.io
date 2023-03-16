@@ -74,6 +74,7 @@
   SharedPreferences prefs = await SharedPreferences.getInstance();
   bool isLoggedIn = prefs.getBool(&#39;isLoggedIn&#39;) ?? false;
   bool isDarkTheme = prefs.getBool(&#39;isDarkTheme&#39;) ?? false;
+  prefs.setBool(&#39;rememberMe&#39;, false);
 
   ThemeManager themeManager = ThemeManager();
   if (isDarkTheme) {
@@ -83,9 +84,18 @@
   }
 
   runApp(
-    ChangeNotifierProvider&lt;ThemeManager&gt;(
-      create: (_) =&gt; themeManager,
-      child: MyApp(isLoggedIn),
+    FGBGNotifier(
+      onEvent: (event) {
+        if (event == FGBGType.foreground) {
+          print(&quot;print  1 - &quot; + event.name);
+        } else if (event == FGBGType.background) {
+          print(&quot;print  2 - &quot; + event.name);
+        }
+      },
+      child: ChangeNotifierProvider&lt;ThemeManager&gt;(
+        create: (_) =&gt; themeManager,
+        child: MyApp(isLoggedIn),
+      ),
     ),
   );
 }</code></pre>

@@ -5,5 +5,5 @@ digraph "Graphical Class Hierarchy"
   edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
   node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
   rankdir="LR";
-  Node0 [label="Traveller_Server.Models.\lDataClasses.Transport",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_traveller___server_1_1_models_1_1_data_classes_1_1_transport.html",tooltip="Data class of a transport. Represents a transport that circulates in one or more routes."];
+  Node0 [label="Traveller_Server.Models.\lDataClasses.Stop",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_traveller___server_1_1_models_1_1_data_classes_1_1_stop.html",tooltip="Data class of a stop. Represents the location at which a transport stops to pick up or offload passen..."];
 }

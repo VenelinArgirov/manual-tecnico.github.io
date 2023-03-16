@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['location_0',['Location',['../class_traveller___server_1_1_models_1_1_data_classes_1_1_location.html#a5882261331ed88de2fce6fb494504ddf',1,'Traveller_Server::Models::DataClasses::Location']]]
+  ['buildmodel_0',['BuildModel',['../class_traveller___server_1_1_migrations_1_1_traveller___server_context_model_snapshot.html#a4923dca6272a514c899d25c10a01cc54',1,'Traveller_Server::Migrations::Traveller_ServerContextModelSnapshot']]],
+  ['buildtargetmodel_1',['BuildTargetModel',['../class_traveller___server_1_1_migrations_1_1_initial.html#aa8d953f59adfe04e246c63bdaafaec8b',1,'Traveller_Server::Migrations::Initial']]]
 ];
