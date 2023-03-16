@@ -9,9 +9,18 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(document).ready(function() { init_search(); });
+/* @license-end */
+</script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -35,17 +44,52 @@
 var searchBox = new SearchBox("searchBox", "search/",'.html');
 /* @license-end */
 </script>
-<script type="text/javascript" src="menudata.js"></script>
-<script type="text/javascript" src="menu.js"></script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
+      <li><a href="namespaces.html"><span>Packages</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="Search" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
+      <li><a href="classes.html"><span>Data&#160;Structure&#160;Index</span></a></li>
+      <li><a href="inherits.html"><span>Class&#160;Hierarchy</span></a></li>
+      <li><a href="functions.html"><span>Data&#160;Fields</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(function() {
-  initMenu('',true,false,'search.php','Search');
-  $(document).ready(function() { init_search(); });
-});
+$(document).ready(function(){initNavTree('class_traveller___server_1_1_controllers_1_1_course_routes_controller.html',''); initResizable(); });
 /* @license-end */
 </script>
-<div id="main-nav"></div>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -67,15 +111,9 @@ $(function() {
 </div>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespace_traveller___server.html">Traveller_Server</a></li><li class="navelem"><a class="el" href="namespace_traveller___server_1_1_controllers.html">Controllers</a></li><li class="navelem"><a class="el" href="class_traveller___server_1_1_controllers_1_1_course_routes_controller.html">CourseRoutesController</a></li>  </ul>
-</div>
-</div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="class_traveller___server_1_1_controllers_1_1_course_routes_controller-members.html">List of all members</a>  </div>
+<a href="#pub-methods">Public Member Functions</a>  </div>
   <div class="headertitle"><div class="title">Traveller_Server.Controllers.CourseRoutesController Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
@@ -83,233 +121,54 @@ $(function() {
 Inheritance diagram for Traveller_Server.Controllers.CourseRoutesController:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_traveller___server_1_1_controllers_1_1_course_routes_controller__inherit__graph.png" border="0" usemap="#a_traveller___server_8_controllers_8_course_routes_controller_inherit__map" alt="Inheritance graph"/></div>
-<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
+</div>
 <div class="dynheader">
 Collaboration diagram for Traveller_Server.Controllers.CourseRoutesController:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_traveller___server_1_1_controllers_1_1_course_routes_controller__coll__graph.png" border="0" usemap="#a_traveller___server_8_controllers_8_course_routes_controller_coll__map" alt="Collaboration graph"/></div>
-<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
+</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a8c4baa9db6d527bad641f2c216b8a607"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_traveller___server_1_1_controllers_1_1_course_routes_controller.html#a8c4baa9db6d527bad641f2c216b8a607">CourseRoutesController</a> (<a class="el" href="class_traveller___server_1_1_data_1_1_traveller___server_context.html">Traveller_ServerContext</a> context)</td></tr>
+<tr class="memitem:a8c4baa9db6d527bad641f2c216b8a607"><td class="memItemLeft" align="right" valign="top"><a id="a8c4baa9db6d527bad641f2c216b8a607" name="a8c4baa9db6d527bad641f2c216b8a607"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>CourseRoutesController</b> (<a class="el" href="class_traveller___server_1_1_data_1_1_traveller___server_context.html">Traveller_ServerContext</a> context)</td></tr>
 <tr class="separator:a8c4baa9db6d527bad641f2c216b8a607"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4ef6ce77447f8cdc49f3e532bef69adc"><td class="memItemLeft" align="right" valign="top">async Task&lt; IActionResult &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_traveller___server_1_1_controllers_1_1_course_routes_controller.html#a4ef6ce77447f8cdc49f3e532bef69adc">Index</a> ()</td></tr>
+<tr class="memitem:a4ef6ce77447f8cdc49f3e532bef69adc"><td class="memItemLeft" align="right" valign="top"><a id="a4ef6ce77447f8cdc49f3e532bef69adc" name="a4ef6ce77447f8cdc49f3e532bef69adc"></a>
+async Task&lt; IActionResult &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>Index</b> ()</td></tr>
 <tr class="separator:a4ef6ce77447f8cdc49f3e532bef69adc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8da124d7df2bdfd7bd191e1b688c88d8"><td class="memItemLeft" align="right" valign="top">async Task&lt; IActionResult &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_traveller___server_1_1_controllers_1_1_course_routes_controller.html#a8da124d7df2bdfd7bd191e1b688c88d8">Details</a> (Guid? id)</td></tr>
+<tr class="memitem:a8da124d7df2bdfd7bd191e1b688c88d8"><td class="memItemLeft" align="right" valign="top"><a id="a8da124d7df2bdfd7bd191e1b688c88d8" name="a8da124d7df2bdfd7bd191e1b688c88d8"></a>
+async Task&lt; IActionResult &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>Details</b> (Guid? id)</td></tr>
 <tr class="separator:a8da124d7df2bdfd7bd191e1b688c88d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a789470621242e7aff1ea26155a5c582d"><td class="memItemLeft" align="right" valign="top">IActionResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_traveller___server_1_1_controllers_1_1_course_routes_controller.html#a789470621242e7aff1ea26155a5c582d">Create</a> ()</td></tr>
+<tr class="memitem:a789470621242e7aff1ea26155a5c582d"><td class="memItemLeft" align="right" valign="top"><a id="a789470621242e7aff1ea26155a5c582d" name="a789470621242e7aff1ea26155a5c582d"></a>
+IActionResult&#160;</td><td class="memItemRight" valign="bottom"><b>Create</b> ()</td></tr>
 <tr class="separator:a789470621242e7aff1ea26155a5c582d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad924d4feffa2b2e61631416d97435cbc"><td class="memItemLeft" align="right" valign="top">async Task&lt; IActionResult &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_traveller___server_1_1_controllers_1_1_course_routes_controller.html#ad924d4feffa2b2e61631416d97435cbc">Create</a> ([Bind(&quot;CourseRouteId,CourseId,RouteId&quot;)] <a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_course_route.html">CourseRoute</a> courseRoute)</td></tr>
+<tr class="memitem:ad924d4feffa2b2e61631416d97435cbc"><td class="memItemLeft" align="right" valign="top"><a id="ad924d4feffa2b2e61631416d97435cbc" name="ad924d4feffa2b2e61631416d97435cbc"></a>
+async Task&lt; IActionResult &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>Create</b> ([Bind(&quot;CourseRouteId,CourseId,RouteId&quot;)] <a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_course_route.html">CourseRoute</a> courseRoute)</td></tr>
 <tr class="separator:ad924d4feffa2b2e61631416d97435cbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7f397abbfbea0edc4b9c298801598419"><td class="memItemLeft" align="right" valign="top">async Task&lt; IActionResult &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_traveller___server_1_1_controllers_1_1_course_routes_controller.html#a7f397abbfbea0edc4b9c298801598419">Edit</a> (Guid? id)</td></tr>
+<tr class="memitem:a7f397abbfbea0edc4b9c298801598419"><td class="memItemLeft" align="right" valign="top"><a id="a7f397abbfbea0edc4b9c298801598419" name="a7f397abbfbea0edc4b9c298801598419"></a>
+async Task&lt; IActionResult &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>Edit</b> (Guid? id)</td></tr>
 <tr class="separator:a7f397abbfbea0edc4b9c298801598419"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a230cd58d32de53f10222a6f11b9db27c"><td class="memItemLeft" align="right" valign="top">async Task&lt; IActionResult &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_traveller___server_1_1_controllers_1_1_course_routes_controller.html#a230cd58d32de53f10222a6f11b9db27c">Edit</a> (Guid id, [Bind(&quot;CourseRouteId,CourseId,RouteId&quot;)] <a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_course_route.html">CourseRoute</a> courseRoute)</td></tr>
+<tr class="memitem:a230cd58d32de53f10222a6f11b9db27c"><td class="memItemLeft" align="right" valign="top"><a id="a230cd58d32de53f10222a6f11b9db27c" name="a230cd58d32de53f10222a6f11b9db27c"></a>
+async Task&lt; IActionResult &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>Edit</b> (Guid id, [Bind(&quot;CourseRouteId,CourseId,RouteId&quot;)] <a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_course_route.html">CourseRoute</a> courseRoute)</td></tr>
 <tr class="separator:a230cd58d32de53f10222a6f11b9db27c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a119c9bb14490eb293def8af13366e726"><td class="memItemLeft" align="right" valign="top">async Task&lt; IActionResult &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_traveller___server_1_1_controllers_1_1_course_routes_controller.html#a119c9bb14490eb293def8af13366e726">Delete</a> (Guid? id)</td></tr>
+<tr class="memitem:a119c9bb14490eb293def8af13366e726"><td class="memItemLeft" align="right" valign="top"><a id="a119c9bb14490eb293def8af13366e726" name="a119c9bb14490eb293def8af13366e726"></a>
+async Task&lt; IActionResult &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>Delete</b> (Guid? id)</td></tr>
 <tr class="separator:a119c9bb14490eb293def8af13366e726"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a47eb2cc66eee7064def6a2bf96b9f9bb"><td class="memItemLeft" align="right" valign="top">async Task&lt; IActionResult &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_traveller___server_1_1_controllers_1_1_course_routes_controller.html#a47eb2cc66eee7064def6a2bf96b9f9bb">DeleteConfirmed</a> (Guid id)</td></tr>
+<tr class="memitem:a47eb2cc66eee7064def6a2bf96b9f9bb"><td class="memItemLeft" align="right" valign="top"><a id="a47eb2cc66eee7064def6a2bf96b9f9bb" name="a47eb2cc66eee7064def6a2bf96b9f9bb"></a>
+async Task&lt; IActionResult &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>DeleteConfirmed</b> (Guid id)</td></tr>
 <tr class="separator:a47eb2cc66eee7064def6a2bf96b9f9bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a8c4baa9db6d527bad641f2c216b8a607" name="a8c4baa9db6d527bad641f2c216b8a607"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8c4baa9db6d527bad641f2c216b8a607">&#9670;&#160;</a></span>CourseRoutesController()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">Traveller_Server.Controllers.CourseRoutesController.CourseRoutesController </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="class_traveller___server_1_1_data_1_1_traveller___server_context.html">Traveller_ServerContext</a>&#160;</td>
-          <td class="paramname"><em>context</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="a789470621242e7aff1ea26155a5c582d" name="a789470621242e7aff1ea26155a5c582d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a789470621242e7aff1ea26155a5c582d">&#9670;&#160;</a></span>Create() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">IActionResult Traveller_Server.Controllers.CourseRoutesController.Create </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ad924d4feffa2b2e61631416d97435cbc" name="ad924d4feffa2b2e61631416d97435cbc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad924d4feffa2b2e61631416d97435cbc">&#9670;&#160;</a></span>Create() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">async Task&lt; IActionResult &gt; Traveller_Server.Controllers.CourseRoutesController.Create </td>
-          <td>(</td>
-          <td class="paramtype">[Bind(&quot;CourseRouteId,CourseId,RouteId&quot;)] <a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_course_route.html">CourseRoute</a>&#160;</td>
-          <td class="paramname"><em>courseRoute</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_traveller___server_1_1_controllers_1_1_course_routes_controller_ad924d4feffa2b2e61631416d97435cbc_cgraph.png" border="0" usemap="#aclass_traveller___server_1_1_controllers_1_1_course_routes_controller_ad924d4feffa2b2e61631416d97435cbc_cgraph" alt=""/></div>
-</div>
-
-</div>
-</div>
-<a id="a119c9bb14490eb293def8af13366e726" name="a119c9bb14490eb293def8af13366e726"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a119c9bb14490eb293def8af13366e726">&#9670;&#160;</a></span>Delete()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">async Task&lt; IActionResult &gt; Traveller_Server.Controllers.CourseRoutesController.Delete </td>
-          <td>(</td>
-          <td class="paramtype">Guid?&#160;</td>
-          <td class="paramname"><em>id</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a47eb2cc66eee7064def6a2bf96b9f9bb" name="a47eb2cc66eee7064def6a2bf96b9f9bb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a47eb2cc66eee7064def6a2bf96b9f9bb">&#9670;&#160;</a></span>DeleteConfirmed()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">async Task&lt; IActionResult &gt; Traveller_Server.Controllers.CourseRoutesController.DeleteConfirmed </td>
-          <td>(</td>
-          <td class="paramtype">Guid&#160;</td>
-          <td class="paramname"><em>id</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_traveller___server_1_1_controllers_1_1_course_routes_controller_a47eb2cc66eee7064def6a2bf96b9f9bb_cgraph.png" border="0" usemap="#aclass_traveller___server_1_1_controllers_1_1_course_routes_controller_a47eb2cc66eee7064def6a2bf96b9f9bb_cgraph" alt=""/></div>
-</div>
-
-</div>
-</div>
-<a id="a8da124d7df2bdfd7bd191e1b688c88d8" name="a8da124d7df2bdfd7bd191e1b688c88d8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8da124d7df2bdfd7bd191e1b688c88d8">&#9670;&#160;</a></span>Details()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">async Task&lt; IActionResult &gt; Traveller_Server.Controllers.CourseRoutesController.Details </td>
-          <td>(</td>
-          <td class="paramtype">Guid?&#160;</td>
-          <td class="paramname"><em>id</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a230cd58d32de53f10222a6f11b9db27c" name="a230cd58d32de53f10222a6f11b9db27c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a230cd58d32de53f10222a6f11b9db27c">&#9670;&#160;</a></span>Edit() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">async Task&lt; IActionResult &gt; Traveller_Server.Controllers.CourseRoutesController.Edit </td>
-          <td>(</td>
-          <td class="paramtype">Guid&#160;</td>
-          <td class="paramname"><em>id</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">[Bind(&quot;CourseRouteId,CourseId,RouteId&quot;)] <a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_course_route.html">CourseRoute</a>&#160;</td>
-          <td class="paramname"><em>courseRoute</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_traveller___server_1_1_controllers_1_1_course_routes_controller_a230cd58d32de53f10222a6f11b9db27c_cgraph.png" border="0" usemap="#aclass_traveller___server_1_1_controllers_1_1_course_routes_controller_a230cd58d32de53f10222a6f11b9db27c_cgraph" alt=""/></div>
-</div>
-
-</div>
-</div>
-<a id="a7f397abbfbea0edc4b9c298801598419" name="a7f397abbfbea0edc4b9c298801598419"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7f397abbfbea0edc4b9c298801598419">&#9670;&#160;</a></span>Edit() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">async Task&lt; IActionResult &gt; Traveller_Server.Controllers.CourseRoutesController.Edit </td>
-          <td>(</td>
-          <td class="paramtype">Guid?&#160;</td>
-          <td class="paramname"><em>id</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a4ef6ce77447f8cdc49f3e532bef69adc" name="a4ef6ce77447f8cdc49f3e532bef69adc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4ef6ce77447f8cdc49f3e532bef69adc">&#9670;&#160;</a></span>Index()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">async Task&lt; IActionResult &gt; Traveller_Server.Controllers.CourseRoutesController.Index </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_traveller___server_1_1_controllers_1_1_course_routes_controller_a4ef6ce77447f8cdc49f3e532bef69adc_icgraph.png" border="0" usemap="#aclass_traveller___server_1_1_controllers_1_1_course_routes_controller_a4ef6ce77447f8cdc49f3e532bef69adc_icgraph" alt=""/></div>
-</div>
-
-</div>
-</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>E:/Users/venel/Desktop/TravellerV2/traveller/Traveller-Server/Controllers/<a class="el" href="_course_routes_controller_8cs.html">CourseRoutesController.cs</a></li>
+<li>E:/Users/venel/Desktop/TravellerV2/traveller/Traveller-Server/Controllers/CourseRoutesController.cs</li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespace_traveller___server.html">Traveller_Server</a></li><li class="navelem"><a class="el" href="namespace_traveller___server_1_1_controllers.html">Controllers</a></li><li class="navelem"><a class="el" href="class_traveller___server_1_1_controllers_1_1_course_routes_controller.html">CourseRoutesController</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
+  </ul>
+</div>
 </body>
 </html>

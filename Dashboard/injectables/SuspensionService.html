@@ -569,8 +569,8 @@ export class SuspensionService {
    * @returns A list of suspensions of a user obtained from the database.
    */
   getSuspensionsOfUser(userId: string): Observable&lt;Suspension[]&gt; {
-    return this.http.get&lt;Suspension[]&gt;(&#x60;api/UserSuspensionsApi/user/${userId}&#x60;)
-    //return this.http.get&lt;Suspension[]&gt;(&#x60;https://traveller-server.azurewebsites.net/api/UserSuspensionsApi/user/${userId}&#x60;)
+    //return this.http.get&lt;Suspension[]&gt;(&#x60;https://localhost:7036/api/UserSuspensionsApi/user/${userId}&#x60;)
+    return this.http.get&lt;Suspension[]&gt;(&#x60;https://traveller-server.azurewebsites.net/api/UserSuspensionsApi/user/${userId}&#x60;)
       .pipe(catchError(this.handleError));
   }
 
@@ -586,8 +586,8 @@ export class SuspensionService {
     if (reason &#x3D;&#x3D; &quot;&quot;) {
       reason &#x3D; &quot;No reason provided.&quot;;
     }
-    return this.http.post&lt;Suspension&gt;(&#x60;api/UserSuspensionsApi&#x60;, new Suspension(Guid.create().toString(), userId, startDate, endDate, reason, permanent))
-    //return this.http.post&lt;Suspension&gt;(&#x60;https://traveller-server.azurewebsites.net/api/UserSuspensionsApi&#x60;, new Suspension(Guid.create().toString(), userId, startDate, endDate, reason, permanent))
+    //return this.http.post&lt;Suspension&gt;(&#x60;https://localhost:7036/api/UserSuspensionsApi&#x60;, new Suspension(Guid.create().toString(), userId, startDate, endDate, reason, permanent))
+    return this.http.post&lt;Suspension&gt;(&#x60;https://traveller-server.azurewebsites.net/api/UserSuspensionsApi&#x60;, new Suspension(Guid.create().toString(), userId, startDate, endDate, reason, permanent))
       .pipe(catchError(this.handleError));
   }
 
@@ -596,8 +596,8 @@ export class SuspensionService {
    * @param userId Id of the user to unban.
    */
   unbanUser(userId: string) {
-    return this.http.get&lt;Suspension&gt;(&#x60;api/UserSuspensionsApi/unban/${userId}&#x60;)
-    //return this.http.get&lt;Suspension&gt;(&#x60;https://traveller-server.azurewebsites.net/api/UserSuspensionsApi/unban/${userId}&#x60;)
+    //return this.http.get&lt;Suspension&gt;(&#x60;https://localhost:7036/api/UserSuspensionsApi/unban/${userId}&#x60;)
+    return this.http.get&lt;Suspension&gt;(&#x60;https://traveller-server.azurewebsites.net/api/UserSuspensionsApi/unban/${userId}&#x60;)
       .pipe(catchError(this.handleError));
   }
 

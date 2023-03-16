@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['isnotanabstractclassandhasaparameterlessconstructor_0',['isnotanabstractclassandhasaparameterlessconstructor',['../_external_login_8cshtml_8cs.html#a62c0dbcc881bb926cdd2b50b4d3b3f20',1,'isnotanabstractclassandhasaparameterlessconstructor():&#160;ExternalLogin.cshtml.cs'],['../_register_8cshtml_8cs.html#a62c0dbcc881bb926cdd2b50b4d3b3f20',1,'isnotanabstractclassandhasaparameterlessconstructor():&#160;Register.cshtml.cs']]]
+  ['rating_0',['rating',['../class_traveller___server_1_1_models_1_1_data_classes_1_1_alert_rating_info.html#a99d703a842d8e06af946323771d516e2',1,'Traveller_Server::Models::DataClasses::AlertRatingInfo']]]
 ];

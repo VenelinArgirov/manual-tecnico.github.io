@@ -70,112 +70,87 @@
 <section class="summary source-code" id="source">
   <h2><span>Implementation</span></h2>
   <pre class="language-dart"><code class="language-dart">ThemeData darkTheme = ThemeData(
-  brightness: Brightness.dark,
-  primaryColor: DARKTHEME_COLOR_PRIMARY,
-  primarySwatch: generateMaterialColor(color: DARKTHEME_COLOR_PRIMARY),
-  scaffoldBackgroundColor: DARKTHEME_COLOR_BACKGROUND,
-  elevatedButtonTheme: ElevatedButtonThemeData(
-    style: ElevatedButton.styleFrom(
-        fixedSize: const Size(150, 50),
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(30),
-        ),
-        textStyle: const TextStyle(
-          color: Colors.white,
-          fontSize: 24,
-        ),
-        foregroundColor: Colors.white),
-  ),
-  floatingActionButtonTheme: const FloatingActionButtonThemeData(
-    backgroundColor: DARKTHEME_COLOR_SECONDARY,
-  ),
-  textButtonTheme: TextButtonThemeData(
-      style: TextButton.styleFrom(
-    foregroundColor: Colors.white,
-  )),
-  switchTheme: SwitchThemeData(
-    trackColor: MaterialStateProperty.all&lt;Color&gt;(const Color(0xffE1BEE7)),
-    thumbColor: MaterialStateProperty.all&lt;Color&gt;(DARKTHEME_COLOR_PRIMARY),
-  ),
-  appBarTheme: const AppBarTheme(
-    color: DARKTHEME_COLOR_PRIMARY,
-    foregroundColor: Colors.white,
-    iconTheme: IconThemeData(
+    brightness: Brightness.dark,
+    primarySwatch: generateMaterialColor(color: DARKTHEME_COLOR_PRIMARY),
+    scaffoldBackgroundColor: DARKTHEME_COLOR_BACKGROUND,
+    elevatedButtonTheme: ElevatedButtonThemeData(
+      style: ElevatedButton.styleFrom(
+          fixedSize: const Size(150, 50),
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(30),
+          ),
+          textStyle: const TextStyle(
+            color: Colors.white,
+            fontSize: 24,
+          ),
+          foregroundColor: Colors.white),
+    ),
+    floatingActionButtonTheme: const FloatingActionButtonThemeData(
+      backgroundColor: DARKTHEME_COLOR_SECONDARY,
+    ),
+    textButtonTheme: TextButtonThemeData(
+        style: TextButton.styleFrom(
+      foregroundColor: Colors.white,
+    )),
+    switchTheme: SwitchThemeData(
+      trackColor: MaterialStateProperty.all&lt;Color&gt;(const Color(0xffE1BEE7)),
+      thumbColor: MaterialStateProperty.all&lt;Color&gt;(DARKTHEME_COLOR_PRIMARY),
+    ),
+    appBarTheme: const AppBarTheme(
+      color: DARKTHEME_COLOR_PRIMARY,
+      foregroundColor: Colors.white,
+      iconTheme: IconThemeData(
+        color: Colors.white,
+      ),
+      centerTitle: true,
+    ),
+    iconTheme: const IconThemeData(
       color: Colors.white,
     ),
-    centerTitle: true,
-  ),
-  iconTheme: const IconThemeData(
-    color: Colors.white,
-  ),
-  textTheme: const TextTheme(
-    headlineSmall: TextStyle(
-      color: Colors.white,
+    textTheme: const TextTheme(
+      headlineSmall: TextStyle(color: Colors.white,),
+      headlineMedium: TextStyle(color: Colors.white,),
+      headlineLarge: TextStyle(color: Colors.white,),
+      bodySmall: TextStyle(color: Colors.white,),
+      bodyMedium: TextStyle(color: Colors.white,),
+      bodyLarge: TextStyle(color: Colors.white,),
+      labelSmall: TextStyle(color: Colors.white,),
+      labelMedium: TextStyle(color: Colors.white,),
+      labelLarge: TextStyle(color: Colors.white,),
+      titleSmall: TextStyle(color: Colors.white,),
+      titleMedium: TextStyle(color: Colors.white,),
+      titleLarge: TextStyle(color: Colors.white,),
+      displaySmall: TextStyle(color: Colors.white,),
+      displayMedium: TextStyle(color: Colors.white,),
+      displayLarge: TextStyle(color: Colors.white,),
     ),
-    headlineMedium: TextStyle(
-      color: Colors.white,
-    ),
-    headlineLarge: TextStyle(
-      color: Colors.white,
-    ),
-    bodySmall: TextStyle(
-      color: Colors.white,
-    ),
-    bodyMedium: TextStyle(
-      color: Colors.white,
-    ),
-    bodyLarge: TextStyle(
-      color: Colors.white,
-    ),
-    labelSmall: TextStyle(
-      color: Colors.white,
-    ),
-    labelMedium: TextStyle(
-      color: Colors.white,
-    ),
-    labelLarge: TextStyle(
-      color: Colors.white,
-    ),
-    titleSmall: TextStyle(
-      color: Colors.white,
-    ),
-    titleMedium: TextStyle(
-      color: Colors.white,
-    ),
-    titleLarge: TextStyle(
-      color: Colors.white,
-    ),
-    displaySmall: TextStyle(
-      color: Colors.white,
-    ),
-    displayMedium: TextStyle(
-      color: Colors.white,
-    ),
-    displayLarge: TextStyle(
-      color: Colors.white,
-    ),
-  ),
-  dialogBackgroundColor: DARKTHEME_COLOR_BACKGROUND,
-  inputDecorationTheme: const InputDecorationTheme(
+    dialogBackgroundColor: DARKTHEME_COLOR_BACKGROUND,
+    inputDecorationTheme: const InputDecorationTheme(
       iconColor: Colors.white,
       prefixIconColor: Colors.white,
       suffixIconColor: Colors.white,
       hintStyle: TextStyle(color: Colors.white),
       enabledBorder: UnderlineInputBorder(
-          borderSide: BorderSide(
-        color: Colors.white,
-      )),
-      outlineBorder: BorderSide(color: Colors.white),
+        borderSide: BorderSide(
+          color: Colors.white,
+        )
+      ),
+      outlineBorder: BorderSide(
+        color: Colors.white
+      ),
       border: UnderlineInputBorder(
-          borderSide: BorderSide(
-        color: Colors.white,
-      )),
+        borderSide: BorderSide(
+          color: Colors.white,
+        )
+      ),
       disabledBorder: UnderlineInputBorder(
-          borderSide: BorderSide(
-        color: Colors.white,
-      ))),
-  unselectedWidgetColor: DARKTHEME_COLOR_PRIMARY,
-);</code></pre>
+        borderSide: BorderSide(
+          color: Colors.white,
+        )
+      )
+    ),
+    unselectedWidgetColor: DARKTHEME_COLOR_PRIMARY,
+    );</code></pre>
 </section>
 
 

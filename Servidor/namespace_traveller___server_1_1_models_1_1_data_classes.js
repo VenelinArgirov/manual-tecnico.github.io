@@ -2,6 +2,7 @@ var namespace_traveller___server_1_1_models_1_1_data_classes =
 [
     [ "ActivityLog", "class_traveller___server_1_1_models_1_1_data_classes_1_1_activity_log.html", "class_traveller___server_1_1_models_1_1_data_classes_1_1_activity_log" ],
     [ "Alert", "class_traveller___server_1_1_models_1_1_data_classes_1_1_alert.html", "class_traveller___server_1_1_models_1_1_data_classes_1_1_alert" ],
+    [ "AlertRatingInfo", "class_traveller___server_1_1_models_1_1_data_classes_1_1_alert_rating_info.html", "class_traveller___server_1_1_models_1_1_data_classes_1_1_alert_rating_info" ],
     [ "AuthResponse", "class_traveller___server_1_1_models_1_1_data_classes_1_1_auth_response.html", "class_traveller___server_1_1_models_1_1_data_classes_1_1_auth_response" ],
     [ "Course", "class_traveller___server_1_1_models_1_1_data_classes_1_1_course.html", "class_traveller___server_1_1_models_1_1_data_classes_1_1_course" ],
     [ "CourseRoute", "class_traveller___server_1_1_models_1_1_data_classes_1_1_course_route.html", "class_traveller___server_1_1_models_1_1_data_classes_1_1_course_route" ],
@@ -10,11 +11,14 @@ var namespace_traveller___server_1_1_models_1_1_data_classes =
     [ "ResetPasswordLog", "class_traveller___server_1_1_models_1_1_data_classes_1_1_reset_password_log.html", "class_traveller___server_1_1_models_1_1_data_classes_1_1_reset_password_log" ],
     [ "Route", "class_traveller___server_1_1_models_1_1_data_classes_1_1_route.html", "class_traveller___server_1_1_models_1_1_data_classes_1_1_route" ],
     [ "Stop", "class_traveller___server_1_1_models_1_1_data_classes_1_1_stop.html", "class_traveller___server_1_1_models_1_1_data_classes_1_1_stop" ],
+    [ "TimeSpentWeek", "class_traveller___server_1_1_models_1_1_data_classes_1_1_time_spent_week.html", "class_traveller___server_1_1_models_1_1_data_classes_1_1_time_spent_week" ],
     [ "Transport", "class_traveller___server_1_1_models_1_1_data_classes_1_1_transport.html", "class_traveller___server_1_1_models_1_1_data_classes_1_1_transport" ],
     [ "User", "class_traveller___server_1_1_models_1_1_data_classes_1_1_user.html", "class_traveller___server_1_1_models_1_1_data_classes_1_1_user" ],
     [ "User_Course", "class_traveller___server_1_1_models_1_1_data_classes_1_1_user___course.html", "class_traveller___server_1_1_models_1_1_data_classes_1_1_user___course" ],
+    [ "UserChangeState", "class_traveller___server_1_1_models_1_1_data_classes_1_1_user_change_state.html", "class_traveller___server_1_1_models_1_1_data_classes_1_1_user_change_state" ],
     [ "UserForAuthentication", "class_traveller___server_1_1_models_1_1_data_classes_1_1_user_for_authentication.html", "class_traveller___server_1_1_models_1_1_data_classes_1_1_user_for_authentication" ],
     [ "UserResetPassword", "class_traveller___server_1_1_models_1_1_data_classes_1_1_user_reset_password.html", "class_traveller___server_1_1_models_1_1_data_classes_1_1_user_reset_password" ],
+    [ "UserStatus", "class_traveller___server_1_1_models_1_1_data_classes_1_1_user_status.html", "class_traveller___server_1_1_models_1_1_data_classes_1_1_user_status" ],
     [ "UserSuspension", "class_traveller___server_1_1_models_1_1_data_classes_1_1_user_suspension.html", "class_traveller___server_1_1_models_1_1_data_classes_1_1_user_suspension" ],
     [ "AlertType", "namespace_traveller___server_1_1_models_1_1_data_classes.html#a9257384b227a91c9a6393ec07f4d9929", [
       [ "delay", "namespace_traveller___server_1_1_models_1_1_data_classes.html#a9257384b227a91c9a6393ec07f4d9929a7243f8be75253afbadf7477867021f8b", null ],

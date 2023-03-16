@@ -9,9 +9,18 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(document).ready(function() { init_search(); });
+/* @license-end */
+</script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -35,17 +44,52 @@
 var searchBox = new SearchBox("searchBox", "search/",'.html');
 /* @license-end */
 </script>
-<script type="text/javascript" src="menudata.js"></script>
-<script type="text/javascript" src="menu.js"></script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
+      <li><a href="namespaces.html"><span>Packages</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="Search" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
+      <li><a href="classes.html"><span>Data&#160;Structure&#160;Index</span></a></li>
+      <li><a href="inherits.html"><span>Class&#160;Hierarchy</span></a></li>
+      <li><a href="functions.html"><span>Data&#160;Fields</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(function() {
-  initMenu('',true,false,'search.php','Search');
-  $(document).ready(function() { init_search(); });
-});
+$(document).ready(function(){initNavTree('class_traveller___server_1_1_data_1_1_traveller___server_context.html',''); initResizable(); });
 /* @license-end */
 </script>
-<div id="main-nav"></div>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -67,17 +111,11 @@ $(function() {
 </div>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespace_traveller___server.html">Traveller_Server</a></li><li class="navelem"><a class="el" href="namespace_traveller___server_1_1_data.html">Data</a></li><li class="navelem"><a class="el" href="class_traveller___server_1_1_data_1_1_traveller___server_context.html">Traveller_ServerContext</a></li>  </ul>
-</div>
-</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
-<a href="#properties">Properties</a> &#124;
-<a href="class_traveller___server_1_1_data_1_1_traveller___server_context-members.html">List of all members</a>  </div>
+<a href="#properties">Properties</a>  </div>
   <div class="headertitle"><div class="title">Traveller_Server.Data.Traveller_ServerContext Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
@@ -85,444 +123,84 @@ $(function() {
 Inheritance diagram for Traveller_Server.Data.Traveller_ServerContext:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_traveller___server_1_1_data_1_1_traveller___server_context__inherit__graph.png" border="0" usemap="#a_traveller___server_8_data_8_traveller___server_context_inherit__map" alt="Inheritance graph"/></div>
-<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
+</div>
 <div class="dynheader">
 Collaboration diagram for Traveller_Server.Data.Traveller_ServerContext:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_traveller___server_1_1_data_1_1_traveller___server_context__coll__graph.png" border="0" usemap="#a_traveller___server_8_data_8_traveller___server_context_coll__map" alt="Collaboration graph"/></div>
-<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
+</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ab81aca91f9ed70a78e37ee7d87539a13"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_traveller___server_1_1_data_1_1_traveller___server_context.html#ab81aca91f9ed70a78e37ee7d87539a13">Traveller_ServerContext</a> (DbContextOptions&lt; <a class="el" href="class_traveller___server_1_1_data_1_1_traveller___server_context.html">Traveller_ServerContext</a> &gt; options)</td></tr>
+<tr class="memitem:ab81aca91f9ed70a78e37ee7d87539a13"><td class="memItemLeft" align="right" valign="top"><a id="ab81aca91f9ed70a78e37ee7d87539a13" name="ab81aca91f9ed70a78e37ee7d87539a13"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Traveller_ServerContext</b> (DbContextOptions&lt; <a class="el" href="class_traveller___server_1_1_data_1_1_traveller___server_context.html">Traveller_ServerContext</a> &gt; options)</td></tr>
 <tr class="separator:ab81aca91f9ed70a78e37ee7d87539a13"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:ada83f28db04c928a5775dcdf2a227b55"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_traveller___server_1_1_data_1_1_traveller___server_context.html#ada83f28db04c928a5775dcdf2a227b55">OnConfiguring</a> (DbContextOptionsBuilder optionsBuilder)</td></tr>
+<tr class="memitem:ada83f28db04c928a5775dcdf2a227b55"><td class="memItemLeft" align="right" valign="top"><a id="ada83f28db04c928a5775dcdf2a227b55" name="ada83f28db04c928a5775dcdf2a227b55"></a>
+override void&#160;</td><td class="memItemRight" valign="bottom"><b>OnConfiguring</b> (DbContextOptionsBuilder optionsBuilder)</td></tr>
 <tr class="separator:ada83f28db04c928a5775dcdf2a227b55"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad7f317fb82c3006669237cb1e0658139"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_traveller___server_1_1_data_1_1_traveller___server_context.html#ad7f317fb82c3006669237cb1e0658139">OnModelCreating</a> (ModelBuilder modelBuilder)</td></tr>
+<tr class="memitem:ad7f317fb82c3006669237cb1e0658139"><td class="memItemLeft" align="right" valign="top"><a id="ad7f317fb82c3006669237cb1e0658139" name="ad7f317fb82c3006669237cb1e0658139"></a>
+override void&#160;</td><td class="memItemRight" valign="bottom"><b>OnModelCreating</b> (ModelBuilder modelBuilder)</td></tr>
 <tr class="separator:ad7f317fb82c3006669237cb1e0658139"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="properties" name="properties"></a>
 Properties</h2></td></tr>
-<tr class="memitem:a46e3b125a84940e8133e322ce6b9738b"><td class="memItemLeft" align="right" valign="top">DbSet&lt; <a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_user.html">Traveller_Server.Models.DataClasses.User</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_traveller___server_1_1_data_1_1_traveller___server_context.html#a46e3b125a84940e8133e322ce6b9738b">User</a> = default!<code> [get, set]</code></td></tr>
+<tr class="memitem:a46e3b125a84940e8133e322ce6b9738b"><td class="memItemLeft" align="right" valign="top"><a id="a46e3b125a84940e8133e322ce6b9738b" name="a46e3b125a84940e8133e322ce6b9738b"></a>
+DbSet&lt; <a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_user.html">Traveller_Server.Models.DataClasses.User</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>User</b> = default!<code> [get, set]</code></td></tr>
 <tr class="separator:a46e3b125a84940e8133e322ce6b9738b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3ae32a71ec1ce5fb3cba3a72e5abfef7"><td class="memItemLeft" align="right" valign="top">DbSet&lt; <a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_route.html">Traveller_Server.Models.DataClasses.Route</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_traveller___server_1_1_data_1_1_traveller___server_context.html#a3ae32a71ec1ce5fb3cba3a72e5abfef7">Route</a><code> [get, set]</code></td></tr>
+<tr class="memitem:a3ae32a71ec1ce5fb3cba3a72e5abfef7"><td class="memItemLeft" align="right" valign="top"><a id="a3ae32a71ec1ce5fb3cba3a72e5abfef7" name="a3ae32a71ec1ce5fb3cba3a72e5abfef7"></a>
+DbSet&lt; <a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_route.html">Traveller_Server.Models.DataClasses.Route</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>Route</b><code> [get, set]</code></td></tr>
 <tr class="separator:a3ae32a71ec1ce5fb3cba3a72e5abfef7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4fd4e6c34856a6993158835ef43d0b74"><td class="memItemLeft" align="right" valign="top">DbSet&lt; <a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_stop.html">Traveller_Server.Models.DataClasses.Stop</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_traveller___server_1_1_data_1_1_traveller___server_context.html#a4fd4e6c34856a6993158835ef43d0b74">Stop</a><code> [get, set]</code></td></tr>
+<tr class="memitem:a4fd4e6c34856a6993158835ef43d0b74"><td class="memItemLeft" align="right" valign="top"><a id="a4fd4e6c34856a6993158835ef43d0b74" name="a4fd4e6c34856a6993158835ef43d0b74"></a>
+DbSet&lt; <a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_stop.html">Traveller_Server.Models.DataClasses.Stop</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>Stop</b><code> [get, set]</code></td></tr>
 <tr class="separator:a4fd4e6c34856a6993158835ef43d0b74"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a575954113b19af9a0d07c661a82d2313"><td class="memItemLeft" align="right" valign="top">DbSet&lt; <a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_transport.html">Traveller_Server.Models.DataClasses.Transport</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_traveller___server_1_1_data_1_1_traveller___server_context.html#a575954113b19af9a0d07c661a82d2313">Transport</a><code> [get, set]</code></td></tr>
+<tr class="memitem:a575954113b19af9a0d07c661a82d2313"><td class="memItemLeft" align="right" valign="top"><a id="a575954113b19af9a0d07c661a82d2313" name="a575954113b19af9a0d07c661a82d2313"></a>
+DbSet&lt; <a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_transport.html">Traveller_Server.Models.DataClasses.Transport</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>Transport</b><code> [get, set]</code></td></tr>
 <tr class="separator:a575954113b19af9a0d07c661a82d2313"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae1853255f4d7cf6655cb4babe2452941"><td class="memItemLeft" align="right" valign="top">DbSet&lt; <a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_alert.html">Traveller_Server.Models.DataClasses.Alert</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_traveller___server_1_1_data_1_1_traveller___server_context.html#ae1853255f4d7cf6655cb4babe2452941">Alert</a><code> [get, set]</code></td></tr>
+<tr class="memitem:ae1853255f4d7cf6655cb4babe2452941"><td class="memItemLeft" align="right" valign="top"><a id="ae1853255f4d7cf6655cb4babe2452941" name="ae1853255f4d7cf6655cb4babe2452941"></a>
+DbSet&lt; <a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_alert.html">Traveller_Server.Models.DataClasses.Alert</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>Alert</b><code> [get, set]</code></td></tr>
 <tr class="separator:ae1853255f4d7cf6655cb4babe2452941"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0663ae3fef996b0df25a068c3485af78"><td class="memItemLeft" align="right" valign="top">DbSet&lt; <a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_user_suspension.html">Traveller_Server.Models.DataClasses.UserSuspension</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_traveller___server_1_1_data_1_1_traveller___server_context.html#a0663ae3fef996b0df25a068c3485af78">UserSuspension</a><code> [get, set]</code></td></tr>
+<tr class="memitem:a0663ae3fef996b0df25a068c3485af78"><td class="memItemLeft" align="right" valign="top"><a id="a0663ae3fef996b0df25a068c3485af78" name="a0663ae3fef996b0df25a068c3485af78"></a>
+DbSet&lt; <a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_user_suspension.html">Traveller_Server.Models.DataClasses.UserSuspension</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>UserSuspension</b><code> [get, set]</code></td></tr>
 <tr class="separator:a0663ae3fef996b0df25a068c3485af78"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae8e21fc716b888758fdea22eeea67ccd"><td class="memItemLeft" align="right" valign="top">DbSet&lt; <a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_location.html">Traveller_Server.Models.DataClasses.Location</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_traveller___server_1_1_data_1_1_traveller___server_context.html#ae8e21fc716b888758fdea22eeea67ccd">Location</a><code> [get, set]</code></td></tr>
+<tr class="memitem:ae8e21fc716b888758fdea22eeea67ccd"><td class="memItemLeft" align="right" valign="top"><a id="ae8e21fc716b888758fdea22eeea67ccd" name="ae8e21fc716b888758fdea22eeea67ccd"></a>
+DbSet&lt; <a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_location.html">Traveller_Server.Models.DataClasses.Location</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>Location</b><code> [get, set]</code></td></tr>
 <tr class="separator:ae8e21fc716b888758fdea22eeea67ccd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a55f46fd752af8c4031c6b7108d09d73a"><td class="memItemLeft" align="right" valign="top">DbSet&lt; <a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_linked_stop.html">Traveller_Server.Models.DataClasses.LinkedStop</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_traveller___server_1_1_data_1_1_traveller___server_context.html#a55f46fd752af8c4031c6b7108d09d73a">LinkedStop</a><code> [get, set]</code></td></tr>
+<tr class="memitem:a55f46fd752af8c4031c6b7108d09d73a"><td class="memItemLeft" align="right" valign="top"><a id="a55f46fd752af8c4031c6b7108d09d73a" name="a55f46fd752af8c4031c6b7108d09d73a"></a>
+DbSet&lt; <a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_linked_stop.html">Traveller_Server.Models.DataClasses.LinkedStop</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>LinkedStop</b><code> [get, set]</code></td></tr>
 <tr class="separator:a55f46fd752af8c4031c6b7108d09d73a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9ae1ce03d9308560bfb411be8e0000c1"><td class="memItemLeft" align="right" valign="top">DbSet&lt; <a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_activity_log.html">Traveller_Server.Models.DataClasses.ActivityLog</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_traveller___server_1_1_data_1_1_traveller___server_context.html#a9ae1ce03d9308560bfb411be8e0000c1">ActivityLog</a><code> [get, set]</code></td></tr>
+<tr class="memitem:a9ae1ce03d9308560bfb411be8e0000c1"><td class="memItemLeft" align="right" valign="top"><a id="a9ae1ce03d9308560bfb411be8e0000c1" name="a9ae1ce03d9308560bfb411be8e0000c1"></a>
+DbSet&lt; <a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_activity_log.html">Traveller_Server.Models.DataClasses.ActivityLog</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>ActivityLog</b><code> [get, set]</code></td></tr>
 <tr class="separator:a9ae1ce03d9308560bfb411be8e0000c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a614433fd924c85ae48438bb47834df03"><td class="memItemLeft" align="right" valign="top">DbSet&lt; <a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_course.html">Traveller_Server.Models.DataClasses.Course</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_traveller___server_1_1_data_1_1_traveller___server_context.html#a614433fd924c85ae48438bb47834df03">Course</a><code> [get, set]</code></td></tr>
+<tr class="memitem:a614433fd924c85ae48438bb47834df03"><td class="memItemLeft" align="right" valign="top"><a id="a614433fd924c85ae48438bb47834df03" name="a614433fd924c85ae48438bb47834df03"></a>
+DbSet&lt; <a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_course.html">Traveller_Server.Models.DataClasses.Course</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>Course</b><code> [get, set]</code></td></tr>
 <tr class="separator:a614433fd924c85ae48438bb47834df03"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa7382179903550da273f9bcab4feb61c"><td class="memItemLeft" align="right" valign="top">DbSet&lt; <a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_user___course.html">Traveller_Server.Models.DataClasses.User_Course</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_traveller___server_1_1_data_1_1_traveller___server_context.html#aa7382179903550da273f9bcab4feb61c">User_Course</a><code> [get, set]</code></td></tr>
+<tr class="memitem:aa7382179903550da273f9bcab4feb61c"><td class="memItemLeft" align="right" valign="top"><a id="aa7382179903550da273f9bcab4feb61c" name="aa7382179903550da273f9bcab4feb61c"></a>
+DbSet&lt; <a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_user___course.html">Traveller_Server.Models.DataClasses.User_Course</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>User_Course</b><code> [get, set]</code></td></tr>
 <tr class="separator:aa7382179903550da273f9bcab4feb61c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af8e51b19f133ade503baf297451f7731"><td class="memItemLeft" align="right" valign="top">DbSet&lt; <a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_course_route.html">Traveller_Server.Models.DataClasses.CourseRoute</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_traveller___server_1_1_data_1_1_traveller___server_context.html#af8e51b19f133ade503baf297451f7731">CourseRoute</a><code> [get, set]</code></td></tr>
+<tr class="memitem:af8e51b19f133ade503baf297451f7731"><td class="memItemLeft" align="right" valign="top"><a id="af8e51b19f133ade503baf297451f7731" name="af8e51b19f133ade503baf297451f7731"></a>
+DbSet&lt; <a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_course_route.html">Traveller_Server.Models.DataClasses.CourseRoute</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>CourseRoute</b><code> [get, set]</code></td></tr>
 <tr class="separator:af8e51b19f133ade503baf297451f7731"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad236b73ceaf6c5ba1f49e128bbeac16c"><td class="memItemLeft" align="right" valign="top">DbSet&lt; <a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_reset_password_log.html">Traveller_Server.Models.DataClasses.ResetPasswordLog</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_traveller___server_1_1_data_1_1_traveller___server_context.html#ad236b73ceaf6c5ba1f49e128bbeac16c">ResetPasswordLog</a><code> [get, set]</code></td></tr>
+<tr class="memitem:ad236b73ceaf6c5ba1f49e128bbeac16c"><td class="memItemLeft" align="right" valign="top"><a id="ad236b73ceaf6c5ba1f49e128bbeac16c" name="ad236b73ceaf6c5ba1f49e128bbeac16c"></a>
+DbSet&lt; <a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_reset_password_log.html">Traveller_Server.Models.DataClasses.ResetPasswordLog</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>ResetPasswordLog</b><code> [get, set]</code></td></tr>
 <tr class="separator:ad236b73ceaf6c5ba1f49e128bbeac16c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4f2803d75d084e95a781b5c418cabded"><td class="memItemLeft" align="right" valign="top">DbSet&lt; <a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_user_status.html">Traveller_Server.Models.DataClasses.UserStatus</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_traveller___server_1_1_data_1_1_traveller___server_context.html#a4f2803d75d084e95a781b5c418cabded">UserStatus</a><code> [get, set]</code></td></tr>
+<tr class="memitem:a4f2803d75d084e95a781b5c418cabded"><td class="memItemLeft" align="right" valign="top"><a id="a4f2803d75d084e95a781b5c418cabded" name="a4f2803d75d084e95a781b5c418cabded"></a>
+DbSet&lt; <a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_user_status.html">Traveller_Server.Models.DataClasses.UserStatus</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>UserStatus</b><code> [get, set]</code></td></tr>
 <tr class="separator:a4f2803d75d084e95a781b5c418cabded"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="ab81aca91f9ed70a78e37ee7d87539a13" name="ab81aca91f9ed70a78e37ee7d87539a13"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab81aca91f9ed70a78e37ee7d87539a13">&#9670;&#160;</a></span>Traveller_ServerContext()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">Traveller_Server.Data.Traveller_ServerContext.Traveller_ServerContext </td>
-          <td>(</td>
-          <td class="paramtype">DbContextOptions&lt; <a class="el" href="class_traveller___server_1_1_data_1_1_traveller___server_context.html">Traveller_ServerContext</a> &gt;&#160;</td>
-          <td class="paramname"><em>options</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="ada83f28db04c928a5775dcdf2a227b55" name="ada83f28db04c928a5775dcdf2a227b55"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ada83f28db04c928a5775dcdf2a227b55">&#9670;&#160;</a></span>OnConfiguring()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">override void Traveller_Server.Data.Traveller_ServerContext.OnConfiguring </td>
-          <td>(</td>
-          <td class="paramtype">DbContextOptionsBuilder&#160;</td>
-          <td class="paramname"><em>optionsBuilder</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ad7f317fb82c3006669237cb1e0658139" name="ad7f317fb82c3006669237cb1e0658139"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad7f317fb82c3006669237cb1e0658139">&#9670;&#160;</a></span>OnModelCreating()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">override void Traveller_Server.Data.Traveller_ServerContext.OnModelCreating </td>
-          <td>(</td>
-          <td class="paramtype">ModelBuilder&#160;</td>
-          <td class="paramname"><em>modelBuilder</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">Property Documentation</h2>
-<a id="a9ae1ce03d9308560bfb411be8e0000c1" name="a9ae1ce03d9308560bfb411be8e0000c1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9ae1ce03d9308560bfb411be8e0000c1">&#9670;&#160;</a></span>ActivityLog</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">DbSet&lt;<a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_activity_log.html">Traveller_Server.Models.DataClasses.ActivityLog</a>&gt; Traveller_Server.Data.Traveller_ServerContext.ActivityLog</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ae1853255f4d7cf6655cb4babe2452941" name="ae1853255f4d7cf6655cb4babe2452941"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae1853255f4d7cf6655cb4babe2452941">&#9670;&#160;</a></span>Alert</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">DbSet&lt;<a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_alert.html">Traveller_Server.Models.DataClasses.Alert</a>&gt; Traveller_Server.Data.Traveller_ServerContext.Alert</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a614433fd924c85ae48438bb47834df03" name="a614433fd924c85ae48438bb47834df03"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a614433fd924c85ae48438bb47834df03">&#9670;&#160;</a></span>Course</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">DbSet&lt;<a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_course.html">Traveller_Server.Models.DataClasses.Course</a>&gt; Traveller_Server.Data.Traveller_ServerContext.Course</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="af8e51b19f133ade503baf297451f7731" name="af8e51b19f133ade503baf297451f7731"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af8e51b19f133ade503baf297451f7731">&#9670;&#160;</a></span>CourseRoute</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">DbSet&lt;<a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_course_route.html">Traveller_Server.Models.DataClasses.CourseRoute</a>&gt; Traveller_Server.Data.Traveller_ServerContext.CourseRoute</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a55f46fd752af8c4031c6b7108d09d73a" name="a55f46fd752af8c4031c6b7108d09d73a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a55f46fd752af8c4031c6b7108d09d73a">&#9670;&#160;</a></span>LinkedStop</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">DbSet&lt;<a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_linked_stop.html">Traveller_Server.Models.DataClasses.LinkedStop</a>&gt; Traveller_Server.Data.Traveller_ServerContext.LinkedStop</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ae8e21fc716b888758fdea22eeea67ccd" name="ae8e21fc716b888758fdea22eeea67ccd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae8e21fc716b888758fdea22eeea67ccd">&#9670;&#160;</a></span>Location</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">DbSet&lt;<a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_location.html">Traveller_Server.Models.DataClasses.Location</a>&gt; Traveller_Server.Data.Traveller_ServerContext.Location</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ad236b73ceaf6c5ba1f49e128bbeac16c" name="ad236b73ceaf6c5ba1f49e128bbeac16c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad236b73ceaf6c5ba1f49e128bbeac16c">&#9670;&#160;</a></span>ResetPasswordLog</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">DbSet&lt;<a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_reset_password_log.html">Traveller_Server.Models.DataClasses.ResetPasswordLog</a>&gt; Traveller_Server.Data.Traveller_ServerContext.ResetPasswordLog</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a3ae32a71ec1ce5fb3cba3a72e5abfef7" name="a3ae32a71ec1ce5fb3cba3a72e5abfef7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3ae32a71ec1ce5fb3cba3a72e5abfef7">&#9670;&#160;</a></span>Route</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">DbSet&lt;<a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_route.html">Traveller_Server.Models.DataClasses.Route</a>&gt; Traveller_Server.Data.Traveller_ServerContext.Route</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a4fd4e6c34856a6993158835ef43d0b74" name="a4fd4e6c34856a6993158835ef43d0b74"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4fd4e6c34856a6993158835ef43d0b74">&#9670;&#160;</a></span>Stop</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">DbSet&lt;<a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_stop.html">Traveller_Server.Models.DataClasses.Stop</a>&gt; Traveller_Server.Data.Traveller_ServerContext.Stop</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a575954113b19af9a0d07c661a82d2313" name="a575954113b19af9a0d07c661a82d2313"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a575954113b19af9a0d07c661a82d2313">&#9670;&#160;</a></span>Transport</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">DbSet&lt;<a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_transport.html">Traveller_Server.Models.DataClasses.Transport</a>&gt; Traveller_Server.Data.Traveller_ServerContext.Transport</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a46e3b125a84940e8133e322ce6b9738b" name="a46e3b125a84940e8133e322ce6b9738b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a46e3b125a84940e8133e322ce6b9738b">&#9670;&#160;</a></span>User</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">DbSet&lt;<a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_user.html">Traveller_Server.Models.DataClasses.User</a>&gt; Traveller_Server.Data.Traveller_ServerContext.User = default!</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aa7382179903550da273f9bcab4feb61c" name="aa7382179903550da273f9bcab4feb61c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa7382179903550da273f9bcab4feb61c">&#9670;&#160;</a></span>User_Course</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">DbSet&lt;<a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_user___course.html">Traveller_Server.Models.DataClasses.User_Course</a>&gt; Traveller_Server.Data.Traveller_ServerContext.User_Course</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a4f2803d75d084e95a781b5c418cabded" name="a4f2803d75d084e95a781b5c418cabded"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4f2803d75d084e95a781b5c418cabded">&#9670;&#160;</a></span>UserStatus</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">DbSet&lt;<a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_user_status.html">Traveller_Server.Models.DataClasses.UserStatus</a>&gt; Traveller_Server.Data.Traveller_ServerContext.UserStatus</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a0663ae3fef996b0df25a068c3485af78" name="a0663ae3fef996b0df25a068c3485af78"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0663ae3fef996b0df25a068c3485af78">&#9670;&#160;</a></span>UserSuspension</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">DbSet&lt;<a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_user_suspension.html">Traveller_Server.Models.DataClasses.UserSuspension</a>&gt; Traveller_Server.Data.Traveller_ServerContext.UserSuspension</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>E:/Users/venel/Desktop/TravellerV2/traveller/Traveller-Server/Data/<a class="el" href="_traveller___server_context_8cs.html">Traveller_ServerContext.cs</a></li>
+<li>E:/Users/venel/Desktop/TravellerV2/traveller/Traveller-Server/Data/Traveller_ServerContext.cs</li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespace_traveller___server.html">Traveller_Server</a></li><li class="navelem"><a class="el" href="namespace_traveller___server_1_1_data.html">Data</a></li><li class="navelem"><a class="el" href="class_traveller___server_1_1_data_1_1_traveller___server_context.html">Traveller_ServerContext</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
+  </ul>
+</div>
 </body>
 </html>

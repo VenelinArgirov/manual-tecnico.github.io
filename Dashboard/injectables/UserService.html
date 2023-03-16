@@ -467,14 +467,14 @@ export class UserService {
    * @returns A specific user from the database.
    */
   getUser(userId: string): Observable&lt;User&gt; {
-    return this.http.get&lt;User&gt;(&#x60;api/Users/${userId}&#x60;)
-    //return this.http.get&lt;User&gt;(&#x60;https://traveller-server.azurewebsites.net/api/Users/${userId}&#x60;)
+    //return this.http.get&lt;User&gt;(&#x60;api/Users/${userId}&#x60;)
+    return this.http.get&lt;User&gt;(&#x60;https://traveller-server.azurewebsites.net/api/Users/${userId}&#x60;)
       .pipe(catchError(this.handleError));
   }
 
   getUserFromEmail(email: string): Observable&lt;User&gt; {
-    return this.http.get&lt;User&gt;(&#x60;api/Users/email/${email}&#x60;)
-    //return this.http.get&lt;User&gt;(&#x60;https://traveller-server.azurewebsites.net/api/Users/email/${email}&#x60;)
+    //return this.http.get&lt;User&gt;(&#x60;api/Users/email/${email}&#x60;)
+    return this.http.get&lt;User&gt;(&#x60;https://traveller-server.azurewebsites.net/api/Users/email/${email}&#x60;)
       .pipe(catchError(this.handleError));
   }
 
@@ -483,8 +483,8 @@ export class UserService {
  * @returns All users from the database.
  */
   getUsers(): Observable&lt;User[]&gt; {
-    return this.http.get&lt;User[]&gt;(&#x60;api/Users&#x60;)
-    //return this.http.get&lt;User[]&gt;(&#x60;https://traveller-server.azurewebsites.net/api/Users&#x60;)
+    //return this.http.get&lt;User[]&gt;(&#x60;api/Users&#x60;)
+    return this.http.get&lt;User[]&gt;(&#x60;https://traveller-server.azurewebsites.net/api/Users&#x60;)
       .pipe(catchError(this.handleError));
   }
 

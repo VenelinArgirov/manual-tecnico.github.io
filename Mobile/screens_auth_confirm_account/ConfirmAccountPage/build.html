@@ -112,13 +112,6 @@ and</li>
   <h2><span>Implementation</span></h2>
   <pre class="language-dart"><code class="language-dart">@override
 Widget build(BuildContext context) {
-  if(Theme.of(context).primaryColor == Color(0xff3BE2AB)){
-    circleImage = &#39;lib&#47;assets&#47;images&#47;circle.png&#39;;
-  }
-  else if(Theme.of(context).primaryColor == Color(0xff7E57C2)){
-    circleImage = &#39;lib&#47;assets&#47;images&#47;circle_dark.png&#39;;
-  }
-
   return Scaffold(
     body: Column(
       crossAxisAlignment: CrossAxisAlignment.start,
@@ -133,7 +126,7 @@ Widget build(BuildContext context) {
               Container(
                 alignment: Alignment.center,
                 child: Image.asset(
-                  circleImage,
+                  &#39;lib&#47;assets&#47;images&#47;circle.png&#39;,
                   height: 140,
                   width: 255,
                 ),
@@ -142,18 +135,6 @@ Widget build(BuildContext context) {
                   alignment: const Alignment(-0.5, -0.5),
                   child: Text(AppLocalizations.of(context)!.confirmAccount,
                       style: const TextStyle(fontSize: 35))),
-              Container(
-                alignment: const Alignment(1, -0.5),
-                child: IconButton(
-                  icon: const Icon(Icons.info_outline, size: 32),
-                  onPressed: () =&gt; showDialog(
-                      context: context,
-                      builder: (context) =&gt; HelpDialog(
-                          title: AppLocalizations.of(context)!.help,
-                          content: AppLocalizations.of(context)!
-                              .confirmAccountHelp)),
-                ),
-              ),
             ],
           ),
         ),

@@ -613,8 +613,8 @@ export class AuthService {
    * @param body 
    */
   public loginUser &#x3D; (body: UserForAuthentication) &#x3D;&gt; {
-    return this.http.post&lt;AuthResponse&gt;(&#x27;api/UserApi/LoginDashboard&#x27;, body)
-    //return this.http.post&lt;AuthResponse&gt;(&#x27;https://traveller-server.azurewebsites.net/api/UserApi/LoginDashboard&#x27;, body)
+    //return this.http.post&lt;AuthResponse&gt;(&#x27;https://localhost:7036/api/UserApi/LoginDashboard&#x27;, body)
+    return this.http.post&lt;AuthResponse&gt;(&#x27;https://traveller-server.azurewebsites.net/api/UserApi/LoginDashboard&#x27;, body)
     .pipe(catchError(this.handleError));
   }
 

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['homecontroller_0',['HomeController',['../class_traveller___server_1_1_controllers_1_1_home_controller.html#a3a71b286c90413366fbe344927bef5b7',1,'Traveller_Server::Controllers::HomeController']]]
+  ['unbanuser_0',['UnbanUser',['../class_traveller___server_1_1_controllers_1_1_user_suspensions_api_controller.html#a01ec41de219b571a828c3f2089390377',1,'Traveller_Server::Controllers::UserSuspensionsApiController']]]
 ];

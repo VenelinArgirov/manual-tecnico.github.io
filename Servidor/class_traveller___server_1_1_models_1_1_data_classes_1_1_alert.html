@@ -9,9 +9,18 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(document).ready(function() { init_search(); });
+/* @license-end */
+</script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -35,17 +44,52 @@
 var searchBox = new SearchBox("searchBox", "search/",'.html');
 /* @license-end */
 </script>
-<script type="text/javascript" src="menudata.js"></script>
-<script type="text/javascript" src="menu.js"></script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
+      <li><a href="namespaces.html"><span>Packages</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="Search" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
+      <li><a href="classes.html"><span>Data&#160;Structure&#160;Index</span></a></li>
+      <li><a href="inherits.html"><span>Class&#160;Hierarchy</span></a></li>
+      <li><a href="functions.html"><span>Data&#160;Fields</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(function() {
-  initMenu('',true,false,'search.php','Search');
-  $(document).ready(function() { init_search(); });
-});
+$(document).ready(function(){initNavTree('class_traveller___server_1_1_models_1_1_data_classes_1_1_alert.html',''); initResizable(); });
 /* @license-end */
 </script>
-<div id="main-nav"></div>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -67,305 +111,77 @@ $(function() {
 </div>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespace_traveller___server.html">Traveller_Server</a></li><li class="navelem"><a class="el" href="namespace_traveller___server_1_1_models.html">Models</a></li><li class="navelem"><a class="el" href="namespace_traveller___server_1_1_models_1_1_data_classes.html">DataClasses</a></li><li class="navelem"><a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_alert.html">Alert</a></li>  </ul>
-</div>
-</div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#properties">Properties</a> &#124;
-<a href="class_traveller___server_1_1_models_1_1_data_classes_1_1_alert-members.html">List of all members</a>  </div>
+<a href="#properties">Properties</a>  </div>
   <div class="headertitle"><div class="title">Traveller_Server.Models.DataClasses.Alert Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
 <p>Alert data class. Represents a social alert to warn others users of certain conditions, it is created by a user.  
  <a href="class_traveller___server_1_1_models_1_1_data_classes_1_1_alert.html#details">More...</a></p>
+<div class="dynheader">
+Collaboration diagram for Traveller_Server.Models.DataClasses.Alert:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_traveller___server_1_1_models_1_1_data_classes_1_1_alert__coll__graph.png" border="0" usemap="#a_traveller___server_8_models_8_data_classes_8_alert_coll__map" alt="Collaboration graph"/></div>
+</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="properties" name="properties"></a>
 Properties</h2></td></tr>
-<tr class="memitem:a7e906e9b4d076c45d0ab03295e42a072"><td class="memItemLeft" align="right" valign="top">Guid&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_alert.html#a7e906e9b4d076c45d0ab03295e42a072">AlertId</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:a7e906e9b4d076c45d0ab03295e42a072"><td class="mdescLeft">&#160;</td><td class="mdescRight">ID of the Alert, unique identifier in the GUID format.  <br /></td></tr>
+<tr class="memitem:a7e906e9b4d076c45d0ab03295e42a072"><td class="memItemLeft" align="right" valign="top"><a id="a7e906e9b4d076c45d0ab03295e42a072" name="a7e906e9b4d076c45d0ab03295e42a072"></a>
+Guid&#160;</td><td class="memItemRight" valign="bottom"><b>AlertId</b><code> [get, set]</code></td></tr>
+<tr class="memdesc:a7e906e9b4d076c45d0ab03295e42a072"><td class="mdescLeft">&#160;</td><td class="mdescRight">ID of the Alert, unique identifier in the GUID format. <br /></td></tr>
 <tr class="separator:a7e906e9b4d076c45d0ab03295e42a072"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a34873f7b629409ff2fe165b333049bd2"><td class="memItemLeft" align="right" valign="top">Guid&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_alert.html#a34873f7b629409ff2fe165b333049bd2">LocationId</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:a34873f7b629409ff2fe165b333049bd2"><td class="mdescLeft">&#160;</td><td class="mdescRight">ID of the location who where the alert was created.  <br /></td></tr>
+<tr class="memitem:a34873f7b629409ff2fe165b333049bd2"><td class="memItemLeft" align="right" valign="top"><a id="a34873f7b629409ff2fe165b333049bd2" name="a34873f7b629409ff2fe165b333049bd2"></a>
+Guid&#160;</td><td class="memItemRight" valign="bottom"><b>LocationId</b><code> [get, set]</code></td></tr>
+<tr class="memdesc:a34873f7b629409ff2fe165b333049bd2"><td class="mdescLeft">&#160;</td><td class="mdescRight">ID of the location who where the alert was created. <br /></td></tr>
 <tr class="separator:a34873f7b629409ff2fe165b333049bd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3e7b54c5b2b4c9b1bda491d7aeadeda5"><td class="memItemLeft" align="right" valign="top">Guid&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_alert.html#a3e7b54c5b2b4c9b1bda491d7aeadeda5">CreatorId</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:a3e7b54c5b2b4c9b1bda491d7aeadeda5"><td class="mdescLeft">&#160;</td><td class="mdescRight">ID of the user who created the alert, used to link the user who created the alert with the new alert.  <br /></td></tr>
+<tr class="memitem:a3e7b54c5b2b4c9b1bda491d7aeadeda5"><td class="memItemLeft" align="right" valign="top"><a id="a3e7b54c5b2b4c9b1bda491d7aeadeda5" name="a3e7b54c5b2b4c9b1bda491d7aeadeda5"></a>
+Guid&#160;</td><td class="memItemRight" valign="bottom"><b>CreatorId</b><code> [get, set]</code></td></tr>
+<tr class="memdesc:a3e7b54c5b2b4c9b1bda491d7aeadeda5"><td class="mdescLeft">&#160;</td><td class="mdescRight">ID of the user who created the alert, used to link the user who created the alert with the new alert. <br /></td></tr>
 <tr class="separator:a3e7b54c5b2b4c9b1bda491d7aeadeda5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abe16487f3576ecfc185fd81898324a93"><td class="memItemLeft" align="right" valign="top">string?&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_alert.html#abe16487f3576ecfc185fd81898324a93">Description</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:abe16487f3576ecfc185fd81898324a93"><td class="mdescLeft">&#160;</td><td class="mdescRight">Description of the alert, in essence the message that the alert contains to warn other users of.  <br /></td></tr>
+<tr class="memitem:abe16487f3576ecfc185fd81898324a93"><td class="memItemLeft" align="right" valign="top"><a id="abe16487f3576ecfc185fd81898324a93" name="abe16487f3576ecfc185fd81898324a93"></a>
+string?&#160;</td><td class="memItemRight" valign="bottom"><b>Description</b><code> [get, set]</code></td></tr>
+<tr class="memdesc:abe16487f3576ecfc185fd81898324a93"><td class="mdescLeft">&#160;</td><td class="mdescRight">Description of the alert, in essence the message that the alert contains to warn other users of. <br /></td></tr>
 <tr class="separator:abe16487f3576ecfc185fd81898324a93"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a45dd0dc6086f84845b57e40381b25c96"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_traveller___server_1_1_models_1_1_data_classes.html#a3b6977ee24bfb8cae7de253503974476">TransportType</a>?&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_alert.html#a45dd0dc6086f84845b57e40381b25c96">TransportType</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:a45dd0dc6086f84845b57e40381b25c96"><td class="mdescLeft">&#160;</td><td class="mdescRight">The transport type of the alert.  <br /></td></tr>
+<tr class="memitem:a45dd0dc6086f84845b57e40381b25c96"><td class="memItemLeft" align="right" valign="top"><a id="a45dd0dc6086f84845b57e40381b25c96" name="a45dd0dc6086f84845b57e40381b25c96"></a>
+<a class="el" href="namespace_traveller___server_1_1_models_1_1_data_classes.html#a3b6977ee24bfb8cae7de253503974476">TransportType</a>?&#160;</td><td class="memItemRight" valign="bottom"><b>TransportType</b><code> [get, set]</code></td></tr>
+<tr class="memdesc:a45dd0dc6086f84845b57e40381b25c96"><td class="mdescLeft">&#160;</td><td class="mdescRight">The transport type of the alert. <br /></td></tr>
 <tr class="separator:a45dd0dc6086f84845b57e40381b25c96"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abae87846c6332177c322c72214efec60"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_traveller___server_1_1_models_1_1_data_classes.html#a9257384b227a91c9a6393ec07f4d9929">AlertType</a>?&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_alert.html#abae87846c6332177c322c72214efec60">AlertType</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:abae87846c6332177c322c72214efec60"><td class="mdescLeft">&#160;</td><td class="mdescRight">The type of the alert.  <br /></td></tr>
+<tr class="memitem:abae87846c6332177c322c72214efec60"><td class="memItemLeft" align="right" valign="top"><a id="abae87846c6332177c322c72214efec60" name="abae87846c6332177c322c72214efec60"></a>
+<a class="el" href="namespace_traveller___server_1_1_models_1_1_data_classes.html#a9257384b227a91c9a6393ec07f4d9929">AlertType</a>?&#160;</td><td class="memItemRight" valign="bottom"><b>AlertType</b><code> [get, set]</code></td></tr>
+<tr class="memdesc:abae87846c6332177c322c72214efec60"><td class="mdescLeft">&#160;</td><td class="mdescRight">The type of the alert. <br /></td></tr>
 <tr class="separator:abae87846c6332177c322c72214efec60"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac679aae5ed4142ea45fffcd7f1db0d21"><td class="memItemLeft" align="right" valign="top">int?&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_alert.html#ac679aae5ed4142ea45fffcd7f1db0d21">PositiveRatings</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:ac679aae5ed4142ea45fffcd7f1db0d21"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of positive ratings the alert has, used in calculating the user rating.  <br /></td></tr>
+<tr class="memitem:ac679aae5ed4142ea45fffcd7f1db0d21"><td class="memItemLeft" align="right" valign="top"><a id="ac679aae5ed4142ea45fffcd7f1db0d21" name="ac679aae5ed4142ea45fffcd7f1db0d21"></a>
+int?&#160;</td><td class="memItemRight" valign="bottom"><b>PositiveRatings</b><code> [get, set]</code></td></tr>
+<tr class="memdesc:ac679aae5ed4142ea45fffcd7f1db0d21"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of positive ratings the alert has, used in calculating the user rating. <br /></td></tr>
 <tr class="separator:ac679aae5ed4142ea45fffcd7f1db0d21"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8081a624f5213530d0b7bcca06a5410d"><td class="memItemLeft" align="right" valign="top">int?&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_alert.html#a8081a624f5213530d0b7bcca06a5410d">NegativeRatings</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:a8081a624f5213530d0b7bcca06a5410d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of negative ratings the alert has, used in calculating the user rating.  <br /></td></tr>
+<tr class="memitem:a8081a624f5213530d0b7bcca06a5410d"><td class="memItemLeft" align="right" valign="top"><a id="a8081a624f5213530d0b7bcca06a5410d" name="a8081a624f5213530d0b7bcca06a5410d"></a>
+int?&#160;</td><td class="memItemRight" valign="bottom"><b>NegativeRatings</b><code> [get, set]</code></td></tr>
+<tr class="memdesc:a8081a624f5213530d0b7bcca06a5410d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of negative ratings the alert has, used in calculating the user rating. <br /></td></tr>
 <tr class="separator:a8081a624f5213530d0b7bcca06a5410d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8a191d9e29f97005da348a0ac23135be"><td class="memItemLeft" align="right" valign="top">DateTime&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_alert.html#a8a191d9e29f97005da348a0ac23135be">CreationDate</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:a8a191d9e29f97005da348a0ac23135be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Date and time in which the alert was created.  <br /></td></tr>
+<tr class="memitem:a8a191d9e29f97005da348a0ac23135be"><td class="memItemLeft" align="right" valign="top"><a id="a8a191d9e29f97005da348a0ac23135be" name="a8a191d9e29f97005da348a0ac23135be"></a>
+DateTime&#160;</td><td class="memItemRight" valign="bottom"><b>CreationDate</b><code> [get, set]</code></td></tr>
+<tr class="memdesc:a8a191d9e29f97005da348a0ac23135be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Date and time in which the alert was created. <br /></td></tr>
 <tr class="separator:a8a191d9e29f97005da348a0ac23135be"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0d8b7071ba2212a4e9c26ca7c66fb47a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_location.html">Location</a>?&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_alert.html#a0d8b7071ba2212a4e9c26ca7c66fb47a">Location</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:a0d8b7071ba2212a4e9c26ca7c66fb47a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Location in which the alert was created, used to insert it's coordinates in the dynamic map.  <br /></td></tr>
+<tr class="memitem:a0d8b7071ba2212a4e9c26ca7c66fb47a"><td class="memItemLeft" align="right" valign="top"><a id="a0d8b7071ba2212a4e9c26ca7c66fb47a" name="a0d8b7071ba2212a4e9c26ca7c66fb47a"></a>
+<a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_location.html">Location</a>?&#160;</td><td class="memItemRight" valign="bottom"><b>Location</b><code> [get, set]</code></td></tr>
+<tr class="memdesc:a0d8b7071ba2212a4e9c26ca7c66fb47a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Location in which the alert was created, used to insert it's coordinates in the dynamic map. <br /></td></tr>
 <tr class="separator:a0d8b7071ba2212a4e9c26ca7c66fb47a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Alert data class. Represents a social alert to warn others users of certain conditions, it is created by a user. </p>
-</div><h2 class="groupheader">Property Documentation</h2>
-<a id="a7e906e9b4d076c45d0ab03295e42a072" name="a7e906e9b4d076c45d0ab03295e42a072"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7e906e9b4d076c45d0ab03295e42a072">&#9670;&#160;</a></span>AlertId</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">Guid Traveller_Server.Models.DataClasses.Alert.AlertId</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>ID of the Alert, unique identifier in the GUID format. </p>
-
-</div>
-</div>
-<a id="abae87846c6332177c322c72214efec60" name="abae87846c6332177c322c72214efec60"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abae87846c6332177c322c72214efec60">&#9670;&#160;</a></span>AlertType</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="namespace_traveller___server_1_1_models_1_1_data_classes.html#a9257384b227a91c9a6393ec07f4d9929">AlertType</a>? Traveller_Server.Models.DataClasses.Alert.AlertType</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>The type of the alert. </p>
-
-</div>
-</div>
-<a id="a8a191d9e29f97005da348a0ac23135be" name="a8a191d9e29f97005da348a0ac23135be"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8a191d9e29f97005da348a0ac23135be">&#9670;&#160;</a></span>CreationDate</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">DateTime Traveller_Server.Models.DataClasses.Alert.CreationDate</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Date and time in which the alert was created. </p>
-
-</div>
-</div>
-<a id="a3e7b54c5b2b4c9b1bda491d7aeadeda5" name="a3e7b54c5b2b4c9b1bda491d7aeadeda5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3e7b54c5b2b4c9b1bda491d7aeadeda5">&#9670;&#160;</a></span>CreatorId</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">Guid Traveller_Server.Models.DataClasses.Alert.CreatorId</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>ID of the user who created the alert, used to link the user who created the alert with the new alert. </p>
-
-</div>
-</div>
-<a id="abe16487f3576ecfc185fd81898324a93" name="abe16487f3576ecfc185fd81898324a93"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abe16487f3576ecfc185fd81898324a93">&#9670;&#160;</a></span>Description</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">string? Traveller_Server.Models.DataClasses.Alert.Description</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Description of the alert, in essence the message that the alert contains to warn other users of. </p>
-
-</div>
-</div>
-<a id="a0d8b7071ba2212a4e9c26ca7c66fb47a" name="a0d8b7071ba2212a4e9c26ca7c66fb47a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0d8b7071ba2212a4e9c26ca7c66fb47a">&#9670;&#160;</a></span>Location</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_location.html">Location</a>? Traveller_Server.Models.DataClasses.Alert.Location</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Location in which the alert was created, used to insert it's coordinates in the dynamic map. </p>
-
-</div>
-</div>
-<a id="a34873f7b629409ff2fe165b333049bd2" name="a34873f7b629409ff2fe165b333049bd2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a34873f7b629409ff2fe165b333049bd2">&#9670;&#160;</a></span>LocationId</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">Guid Traveller_Server.Models.DataClasses.Alert.LocationId</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>ID of the location who where the alert was created. </p>
-
-</div>
-</div>
-<a id="a8081a624f5213530d0b7bcca06a5410d" name="a8081a624f5213530d0b7bcca06a5410d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8081a624f5213530d0b7bcca06a5410d">&#9670;&#160;</a></span>NegativeRatings</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int? Traveller_Server.Models.DataClasses.Alert.NegativeRatings</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Number of negative ratings the alert has, used in calculating the user rating. </p>
-
-</div>
-</div>
-<a id="ac679aae5ed4142ea45fffcd7f1db0d21" name="ac679aae5ed4142ea45fffcd7f1db0d21"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac679aae5ed4142ea45fffcd7f1db0d21">&#9670;&#160;</a></span>PositiveRatings</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int? Traveller_Server.Models.DataClasses.Alert.PositiveRatings</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Number of positive ratings the alert has, used in calculating the user rating. </p>
-
-</div>
-</div>
-<a id="a45dd0dc6086f84845b57e40381b25c96" name="a45dd0dc6086f84845b57e40381b25c96"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a45dd0dc6086f84845b57e40381b25c96">&#9670;&#160;</a></span>TransportType</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="namespace_traveller___server_1_1_models_1_1_data_classes.html#a3b6977ee24bfb8cae7de253503974476">TransportType</a>? Traveller_Server.Models.DataClasses.Alert.TransportType</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>The transport type of the alert. </p>
-
-</div>
-</div>
-<hr/>The documentation for this class was generated from the following file:<ul>
-<li>E:/Users/venel/Desktop/TravellerV2/traveller/Traveller-Server/Models/DataClasses/<a class="el" href="_alert_8cs.html">Alert.cs</a></li>
+</div><hr/>The documentation for this class was generated from the following file:<ul>
+<li>E:/Users/venel/Desktop/TravellerV2/traveller/Traveller-Server/Models/DataClasses/Alert.cs</li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespace_traveller___server.html">Traveller_Server</a></li><li class="navelem"><a class="el" href="namespace_traveller___server_1_1_models.html">Models</a></li><li class="navelem"><a class="el" href="namespace_traveller___server_1_1_models_1_1_data_classes.html">DataClasses</a></li><li class="navelem"><a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_alert.html">Alert</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
+  </ul>
+</div>
 </body>
 </html>

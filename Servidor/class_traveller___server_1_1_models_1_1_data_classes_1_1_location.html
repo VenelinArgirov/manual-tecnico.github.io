@@ -9,9 +9,18 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(document).ready(function() { init_search(); });
+/* @license-end */
+</script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -35,17 +44,52 @@
 var searchBox = new SearchBox("searchBox", "search/",'.html');
 /* @license-end */
 </script>
-<script type="text/javascript" src="menudata.js"></script>
-<script type="text/javascript" src="menu.js"></script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
+      <li><a href="namespaces.html"><span>Packages</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="Search" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
+      <li><a href="classes.html"><span>Data&#160;Structure&#160;Index</span></a></li>
+      <li><a href="inherits.html"><span>Class&#160;Hierarchy</span></a></li>
+      <li><a href="functions.html"><span>Data&#160;Fields</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(function() {
-  initMenu('',true,false,'search.php','Search');
-  $(document).ready(function() { init_search(); });
-});
+$(document).ready(function(){initNavTree('class_traveller___server_1_1_models_1_1_data_classes_1_1_location.html',''); initResizable(); });
 /* @license-end */
 </script>
-<div id="main-nav"></div>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -67,143 +111,57 @@ $(function() {
 </div>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespace_traveller___server.html">Traveller_Server</a></li><li class="navelem"><a class="el" href="namespace_traveller___server_1_1_models.html">Models</a></li><li class="navelem"><a class="el" href="namespace_traveller___server_1_1_models_1_1_data_classes.html">DataClasses</a></li><li class="navelem"><a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_location.html">Location</a></li>  </ul>
-</div>
-</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#properties">Properties</a> &#124;
-<a href="class_traveller___server_1_1_models_1_1_data_classes_1_1_location-members.html">List of all members</a>  </div>
+<a href="#properties">Properties</a>  </div>
   <div class="headertitle"><div class="title">Traveller_Server.Models.DataClasses.Location Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
 <p>Data class that represents a location in the map with latitude and longitude coordinates.  
  <a href="class_traveller___server_1_1_models_1_1_data_classes_1_1_location.html#details">More...</a></p>
+<div class="dynheader">
+Collaboration diagram for Traveller_Server.Models.DataClasses.Location:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_traveller___server_1_1_models_1_1_data_classes_1_1_location__coll__graph.png" border="0" usemap="#a_traveller___server_8_models_8_data_classes_8_location_coll__map" alt="Collaboration graph"/></div>
+</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a5882261331ed88de2fce6fb494504ddf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_location.html#a5882261331ed88de2fce6fb494504ddf">Location</a> ()</td></tr>
-<tr class="memdesc:a5882261331ed88de2fce6fb494504ddf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor of this data class.  <br /></td></tr>
+<tr class="memitem:a5882261331ed88de2fce6fb494504ddf"><td class="memItemLeft" align="right" valign="top"><a id="a5882261331ed88de2fce6fb494504ddf" name="a5882261331ed88de2fce6fb494504ddf"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Location</b> ()</td></tr>
+<tr class="memdesc:a5882261331ed88de2fce6fb494504ddf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor of this data class. <br /></td></tr>
 <tr class="separator:a5882261331ed88de2fce6fb494504ddf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="properties" name="properties"></a>
 Properties</h2></td></tr>
-<tr class="memitem:a515ea44c28d3cad438652a019456babe"><td class="memItemLeft" align="right" valign="top">Guid&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_location.html#a515ea44c28d3cad438652a019456babe">LocationId</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:a515ea44c28d3cad438652a019456babe"><td class="mdescLeft">&#160;</td><td class="mdescRight">ID of the Location, unique identifier in the GUID format.  <br /></td></tr>
+<tr class="memitem:a515ea44c28d3cad438652a019456babe"><td class="memItemLeft" align="right" valign="top"><a id="a515ea44c28d3cad438652a019456babe" name="a515ea44c28d3cad438652a019456babe"></a>
+Guid&#160;</td><td class="memItemRight" valign="bottom"><b>LocationId</b><code> [get, set]</code></td></tr>
+<tr class="memdesc:a515ea44c28d3cad438652a019456babe"><td class="mdescLeft">&#160;</td><td class="mdescRight">ID of the Location, unique identifier in the GUID format. <br /></td></tr>
 <tr class="separator:a515ea44c28d3cad438652a019456babe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac17cfa93564170cf2d64ed785be7f5d5"><td class="memItemLeft" align="right" valign="top">float?&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_location.html#ac17cfa93564170cf2d64ed785be7f5d5">Latitude</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:ac17cfa93564170cf2d64ed785be7f5d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Latitude coordinate of the location, also seen as "X".  <br /></td></tr>
+<tr class="memitem:ac17cfa93564170cf2d64ed785be7f5d5"><td class="memItemLeft" align="right" valign="top"><a id="ac17cfa93564170cf2d64ed785be7f5d5" name="ac17cfa93564170cf2d64ed785be7f5d5"></a>
+float?&#160;</td><td class="memItemRight" valign="bottom"><b>Latitude</b><code> [get, set]</code></td></tr>
+<tr class="memdesc:ac17cfa93564170cf2d64ed785be7f5d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Latitude coordinate of the location, also seen as "X". <br /></td></tr>
 <tr class="separator:ac17cfa93564170cf2d64ed785be7f5d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a75a7d369bae0d1b69dc9a6f7d0021888"><td class="memItemLeft" align="right" valign="top">float?&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_location.html#a75a7d369bae0d1b69dc9a6f7d0021888">Longitude</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:a75a7d369bae0d1b69dc9a6f7d0021888"><td class="mdescLeft">&#160;</td><td class="mdescRight">Longitude coordinate of the location, also seen as "Y".  <br /></td></tr>
+<tr class="memitem:a75a7d369bae0d1b69dc9a6f7d0021888"><td class="memItemLeft" align="right" valign="top"><a id="a75a7d369bae0d1b69dc9a6f7d0021888" name="a75a7d369bae0d1b69dc9a6f7d0021888"></a>
+float?&#160;</td><td class="memItemRight" valign="bottom"><b>Longitude</b><code> [get, set]</code></td></tr>
+<tr class="memdesc:a75a7d369bae0d1b69dc9a6f7d0021888"><td class="mdescLeft">&#160;</td><td class="mdescRight">Longitude coordinate of the location, also seen as "Y". <br /></td></tr>
 <tr class="separator:a75a7d369bae0d1b69dc9a6f7d0021888"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Data class that represents a location in the map with latitude and longitude coordinates. </p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a5882261331ed88de2fce6fb494504ddf" name="a5882261331ed88de2fce6fb494504ddf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5882261331ed88de2fce6fb494504ddf">&#9670;&#160;</a></span>Location()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">Traveller_Server.Models.DataClasses.Location.Location </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Constructor of this data class. </p>
-
-</div>
-</div>
-<h2 class="groupheader">Property Documentation</h2>
-<a id="ac17cfa93564170cf2d64ed785be7f5d5" name="ac17cfa93564170cf2d64ed785be7f5d5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac17cfa93564170cf2d64ed785be7f5d5">&#9670;&#160;</a></span>Latitude</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">float? Traveller_Server.Models.DataClasses.Location.Latitude</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Latitude coordinate of the location, also seen as "X". </p>
-
-</div>
-</div>
-<a id="a515ea44c28d3cad438652a019456babe" name="a515ea44c28d3cad438652a019456babe"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a515ea44c28d3cad438652a019456babe">&#9670;&#160;</a></span>LocationId</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">Guid Traveller_Server.Models.DataClasses.Location.LocationId</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>ID of the Location, unique identifier in the GUID format. </p>
-
-</div>
-</div>
-<a id="a75a7d369bae0d1b69dc9a6f7d0021888" name="a75a7d369bae0d1b69dc9a6f7d0021888"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a75a7d369bae0d1b69dc9a6f7d0021888">&#9670;&#160;</a></span>Longitude</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">float? Traveller_Server.Models.DataClasses.Location.Longitude</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Longitude coordinate of the location, also seen as "Y". </p>
-
-</div>
-</div>
-<hr/>The documentation for this class was generated from the following file:<ul>
-<li>E:/Users/venel/Desktop/TravellerV2/traveller/Traveller-Server/Models/DataClasses/<a class="el" href="_location_8cs.html">Location.cs</a></li>
+</div><hr/>The documentation for this class was generated from the following file:<ul>
+<li>E:/Users/venel/Desktop/TravellerV2/traveller/Traveller-Server/Models/DataClasses/Location.cs</li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespace_traveller___server.html">Traveller_Server</a></li><li class="navelem"><a class="el" href="namespace_traveller___server_1_1_models.html">Models</a></li><li class="navelem"><a class="el" href="namespace_traveller___server_1_1_models_1_1_data_classes.html">DataClasses</a></li><li class="navelem"><a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_location.html">Location</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
+  </ul>
+</div>
 </body>
 </html>

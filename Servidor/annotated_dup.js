@@ -43,8 +43,9 @@ var annotated_dup =
         ] ]
       ] ],
       [ "Controllers", "namespace_traveller___server_1_1_controllers.html", [
+        [ "ActivityLogsApiController", "class_traveller___server_1_1_controllers_1_1_activity_logs_api_controller.html", null ],
         [ "ActivityLogsController", "class_traveller___server_1_1_controllers_1_1_activity_logs_controller.html", null ],
-        [ "AlertsApiController", "class_traveller___server_1_1_controllers_1_1_alerts_api_controller.html", null ],
+        [ "AlertsApiController", "class_traveller___server_1_1_controllers_1_1_alerts_api_controller.html", "class_traveller___server_1_1_controllers_1_1_alerts_api_controller" ],
         [ "CourseRoutesController", "class_traveller___server_1_1_controllers_1_1_course_routes_controller.html", null ],
         [ "CoursesController", "class_traveller___server_1_1_controllers_1_1_courses_controller.html", null ],
         [ "HomeController", "class_traveller___server_1_1_controllers_1_1_home_controller.html", null ],
@@ -53,14 +54,16 @@ var annotated_dup =
         [ "ResetPasswordLogsController", "class_traveller___server_1_1_controllers_1_1_reset_password_logs_controller.html", null ],
         [ "RoutesApiController", "class_traveller___server_1_1_controllers_1_1_routes_api_controller.html", null ],
         [ "RoutesController", "class_traveller___server_1_1_controllers_1_1_routes_controller.html", null ],
-        [ "StatisticsApiController", "class_traveller___server_1_1_controllers_1_1_statistics_api_controller.html", null ],
+        [ "StatisticsApiController", "class_traveller___server_1_1_controllers_1_1_statistics_api_controller.html", "class_traveller___server_1_1_controllers_1_1_statistics_api_controller" ],
         [ "StopsApiController", "class_traveller___server_1_1_controllers_1_1_stops_api_controller.html", null ],
         [ "StopsController", "class_traveller___server_1_1_controllers_1_1_stops_controller.html", null ],
         [ "TransportsApiController", "class_traveller___server_1_1_controllers_1_1_transports_api_controller.html", null ],
         [ "User_CourseController", "class_traveller___server_1_1_controllers_1_1_user___course_controller.html", null ],
-        [ "UserApiController", "class_traveller___server_1_1_controllers_1_1_user_api_controller.html", null ],
+        [ "UserApiController", "class_traveller___server_1_1_controllers_1_1_user_api_controller.html", "class_traveller___server_1_1_controllers_1_1_user_api_controller" ],
         [ "UsersApiController", "class_traveller___server_1_1_controllers_1_1_users_api_controller.html", null ],
         [ "UsersController", "class_traveller___server_1_1_controllers_1_1_users_controller.html", null ],
+        [ "UserStatusApiController", "class_traveller___server_1_1_controllers_1_1_user_status_api_controller.html", null ],
+        [ "UserStatusController", "class_traveller___server_1_1_controllers_1_1_user_status_controller.html", null ],
         [ "UserSuspensionsApiController", "class_traveller___server_1_1_controllers_1_1_user_suspensions_api_controller.html", "class_traveller___server_1_1_controllers_1_1_user_suspensions_api_controller" ],
         [ "UserSuspensionsController", "class_traveller___server_1_1_controllers_1_1_user_suspensions_controller.html", null ]
       ] ],
@@ -78,6 +81,7 @@ var annotated_dup =
         [ "DataClasses", "namespace_traveller___server_1_1_models_1_1_data_classes.html", [
           [ "ActivityLog", "class_traveller___server_1_1_models_1_1_data_classes_1_1_activity_log.html", "class_traveller___server_1_1_models_1_1_data_classes_1_1_activity_log" ],
           [ "Alert", "class_traveller___server_1_1_models_1_1_data_classes_1_1_alert.html", "class_traveller___server_1_1_models_1_1_data_classes_1_1_alert" ],
+          [ "AlertRatingInfo", "class_traveller___server_1_1_models_1_1_data_classes_1_1_alert_rating_info.html", "class_traveller___server_1_1_models_1_1_data_classes_1_1_alert_rating_info" ],
           [ "AuthResponse", "class_traveller___server_1_1_models_1_1_data_classes_1_1_auth_response.html", "class_traveller___server_1_1_models_1_1_data_classes_1_1_auth_response" ],
           [ "Course", "class_traveller___server_1_1_models_1_1_data_classes_1_1_course.html", "class_traveller___server_1_1_models_1_1_data_classes_1_1_course" ],
           [ "CourseRoute", "class_traveller___server_1_1_models_1_1_data_classes_1_1_course_route.html", "class_traveller___server_1_1_models_1_1_data_classes_1_1_course_route" ],
@@ -86,11 +90,14 @@ var annotated_dup =
           [ "ResetPasswordLog", "class_traveller___server_1_1_models_1_1_data_classes_1_1_reset_password_log.html", "class_traveller___server_1_1_models_1_1_data_classes_1_1_reset_password_log" ],
           [ "Route", "class_traveller___server_1_1_models_1_1_data_classes_1_1_route.html", "class_traveller___server_1_1_models_1_1_data_classes_1_1_route" ],
           [ "Stop", "class_traveller___server_1_1_models_1_1_data_classes_1_1_stop.html", "class_traveller___server_1_1_models_1_1_data_classes_1_1_stop" ],
+          [ "TimeSpentWeek", "class_traveller___server_1_1_models_1_1_data_classes_1_1_time_spent_week.html", "class_traveller___server_1_1_models_1_1_data_classes_1_1_time_spent_week" ],
           [ "Transport", "class_traveller___server_1_1_models_1_1_data_classes_1_1_transport.html", "class_traveller___server_1_1_models_1_1_data_classes_1_1_transport" ],
           [ "User", "class_traveller___server_1_1_models_1_1_data_classes_1_1_user.html", "class_traveller___server_1_1_models_1_1_data_classes_1_1_user" ],
           [ "User_Course", "class_traveller___server_1_1_models_1_1_data_classes_1_1_user___course.html", "class_traveller___server_1_1_models_1_1_data_classes_1_1_user___course" ],
+          [ "UserChangeState", "class_traveller___server_1_1_models_1_1_data_classes_1_1_user_change_state.html", "class_traveller___server_1_1_models_1_1_data_classes_1_1_user_change_state" ],
           [ "UserForAuthentication", "class_traveller___server_1_1_models_1_1_data_classes_1_1_user_for_authentication.html", "class_traveller___server_1_1_models_1_1_data_classes_1_1_user_for_authentication" ],
           [ "UserResetPassword", "class_traveller___server_1_1_models_1_1_data_classes_1_1_user_reset_password.html", "class_traveller___server_1_1_models_1_1_data_classes_1_1_user_reset_password" ],
+          [ "UserStatus", "class_traveller___server_1_1_models_1_1_data_classes_1_1_user_status.html", "class_traveller___server_1_1_models_1_1_data_classes_1_1_user_status" ],
           [ "UserSuspension", "class_traveller___server_1_1_models_1_1_data_classes_1_1_user_suspension.html", "class_traveller___server_1_1_models_1_1_data_classes_1_1_user_suspension" ]
         ] ],
         [ "ErrorViewModel", "class_traveller___server_1_1_models_1_1_error_view_model.html", null ]

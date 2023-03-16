@@ -582,8 +582,8 @@ export class StatisticsService {
   */
 
   getActiveUsers() {
-    return this.http.get&lt;Statistics&gt;(&#x27;api/StatisticsApi/GetActiveUsers&#x27;)
-    //return this.http.get&lt;Statistics&gt;(&#x27;https://traveller-server.azurewebsites.net/api/StatisticsApi/GetActiveUsers&#x27;)
+    //return this.http.get&lt;Statistics&gt;(&#x27;https://localhost:7036/api/StatisticsApi/GetActiveUsers&#x27;)
+    return this.http.get&lt;Statistics&gt;(&#x27;https://traveller-server.azurewebsites.net/api/StatisticsApi/GetActiveUsers&#x27;)
       .pipe(catchError(this.handleError));
   }
 
@@ -593,8 +593,8 @@ export class StatisticsService {
    */
 
   getTotalNumberOfUsers() {
-    return this.http.get&lt;Statistics&gt;(&#x27;api/StatisticsApi/GetTotalNumberOfUsers&#x27;)
-    //return this.http.get&lt;Statistics&gt;(&#x27;https://traveller-server.azurewebsites.net/api/StatisticsApi/GetTotalNumberOfUsers&#x27;)
+    //return this.http.get&lt;Statistics&gt;(&#x27;https://localhost:7036/api/StatisticsApi/GetTotalNumberOfUsers&#x27;)
+    return this.http.get&lt;Statistics&gt;(&#x27;https://traveller-server.azurewebsites.net/api/StatisticsApi/GetTotalNumberOfUsers&#x27;)
       .pipe(catchError(this.handleError));
   }
 
@@ -603,8 +603,8 @@ export class StatisticsService {
   */
 
   getNumberOfNewUsers() {
-    return this.http.get&lt;Statistics&gt;(&#x27;api/StatisticsApi/GetTotalOfNewUsers&#x27;)
-    //return this.http.get&lt;Statistics&gt;(&#x27;https://traveller-server.azurewebsites.net/api/StatisticsApi/GetTotalOfNewUsers&#x27;)
+    //return this.http.get&lt;Statistics&gt;(&#x27;https://localhost:7036/api/StatisticsApi/GetTotalOfNewUsers&#x27;)
+    return this.http.get&lt;Statistics&gt;(&#x27;https://traveller-server.azurewebsites.net/api/StatisticsApi/GetTotalOfNewUsers&#x27;)
       .pipe(catchError(this.handleError));
   }
 
@@ -613,8 +613,8 @@ export class StatisticsService {
   */
 
   getMostActiveZones() {
-    return this.http.get&lt;Statistics&gt;(&#x27;api/StatisticsApi/GetMostActiveZones&#x27;)
-    //return this.http.get&lt;Statistics&gt;(&#x27;https://traveller-server.azurewebsites.net/api/StatisticsApi/GetMostActiveZones&#x27;)
+    //return this.http.get&lt;Statistics&gt;(&#x27;https://localhost:7036/api/StatisticsApi/GetMostActiveZones&#x27;)
+    return this.http.get&lt;Statistics&gt;(&#x27;https://traveller-server.azurewebsites.net/api/StatisticsApi/GetMostActiveZones&#x27;)
       .pipe(catchError(this.handleError));
   }
 
@@ -623,8 +623,8 @@ export class StatisticsService {
   */
 
   getUserMostUsedTransport(userId: string) {
-    return this.http.get&lt;Statistics&gt;(&#x60;api/StatisticsApi/GetMostUsedTransport/${userId}&#x60;)
-    //return this.http.get&lt;Statistics&gt;(&#x60;https://traveller-server.azurewebsites.net/api/StatisticsApi/GetMostUsedTransport/${userId}&#x60;)
+    //return this.http.get&lt;Statistics&gt;(&#x60;https://localhost:7036/api/StatisticsApi/GetMostUsedTransport/${userId}&#x60;)
+    return this.http.get&lt;Statistics&gt;(&#x60;https://traveller-server.azurewebsites.net/api/StatisticsApi/GetMostUsedTransport/${userId}&#x60;)
       .pipe(catchError(this.handleError));
   }
 
@@ -633,8 +633,8 @@ export class StatisticsService {
   */
 
   getUserTimeSpent(userId: string) {
-    return this.http.get&lt;Statistics&gt;(&#x60;api/StatisticsApi/GetTimeSpent/${userId}&#x60;)
-    //return this.http.get&lt;Statistics&gt;(&#x60;https://traveller-server.azurewebsites.net/api/StatisticsApi/GetTimeSpent/${userId}&#x60;)
+    //return this.http.get&lt;Statistics&gt;(&#x60;https://localhost:7036/api/StatisticsApi/GetTimeSpent/${userId}&#x60;)
+    return this.http.get&lt;Statistics&gt;(&#x60;https://traveller-server.azurewebsites.net/api/StatisticsApi/GetTimeSpent/${userId}&#x60;)
       .pipe(catchError(this.handleError));
   }
 
