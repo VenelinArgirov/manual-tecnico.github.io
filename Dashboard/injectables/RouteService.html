@@ -633,8 +633,8 @@ export class RouteService {
    * @returns A list of routes obtained from the database.
    */
   getRoutes(): Observable&lt;Route[]&gt; {
-    //return this.http.get&lt;Route[]&gt;(&#x27;https://localhost:7036/api/RoutesApi&#x27;)
-    return this.http.get&lt;Route[]&gt;(&#x27;https://traveller-server.azurewebsites.net/api/RoutesApi&#x27;)
+    return this.http.get&lt;Route[]&gt;(&#x27;api/RoutesApi&#x27;)
+    //return this.http.get&lt;Route[]&gt;(&#x27;https://traveller-server.azurewebsites.net/api/RoutesApi&#x27;)
       .pipe(catchError(this.handleError));
   }
 
@@ -644,8 +644,8 @@ export class RouteService {
    * @returns A route obtained from the database with a specific id.
    */
   getRoute(routeId: string): Observable&lt;Route&gt; {
-    //return this.http.get&lt;Route&gt;(&#x60;https://localhost:7036/api/RoutesApi/${routeId}&#x60;)
-    return this.http.get&lt;Route&gt;(&#x60;https://traveller-server.azurewebsites.net/api/RoutesApi/${routeId}&#x60;)
+    return this.http.get&lt;Route&gt;(&#x60;api/RoutesApi/${routeId}&#x60;)
+    //return this.http.get&lt;Route&gt;(&#x60;https://traveller-server.azurewebsites.net/api/RoutesApi/${routeId}&#x60;)
       .pipe(catchError(this.handleError));
   }
 
@@ -655,8 +655,8 @@ export class RouteService {
    * @returns The created route.
    */
   addRoute(route: Route): Observable&lt;Route&gt; {
-    //return this.http.post&lt;Route&gt;(&#x60;https://localhost:7036/api/RoutesApi&#x60;, route)
-    return this.http.post&lt;Route&gt;(&#x60;https://traveller-server.azurewebsites.net/api/RoutesApi&#x60;, route)
+    return this.http.post&lt;Route&gt;(&#x60;api/RoutesApi&#x60;, route)
+    //return this.http.post&lt;Route&gt;(&#x60;https://traveller-server.azurewebsites.net/api/RoutesApi&#x60;, route)
       .pipe(catchError(this.handleError));
   }
 
@@ -666,8 +666,8 @@ export class RouteService {
    * @returns The deleted route
    */
   deleteRoute(routeId: string): Observable&lt;Route&gt; {
-    //return this.http.delete&lt;Route&gt;(&#x60;https://localhost:7036/api/RoutesApi/${routeId}&#x60;)
-    return this.http.delete&lt;Route&gt;(&#x60;https://traveller-server.azurewebsites.net/api/RoutesApi/${routeId}&#x60;)
+    return this.http.delete&lt;Route&gt;(&#x60;api/RoutesApi/${routeId}&#x60;)
+    //return this.http.delete&lt;Route&gt;(&#x60;https://traveller-server.azurewebsites.net/api/RoutesApi/${routeId}&#x60;)
       .pipe(catchError(this.handleError));
   }
 
@@ -677,8 +677,8 @@ export class RouteService {
    * @returns The edited route
    */
   editRoute(route: Route): Observable&lt;Route&gt; {
-    //return this.http.put&lt;Route&gt;(&#x60;https://localhost:7036/api/RoutesApi/${route.routeId}&#x60;, route)
-    return this.http.put&lt;Route&gt;(&#x60;https://traveller-server.azurewebsites.net/api/RoutesApi/${route.routeId}&#x60;, route)
+    return this.http.put&lt;Route&gt;(&#x60;api/RoutesApi/${route.routeId}&#x60;, route)
+    //return this.http.put&lt;Route&gt;(&#x60;https://traveller-server.azurewebsites.net/api/RoutesApi/${route.routeId}&#x60;, route)
       .pipe(catchError(this.handleError));
   }
 

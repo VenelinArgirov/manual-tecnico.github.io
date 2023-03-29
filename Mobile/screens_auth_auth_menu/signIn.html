@@ -58,7 +58,8 @@
         
 
 <span class="returntype"><a href="https://api.flutter.dev/flutter/dart-async/Future-class.html">Future</a></span>
-<span class="name ">signIn</span>(<wbr><ol class="parameter-list"><li><span class="parameter" id="signIn-param-context"><span class="type-annotation">dynamic</span> <span class="parameter-name">context</span></span></li>
+<span class="name ">signIn</span>(<wbr><ol class="parameter-list"><li><span class="parameter" id="signIn-param-context"><span class="type-annotation">dynamic</span> <span class="parameter-name">context</span>, </span></li>
+<li><span class="parameter" id="signIn-param-prefs"><span class="type-annotation">dynamic</span> <span class="parameter-name">prefs</span></span></li>
 </ol>)
 
         
@@ -75,47 +76,23 @@ Otherwise, display an error dialog.</p>
     
 <section class="summary source-code" id="source">
   <h2><span>Implementation</span></h2>
-  <pre class="language-dart"><code class="language-dart">Future signIn(context) async {
+  <pre class="language-dart"><code class="language-dart">Future signIn(context, prefs) async {
   final user = await GoogleSignInApi.login();
   if (user != null) {
-    final authUser = await loginWithGoogle(
-        user.email.toString(), &quot;&quot;, user.displayName.toString());
+    final email = user.email.toString();
+    final username = user.displayName.toString();
+    final result = await loginWithGoogle(email, &quot;Admin_123&quot;, username);
 
-    if (authUser.statusCode == 200) {
-      showDialog(
-        context: context,
-        builder: (context) =&gt; AlertDialog(
-          title: Text(AppLocalizations.of(context)!.welcome),
-          content: Text(user.displayName.toString()),
-          actions: [
-            TextButton(
-              onPressed: () {
-                &#47;&#47; Navigate to TravellerMap screen
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) =&gt; TravellerMap()),
-                );
-              },
-              child: Text(AppLocalizations.of(context)!.ok),
-            ),
-          ],
-        ),
+    if (result.statusCode == 200) {
+      prefs.setBool(&#39;rememberMe&#39;, true);
+      prefs.setBool(&#39;isLoggedIn&#39;, true);
+      prefs.setString(&#39;email&#39;, user.email.toString());
+      prefs.setString(&#39;id&#39;, (await getUserInfo(user.email.toString())).id);
+      Navigator.push(
+        context,
+        MaterialPageRoute(builder: (context) =&gt; const TravellerMap()),
       );
     }
-  } else {
-    showDialog(
-      context: context,
-      builder: (context) =&gt; AlertDialog(
-        title: Text(AppLocalizations.of(context)!.error),
-        content: Text(AppLocalizations.of(context)!.invalidCredentials),
-        actions: [
-          TextButton(
-            onPressed: () =&gt; Navigator.pop(context),
-            child: Text(AppLocalizations.of(context)!.ok),
-          ),
-        ],
-      ),
-    );
   }
 }</code></pre>
 </section>
@@ -145,6 +122,8 @@ Otherwise, display an error dialog.</p>
 
 
 
+      <li class="section-title"><a href="../screens_auth_auth_menu/screens_auth_auth_menu-library.html#properties">Properties</a></li>
+        <li><a href="../screens_auth_auth_menu/logoImage.html">logoImage</a></li>
 
       <li class="section-title"><a href="../screens_auth_auth_menu/screens_auth_auth_menu-library.html#functions">Functions</a></li>
         <li><a href="../screens_auth_auth_menu/signIn.html">signIn</a></li>

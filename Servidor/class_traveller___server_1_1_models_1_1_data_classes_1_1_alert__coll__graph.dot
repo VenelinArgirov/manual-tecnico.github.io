@@ -4,5 +4,5 @@ digraph "Traveller_Server.Models.DataClasses.Alert"
   bgcolor="transparent";
   edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
   node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
-  Node1 [shape=record,label="{Traveller_Server.Models.\lDataClasses.Alert\n|+ AlertId\l+ LocationId\l+ CreatorId\l+ Description\l+ TransportType\l+ AlertType\l+ PositiveRatings\l+ NegativeRatings\l+ CreationDate\l+ Location\l|}",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Alert data class. Represents a social alert to warn others users of certain conditions,..."];
+  Node1 [shape=record,label="{Traveller_Server.Models.\lDataClasses.Alert\n|+ AlertId\l+ LocationId\l+ CreatorId\l+ Description\l+ TransportType\l+ AlertType\l+ CreationDate\l+ Location\l|}",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Alert data class. Represents a social alert to warn others users of certain conditions,..."];
 }

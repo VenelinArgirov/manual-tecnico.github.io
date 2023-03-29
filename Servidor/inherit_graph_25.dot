@@ -5,5 +5,5 @@ digraph "Graphical Class Hierarchy"
   edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
   node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
   rankdir="LR";
-  Node0 [label="Traveller_Server.Models.\lDataClasses.AlertRatingInfo",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_traveller___server_1_1_models_1_1_data_classes_1_1_alert_rating_info.html",tooltip="Class used as an interface to communicate with the front-end to get info related to rating an alert."];
+  Node0 [label="Traveller_Server.Models.\lDataClasses.Alert",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_traveller___server_1_1_models_1_1_data_classes_1_1_alert.html",tooltip="Alert data class. Represents a social alert to warn others users of certain conditions,..."];
 }

@@ -9,5 +9,5 @@ var searchData=
   ['isauthsuccessful_6',['IsAuthSuccessful',['../class_traveller___server_1_1_models_1_1_data_classes_1_1_auth_response.html#afa1953b0601a2f0af5e027e92c00191e',1,'Traveller_Server::Models::DataClasses::AuthResponse']]],
   ['isemailconfirmed_7',['IsEmailConfirmed',['../class_traveller___server_1_1_areas_1_1_identity_1_1_pages_1_1_account_1_1_manage_1_1_email_model.html#a16e186adabe6d1886a617c03b710758d',1,'Traveller_Server::Areas::Identity::Pages::Account::Manage::EmailModel']]],
   ['ismachineremembered_8',['IsMachineRemembered',['../class_traveller___server_1_1_areas_1_1_identity_1_1_pages_1_1_account_1_1_manage_1_1_two_factor_authentication_model.html#a22176d2450260765d3f0861381b978f4',1,'Traveller_Server::Areas::Identity::Pages::Account::Manage::TwoFactorAuthenticationModel']]],
-  ['isonline_9',['isOnline',['../class_traveller___server_1_1_models_1_1_data_classes_1_1_user_status.html#afe5a57db943ef1ad9fd2347738f129a9',1,'Traveller_Server::Models::DataClasses::UserStatus']]]
+  ['isonline_9',['IsOnline',['../class_traveller___server_1_1_models_1_1_data_classes_1_1_user_status.html#a98164214fcc89bb821f06dc4ba0dc7ac',1,'Traveller_Server::Models::DataClasses::UserStatus']]]
 ];

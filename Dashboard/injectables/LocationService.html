@@ -343,8 +343,8 @@ export class LocationService {
    * @param {Location} location location to send to be added.
    */
   addLocation(location: Location) {
-    //this.http.post&lt;Location&gt;(&#x27;https://localhost:7036/api/LocationsApi&#x27;, location)
-    this.http.post&lt;Location&gt;(&#x27;https://traveller-server.azurewebsites.net/api/LocationsApi&#x27;, location)
+    this.http.post&lt;Location&gt;(&#x27;api/LocationsApi&#x27;, location)
+    //this.http.post&lt;Location&gt;(&#x27;https://traveller-server.azurewebsites.net/api/LocationsApi&#x27;, location)
       .pipe(catchError(this.handleError))
       .subscribe();
   }

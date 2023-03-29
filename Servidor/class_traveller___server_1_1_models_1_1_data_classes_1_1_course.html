@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Sprint 3: Traveller_Server.Models.DataClasses.Course Class Reference</title>
+<title>Sprint 4: Traveller_Server.Models.DataClasses.Course Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -30,7 +30,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Sprint 3
+   <div id="projectname">Sprint 4
    </div>
   </td>
  </tr>
@@ -134,7 +134,16 @@ Guid&#160;</td><td class="memItemRight" valign="bottom"><b>CourseId</b><code> [g
 <tr class="separator:a2224a615973ac1c0768a01980e2f7c89"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3e91b8c89e3f292ee58da3b2b09a6b93"><td class="memItemLeft" align="right" valign="top"><a id="a3e91b8c89e3f292ee58da3b2b09a6b93" name="a3e91b8c89e3f292ee58da3b2b09a6b93"></a>
 Guid&#160;</td><td class="memItemRight" valign="bottom"><b>StartLocationId</b><code> [get, set]</code></td></tr>
+<tr class="memdesc:a3e91b8c89e3f292ee58da3b2b09a6b93"><td class="mdescLeft">&#160;</td><td class="mdescRight">ID of the location that the course starts at. <br /></td></tr>
 <tr class="separator:a3e91b8c89e3f292ee58da3b2b09a6b93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3036a86e0a07c9df8fac91a9dacf720f"><td class="memItemLeft" align="right" valign="top"><a id="a3036a86e0a07c9df8fac91a9dacf720f" name="a3036a86e0a07c9df8fac91a9dacf720f"></a>
+Guid?&#160;</td><td class="memItemRight" valign="bottom"><b>DestinationLocationId</b><code> [get, set]</code></td></tr>
+<tr class="memdesc:a3036a86e0a07c9df8fac91a9dacf720f"><td class="mdescLeft">&#160;</td><td class="mdescRight">ID of the destination of the course. <br /></td></tr>
+<tr class="separator:a3036a86e0a07c9df8fac91a9dacf720f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acdc68e0f6e7325ee8b858b20fc7a9533"><td class="memItemLeft" align="right" valign="top"><a id="acdc68e0f6e7325ee8b858b20fc7a9533" name="acdc68e0f6e7325ee8b858b20fc7a9533"></a>
+string?&#160;</td><td class="memItemRight" valign="bottom"><b>Name</b><code> [get, set]</code></td></tr>
+<tr class="memdesc:acdc68e0f6e7325ee8b858b20fc7a9533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Name of the course. <br /></td></tr>
+<tr class="separator:acdc68e0f6e7325ee8b858b20fc7a9533"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6bf5e3fbe4113ef4a44f654627da0b3a"><td class="memItemLeft" align="right" valign="top"><a id="a6bf5e3fbe4113ef4a44f654627da0b3a" name="a6bf5e3fbe4113ef4a44f654627da0b3a"></a>
 List&lt; <a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_route.html">Route</a> &gt;?&#160;</td><td class="memItemRight" valign="bottom"><b>Routes</b> = new List&lt;<a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_route.html">Route</a>&gt;()<code> [get, set]</code></td></tr>
 <tr class="memdesc:a6bf5e3fbe4113ef4a44f654627da0b3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Routes that are part of the course. A course can have one or more routes. Routes are the paths that the public transport takes from A to B. <br /></td></tr>
@@ -143,6 +152,10 @@ List&lt; <a class="el" href="class_traveller___server_1_1_models_1_1_data_classe
 <a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_location.html">Location</a>?&#160;</td><td class="memItemRight" valign="bottom"><b>StartLocation</b><code> [get, set]</code></td></tr>
 <tr class="memdesc:a4d17f7c9ce8ed64fb2220a766fbd3c2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Location that the course starts at, normally the location of the user. <br /></td></tr>
 <tr class="separator:a4d17f7c9ce8ed64fb2220a766fbd3c2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad04567341519bd5d2e29590fa87ec6a3"><td class="memItemLeft" align="right" valign="top"><a id="ad04567341519bd5d2e29590fa87ec6a3" name="ad04567341519bd5d2e29590fa87ec6a3"></a>
+<a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_location.html">Location</a>?&#160;</td><td class="memItemRight" valign="bottom"><b>Destination</b><code> [get, set]</code></td></tr>
+<tr class="memdesc:ad04567341519bd5d2e29590fa87ec6a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destination of the course, where the user desires to be. <br /></td></tr>
+<tr class="separator:ad04567341519bd5d2e29590fa87ec6a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Data class of a course. Represents the course which a user will take to reach it's destination from it's current location, has multiple routes. </p>

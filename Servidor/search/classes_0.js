@@ -7,6 +7,8 @@ var searchData=
   ['alert_4',['Alert',['../class_traveller___server_1_1_models_1_1_data_classes_1_1_alert.html',1,'Traveller_Server::Models::DataClasses']]],
   ['alertratinginfo_5',['AlertRatingInfo',['../class_traveller___server_1_1_models_1_1_data_classes_1_1_alert_rating_info.html',1,'Traveller_Server::Models::DataClasses']]],
   ['alertsapicontroller_6',['AlertsApiController',['../class_traveller___server_1_1_controllers_1_1_alerts_api_controller.html',1,'Traveller_Server::Controllers']]],
-  ['authmessagesenderoptions_7',['AuthMessageSenderOptions',['../class_traveller___server_1_1_services_1_1_auth_message_sender_options.html',1,'Traveller_Server::Services']]],
-  ['authresponse_8',['AuthResponse',['../class_traveller___server_1_1_models_1_1_data_classes_1_1_auth_response.html',1,'Traveller_Server::Models::DataClasses']]]
+  ['alertvote_7',['AlertVote',['../class_traveller___server_1_1_models_1_1_data_classes_1_1_alert_vote.html',1,'Traveller_Server::Models::DataClasses']]],
+  ['alertvotescontroller_8',['AlertVotesController',['../class_traveller___server_1_1_controllers_1_1_alert_votes_controller.html',1,'Traveller_Server::Controllers']]],
+  ['authmessagesenderoptions_9',['AuthMessageSenderOptions',['../class_traveller___server_1_1_services_1_1_auth_message_sender_options.html',1,'Traveller_Server::Services']]],
+  ['authresponse_10',['AuthResponse',['../class_traveller___server_1_1_models_1_1_data_classes_1_1_auth_response.html',1,'Traveller_Server::Models::DataClasses']]]
 ];

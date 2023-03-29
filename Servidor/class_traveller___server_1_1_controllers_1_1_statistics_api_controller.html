@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Sprint 3: Traveller_Server.Controllers.StatisticsApiController Class Reference</title>
+<title>Sprint 4: Traveller_Server.Controllers.StatisticsApiController Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -30,7 +30,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Sprint 3
+   <div id="projectname">Sprint 4
    </div>
   </td>
  </tr>
@@ -145,12 +145,12 @@ async Task&lt; ActionResult&lt; IEnumerable&lt; <a class="el" href="class_travel
 <tr class="memitem:ad93d0f68eb02dfbd742173700c4a5ba8"><td class="memItemLeft" align="right" valign="top">IActionResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_traveller___server_1_1_controllers_1_1_statistics_api_controller.html#ad93d0f68eb02dfbd742173700c4a5ba8">GetTotalOfNewUsers</a> ()</td></tr>
 <tr class="memdesc:ad93d0f68eb02dfbd742173700c4a5ba8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the number of new users that joined the system in the past week.  <br /></td></tr>
 <tr class="separator:ad93d0f68eb02dfbd742173700c4a5ba8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a280afbbc564fe87752257cca44727791"><td class="memItemLeft" align="right" valign="top">IActionResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_traveller___server_1_1_controllers_1_1_statistics_api_controller.html#a280afbbc564fe87752257cca44727791">GetMostActiveZones</a> ()</td></tr>
-<tr class="memdesc:a280afbbc564fe87752257cca44727791"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the five most active zones based on the number of courses that start in each zone.  <br /></td></tr>
-<tr class="separator:a280afbbc564fe87752257cca44727791"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0e02992b514896814ce15e0a1f5ab16f"><td class="memItemLeft" align="right" valign="top"><a id="a0e02992b514896814ce15e0a1f5ab16f" name="a0e02992b514896814ce15e0a1f5ab16f"></a>
-List&lt; string &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>ReverseGeocode</b> (List&lt; <a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_location.html">Location</a> &gt; coordinates)</td></tr>
-<tr class="separator:a0e02992b514896814ce15e0a1f5ab16f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac35de52799f153d6129657431fb092d5"><td class="memItemLeft" align="right" valign="top">async Task&lt; IActionResult &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_traveller___server_1_1_controllers_1_1_statistics_api_controller.html#ac35de52799f153d6129657431fb092d5">GetMostActiveZones</a> ()</td></tr>
+<tr class="memdesc:ac35de52799f153d6129657431fb092d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the five most active zones based on the number of courses that start in each zone.  <br /></td></tr>
+<tr class="separator:ac35de52799f153d6129657431fb092d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c3e401a164172bcc3881ae9c2422698"><td class="memItemLeft" align="right" valign="top"><a id="a2c3e401a164172bcc3881ae9c2422698" name="a2c3e401a164172bcc3881ae9c2422698"></a>
+string&#160;</td><td class="memItemRight" valign="bottom"><b>ReverseGeocode</b> (Guid? coordinates)</td></tr>
+<tr class="separator:a2c3e401a164172bcc3881ae9c2422698"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a76385e84b634958aab4286cdd8d88a8d"><td class="memItemLeft" align="right" valign="top">IActionResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_traveller___server_1_1_controllers_1_1_statistics_api_controller.html#a76385e84b634958aab4286cdd8d88a8d">GetMostUsedTransport</a> (Guid userId)</td></tr>
 <tr class="memdesc:a76385e84b634958aab4286cdd8d88a8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the most frequently used transport type by a given user.  <br /></td></tr>
 <tr class="separator:a76385e84b634958aab4286cdd8d88a8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -235,14 +235,14 @@ List&lt; string &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>Rever
 
 </div>
 </div>
-<a id="a280afbbc564fe87752257cca44727791" name="a280afbbc564fe87752257cca44727791"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a280afbbc564fe87752257cca44727791">&#9670;&#160;</a></span>GetMostActiveZones()</h2>
+<a id="ac35de52799f153d6129657431fb092d5" name="ac35de52799f153d6129657431fb092d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac35de52799f153d6129657431fb092d5">&#9670;&#160;</a></span>GetMostActiveZones()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">IActionResult Traveller_Server.Controllers.StatisticsApiController.GetMostActiveZones </td>
+          <td class="memname">async Task&lt; IActionResult &gt; Traveller_Server.Controllers.StatisticsApiController.GetMostActiveZones </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>

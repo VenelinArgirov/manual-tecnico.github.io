@@ -3,13 +3,13 @@ var hierarchy =
     [ "Traveller_Server.Models.DataClasses.ActivityLog", "class_traveller___server_1_1_models_1_1_data_classes_1_1_activity_log.html", null ],
     [ "Traveller_Server.Models.DataClasses.Alert", "class_traveller___server_1_1_models_1_1_data_classes_1_1_alert.html", null ],
     [ "Traveller_Server.Models.DataClasses.AlertRatingInfo", "class_traveller___server_1_1_models_1_1_data_classes_1_1_alert_rating_info.html", null ],
+    [ "Traveller_Server.Models.DataClasses.AlertVote", "class_traveller___server_1_1_models_1_1_data_classes_1_1_alert_vote.html", null ],
     [ "Traveller_Server.Services.AuthMessageSenderOptions", "class_traveller___server_1_1_services_1_1_auth_message_sender_options.html", null ],
     [ "Traveller_Server.Models.DataClasses.AuthResponse", "class_traveller___server_1_1_models_1_1_data_classes_1_1_auth_response.html", null ],
     [ "Controller", null, [
       [ "Traveller_Server.Controllers.ActivityLogsController", "class_traveller___server_1_1_controllers_1_1_activity_logs_controller.html", null ],
       [ "Traveller_Server.Controllers.CourseRoutesController", "class_traveller___server_1_1_controllers_1_1_course_routes_controller.html", null ],
       [ "Traveller_Server.Controllers.CoursesController", "class_traveller___server_1_1_controllers_1_1_courses_controller.html", null ],
-      [ "Traveller_Server.Controllers.HomeController", "class_traveller___server_1_1_controllers_1_1_home_controller.html", null ],
       [ "Traveller_Server.Controllers.ResetPasswordLogsController", "class_traveller___server_1_1_controllers_1_1_reset_password_logs_controller.html", null ],
       [ "Traveller_Server.Controllers.RoutesController", "class_traveller___server_1_1_controllers_1_1_routes_controller.html", null ],
       [ "Traveller_Server.Controllers.StopsController", "class_traveller___server_1_1_controllers_1_1_stops_controller.html", null ],
@@ -20,7 +20,9 @@ var hierarchy =
     ] ],
     [ "ControllerBase", null, [
       [ "Traveller_Server.Controllers.ActivityLogsApiController", "class_traveller___server_1_1_controllers_1_1_activity_logs_api_controller.html", null ],
+      [ "Traveller_Server.Controllers.AlertVotesController", "class_traveller___server_1_1_controllers_1_1_alert_votes_controller.html", null ],
       [ "Traveller_Server.Controllers.AlertsApiController", "class_traveller___server_1_1_controllers_1_1_alerts_api_controller.html", null ],
+      [ "Traveller_Server.Controllers.FavoritePlacesApiController", "class_traveller___server_1_1_controllers_1_1_favorite_places_api_controller.html", null ],
       [ "Traveller_Server.Controllers.LinkedStopsApiController", "class_traveller___server_1_1_controllers_1_1_linked_stops_api_controller.html", null ],
       [ "Traveller_Server.Controllers.LocationsApiController", "class_traveller___server_1_1_controllers_1_1_locations_api_controller.html", null ],
       [ "Traveller_Server.Controllers.RoutesApiController", "class_traveller___server_1_1_controllers_1_1_routes_api_controller.html", null ],
@@ -28,6 +30,7 @@ var hierarchy =
       [ "Traveller_Server.Controllers.StopsApiController", "class_traveller___server_1_1_controllers_1_1_stops_api_controller.html", null ],
       [ "Traveller_Server.Controllers.TransportsApiController", "class_traveller___server_1_1_controllers_1_1_transports_api_controller.html", null ],
       [ "Traveller_Server.Controllers.UserApiController", "class_traveller___server_1_1_controllers_1_1_user_api_controller.html", null ],
+      [ "Traveller_Server.Controllers.UserLocationsApiController", "class_traveller___server_1_1_controllers_1_1_user_locations_api_controller.html", null ],
       [ "Traveller_Server.Controllers.UserStatusApiController", "class_traveller___server_1_1_controllers_1_1_user_status_api_controller.html", null ],
       [ "Traveller_Server.Controllers.UserSuspensionsApiController", "class_traveller___server_1_1_controllers_1_1_user_suspensions_api_controller.html", null ],
       [ "Traveller_Server.Controllers.UsersApiController", "class_traveller___server_1_1_controllers_1_1_users_api_controller.html", null ]
@@ -35,6 +38,7 @@ var hierarchy =
     [ "Traveller_Server.Models.DataClasses.Course", "class_traveller___server_1_1_models_1_1_data_classes_1_1_course.html", null ],
     [ "Traveller_Server.Models.DataClasses.CourseRoute", "class_traveller___server_1_1_models_1_1_data_classes_1_1_course_route.html", null ],
     [ "Traveller_Server.Models.ErrorViewModel", "class_traveller___server_1_1_models_1_1_error_view_model.html", null ],
+    [ "Traveller_Server.Models.DataClasses.FavoritePlace", "class_traveller___server_1_1_models_1_1_data_classes_1_1_favorite_place.html", null ],
     [ "IdentityDbContext", null, [
       [ "Traveller_Server.Data.Traveller_ServerContext", "class_traveller___server_1_1_data_1_1_traveller___server_context.html", null ]
     ] ],
@@ -62,7 +66,8 @@ var hierarchy =
     [ "Traveller_Server.Models.DataClasses.LinkedStop", "class_traveller___server_1_1_models_1_1_data_classes_1_1_linked_stop.html", null ],
     [ "Traveller_Server.Models.DataClasses.Location", "class_traveller___server_1_1_models_1_1_data_classes_1_1_location.html", null ],
     [ "Migration", null, [
-      [ "Traveller_Server.Migrations.Initial", "class_traveller___server_1_1_migrations_1_1_initial.html", null ]
+      [ "Traveller_Server.Migrations.Initial", "class_traveller___server_1_1_migrations_1_1_initial.html", null ],
+      [ "Traveller_Server.Migrations.cenasVenelin1", "class_traveller___server_1_1_migrations_1_1cenas_venelin1.html", null ]
     ] ],
     [ "ModelSnapshot", null, [
       [ "Traveller_Server.Migrations.Traveller_ServerContextModelSnapshot", "class_traveller___server_1_1_migrations_1_1_traveller___server_context_model_snapshot.html", null ]
@@ -109,6 +114,8 @@ var hierarchy =
     [ "Traveller_Server.Models.DataClasses.User_Course", "class_traveller___server_1_1_models_1_1_data_classes_1_1_user___course.html", null ],
     [ "Traveller_Server.Models.DataClasses.UserChangeState", "class_traveller___server_1_1_models_1_1_data_classes_1_1_user_change_state.html", null ],
     [ "Traveller_Server.Models.DataClasses.UserForAuthentication", "class_traveller___server_1_1_models_1_1_data_classes_1_1_user_for_authentication.html", null ],
+    [ "Traveller_Server.Models.DataClasses.UserLocation", "class_traveller___server_1_1_models_1_1_data_classes_1_1_user_location.html", null ],
+    [ "Traveller_Server.Controllers.UserLocationsApiController.userLocationMessage", "class_traveller___server_1_1_controllers_1_1_user_locations_api_controller_1_1user_location_message.html", null ],
     [ "Traveller_Server.Models.DataClasses.UserResetPassword", "class_traveller___server_1_1_models_1_1_data_classes_1_1_user_reset_password.html", null ],
     [ "Traveller_Server.Models.DataClasses.UserStatus", "class_traveller___server_1_1_models_1_1_data_classes_1_1_user_status.html", null ],
     [ "Traveller_Server.Models.DataClasses.UserSuspension", "class_traveller___server_1_1_models_1_1_data_classes_1_1_user_suspension.html", null ]

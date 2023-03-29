@@ -5,13 +5,22 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Sprint 2: Class Members</title>
+<title>Sprint 4: Data Fields</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(document).ready(function() { init_search(); });
+/* @license-end */
+</script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -21,7 +30,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Sprint 2
+   <div id="projectname">Sprint 4
    </div>
   </td>
  </tr>
@@ -35,18 +44,81 @@
 var searchBox = new SearchBox("searchBox", "search/",'.html');
 /* @license-end */
 </script>
-<script type="text/javascript" src="menudata.js"></script>
-<script type="text/javascript" src="menu.js"></script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
+      <li><a href="namespaces.html"><span>Packages</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="Search" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
+      <li><a href="classes.html"><span>Data&#160;Structure&#160;Index</span></a></li>
+      <li><a href="inherits.html"><span>Class&#160;Hierarchy</span></a></li>
+      <li class="current"><a href="functions.html"><span>Data&#160;Fields</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow3" class="tabs2">
+    <ul class="tablist">
+      <li class="current"><a href="functions.html"><span>All</span></a></li>
+      <li><a href="functions_func.html"><span>Functions</span></a></li>
+      <li><a href="functions_vars.html"><span>Variables</span></a></li>
+      <li><a href="functions_prop.html"><span>Properties</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow4" class="tabs3">
+    <ul class="tablist">
+      <li><a href="functions.html#index_a"><span>a</span></a></li>
+      <li><a href="functions_c.html#index_c"><span>c</span></a></li>
+      <li><a href="functions_d.html#index_d"><span>d</span></a></li>
+      <li><a href="functions_e.html#index_e"><span>e</span></a></li>
+      <li><a href="functions_f.html#index_f"><span>f</span></a></li>
+      <li><a href="functions_g.html#index_g"><span>g</span></a></li>
+      <li><a href="functions_h.html#index_h"><span>h</span></a></li>
+      <li><a href="functions_i.html#index_i"><span>i</span></a></li>
+      <li><a href="functions_l.html#index_l"><span>l</span></a></li>
+      <li><a href="functions_n.html#index_n"><span>n</span></a></li>
+      <li><a href="functions_o.html#index_o"><span>o</span></a></li>
+      <li class="current"><a href="functions_p.html#index_p"><span>p</span></a></li>
+      <li><a href="functions_r.html#index_r"><span>r</span></a></li>
+      <li><a href="functions_s.html#index_s"><span>s</span></a></li>
+      <li><a href="functions_t.html#index_t"><span>t</span></a></li>
+      <li><a href="functions_u.html#index_u"><span>u</span></a></li>
+      <li><a href="functions_v.html#index_v"><span>v</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(function() {
-  initMenu('',true,false,'search.php','Search');
-  $(document).ready(function() { init_search(); });
-});
+$(document).ready(function(){initNavTree('functions_p.html',''); initResizable(); });
 /* @license-end */
 </script>
-<div id="main-nav"></div>
-</div><!-- top -->
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -69,37 +141,22 @@ $(function() {
 </div>
 
 <div class="contents">
-<div class="textblock">Here is a list of all class members with links to the classes they belong to:</div>
+<div class="textblock">Here is a list of all documented struct and union fields with links to the struct/union documentation for each field:</div>
 
 <h3><a id="index_p" name="index_p"></a>- p -</h3><ul>
 <li>Password&#160;:&#160;<a class="el" href="class_traveller___server_1_1_areas_1_1_identity_1_1_pages_1_1_account_1_1_login_model_1_1_input_model.html#a7b2ff5e3bdd3571ddedb9743c081850d">Traveller_Server.Areas.Identity.Pages.Account.LoginModel.InputModel</a>, <a class="el" href="class_traveller___server_1_1_areas_1_1_identity_1_1_pages_1_1_account_1_1_manage_1_1_delete_personal_data_model_1_1_input_model.html#a2404ec685aac46a8191594af67aa3d5c">Traveller_Server.Areas.Identity.Pages.Account.Manage.DeletePersonalDataModel.InputModel</a>, <a class="el" href="class_traveller___server_1_1_areas_1_1_identity_1_1_pages_1_1_account_1_1_register_model_1_1_input_model.html#accf28fd0d17407c6c0f2143da7408944">Traveller_Server.Areas.Identity.Pages.Account.RegisterModel.InputModel</a>, <a class="el" href="class_traveller___server_1_1_areas_1_1_identity_1_1_pages_1_1_account_1_1_reset_password_model_1_1_input_model.html#a7c09f509de3fdd64b3e54612e608f0f8">Traveller_Server.Areas.Identity.Pages.Account.ResetPasswordModel.InputModel</a>, <a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_user_for_authentication.html#afd8205c815b08fc1a14bd0cec77cfe74">Traveller_Server.Models.DataClasses.UserForAuthentication</a></li>
 <li>permanent&#160;:&#160;<a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_user_suspension.html#a23a0183185f93f0251f95619eecdf30f">Traveller_Server.Models.DataClasses.UserSuspension</a></li>
-<li>PersonalDataModel()&#160;:&#160;<a class="el" href="class_traveller___server_1_1_areas_1_1_identity_1_1_pages_1_1_account_1_1_manage_1_1_personal_data_model.html#a4e345dbc3aa57ab37198eba98007988d">Traveller_Server.Areas.Identity.Pages.Account.Manage.PersonalDataModel</a></li>
 <li>PhoneNumber&#160;:&#160;<a class="el" href="class_traveller___server_1_1_areas_1_1_identity_1_1_pages_1_1_account_1_1_manage_1_1_index_model_1_1_input_model.html#aa3fba083181a2458f9e2eb043d7ce014">Traveller_Server.Areas.Identity.Pages.Account.Manage.IndexModel.InputModel</a></li>
-<li>PositiveRatings&#160;:&#160;<a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_alert.html#ac679aae5ed4142ea45fffcd7f1db0d21">Traveller_Server.Models.DataClasses.Alert</a></li>
-<li>PostAlert()&#160;:&#160;<a class="el" href="class_traveller___server_1_1_controllers_1_1_alerts_api_controller.html#ab3adf279a9833c1e81eed93b27ea4a6f">Traveller_Server.Controllers.AlertsApiController</a></li>
-<li>PostLinkedStop()&#160;:&#160;<a class="el" href="class_traveller___server_1_1_controllers_1_1_linked_stops_api_controller.html#af2134708fd728b0403024553602729e4">Traveller_Server.Controllers.LinkedStopsApiController</a></li>
-<li>PostLocation()&#160;:&#160;<a class="el" href="class_traveller___server_1_1_controllers_1_1_locations_api_controller.html#a42cd2d48ec0fb9f9f761cb296350b734">Traveller_Server.Controllers.LocationsApiController</a></li>
-<li>PostRoute()&#160;:&#160;<a class="el" href="class_traveller___server_1_1_controllers_1_1_routes_api_controller.html#af8279dca7141dfe62a6b9f0f6276101b">Traveller_Server.Controllers.RoutesApiController</a></li>
-<li>PostStop()&#160;:&#160;<a class="el" href="class_traveller___server_1_1_controllers_1_1_stops_api_controller.html#ae9e08731f3151c3c089f64f5aa5102a7">Traveller_Server.Controllers.StopsApiController</a></li>
-<li>PostTransport()&#160;:&#160;<a class="el" href="class_traveller___server_1_1_controllers_1_1_transports_api_controller.html#a9834cd1a39e6b773ef93f48dcec9ec83">Traveller_Server.Controllers.TransportsApiController</a></li>
-<li>PostUser()&#160;:&#160;<a class="el" href="class_traveller___server_1_1_controllers_1_1_users_api_controller.html#af7151f2f8aa0d877a0843055aafdfbd3">Traveller_Server.Controllers.UsersApiController</a>, <a class="el" href="class_traveller___server_1_1_controllers_1_1_users_controller.html#a7cb1fc6cf8a1396ad15e6c6b1fbba07e">Traveller_Server.Controllers.UsersController</a></li>
-<li>PostUserSuspension()&#160;:&#160;<a class="el" href="class_traveller___server_1_1_controllers_1_1_user_suspensions_api_controller.html#a5b22c66cf6b3298d1e4946f868906720">Traveller_Server.Controllers.UserSuspensionsApiController</a></li>
-<li>Privacy()&#160;:&#160;<a class="el" href="class_traveller___server_1_1_controllers_1_1_home_controller.html#a9ef01430107d5332479884e8e619a1c6">Traveller_Server.Controllers.HomeController</a></li>
+<li>profileImage&#160;:&#160;<a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_user.html#a64b6773b38343cc684f226c78a070ff0">Traveller_Server.Models.DataClasses.User</a></li>
 <li>ProviderDisplayName&#160;:&#160;<a class="el" href="class_traveller___server_1_1_areas_1_1_identity_1_1_pages_1_1_account_1_1_external_login_model.html#a22ecf673e7a4e35c676919f004237061">Traveller_Server.Areas.Identity.Pages.Account.ExternalLoginModel</a></li>
-<li>PutAlert()&#160;:&#160;<a class="el" href="class_traveller___server_1_1_controllers_1_1_alerts_api_controller.html#a9f56d7e12b7323fc84560d8bfa8e0f07">Traveller_Server.Controllers.AlertsApiController</a></li>
-<li>PutLinkedStop()&#160;:&#160;<a class="el" href="class_traveller___server_1_1_controllers_1_1_linked_stops_api_controller.html#a3e314250697f9889b3f0663269572cb6">Traveller_Server.Controllers.LinkedStopsApiController</a></li>
-<li>PutLocation()&#160;:&#160;<a class="el" href="class_traveller___server_1_1_controllers_1_1_locations_api_controller.html#a72e4b5097922c57508404857296053d0">Traveller_Server.Controllers.LocationsApiController</a></li>
-<li>PutRoute()&#160;:&#160;<a class="el" href="class_traveller___server_1_1_controllers_1_1_routes_api_controller.html#af82680336a6c2004c620497390f94ecb">Traveller_Server.Controllers.RoutesApiController</a></li>
-<li>PutStop()&#160;:&#160;<a class="el" href="class_traveller___server_1_1_controllers_1_1_stops_api_controller.html#a0e6eb15b7ff0daea18fea5ca763b96d3">Traveller_Server.Controllers.StopsApiController</a></li>
-<li>PutTransport()&#160;:&#160;<a class="el" href="class_traveller___server_1_1_controllers_1_1_transports_api_controller.html#a4e853efce8a3e19ec165873cfe54ab98">Traveller_Server.Controllers.TransportsApiController</a></li>
-<li>PutUser()&#160;:&#160;<a class="el" href="class_traveller___server_1_1_controllers_1_1_users_api_controller.html#a10dee25ef7d5eabb3cadac59029ec774">Traveller_Server.Controllers.UsersApiController</a>, <a class="el" href="class_traveller___server_1_1_controllers_1_1_users_controller.html#aab3310ee788de2c846e2080a55dc4ca6">Traveller_Server.Controllers.UsersController</a></li>
-<li>PutUserSuspension()&#160;:&#160;<a class="el" href="class_traveller___server_1_1_controllers_1_1_user_suspensions_api_controller.html#a6ca9b3c62b0e6a6c4a8345f807e56465">Traveller_Server.Controllers.UserSuspensionsApiController</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
+  </ul>
+</div>
 </body>
 </html>

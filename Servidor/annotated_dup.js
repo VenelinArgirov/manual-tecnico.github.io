@@ -46,9 +46,10 @@ var annotated_dup =
         [ "ActivityLogsApiController", "class_traveller___server_1_1_controllers_1_1_activity_logs_api_controller.html", null ],
         [ "ActivityLogsController", "class_traveller___server_1_1_controllers_1_1_activity_logs_controller.html", null ],
         [ "AlertsApiController", "class_traveller___server_1_1_controllers_1_1_alerts_api_controller.html", "class_traveller___server_1_1_controllers_1_1_alerts_api_controller" ],
+        [ "AlertVotesController", "class_traveller___server_1_1_controllers_1_1_alert_votes_controller.html", null ],
         [ "CourseRoutesController", "class_traveller___server_1_1_controllers_1_1_course_routes_controller.html", null ],
         [ "CoursesController", "class_traveller___server_1_1_controllers_1_1_courses_controller.html", null ],
-        [ "HomeController", "class_traveller___server_1_1_controllers_1_1_home_controller.html", null ],
+        [ "FavoritePlacesApiController", "class_traveller___server_1_1_controllers_1_1_favorite_places_api_controller.html", null ],
         [ "LinkedStopsApiController", "class_traveller___server_1_1_controllers_1_1_linked_stops_api_controller.html", null ],
         [ "LocationsApiController", "class_traveller___server_1_1_controllers_1_1_locations_api_controller.html", null ],
         [ "ResetPasswordLogsController", "class_traveller___server_1_1_controllers_1_1_reset_password_logs_controller.html", null ],
@@ -60,9 +61,10 @@ var annotated_dup =
         [ "TransportsApiController", "class_traveller___server_1_1_controllers_1_1_transports_api_controller.html", null ],
         [ "User_CourseController", "class_traveller___server_1_1_controllers_1_1_user___course_controller.html", null ],
         [ "UserApiController", "class_traveller___server_1_1_controllers_1_1_user_api_controller.html", "class_traveller___server_1_1_controllers_1_1_user_api_controller" ],
+        [ "UserLocationsApiController", "class_traveller___server_1_1_controllers_1_1_user_locations_api_controller.html", "class_traveller___server_1_1_controllers_1_1_user_locations_api_controller" ],
         [ "UsersApiController", "class_traveller___server_1_1_controllers_1_1_users_api_controller.html", null ],
         [ "UsersController", "class_traveller___server_1_1_controllers_1_1_users_controller.html", null ],
-        [ "UserStatusApiController", "class_traveller___server_1_1_controllers_1_1_user_status_api_controller.html", null ],
+        [ "UserStatusApiController", "class_traveller___server_1_1_controllers_1_1_user_status_api_controller.html", "class_traveller___server_1_1_controllers_1_1_user_status_api_controller" ],
         [ "UserStatusController", "class_traveller___server_1_1_controllers_1_1_user_status_controller.html", null ],
         [ "UserSuspensionsApiController", "class_traveller___server_1_1_controllers_1_1_user_suspensions_api_controller.html", "class_traveller___server_1_1_controllers_1_1_user_suspensions_api_controller" ],
         [ "UserSuspensionsController", "class_traveller___server_1_1_controllers_1_1_user_suspensions_controller.html", null ]
@@ -74,6 +76,7 @@ var annotated_dup =
         [ "JwtHandler", "class_traveller___server_1_1_jwt_features_1_1_jwt_handler.html", "class_traveller___server_1_1_jwt_features_1_1_jwt_handler" ]
       ] ],
       [ "Migrations", "namespace_traveller___server_1_1_migrations.html", [
+        [ "cenasVenelin1", "class_traveller___server_1_1_migrations_1_1cenas_venelin1.html", null ],
         [ "Initial", "class_traveller___server_1_1_migrations_1_1_initial.html", null ],
         [ "Traveller_ServerContextModelSnapshot", "class_traveller___server_1_1_migrations_1_1_traveller___server_context_model_snapshot.html", null ]
       ] ],
@@ -82,9 +85,11 @@ var annotated_dup =
           [ "ActivityLog", "class_traveller___server_1_1_models_1_1_data_classes_1_1_activity_log.html", "class_traveller___server_1_1_models_1_1_data_classes_1_1_activity_log" ],
           [ "Alert", "class_traveller___server_1_1_models_1_1_data_classes_1_1_alert.html", "class_traveller___server_1_1_models_1_1_data_classes_1_1_alert" ],
           [ "AlertRatingInfo", "class_traveller___server_1_1_models_1_1_data_classes_1_1_alert_rating_info.html", "class_traveller___server_1_1_models_1_1_data_classes_1_1_alert_rating_info" ],
+          [ "AlertVote", "class_traveller___server_1_1_models_1_1_data_classes_1_1_alert_vote.html", "class_traveller___server_1_1_models_1_1_data_classes_1_1_alert_vote" ],
           [ "AuthResponse", "class_traveller___server_1_1_models_1_1_data_classes_1_1_auth_response.html", "class_traveller___server_1_1_models_1_1_data_classes_1_1_auth_response" ],
           [ "Course", "class_traveller___server_1_1_models_1_1_data_classes_1_1_course.html", "class_traveller___server_1_1_models_1_1_data_classes_1_1_course" ],
           [ "CourseRoute", "class_traveller___server_1_1_models_1_1_data_classes_1_1_course_route.html", "class_traveller___server_1_1_models_1_1_data_classes_1_1_course_route" ],
+          [ "FavoritePlace", "class_traveller___server_1_1_models_1_1_data_classes_1_1_favorite_place.html", "class_traveller___server_1_1_models_1_1_data_classes_1_1_favorite_place" ],
           [ "LinkedStop", "class_traveller___server_1_1_models_1_1_data_classes_1_1_linked_stop.html", "class_traveller___server_1_1_models_1_1_data_classes_1_1_linked_stop" ],
           [ "Location", "class_traveller___server_1_1_models_1_1_data_classes_1_1_location.html", "class_traveller___server_1_1_models_1_1_data_classes_1_1_location" ],
           [ "ResetPasswordLog", "class_traveller___server_1_1_models_1_1_data_classes_1_1_reset_password_log.html", "class_traveller___server_1_1_models_1_1_data_classes_1_1_reset_password_log" ],
@@ -96,6 +101,7 @@ var annotated_dup =
           [ "User_Course", "class_traveller___server_1_1_models_1_1_data_classes_1_1_user___course.html", "class_traveller___server_1_1_models_1_1_data_classes_1_1_user___course" ],
           [ "UserChangeState", "class_traveller___server_1_1_models_1_1_data_classes_1_1_user_change_state.html", "class_traveller___server_1_1_models_1_1_data_classes_1_1_user_change_state" ],
           [ "UserForAuthentication", "class_traveller___server_1_1_models_1_1_data_classes_1_1_user_for_authentication.html", "class_traveller___server_1_1_models_1_1_data_classes_1_1_user_for_authentication" ],
+          [ "UserLocation", "class_traveller___server_1_1_models_1_1_data_classes_1_1_user_location.html", "class_traveller___server_1_1_models_1_1_data_classes_1_1_user_location" ],
           [ "UserResetPassword", "class_traveller___server_1_1_models_1_1_data_classes_1_1_user_reset_password.html", "class_traveller___server_1_1_models_1_1_data_classes_1_1_user_reset_password" ],
           [ "UserStatus", "class_traveller___server_1_1_models_1_1_data_classes_1_1_user_status.html", "class_traveller___server_1_1_models_1_1_data_classes_1_1_user_status" ],
           [ "UserSuspension", "class_traveller___server_1_1_models_1_1_data_classes_1_1_user_suspension.html", "class_traveller___server_1_1_models_1_1_data_classes_1_1_user_suspension" ]

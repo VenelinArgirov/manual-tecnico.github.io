@@ -506,8 +506,8 @@ export class LinkedStopService {
    * @returns The created LinkedStop
    */
   addLinkedStop(linkedStop: LinkedStop): Observable&lt;LinkedStop&gt; {
-    //return this.http.post&lt;LinkedStop&gt;(&#x60;https://localhost:7036/api/LinkedStopsApi&#x60;, linkedStop)
-    return this.http.post&lt;LinkedStop&gt;(&#x60;https://traveller-server.azurewebsites.net/api/LinkedStopsApi&#x60;, linkedStop)
+    return this.http.post&lt;LinkedStop&gt;(&#x60;api/LinkedStopsApi&#x60;, linkedStop)
+    //return this.http.post&lt;LinkedStop&gt;(&#x60;https://traveller-server.azurewebsites.net/api/LinkedStopsApi&#x60;, linkedStop)
       .pipe(catchError(this.handleError));
   }
 
@@ -517,8 +517,8 @@ export class LinkedStopService {
    * @returns The edited LinkedStop
    */
   editLinkedStop(linkedStop: LinkedStop): Observable&lt;LinkedStop&gt; {
-    //return this.http.put&lt;LinkedStop&gt;(&#x60;https://localhost:7036/api/LinkedStopsApi/${linkedStop.id}&#x60;, linkedStop)
-    return this.http.put&lt;LinkedStop&gt;(&#x60;https://traveller-server.azurewebsites.net/api/LinkedStopsApi/${linkedStop.id}&#x60;, linkedStop)
+    return this.http.put&lt;LinkedStop&gt;(&#x60;api/LinkedStopsApi/${linkedStop.id}&#x60;, linkedStop)
+    //return this.http.put&lt;LinkedStop&gt;(&#x60;https://traveller-server.azurewebsites.net/api/LinkedStopsApi/${linkedStop.id}&#x60;, linkedStop)
       .pipe(catchError(this.handleError));
   }
 
@@ -528,8 +528,8 @@ export class LinkedStopService {
    * @returns The deleted route
    */
   deleteLinkedStop(linkedStopId: string): Observable&lt;LinkedStop&gt; {
-    //return this.http.delete&lt;LinkedStop&gt;(&#x60;https://localhost:7036/api/LinkedStopsApi/${linkedStopId}&#x60;)
-    return this.http.delete&lt;LinkedStop&gt;(&#x60;https://traveller-server.azurewebsites.net/api/LinkedStopsApi/${linkedStopId}&#x60;)
+    return this.http.delete&lt;LinkedStop&gt;(&#x60;api/LinkedStopsApi/${linkedStopId}&#x60;)
+    //return this.http.delete&lt;LinkedStop&gt;(&#x60;https://traveller-server.azurewebsites.net/api/LinkedStopsApi/${linkedStopId}&#x60;)
       .pipe(catchError(this.handleError));
   }
 

@@ -393,8 +393,8 @@ export class StopService {
    * @returns A list of all the stops in the system.
    */
   getStops(): Observable&lt;Stop[]&gt; {
-    //return this.http.get&lt;Stop[]&gt;(&#x27;https://localhost:7036/api/StopsApi&#x27;)
-    return this.http.get&lt;Stop[]&gt;(&#x27;https://traveller-server.azurewebsites.net/api/StopsApi&#x27;)
+    return this.http.get&lt;Stop[]&gt;(&#x27;api/StopsApi&#x27;)
+    //return this.http.get&lt;Stop[]&gt;(&#x27;https://traveller-server.azurewebsites.net/api/StopsApi&#x27;)
       .pipe(catchError(this.handleError));
   }
 
@@ -404,8 +404,8 @@ export class StopService {
    * @returns The created route.
    */
   addStop(stop: Stop): Observable&lt;Stop&gt; {
-    //return this.http.post&lt;Stop&gt;(&#x60;https://localhost:7036/api/StopsApi&#x60;, stop)
-    return this.http.post&lt;Stop&gt;(&#x60;https://traveller-server.azurewebsites.net/api/StopsApi&#x60;, stop)
+    return this.http.post&lt;Stop&gt;(&#x60;api/StopsApi&#x60;, stop)
+    //return this.http.post&lt;Stop&gt;(&#x60;https://traveller-server.azurewebsites.net/api/StopsApi&#x60;, stop)
       .pipe(catchError(this.handleError));
   }
 

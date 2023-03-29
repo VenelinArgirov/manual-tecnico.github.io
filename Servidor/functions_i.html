@@ -5,13 +5,22 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Sprint 2: Class Members</title>
+<title>Sprint 4: Data Fields</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(document).ready(function() { init_search(); });
+/* @license-end */
+</script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -21,7 +30,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Sprint 2
+   <div id="projectname">Sprint 4
    </div>
   </td>
  </tr>
@@ -35,18 +44,81 @@
 var searchBox = new SearchBox("searchBox", "search/",'.html');
 /* @license-end */
 </script>
-<script type="text/javascript" src="menudata.js"></script>
-<script type="text/javascript" src="menu.js"></script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
+      <li><a href="namespaces.html"><span>Packages</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="Search" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
+      <li><a href="classes.html"><span>Data&#160;Structure&#160;Index</span></a></li>
+      <li><a href="inherits.html"><span>Class&#160;Hierarchy</span></a></li>
+      <li class="current"><a href="functions.html"><span>Data&#160;Fields</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow3" class="tabs2">
+    <ul class="tablist">
+      <li class="current"><a href="functions.html"><span>All</span></a></li>
+      <li><a href="functions_func.html"><span>Functions</span></a></li>
+      <li><a href="functions_vars.html"><span>Variables</span></a></li>
+      <li><a href="functions_prop.html"><span>Properties</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow4" class="tabs3">
+    <ul class="tablist">
+      <li><a href="functions.html#index_a"><span>a</span></a></li>
+      <li><a href="functions_c.html#index_c"><span>c</span></a></li>
+      <li><a href="functions_d.html#index_d"><span>d</span></a></li>
+      <li><a href="functions_e.html#index_e"><span>e</span></a></li>
+      <li><a href="functions_f.html#index_f"><span>f</span></a></li>
+      <li><a href="functions_g.html#index_g"><span>g</span></a></li>
+      <li><a href="functions_h.html#index_h"><span>h</span></a></li>
+      <li class="current"><a href="functions_i.html#index_i"><span>i</span></a></li>
+      <li><a href="functions_l.html#index_l"><span>l</span></a></li>
+      <li><a href="functions_n.html#index_n"><span>n</span></a></li>
+      <li><a href="functions_o.html#index_o"><span>o</span></a></li>
+      <li><a href="functions_p.html#index_p"><span>p</span></a></li>
+      <li><a href="functions_r.html#index_r"><span>r</span></a></li>
+      <li><a href="functions_s.html#index_s"><span>s</span></a></li>
+      <li><a href="functions_t.html#index_t"><span>t</span></a></li>
+      <li><a href="functions_u.html#index_u"><span>u</span></a></li>
+      <li><a href="functions_v.html#index_v"><span>v</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(function() {
-  initMenu('',true,false,'search.php','Search');
-  $(document).ready(function() { init_search(); });
-});
+$(document).ready(function(){initNavTree('functions_i.html',''); initResizable(); });
 /* @license-end */
 </script>
-<div id="main-nav"></div>
-</div><!-- top -->
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -69,22 +141,24 @@ $(function() {
 </div>
 
 <div class="contents">
-<div class="textblock">Here is a list of all class members with links to the classes they belong to:</div>
+<div class="textblock">Here is a list of all documented struct and union fields with links to the struct/union documentation for each field:</div>
 
 <h3><a id="index_i" name="index_i"></a>- i -</h3><ul>
-<li>Id&#160;:&#160;<a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_linked_stop.html#a0221d5f25a79c4afae50fa69713261d2">Traveller_Server.Models.DataClasses.LinkedStop</a>, <a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_user_suspension.html#aab6f3ddd6960832769f6234fdeb592b6">Traveller_Server.Models.DataClasses.UserSuspension</a></li>
-<li>Index()&#160;:&#160;<a class="el" href="class_traveller___server_1_1_controllers_1_1_activity_logs_controller.html#a38b23e65af5be244dcb34a150910f1e3">Traveller_Server.Controllers.ActivityLogsController</a>, <a class="el" href="class_traveller___server_1_1_controllers_1_1_course_routes_controller.html#a4ef6ce77447f8cdc49f3e532bef69adc">Traveller_Server.Controllers.CourseRoutesController</a>, <a class="el" href="class_traveller___server_1_1_controllers_1_1_courses_controller.html#a2fdaeb97bff52509ab3dbbbd06cbedad">Traveller_Server.Controllers.CoursesController</a>, <a class="el" href="class_traveller___server_1_1_controllers_1_1_home_controller.html#ab7c11d35418644199912085b039bd40c">Traveller_Server.Controllers.HomeController</a>, <a class="el" href="class_traveller___server_1_1_controllers_1_1_reset_password_logs_controller.html#a907aa0ff7310e0d206d6b94155534ded">Traveller_Server.Controllers.ResetPasswordLogsController</a>, <a class="el" href="class_traveller___server_1_1_controllers_1_1_routes_controller.html#a6d3c58372d2dc5f6a05e2f34db671fd4">Traveller_Server.Controllers.RoutesController</a>, <a class="el" href="class_traveller___server_1_1_controllers_1_1_stops_controller.html#a0e4f77774cba8a225ecf8fa809898555">Traveller_Server.Controllers.StopsController</a>, <a class="el" href="class_traveller___server_1_1_controllers_1_1_user___course_controller.html#ab9271f6fc70e9dcb3b77ffef854f2c96">Traveller_Server.Controllers.User_CourseController</a>, <a class="el" href="class_traveller___server_1_1_controllers_1_1_user_suspensions_controller.html#a829ddc4bebda94107e08ce6c665c340c">Traveller_Server.Controllers.UserSuspensionsController</a></li>
-<li>IndexModel()&#160;:&#160;<a class="el" href="class_traveller___server_1_1_areas_1_1_identity_1_1_pages_1_1_account_1_1_manage_1_1_index_model.html#a93e68183976e09550f6c46835b3d5b78">Traveller_Server.Areas.Identity.Pages.Account.Manage.IndexModel</a></li>
+<li>Id&#160;:&#160;<a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_linked_stop.html#a0221d5f25a79c4afae50fa69713261d2">Traveller_Server.Models.DataClasses.LinkedStop</a>, <a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_user_status.html#afa4c0ed49ee7778e934e8e16d1c2d083">Traveller_Server.Models.DataClasses.UserStatus</a>, <a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_user_suspension.html#aab6f3ddd6960832769f6234fdeb592b6">Traveller_Server.Models.DataClasses.UserSuspension</a></li>
 <li>Input&#160;:&#160;<a class="el" href="class_traveller___server_1_1_areas_1_1_identity_1_1_pages_1_1_account_1_1_external_login_model.html#a40a33ef14d1f0b5ce124ca585d3ad920">Traveller_Server.Areas.Identity.Pages.Account.ExternalLoginModel</a>, <a class="el" href="class_traveller___server_1_1_areas_1_1_identity_1_1_pages_1_1_account_1_1_forgot_password_model.html#aa9f1d737a6f7ac93b809af600930d94d">Traveller_Server.Areas.Identity.Pages.Account.ForgotPasswordModel</a>, <a class="el" href="class_traveller___server_1_1_areas_1_1_identity_1_1_pages_1_1_account_1_1_login_model.html#a2f24ce29e113f724d7d66f5fe2c77431">Traveller_Server.Areas.Identity.Pages.Account.LoginModel</a>, <a class="el" href="class_traveller___server_1_1_areas_1_1_identity_1_1_pages_1_1_account_1_1_login_with2fa_model.html#a977852d01a1d701f574783af85a5114b">Traveller_Server.Areas.Identity.Pages.Account.LoginWith2faModel</a>, <a class="el" href="class_traveller___server_1_1_areas_1_1_identity_1_1_pages_1_1_account_1_1_login_with_recovery_code_model.html#a6a5b8c92b0d4d6d57b9f3e19ca20a638">Traveller_Server.Areas.Identity.Pages.Account.LoginWithRecoveryCodeModel</a>, <a class="el" href="class_traveller___server_1_1_areas_1_1_identity_1_1_pages_1_1_account_1_1_manage_1_1_change_password_model.html#af2653ebc406df93c29546df295ee1514">Traveller_Server.Areas.Identity.Pages.Account.Manage.ChangePasswordModel</a>, <a class="el" href="class_traveller___server_1_1_areas_1_1_identity_1_1_pages_1_1_account_1_1_manage_1_1_delete_personal_data_model.html#ae9912868a027dc2afaf92da146ef150c">Traveller_Server.Areas.Identity.Pages.Account.Manage.DeletePersonalDataModel</a>, <a class="el" href="class_traveller___server_1_1_areas_1_1_identity_1_1_pages_1_1_account_1_1_manage_1_1_email_model.html#a998fce17c669797fc34b1e293bc6a7f0">Traveller_Server.Areas.Identity.Pages.Account.Manage.EmailModel</a>, <a class="el" href="class_traveller___server_1_1_areas_1_1_identity_1_1_pages_1_1_account_1_1_manage_1_1_enable_authenticator_model.html#a53a39d12f65ac550259f0651054ca1b7">Traveller_Server.Areas.Identity.Pages.Account.Manage.EnableAuthenticatorModel</a>, <a class="el" href="class_traveller___server_1_1_areas_1_1_identity_1_1_pages_1_1_account_1_1_manage_1_1_index_model.html#accd85ae59c2a025bdbf2a370500f2999">Traveller_Server.Areas.Identity.Pages.Account.Manage.IndexModel</a>, <a class="el" href="class_traveller___server_1_1_areas_1_1_identity_1_1_pages_1_1_account_1_1_manage_1_1_set_password_model.html#ae43e7ec203e4131f482e155f3928e296">Traveller_Server.Areas.Identity.Pages.Account.Manage.SetPasswordModel</a>, <a class="el" href="class_traveller___server_1_1_areas_1_1_identity_1_1_pages_1_1_account_1_1_register_model.html#aeb23fe6ef05ed99336fffb8e16b5eef2">Traveller_Server.Areas.Identity.Pages.Account.RegisterModel</a>, <a class="el" href="class_traveller___server_1_1_areas_1_1_identity_1_1_pages_1_1_account_1_1_resend_email_confirmation_model.html#a974a8a41e9752999c8235ed3d3677814">Traveller_Server.Areas.Identity.Pages.Account.ResendEmailConfirmationModel</a>, <a class="el" href="class_traveller___server_1_1_areas_1_1_identity_1_1_pages_1_1_account_1_1_reset_password_model.html#a23356fbaa048900ee043b076a538ee15">Traveller_Server.Areas.Identity.Pages.Account.ResetPasswordModel</a></li>
 <li>Is2faEnabled&#160;:&#160;<a class="el" href="class_traveller___server_1_1_areas_1_1_identity_1_1_pages_1_1_account_1_1_manage_1_1_two_factor_authentication_model.html#aa491c8ff7a54e68d6def81543c1416e3">Traveller_Server.Areas.Identity.Pages.Account.Manage.TwoFactorAuthenticationModel</a></li>
 <li>IsAuthSuccessful&#160;:&#160;<a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_auth_response.html#afa1953b0601a2f0af5e027e92c00191e">Traveller_Server.Models.DataClasses.AuthResponse</a></li>
 <li>IsEmailConfirmed&#160;:&#160;<a class="el" href="class_traveller___server_1_1_areas_1_1_identity_1_1_pages_1_1_account_1_1_manage_1_1_email_model.html#a16e186adabe6d1886a617c03b710758d">Traveller_Server.Areas.Identity.Pages.Account.Manage.EmailModel</a></li>
 <li>IsMachineRemembered&#160;:&#160;<a class="el" href="class_traveller___server_1_1_areas_1_1_identity_1_1_pages_1_1_account_1_1_manage_1_1_two_factor_authentication_model.html#a22176d2450260765d3f0861381b978f4">Traveller_Server.Areas.Identity.Pages.Account.Manage.TwoFactorAuthenticationModel</a></li>
+<li>IsOnline&#160;:&#160;<a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_user_status.html#a98164214fcc89bb821f06dc4ba0dc7ac">Traveller_Server.Models.DataClasses.UserStatus</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
+  </ul>
+</div>
 </body>
 </html>

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Sprint 3: Traveller_Server.Controllers.UserApiController Class Reference</title>
+<title>Sprint 4: Traveller_Server.Controllers.UserApiController Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -30,7 +30,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Sprint 3
+   <div id="projectname">Sprint 4
    </div>
   </td>
  </tr>
@@ -133,14 +133,14 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a91fad582099aefd9c36e48c951a39355"><td class="memItemLeft" align="right" valign="top"><a id="a91fad582099aefd9c36e48c951a39355" name="a91fad582099aefd9c36e48c951a39355"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>UserApiController</b> (UserManager&lt; <a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_user.html">User</a> &gt; userManager, <a class="el" href="class_traveller___server_1_1_jwt_features_1_1_jwt_handler.html">JwtHandler</a> jwtHandler, <a class="el" href="class_traveller___server_1_1_data_1_1_traveller___server_context.html">Traveller_ServerContext</a> context, IEmailSender emailSender)</td></tr>
 <tr class="separator:a91fad582099aefd9c36e48c951a39355"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae628b6d8a08472ad9ba60103453814c7"><td class="memItemLeft" align="right" valign="top"><a id="ae628b6d8a08472ad9ba60103453814c7" name="ae628b6d8a08472ad9ba60103453814c7"></a>
-async Task&lt; IActionResult &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>Login</b> ([FromBody] <a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_user_for_authentication.html">UserForAuthentication</a> userForAuthentication)</td></tr>
+<tr class="memitem:ae628b6d8a08472ad9ba60103453814c7"><td class="memItemLeft" align="right" valign="top">async Task&lt; IActionResult &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_traveller___server_1_1_controllers_1_1_user_api_controller.html#ae628b6d8a08472ad9ba60103453814c7">Login</a> ([FromBody] <a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_user_for_authentication.html">UserForAuthentication</a> userForAuthentication)</td></tr>
+<tr class="memdesc:ae628b6d8a08472ad9ba60103453814c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Log in into the mobile app.  <br /></td></tr>
 <tr class="separator:ae628b6d8a08472ad9ba60103453814c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af0cfcc9446e1995ae6a38f70529622be"><td class="memItemLeft" align="right" valign="top"><a id="af0cfcc9446e1995ae6a38f70529622be" name="af0cfcc9446e1995ae6a38f70529622be"></a>
-async Task&lt; IActionResult &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>LoginDashboard</b> ([FromBody] <a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_user_for_authentication.html">UserForAuthentication</a> userForAuthentication)</td></tr>
+<tr class="memitem:af0cfcc9446e1995ae6a38f70529622be"><td class="memItemLeft" align="right" valign="top">async Task&lt; IActionResult &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_traveller___server_1_1_controllers_1_1_user_api_controller.html#af0cfcc9446e1995ae6a38f70529622be">LoginDashboard</a> ([FromBody] <a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_user_for_authentication.html">UserForAuthentication</a> userForAuthentication)</td></tr>
+<tr class="memdesc:af0cfcc9446e1995ae6a38f70529622be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Log in into the dashboard, just for admin users.  <br /></td></tr>
 <tr class="separator:af0cfcc9446e1995ae6a38f70529622be"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3d74c21b8e4378ae2d6f80ba4d09e166"><td class="memItemLeft" align="right" valign="top"><a id="a3d74c21b8e4378ae2d6f80ba4d09e166" name="a3d74c21b8e4378ae2d6f80ba4d09e166"></a>
-async Task&lt; IActionResult &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>Register</b> ([FromBody] <a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_user_for_authentication.html">UserForAuthentication</a> user)</td></tr>
+<tr class="memitem:a3d74c21b8e4378ae2d6f80ba4d09e166"><td class="memItemLeft" align="right" valign="top">async Task&lt; IActionResult &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_traveller___server_1_1_controllers_1_1_user_api_controller.html#a3d74c21b8e4378ae2d6f80ba4d09e166">Register</a> ([FromBody] <a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_user_for_authentication.html">UserForAuthentication</a> user)</td></tr>
+<tr class="memdesc:a3d74c21b8e4378ae2d6f80ba4d09e166"><td class="mdescLeft">&#160;</td><td class="mdescRight">With the register post this creates a new user in the database.  <br /></td></tr>
 <tr class="separator:a3d74c21b8e4378ae2d6f80ba4d09e166"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9a957267e6f78ef21c41abcbda9fa8d1"><td class="memItemLeft" align="right" valign="top">async Task&lt; IActionResult &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_traveller___server_1_1_controllers_1_1_user_api_controller.html#a9a957267e6f78ef21c41abcbda9fa8d1">SendRequestResetPassword</a> (string toEmail)</td></tr>
 <tr class="memdesc:a9a957267e6f78ef21c41abcbda9fa8d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends an email to the provided email address with a randomly generated code.  <br /></td></tr>
@@ -197,6 +197,60 @@ async Task&lt; IActionResult &gt;&#160;</td><td class="memItemRight" valign="bot
 
 </div>
 </div>
+<a id="ae628b6d8a08472ad9ba60103453814c7" name="ae628b6d8a08472ad9ba60103453814c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae628b6d8a08472ad9ba60103453814c7">&#9670;&#160;</a></span>Login()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">async Task&lt; IActionResult &gt; Traveller_Server.Controllers.UserApiController.Login </td>
+          <td>(</td>
+          <td class="paramtype">[FromBody] <a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_user_for_authentication.html">UserForAuthentication</a>&#160;</td>
+          <td class="paramname"><em>userForAuthentication</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Log in into the mobile app. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">userForAuthentication</td><td>User login credentials</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>An IActionResult indicating the status of the request</dd></dl>
+
+</div>
+</div>
+<a id="af0cfcc9446e1995ae6a38f70529622be" name="af0cfcc9446e1995ae6a38f70529622be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af0cfcc9446e1995ae6a38f70529622be">&#9670;&#160;</a></span>LoginDashboard()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">async Task&lt; IActionResult &gt; Traveller_Server.Controllers.UserApiController.LoginDashboard </td>
+          <td>(</td>
+          <td class="paramtype">[FromBody] <a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_user_for_authentication.html">UserForAuthentication</a>&#160;</td>
+          <td class="paramname"><em>userForAuthentication</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Log in into the dashboard, just for admin users. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">userForAuthentication</td><td>User login credentials</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>An IActionResult indicating the status of the request</dd></dl>
+
+</div>
+</div>
 <a id="a6bc8447d9eb94fbaa97b8e9f6c47b019" name="a6bc8447d9eb94fbaa97b8e9f6c47b019"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6bc8447d9eb94fbaa97b8e9f6c47b019">&#9670;&#160;</a></span>LoginWithGoogle()</h2>
 
@@ -221,6 +275,33 @@ async Task&lt; IActionResult &gt;&#160;</td><td class="memItemRight" valign="bot
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>An IActionResult indicating the status of the login</dd></dl>
+
+</div>
+</div>
+<a id="a3d74c21b8e4378ae2d6f80ba4d09e166" name="a3d74c21b8e4378ae2d6f80ba4d09e166"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d74c21b8e4378ae2d6f80ba4d09e166">&#9670;&#160;</a></span>Register()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">async Task&lt; IActionResult &gt; Traveller_Server.Controllers.UserApiController.Register </td>
+          <td>(</td>
+          <td class="paramtype">[FromBody] <a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_user_for_authentication.html">UserForAuthentication</a>&#160;</td>
+          <td class="paramname"><em>user</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>With the register post this creates a new user in the database. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">user</td><td>The user credentials</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>An IActionResult indicating the status of the request</dd></dl>
 
 </div>
 </div>

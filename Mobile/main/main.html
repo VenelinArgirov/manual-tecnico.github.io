@@ -72,7 +72,7 @@
   <pre class="language-dart"><code class="language-dart">void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   SharedPreferences prefs = await SharedPreferences.getInstance();
-  bool isLoggedIn = prefs.getBool(&#39;isLoggedIn&#39;) ?? false;
+  bool rememberMe = prefs.getBool(&#39;rememberMe&#39;) ?? false;
   bool isDarkTheme = prefs.getBool(&#39;isDarkTheme&#39;) ?? false;
 
   ThemeManager themeManager = ThemeManager();
@@ -85,7 +85,7 @@
   runApp(
     ChangeNotifierProvider&lt;ThemeManager&gt;(
       create: (_) =&gt; themeManager,
-      child: MyApp(isLoggedIn),
+      child: MyApp(rememberMe),
     ),
   );
 }</code></pre>

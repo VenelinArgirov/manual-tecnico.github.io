@@ -1,9 +1,21 @@
 var searchData=
 [
-  ['timespentweek_0',['TimeSpentWeek',['../class_traveller___server_1_1_models_1_1_data_classes_1_1_time_spent_week.html',1,'Traveller_Server::Models::DataClasses']]],
-  ['transport_1',['Transport',['../class_traveller___server_1_1_models_1_1_data_classes_1_1_transport.html',1,'Traveller_Server::Models::DataClasses']]],
-  ['transportsapicontroller_2',['TransportsApiController',['../class_traveller___server_1_1_controllers_1_1_transports_api_controller.html',1,'Traveller_Server::Controllers']]],
-  ['traveller_5fservercontext_3',['Traveller_ServerContext',['../class_traveller___server_1_1_data_1_1_traveller___server_context.html',1,'Traveller_Server::Data']]],
-  ['traveller_5fservercontextmodelsnapshot_4',['Traveller_ServerContextModelSnapshot',['../class_traveller___server_1_1_migrations_1_1_traveller___server_context_model_snapshot.html',1,'Traveller_Server::Migrations']]],
-  ['twofactorauthenticationmodel_5',['TwoFactorAuthenticationModel',['../class_traveller___server_1_1_areas_1_1_identity_1_1_pages_1_1_account_1_1_manage_1_1_two_factor_authentication_model.html',1,'Traveller_Server::Areas::Identity::Pages::Account::Manage']]]
+  ['user_0',['User',['../class_traveller___server_1_1_models_1_1_data_classes_1_1_user.html',1,'Traveller_Server::Models::DataClasses']]],
+  ['user_5fcourse_1',['User_Course',['../class_traveller___server_1_1_models_1_1_data_classes_1_1_user___course.html',1,'Traveller_Server::Models::DataClasses']]],
+  ['user_5fcoursecontroller_2',['User_CourseController',['../class_traveller___server_1_1_controllers_1_1_user___course_controller.html',1,'Traveller_Server::Controllers']]],
+  ['userapicontroller_3',['UserApiController',['../class_traveller___server_1_1_controllers_1_1_user_api_controller.html',1,'Traveller_Server::Controllers']]],
+  ['userchangestate_4',['UserChangeState',['../class_traveller___server_1_1_models_1_1_data_classes_1_1_user_change_state.html',1,'Traveller_Server::Models::DataClasses']]],
+  ['userforauthentication_5',['UserForAuthentication',['../class_traveller___server_1_1_models_1_1_data_classes_1_1_user_for_authentication.html',1,'Traveller_Server::Models::DataClasses']]],
+  ['userlocation_6',['UserLocation',['../class_traveller___server_1_1_models_1_1_data_classes_1_1_user_location.html',1,'Traveller_Server::Models::DataClasses']]],
+  ['userlocationmessage_7',['userLocationMessage',['../class_traveller___server_1_1_controllers_1_1_user_locations_api_controller_1_1user_location_message.html',1,'Traveller_Server::Controllers::UserLocationsApiController']]],
+  ['userlocationsapicontroller_8',['UserLocationsApiController',['../class_traveller___server_1_1_controllers_1_1_user_locations_api_controller.html',1,'Traveller_Server::Controllers']]],
+  ['userresetpassword_9',['UserResetPassword',['../class_traveller___server_1_1_models_1_1_data_classes_1_1_user_reset_password.html',1,'Traveller_Server::Models::DataClasses']]],
+  ['usersapicontroller_10',['UsersApiController',['../class_traveller___server_1_1_controllers_1_1_users_api_controller.html',1,'Traveller_Server::Controllers']]],
+  ['userscontroller_11',['UsersController',['../class_traveller___server_1_1_controllers_1_1_users_controller.html',1,'Traveller_Server::Controllers']]],
+  ['userstatus_12',['UserStatus',['../class_traveller___server_1_1_models_1_1_data_classes_1_1_user_status.html',1,'Traveller_Server::Models::DataClasses']]],
+  ['userstatusapicontroller_13',['UserStatusApiController',['../class_traveller___server_1_1_controllers_1_1_user_status_api_controller.html',1,'Traveller_Server::Controllers']]],
+  ['userstatuscontroller_14',['UserStatusController',['../class_traveller___server_1_1_controllers_1_1_user_status_controller.html',1,'Traveller_Server::Controllers']]],
+  ['usersuspension_15',['UserSuspension',['../class_traveller___server_1_1_models_1_1_data_classes_1_1_user_suspension.html',1,'Traveller_Server::Models::DataClasses']]],
+  ['usersuspensionsapicontroller_16',['UserSuspensionsApiController',['../class_traveller___server_1_1_controllers_1_1_user_suspensions_api_controller.html',1,'Traveller_Server::Controllers']]],
+  ['usersuspensionscontroller_17',['UserSuspensionsController',['../class_traveller___server_1_1_controllers_1_1_user_suspensions_controller.html',1,'Traveller_Server::Controllers']]]
 ];
