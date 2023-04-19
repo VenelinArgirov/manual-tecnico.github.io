@@ -4,7 +4,7 @@ digraph "Traveller_Server.Data.Traveller_ServerContext"
   bgcolor="transparent";
   edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
   node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
-  Node1 [shape=record,label="{Traveller_Server.Data.Traveller\l_ServerContext\n|+ User\l+ Route\l+ Stop\l+ Transport\l+ Alert\l+ UserSuspension\l+ Location\l+ LinkedStop\l+ ActivityLog\l+ Course\land 7 more...\l|+ Traveller_ServerContext()\l# OnConfiguring()\l# OnModelCreating()\l}",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip=" "];
+  Node1 [shape=record,label="{Traveller_Server.Data.Traveller\l_ServerContext\n|+ User\l+ Alert\l+ UserSuspension\l+ Location\l+ ActivityLog\l+ Course\l+ User_Course\l+ CourseRoute\l+ ResetPasswordLog\l+ UserStatus\land 23 more...\l|+ Traveller_ServerContext()\l# OnConfiguring()\l# OnModelCreating()\l}",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip=" "];
   Node2 -> Node1 [dir="back",color="steelblue1",style="solid",arrowtail="onormal"];
   Node2 [shape=record,label="{IdentityDbContext\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
 }

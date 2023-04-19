@@ -58,7 +58,7 @@
             <h3>File</h3>
         </p>
         <p class="comment">
-            <code>src/app/stop.service.ts</code>
+            <code>src/app/services/stop.service.ts</code>
         </p>
 
 
@@ -111,7 +111,7 @@
                 </tr>
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="13" class="link-to-prism">src/app/stop.service.ts:13</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="13" class="link-to-prism">src/app/services/stop.service.ts:13</a></div>
                             </td>
                         </tr>
 
@@ -174,7 +174,7 @@
             </tr>
             <tr>
                 <td class="col-md-4">
-<code>addStop(stop: <a href="../injectables/Stop.html" target="_self">Stop</a>)</code>
+<code>addStop(stop: <a href="../classes/Stop.html" target="_self">Stop</a>)</code>
                 </td>
             </tr>
 
@@ -182,7 +182,7 @@
             <tr>
                 <td class="col-md-4">
                     <div class="io-line">Defined in <a href="" data-line="36"
-                            class="link-to-prism">src/app/stop.service.ts:36</a></div>
+                            class="link-to-prism">src/app/services/stop.service.ts:36</a></div>
                 </td>
             </tr>
 
@@ -208,7 +208,7 @@
                                 <tr>
                                     <td>stop</td>
                                     <td>
-                                                <code><a href="../injectables/Stop.html" target="_self" >Stop</a></code>
+                                                <code><a href="../classes/Stop.html" target="_self" >Stop</a></code>
                                     </td>
 
                                     <td>
@@ -227,7 +227,7 @@
                     <div>
                     </div>
                     <div class="io-description">
-                        <b>Returns : </b>        <code><a href="../injectables/Stop.html" target="_self" >Observable&lt;Stop&gt;</a></code>
+                        <b>Returns : </b>        <code><a href="../classes/Stop.html" target="_self" >Observable&lt;Stop&gt;</a></code>
 
                     </div>
                     <div class="io-description">
@@ -259,7 +259,7 @@
             <tr>
                 <td class="col-md-4">
                     <div class="io-line">Defined in <a href="" data-line="25"
-                            class="link-to-prism">src/app/stop.service.ts:25</a></div>
+                            class="link-to-prism">src/app/services/stop.service.ts:25</a></div>
                 </td>
             </tr>
 
@@ -272,7 +272,7 @@
                     <div>
                     </div>
                     <div class="io-description">
-                        <b>Returns : </b>        <code><a href="../injectables/Stop.html" target="_self" >Observable&lt;Stop[]&gt;</a></code>
+                        <b>Returns : </b>        <code><a href="../classes/Stop.html" target="_self" >Observable&lt;Stop[]&gt;</a></code>
 
                     </div>
                     <div class="io-description">
@@ -306,7 +306,7 @@
             <tr>
                 <td class="col-md-4">
                     <div class="io-line">Defined in <a href="" data-line="47"
-                            class="link-to-prism">src/app/stop.service.ts:47</a></div>
+                            class="link-to-prism">src/app/services/stop.service.ts:47</a></div>
                 </td>
             </tr>
 
@@ -371,7 +371,7 @@ Prints the error to the console.</p>
         <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { HttpClient, HttpErrorResponse } from &#x27;@angular/common/http&#x27;;
 import { Injectable } from &#x27;@angular/core&#x27;;
 import { catchError, Observable, throwError } from &#x27;rxjs&#x27;;
-import { Stop } from &#x27;./stop&#x27;;
+import { Stop } from &#x27;../models/stop&#x27;;
 
 @Injectable({
   providedIn: &#x27;root&#x27;
@@ -393,8 +393,8 @@ export class StopService {
    * @returns A list of all the stops in the system.
    */
   getStops(): Observable&lt;Stop[]&gt; {
-    return this.http.get&lt;Stop[]&gt;(&#x27;api/StopsApi&#x27;)
-    //return this.http.get&lt;Stop[]&gt;(&#x27;https://traveller-server.azurewebsites.net/api/StopsApi&#x27;)
+    //return this.http.get&lt;Stop[]&gt;(&#x27;api/StopsApi&#x27;)
+    return this.http.get&lt;Stop[]&gt;(&#x27;https://traveller-server.azurewebsites.net/api/StopsApi&#x27;)
       .pipe(catchError(this.handleError));
   }
 
@@ -404,8 +404,8 @@ export class StopService {
    * @returns The created route.
    */
   addStop(stop: Stop): Observable&lt;Stop&gt; {
-    return this.http.post&lt;Stop&gt;(&#x60;api/StopsApi&#x60;, stop)
-    //return this.http.post&lt;Stop&gt;(&#x60;https://traveller-server.azurewebsites.net/api/StopsApi&#x60;, stop)
+    //return this.http.post&lt;Stop&gt;(&#x60;api/StopsApi&#x60;, stop)
+    return this.http.post&lt;Stop&gt;(&#x60;https://traveller-server.azurewebsites.net/api/StopsApi&#x60;, stop)
       .pipe(catchError(this.handleError));
   }
 

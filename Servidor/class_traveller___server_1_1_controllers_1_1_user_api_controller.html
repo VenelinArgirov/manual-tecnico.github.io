@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Sprint 4: Traveller_Server.Controllers.UserApiController Class Reference</title>
+<title>Sprint 5: Traveller_Server.Controllers.UserApiController Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -30,7 +30,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Sprint 4
+   <div id="projectname">Sprint 5
    </div>
   </td>
  </tr>
@@ -130,273 +130,31 @@ Collaboration diagram for Traveller_Server.Controllers.UserApiController:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a91fad582099aefd9c36e48c951a39355"><td class="memItemLeft" align="right" valign="top"><a id="a91fad582099aefd9c36e48c951a39355" name="a91fad582099aefd9c36e48c951a39355"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>UserApiController</b> (UserManager&lt; <a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_user.html">User</a> &gt; userManager, <a class="el" href="class_traveller___server_1_1_jwt_features_1_1_jwt_handler.html">JwtHandler</a> jwtHandler, <a class="el" href="class_traveller___server_1_1_data_1_1_traveller___server_context.html">Traveller_ServerContext</a> context, IEmailSender emailSender)</td></tr>
-<tr class="separator:a91fad582099aefd9c36e48c951a39355"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae628b6d8a08472ad9ba60103453814c7"><td class="memItemLeft" align="right" valign="top">async Task&lt; IActionResult &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_traveller___server_1_1_controllers_1_1_user_api_controller.html#ae628b6d8a08472ad9ba60103453814c7">Login</a> ([FromBody] <a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_user_for_authentication.html">UserForAuthentication</a> userForAuthentication)</td></tr>
-<tr class="memdesc:ae628b6d8a08472ad9ba60103453814c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Log in into the mobile app.  <br /></td></tr>
-<tr class="separator:ae628b6d8a08472ad9ba60103453814c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af0cfcc9446e1995ae6a38f70529622be"><td class="memItemLeft" align="right" valign="top">async Task&lt; IActionResult &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_traveller___server_1_1_controllers_1_1_user_api_controller.html#af0cfcc9446e1995ae6a38f70529622be">LoginDashboard</a> ([FromBody] <a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_user_for_authentication.html">UserForAuthentication</a> userForAuthentication)</td></tr>
-<tr class="memdesc:af0cfcc9446e1995ae6a38f70529622be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Log in into the dashboard, just for admin users.  <br /></td></tr>
-<tr class="separator:af0cfcc9446e1995ae6a38f70529622be"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3d74c21b8e4378ae2d6f80ba4d09e166"><td class="memItemLeft" align="right" valign="top">async Task&lt; IActionResult &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_traveller___server_1_1_controllers_1_1_user_api_controller.html#a3d74c21b8e4378ae2d6f80ba4d09e166">Register</a> ([FromBody] <a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_user_for_authentication.html">UserForAuthentication</a> user)</td></tr>
-<tr class="memdesc:a3d74c21b8e4378ae2d6f80ba4d09e166"><td class="mdescLeft">&#160;</td><td class="mdescRight">With the register post this creates a new user in the database.  <br /></td></tr>
-<tr class="separator:a3d74c21b8e4378ae2d6f80ba4d09e166"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9a957267e6f78ef21c41abcbda9fa8d1"><td class="memItemLeft" align="right" valign="top">async Task&lt; IActionResult &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_traveller___server_1_1_controllers_1_1_user_api_controller.html#a9a957267e6f78ef21c41abcbda9fa8d1">SendRequestResetPassword</a> (string toEmail)</td></tr>
-<tr class="memdesc:a9a957267e6f78ef21c41abcbda9fa8d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends an email to the provided email address with a randomly generated code.  <br /></td></tr>
-<tr class="separator:a9a957267e6f78ef21c41abcbda9fa8d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a28de3ce85ed44828af7746ae49e1348c"><td class="memItemLeft" align="right" valign="top">async Task&lt; IActionResult &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_traveller___server_1_1_controllers_1_1_user_api_controller.html#a28de3ce85ed44828af7746ae49e1348c">ValidateCode</a> (string code)</td></tr>
-<tr class="memdesc:a28de3ce85ed44828af7746ae49e1348c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Validates if the given code exists and is not expired.  <br /></td></tr>
-<tr class="separator:a28de3ce85ed44828af7746ae49e1348c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac8b55f4b1ea90dc35b1ffb8cbf1846c4"><td class="memItemLeft" align="right" valign="top">async Task&lt; IActionResult &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_traveller___server_1_1_controllers_1_1_user_api_controller.html#ac8b55f4b1ea90dc35b1ffb8cbf1846c4">ResetPassword</a> (string code, [FromBody] <a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_user_reset_password.html">UserResetPassword</a> newPassword)</td></tr>
-<tr class="memdesc:ac8b55f4b1ea90dc35b1ffb8cbf1846c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets the user password with the provided new password, if the provided code is valid and not expired.  <br /></td></tr>
-<tr class="separator:ac8b55f4b1ea90dc35b1ffb8cbf1846c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a107c4353662d1d5ed0fc1bfd38da24cf"><td class="memItemLeft" align="right" valign="top">async Task&lt; IActionResult &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_traveller___server_1_1_controllers_1_1_user_api_controller.html#a107c4353662d1d5ed0fc1bfd38da24cf">ChangePassword</a> (string userEmail, [FromBody] <a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_user_reset_password.html">UserResetPassword</a> newPassword)</td></tr>
-<tr class="memdesc:a107c4353662d1d5ed0fc1bfd38da24cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes the user password to the provided new password.  <br /></td></tr>
-<tr class="separator:a107c4353662d1d5ed0fc1bfd38da24cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6bc8447d9eb94fbaa97b8e9f6c47b019"><td class="memItemLeft" align="right" valign="top">async Task&lt; IActionResult &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_traveller___server_1_1_controllers_1_1_user_api_controller.html#a6bc8447d9eb94fbaa97b8e9f6c47b019">LoginWithGoogle</a> ([FromBody] <a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_user_for_authentication.html">UserForAuthentication</a> userForAuthentication)</td></tr>
-<tr class="memdesc:a6bc8447d9eb94fbaa97b8e9f6c47b019"><td class="mdescLeft">&#160;</td><td class="mdescRight">Logs the user in with their Google account.  <br /></td></tr>
-<tr class="separator:a6bc8447d9eb94fbaa97b8e9f6c47b019"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae83d9a020b2ae3590bf496f01cf491e0"><td class="memItemLeft" align="right" valign="top"><a id="ae83d9a020b2ae3590bf496f01cf491e0" name="ae83d9a020b2ae3590bf496f01cf491e0"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>UserApiController</b> (<a class="el" href="class_traveller___server_1_1_data_1_1_traveller___server_context.html">Traveller_ServerContext</a> context)</td></tr>
+<tr class="separator:ae83d9a020b2ae3590bf496f01cf491e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b9ce7829cd33eeaa780be340abc2804"><td class="memItemLeft" align="right" valign="top"><a id="a9b9ce7829cd33eeaa780be340abc2804" name="a9b9ce7829cd33eeaa780be340abc2804"></a>
+async Task&lt; ActionResult&lt; IEnumerable&lt; <a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_user.html">User</a> &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetUser</b> ()</td></tr>
+<tr class="separator:a9b9ce7829cd33eeaa780be340abc2804"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56fde0d2676671145a132035ee086304"><td class="memItemLeft" align="right" valign="top"><a id="a56fde0d2676671145a132035ee086304" name="a56fde0d2676671145a132035ee086304"></a>
+async Task&lt; ActionResult&lt; <a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_user.html">User</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetUser</b> (string id)</td></tr>
+<tr class="separator:a56fde0d2676671145a132035ee086304"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c683abfbc930857286745fa2168b5d3"><td class="memItemLeft" align="right" valign="top"><a id="a5c683abfbc930857286745fa2168b5d3" name="a5c683abfbc930857286745fa2168b5d3"></a>
+async Task&lt; ActionResult&lt; <a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_user.html">User</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetUserFromEmail</b> (string email)</td></tr>
+<tr class="separator:a5c683abfbc930857286745fa2168b5d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ab14bcf128f30df005f7300fa703b54"><td class="memItemLeft" align="right" valign="top"><a id="a4ab14bcf128f30df005f7300fa703b54" name="a4ab14bcf128f30df005f7300fa703b54"></a>
+async Task&lt; IActionResult &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>PutUser</b> (string id, <a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_user.html">User</a> user)</td></tr>
+<tr class="separator:a4ab14bcf128f30df005f7300fa703b54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf6ec1698a6f9de350745d95f5aee6bd"><td class="memItemLeft" align="right" valign="top"><a id="adf6ec1698a6f9de350745d95f5aee6bd" name="adf6ec1698a6f9de350745d95f5aee6bd"></a>
+async Task&lt; IActionResult &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>ChangeProfileImage</b> (string id, string profileImage)</td></tr>
+<tr class="separator:adf6ec1698a6f9de350745d95f5aee6bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a988531cb3a45e4959c7a60638bb362aa"><td class="memItemLeft" align="right" valign="top"><a id="a988531cb3a45e4959c7a60638bb362aa" name="a988531cb3a45e4959c7a60638bb362aa"></a>
+async Task&lt; ActionResult&lt; <a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_user.html">User</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>PostUser</b> (<a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_user.html">User</a> user)</td></tr>
+<tr class="separator:a988531cb3a45e4959c7a60638bb362aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5964ab1e2e51332454a0c6fe998dd94"><td class="memItemLeft" align="right" valign="top"><a id="af5964ab1e2e51332454a0c6fe998dd94" name="af5964ab1e2e51332454a0c6fe998dd94"></a>
+async Task&lt; IActionResult &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>DeleteUser</b> (string id)</td></tr>
+<tr class="separator:af5964ab1e2e51332454a0c6fe998dd94"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="a107c4353662d1d5ed0fc1bfd38da24cf" name="a107c4353662d1d5ed0fc1bfd38da24cf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a107c4353662d1d5ed0fc1bfd38da24cf">&#9670;&#160;</a></span>ChangePassword()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">async Task&lt; IActionResult &gt; Traveller_Server.Controllers.UserApiController.ChangePassword </td>
-          <td>(</td>
-          <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>userEmail</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">[FromBody] <a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_user_reset_password.html">UserResetPassword</a>&#160;</td>
-          <td class="paramname"><em>newPassword</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Changes the user password to the provided new password. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">userEmail</td><td>The email address of the user to change the password for</td></tr>
-    <tr><td class="paramname">newPassword</td><td>The new password to be set</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>An IActionResult indicating the status of the password change</dd></dl>
-
-</div>
-</div>
-<a id="ae628b6d8a08472ad9ba60103453814c7" name="ae628b6d8a08472ad9ba60103453814c7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae628b6d8a08472ad9ba60103453814c7">&#9670;&#160;</a></span>Login()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">async Task&lt; IActionResult &gt; Traveller_Server.Controllers.UserApiController.Login </td>
-          <td>(</td>
-          <td class="paramtype">[FromBody] <a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_user_for_authentication.html">UserForAuthentication</a>&#160;</td>
-          <td class="paramname"><em>userForAuthentication</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Log in into the mobile app. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">userForAuthentication</td><td>User login credentials</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>An IActionResult indicating the status of the request</dd></dl>
-
-</div>
-</div>
-<a id="af0cfcc9446e1995ae6a38f70529622be" name="af0cfcc9446e1995ae6a38f70529622be"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af0cfcc9446e1995ae6a38f70529622be">&#9670;&#160;</a></span>LoginDashboard()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">async Task&lt; IActionResult &gt; Traveller_Server.Controllers.UserApiController.LoginDashboard </td>
-          <td>(</td>
-          <td class="paramtype">[FromBody] <a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_user_for_authentication.html">UserForAuthentication</a>&#160;</td>
-          <td class="paramname"><em>userForAuthentication</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Log in into the dashboard, just for admin users. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">userForAuthentication</td><td>User login credentials</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>An IActionResult indicating the status of the request</dd></dl>
-
-</div>
-</div>
-<a id="a6bc8447d9eb94fbaa97b8e9f6c47b019" name="a6bc8447d9eb94fbaa97b8e9f6c47b019"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6bc8447d9eb94fbaa97b8e9f6c47b019">&#9670;&#160;</a></span>LoginWithGoogle()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">async Task&lt; IActionResult &gt; Traveller_Server.Controllers.UserApiController.LoginWithGoogle </td>
-          <td>(</td>
-          <td class="paramtype">[FromBody] <a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_user_for_authentication.html">UserForAuthentication</a>&#160;</td>
-          <td class="paramname"><em>userForAuthentication</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Logs the user in with their Google account. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">userForAuthentication</td><td>The user authentication details</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>An IActionResult indicating the status of the login</dd></dl>
-
-</div>
-</div>
-<a id="a3d74c21b8e4378ae2d6f80ba4d09e166" name="a3d74c21b8e4378ae2d6f80ba4d09e166"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3d74c21b8e4378ae2d6f80ba4d09e166">&#9670;&#160;</a></span>Register()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">async Task&lt; IActionResult &gt; Traveller_Server.Controllers.UserApiController.Register </td>
-          <td>(</td>
-          <td class="paramtype">[FromBody] <a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_user_for_authentication.html">UserForAuthentication</a>&#160;</td>
-          <td class="paramname"><em>user</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>With the register post this creates a new user in the database. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">user</td><td>The user credentials</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>An IActionResult indicating the status of the request</dd></dl>
-
-</div>
-</div>
-<a id="ac8b55f4b1ea90dc35b1ffb8cbf1846c4" name="ac8b55f4b1ea90dc35b1ffb8cbf1846c4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac8b55f4b1ea90dc35b1ffb8cbf1846c4">&#9670;&#160;</a></span>ResetPassword()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">async Task&lt; IActionResult &gt; Traveller_Server.Controllers.UserApiController.ResetPassword </td>
-          <td>(</td>
-          <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>code</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">[FromBody] <a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_user_reset_password.html">UserResetPassword</a>&#160;</td>
-          <td class="paramname"><em>newPassword</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Resets the user password with the provided new password, if the provided code is valid and not expired. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">code</td><td>The code used to validate the request</td></tr>
-    <tr><td class="paramname">newPassword</td><td>The new password to be set</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>An IActionResult indicating the status of the password reset</dd></dl>
-
-</div>
-</div>
-<a id="a9a957267e6f78ef21c41abcbda9fa8d1" name="a9a957267e6f78ef21c41abcbda9fa8d1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9a957267e6f78ef21c41abcbda9fa8d1">&#9670;&#160;</a></span>SendRequestResetPassword()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">async Task&lt; IActionResult &gt; Traveller_Server.Controllers.UserApiController.SendRequestResetPassword </td>
-          <td>(</td>
-          <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>toEmail</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Sends an email to the provided email address with a randomly generated code. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">toEmail</td><td>The email address to send the email to</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>An IActionResult indicating the status of the request</dd></dl>
-
-</div>
-</div>
-<a id="a28de3ce85ed44828af7746ae49e1348c" name="a28de3ce85ed44828af7746ae49e1348c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a28de3ce85ed44828af7746ae49e1348c">&#9670;&#160;</a></span>ValidateCode()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">async Task&lt; IActionResult &gt; Traveller_Server.Controllers.UserApiController.ValidateCode </td>
-          <td>(</td>
-          <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>code</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Validates if the given code exists and is not expired. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">code</td><td>The code to validate</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>An IActionResult indicating the status of the validation</dd></dl>
-
-</div>
-</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>E:/Users/venel/Desktop/TravellerV2/traveller/Traveller-Server/Controllers/UserApiController.cs</li>
 </ul>

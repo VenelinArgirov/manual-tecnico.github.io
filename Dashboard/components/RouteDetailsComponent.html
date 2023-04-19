@@ -64,7 +64,7 @@
     <h3>File</h3>
 </p>
 <p class="comment">
-    <code>src/app/route-details/route-details.component.ts</code>
+    <code>src/app/components/route-details/route-details.component.ts</code>
 </p>
 
 
@@ -134,8 +134,41 @@
                     <td class="col-md-4">
                         <ul class="index-list">
                             <li>
+                                <a href="#center" >center</a>
+                            </li>
+                            <li>
+                                <a href="#directionsOptions" >directionsOptions</a>
+                            </li>
+                            <li>
+                                <a href="#directionsResults$" >directionsResults$</a>
+                            </li>
+                            <li>
+                                <a href="#mapOptions" >mapOptions</a>
+                            </li>
+                            <li>
+                                <a href="#markerOptions" >markerOptions</a>
+                            </li>
+                            <li>
+                                <a href="#markers" >markers</a>
+                            </li>
+                            <li>
                                     <span class="modifier">Public</span>
                                 <a href="#route" >route</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#selectedTrip" >selectedTrip</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#tripsStopsMap" >tripsStopsMap</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#tripStops" >tripStops</a>
+                            </li>
+                            <li>
+                                <a href="#zoom" >zoom</a>
                             </li>
                         </ul>
                     </td>
@@ -150,10 +183,28 @@
                     <td class="col-md-4">
                         <ul class="index-list">
                             <li>
-                                <a href="#getRoute" >getRoute</a>
+                                    <span class="modifier">Private</span>
+                                <a href="#addMarkers" >addMarkers</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#createWaypoints" >createWaypoints</a>
+                            </li>
+                            <li>
+                                <a href="#getTimeOfStopTimeList" >getTimeOfStopTimeList</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#linkMarkers" >linkMarkers</a>
                             </li>
                             <li>
                                 <a href="#ngOnInit" >ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#updateMap" >updateMap</a>
+                            </li>
+                            <li>
+                                <a href="#updateStops" >updateStops</a>
                             </li>
                         </ul>
                     </td>
@@ -173,12 +224,12 @@
             <tbody>
                 <tr>
                     <td class="col-md-4">
-<code>constructor(urlRoute: <a href="../classes/Route.html" target="_self">ActivatedRoute</a>, routeService: <a href="../injectables/RouteService.html" target="_self">RouteService</a>)</code>
+<code>constructor(urlRoute: <a href="../classes/Route.html" target="_self">ActivatedRoute</a>, routeService: <a href="../injectables/RouteService.html" target="_self">RouteService</a>, tripService: <a href="../injectables/TripService.html" target="_self">TripService</a>, stopTimeService: <a href="../injectables/StopTimeService.html" target="_self">StopTimeService</a>, datePipe: <a href="https://angular.io/api/common/DatePipe" target="_blank">DatePipe</a>, mapDirectionsService: MapDirectionsService)</code>
                     </td>
                 </tr>
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="28" class="link-to-prism">src/app/route-details/route-details.component.ts:28</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="86" class="link-to-prism">src/app/components/route-details/route-details.component.ts:86</a></div>
                             </td>
                         </tr>
 
@@ -230,6 +281,70 @@
 
                                                         </td>
                                                 </tr>
+                                                <tr>
+                                                        <td>tripService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/TripService.html" target="_self" >TripService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                        <td>
+                                                                <p>Service that communicates with the server and has various operations about Trips.</p>
+
+                                                        </td>
+                                                </tr>
+                                                <tr>
+                                                        <td>stopTimeService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/StopTimeService.html" target="_self" >StopTimeService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                        <td>
+                                                                <p>Service that communicates with the server and has various operations about StopTimes.</p>
+
+                                                        </td>
+                                                </tr>
+                                                <tr>
+                                                        <td>datePipe</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/common/DatePipe" target="_blank" >DatePipe</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                        <td>
+                                                                <p>Pipe to format dates.</p>
+
+                                                        </td>
+                                                </tr>
+                                                <tr>
+                                                        <td>mapDirectionsService</td>
+                                                  
+                                                        <td>
+                                                                    <code>MapDirectionsService</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                        <td>
+                                                                <p>Google service of the Directions API.</p>
+
+                                                        </td>
+                                                </tr>
                                         </tbody>
                                     </table>
                             </div>
@@ -252,31 +367,182 @@
         <tbody>
             <tr>
                 <td class="col-md-4">
-                    <a name="getRoute"></a>
+                    <a name="addMarkers"></a>
                     <span class="name">
-                        <span ><b>getRoute</b></span>
-                        <a href="#getRoute"><span class="icon ion-ios-link"></span></a>
+                        <span class="modifier">Private</span>
+                        <span ><b>addMarkers</b></span>
+                        <a href="#addMarkers"><span class="icon ion-ios-link"></span></a>
                     </span>
                 </td>
             </tr>
             <tr>
                 <td class="col-md-4">
-<code>getRoute()</code>
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>addMarkers()</code>
                 </td>
             </tr>
 
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="45"
-                            class="link-to-prism">src/app/route-details/route-details.component.ts:45</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="144"
+                            class="link-to-prism">src/app/components/route-details/route-details.component.ts:144</a></div>
                 </td>
             </tr>
 
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-description"><p>Using the id passed by the URL route, gets the route in the database whose id corresponds.</p>
+                    <div class="io-description"><p>Iterates through the list of stop forms and creates a new marker from the corresponding stop and its coordinates.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="createWaypoints"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span ><b>createWaypoints</b></span>
+                        <a href="#createWaypoints"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>createWaypoints()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="169"
+                            class="link-to-prism">src/app/components/route-details/route-details.component.ts:169</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>google.maps.DirectionsWaypoint[]</code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getTimeOfStopTimeList"></a>
+                    <span class="name">
+                        <span ><b>getTimeOfStopTimeList</b></span>
+                        <a href="#getTimeOfStopTimeList"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getTimeOfStopTimeList(stopTimes: StopTime[])</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="129"
+                            class="link-to-prism">src/app/components/route-details/route-details.component.ts:129</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>stopTimes</td>
+                                    <td>
+                                            <code>StopTime[]</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="linkMarkers"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span ><b>linkMarkers</b></span>
+                        <a href="#linkMarkers"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>linkMarkers()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="159"
+                            class="link-to-prism">src/app/components/route-details/route-details.component.ts:159</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Using the Google Directions API, shows the path the route takes using the first and last marker in the route.</p>
 </div>
 
                     <div class="io-description">
@@ -307,8 +573,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="38"
-                            class="link-to-prism">src/app/route-details/route-details.component.ts:38</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="101"
+                            class="link-to-prism">src/app/components/route-details/route-details.component.ts:101</a></div>
                 </td>
             </tr>
 
@@ -324,12 +590,342 @@
             </tr>
         </tbody>
     </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="updateMap"></a>
+                    <span class="name">
+                        <span ><b>updateMap</b></span>
+                        <a href="#updateMap"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>updateMap()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="136"
+                            class="link-to-prism">src/app/components/route-details/route-details.component.ts:136</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Updates the map in the page by adding/removing markers and linking them together in one route.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="updateStops"></a>
+                    <span class="name">
+                        <span ><b>updateStops</b></span>
+                        <a href="#updateStops"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>updateStops(event: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="123"
+                            class="link-to-prism">src/app/components/route-details/route-details.component.ts:123</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>event</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
 </section>
     <section>
     
     <h3 id="inputs">
         Properties
     </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="center"></a>
+                    <span class="name">
+                        <span ><b>center</b></span>
+                        <a href="#center"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>google.maps.LatLngLiteral</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="54" class="link-to-prism">src/app/components/route-details/route-details.component.ts:54</a></div>
+                        </td>
+                    </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Coordinates for the map to be centered on.</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="directionsOptions"></a>
+                    <span class="name">
+                        <span ><b>directionsOptions</b></span>
+                        <a href="#directionsOptions"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>google.maps.DirectionsRendererOptions</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>{
+    suppressMarkers: true,
+    suppressInfoWindows: true,
+  }</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="38" class="link-to-prism">src/app/components/route-details/route-details.component.ts:38</a></div>
+                        </td>
+                    </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Options to be used by the Directions-Renderer field.</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="directionsResults$"></a>
+                    <span class="name">
+                        <span ><b>directionsResults$</b></span>
+                        <a href="#directionsResults$"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>Observable&lt;google.maps.DirectionsResult | undefined&gt;</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="62" class="link-to-prism">src/app/components/route-details/route-details.component.ts:62</a></div>
+                        </td>
+                    </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Holds the result from the call of the Directions API made from the list of markers.</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="mapOptions"></a>
+                    <span class="name">
+                        <span ><b>mapOptions</b></span>
+                        <a href="#mapOptions"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>google.maps.MapOptions</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>{
+    mapTypeId: &#x27;roadmap&#x27;,
+    disableDefaultUI: true,
+    zoomControl: true,
+    clickableIcons: false,
+    disableDoubleClickZoom: true,
+    draggable: false,
+  }</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="27" class="link-to-prism">src/app/components/route-details/route-details.component.ts:27</a></div>
+                        </td>
+                    </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Options to be used by the Google-Map field.</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="markerOptions"></a>
+                    <span class="name">
+                        <span ><b>markerOptions</b></span>
+                        <a href="#markerOptions"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>google.maps.MarkerOptions</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>{ draggable: false }</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="45" class="link-to-prism">src/app/components/route-details/route-details.component.ts:45</a></div>
+                        </td>
+                    </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Options to be used by the Map-Marker field.</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="markers"></a>
+                    <span class="name">
+                        <span ><b>markers</b></span>
+                        <a href="#markers"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>Array&lt;google.maps.LatLng&gt;</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>new Array&lt;google.maps.LatLng&gt;()</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="58" class="link-to-prism">src/app/components/route-details/route-details.component.ts:58</a></div>
+                        </td>
+                    </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>List of markers that represents the stops of the route to edit.</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
     <table class="table table-sm table-bordered">
         <tbody>
             <tr>
@@ -350,13 +946,154 @@
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="28" class="link-to-prism">src/app/route-details/route-details.component.ts:28</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="74" class="link-to-prism">src/app/components/route-details/route-details.component.ts:74</a></div>
                         </td>
                     </tr>
 
             <tr>
                 <td class="col-md-4">
                     <div class="io-description"><p>Route whose details are viewed.</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="selectedTrip"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>selectedTrip</b></span>
+                        <a href="#selectedTrip"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../classes/Trip.html" target="_self" >Trip</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="78" class="link-to-prism">src/app/components/route-details/route-details.component.ts:78</a></div>
+                        </td>
+                    </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>The trip the user has currently selected.</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="tripsStopsMap"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>tripsStopsMap</b></span>
+                        <a href="#tripsStopsMap"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>Map&lt;Trip | StopTime[]&gt;</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>new Map&lt;Trip, StopTime[]&gt;()</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="86" class="link-to-prism">src/app/components/route-details/route-details.component.ts:86</a></div>
+                        </td>
+                    </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>A map with the all the trips of the route, with a list of their stop times.</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="tripStops"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>tripStops</b></span>
+                        <a href="#tripStops"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>StopTime[] | undefined</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="82" class="link-to-prism">src/app/components/route-details/route-details.component.ts:82</a></div>
+                        </td>
+                    </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>The stops belonging to the current selected trip.</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="zoom"></a>
+                    <span class="name">
+                        <span ><b>zoom</b></span>
+                        <a href="#zoom"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>15</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="50" class="link-to-prism">src/app/components/route-details/route-details.component.ts:50</a></div>
+                        </td>
+                    </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Zoom level for the map to use at the start.</p>
 </div>
                 </td>
             </tr>
@@ -371,9 +1108,15 @@
     <div class="tab-pane fade  tab-source-code" id="c-source">
         <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit } from &#x27;@angular/core&#x27;;
 import { ActivatedRoute } from &#x27;@angular/router&#x27;;
-import { LinkedStop } from &#x27;../linked-stop&#x27;;
-import { Route } from &#x27;../route&#x27;;
-import { RouteService } from &#x27;../route.service&#x27;;
+import { StopTime } from &#x27;../../models/stop-time&#x27;;
+import { Route } from &#x27;../../models/route&#x27;;
+import { RouteService } from &#x27;../../services/route.service&#x27;;
+import { StopTimeService } from &#x27;../../services/stop-time.service&#x27;;
+import { Trip } from &#x27;../../models/trip&#x27;;
+import { TripService } from &#x27;../../services/trip.service&#x27;;
+import { DatePipe } from &#x27;@angular/common&#x27;;
+import { map, Observable } from &#x27;rxjs&#x27;;
+import { MapDirectionsService } from &#x27;@angular/google-maps&#x27;;
 
 @Component({
   selector: &#x27;app-route-details&#x27;,
@@ -387,6 +1130,46 @@ import { RouteService } from &#x27;../route.service&#x27;;
  */
 export class RouteDetailsComponent implements OnInit {
   /**
+ * Options to be used by the Google-Map field.
+ */
+  mapOptions: google.maps.MapOptions &#x3D; {
+    mapTypeId: &#x27;roadmap&#x27;,
+    disableDefaultUI: true,
+    zoomControl: true,
+    clickableIcons: false,
+    disableDoubleClickZoom: true,
+    draggable: false,
+  };
+  /**
+   * Options to be used by the Directions-Renderer field.
+   */
+  directionsOptions: google.maps.DirectionsRendererOptions &#x3D; {
+    suppressMarkers: true,
+    suppressInfoWindows: true,
+  };
+  /**
+   * Options to be used by the Map-Marker field.
+   */
+  markerOptions: google.maps.MarkerOptions &#x3D; { draggable: false };
+
+  /**
+   * Zoom level for the map to use at the start.
+   */
+  zoom &#x3D; 15;
+  /**
+   * Coordinates for the map to be centered on.
+   */
+  center!: google.maps.LatLngLiteral;
+  /**
+   * List of markers that represents the stops of the route to edit.
+   */
+  markers: Array&lt;google.maps.LatLng&gt; &#x3D; new Array&lt;google.maps.LatLng&gt;();
+  /**
+   * Holds the result from the call of the Directions API made from the list of markers.
+   */
+  directionsResults$!: Observable&lt;google.maps.DirectionsResult | undefined&gt;;
+
+  /**
    * @ignore
    */
   helpMessage &#x3D; &#x60;Informação detalhada de uma rota
@@ -397,34 +1180,115 @@ export class RouteDetailsComponent implements OnInit {
    * Route whose details are viewed.
    */
   public route!: Route;
+  /**
+   * The trip the user has currently selected.
+   */
+  public selectedTrip!: Trip;
+  /**
+   * The stops belonging to the current selected trip.
+   */
+  public tripStops: StopTime[] | undefined;
+  /**
+   * A map with the all the trips of the route, with a list of their stop times.
+   */
+  public tripsStopsMap: Map&lt;Trip, StopTime[]&gt; &#x3D; new Map&lt;Trip, StopTime[]&gt;();
 
   /**
    * Constructor for the component.
    * @param {ActivatedRoute} urlRoute Gives information about the current route.
    * @param {RouteService} routeService Service that communicates with the server and has various operations about Routes.
+   * @param {TripService} tripService Service that communicates with the server and has various operations about Trips.
+   * @param {StopTimeService} stopTimeService Service that communicates with the server and has various operations about StopTimes.
+   * @param {DatePipe} datePipe Pipe to format dates.
+   * @param {MapDirectionsService} mapDirectionsService Google service of the Directions API.
    */
-  constructor(private urlRoute: ActivatedRoute,
-    private routeService: RouteService) { }
+  constructor(private urlRoute: ActivatedRoute, private routeService: RouteService,
+    private tripService: TripService, private stopTimeService: StopTimeService,
+    private datePipe: DatePipe, private mapDirectionsService: MapDirectionsService) { }
 
   ngOnInit(): void {
-    this.getRoute();
-  }
-
-  /**
-   * Using the id passed by the URL route, gets the route in the database whose id corresponds.
-   */
-  getRoute(): void {
     const id &#x3D; String(this.urlRoute.snapshot.paramMap.get(&quot;id&quot;));
     this.routeService.getRoute(id)
       .subscribe((route) &#x3D;&gt; {
-        //Isto é feito porque o angular é bue fixe e não usa o construtor das classes, então o Date nas route.stops é na realidade apenas uma string...
-        var stops: Array&lt;LinkedStop&gt; &#x3D; [];
-        route.stops?.forEach((s) &#x3D;&gt; {
-          stops.push(new LinkedStop(s.id, s.stopId, s.routeId, new Date(s.time), s.day, s.stop, s.route))
-        })
-        this.route &#x3D; new Route(route.routeId, route.transportNumber ?? null, route.name, route.description,
-          route.transportType, route.companyName, stops);
+        this.stopTimeService.getStopsOfRoute(route.routeId).subscribe((stops) &#x3D;&gt; {
+          this.route &#x3D; new Route(route.routeId, route.agencyId, route.routeShortName, route.routeLongName,
+            route.routeTransportType, route.agency, stops);
+        }, (error) &#x3D;&gt; {
+          this.route &#x3D; new Route(route.routeId, route.agencyId, route.routeShortName, route.routeLongName,
+            route.routeTransportType, route.agency, []);
+        }, () &#x3D;&gt; {
+          this.tripService.getTripsOfRoute(this.route.routeId).subscribe((trips) &#x3D;&gt; {
+            trips.forEach((trip) &#x3D;&gt; {
+              this.stopTimeService.getStopsOfTrip(trip.tripId).subscribe((stops) &#x3D;&gt; {
+                this.tripsStopsMap.set(trip, stops);
+              });
+            });
+          });
+        });
       });
+  }
+
+  updateStops(event: any) {
+    this.selectedTrip &#x3D; event.value;
+    this.tripStops &#x3D; this.tripsStopsMap.get(event.value);
+    this.updateMap();
+  }
+
+  getTimeOfStopTimeList(stopTimes: StopTime[]) {
+    return this.datePipe.transform(stopTimes[0].arrivalTime, &#x27;HH:mm&#x27;) + &quot; | &quot; + this.datePipe.transform(stopTimes[stopTimes.length - 1].arrivalTime, &#x27;HH:mm&#x27;);
+  }
+
+  /**
+   * Updates the map in the page by adding/removing markers and linking them together in one route.
+   */
+  updateMap() {
+    this.addMarkers();
+    this.linkMarkers();
+  }
+
+  /**
+   * Iterates through the list of stop forms and creates a new marker from the corresponding stop and its coordinates.
+   */
+  private addMarkers() {
+    this.markers.splice(0);
+
+    this.tripStops!.forEach(stopTime &#x3D;&gt; {
+      this.markers.push(new google.maps.LatLng(stopTime.stop.stopLat, stopTime.stop.stopLon));
+    });
+    this.center &#x3D; {
+      lat: this.markers[Math.floor(this.markers.length / 2)].lat(),
+      lng: this.markers[Math.floor(this.markers.length / 2)].lng()
+    }
+  }
+
+  /**
+   * Using the Google Directions API, shows the path the route takes using the first and last marker in the route.
+   */
+  private linkMarkers() {
+    const request: google.maps.DirectionsRequest &#x3D; {
+      origin: this.markers[0],
+      waypoints: this.createWaypoints(),
+      destination: this.markers[this.markers.length - 1],
+      travelMode: google.maps.TravelMode.DRIVING,
+    };
+    this.directionsResults$ &#x3D; this.mapDirectionsService.route(request).pipe(map(response &#x3D;&gt; response.result));
+  }
+
+  private createWaypoints(): google.maps.DirectionsWaypoint[] {
+    var waypoints: google.maps.DirectionsWaypoint[] &#x3D; [];
+    const MAX_WAYPOINTS: number &#x3D; 25
+    var addWaypoint: boolean &#x3D; true;
+    this.tripStops?.slice(1, this.tripStops.length - 1).forEach((stopTime) &#x3D;&gt; {
+      if (waypoints.length &lt; 25 &amp;&amp; addWaypoint) {
+        waypoints.push({
+          location: new google.maps.LatLng(stopTime.stop.stopLat, stopTime.stop.stopLon),
+          stopover: true,
+        });
+      }
+      addWaypoint &#x3D; !addWaypoint;
+    });
+
+    return waypoints;
   }
 }
 </code></pre>
@@ -435,31 +1299,73 @@ export class RouteDetailsComponent implements OnInit {
   &lt;p *ngIf&#x3D;&quot;!route else elseBlock&quot;&gt;&lt;em&gt;{{ t(&#x27;loading&#x27;) }}&lt;/em&gt;&lt;/p&gt;
   &lt;ng-template #elseBlock&gt;
     &lt;section id&#x3D;&quot;route-header&quot;&gt;
-      &lt;h1 id&#x3D;&quot;tableLabel&quot; *ngIf&#x3D;&quot;route.transportNumber else elseBlockLabel&quot;&gt;{{ route.transportNumber }} - {{ route.name }}&lt;/h1&gt;
-      &lt;ng-template #elseBlockLabel&gt;&lt;h1 id&#x3D;&quot;tableLabel&quot;&gt;{{ route.name }}&lt;/h1&gt;&lt;/ng-template&gt;
-
-      &lt;button mat-raised-button class&#x3D;&quot;edit-button&quot; routerLink&#x3D;&quot;/route-edit/{{route.routeId}}&quot; matTooltip&#x3D;&quot;{{t(&#x27;help-button-edit-route&#x27;)}}&quot;&gt;{{ t(&#x27;edit&#x27;) }}&lt;/button&gt;
-
+      &lt;div id&#x3D;&quot;route-name&quot;&gt;
+        &lt;h1 id&#x3D;&quot;route-label&quot; *ngIf&#x3D;&quot;route.routeShortName else elseBlockLabel&quot;&gt;{{ route.routeShortName }} - {{ route.routeLongName }}&lt;/h1&gt;
+        &lt;ng-template #elseBlockLabel&gt;&lt;h1 id&#x3D;&quot;route-label&quot;&gt;{{ route.routeLongName }}&lt;/h1&gt;&lt;/ng-template&gt;
+        &lt;button mat-raised-button class&#x3D;&quot;button&quot; routerLink&#x3D;&quot;/route-edit/{{route.routeId}}&quot; matTooltip&#x3D;&quot;{{t(&#x27;help-button-edit-route&#x27;)}}&quot;&gt;{{ t(&#x27;edit&#x27;) }}&lt;/button&gt;
+      &lt;/div&gt;
       &lt;mat-icon class&#x3D;&quot;material-symbols-outlined&quot; matTooltip&#x3D;&quot;{{t(&#x27;help-message&#x27;)}}&quot; [matTooltipPosition]&#x3D;&quot;&#x27;above&#x27;&quot;&gt;
         info
       &lt;/mat-icon&gt;
     &lt;/section&gt;
 
+    &lt;mat-divider class&#x3D;&quot;divider&quot;&gt;&lt;/mat-divider&gt;
+
+    &lt;section id&#x3D;&quot;trip&quot;&gt;
+      &lt;mat-form-field id&#x3D;&quot;trip-selector&quot; appearance&#x3D;&quot;fill&quot; matTooltip&#x3D;&quot;{{t(&#x27;help-input-trip-name&#x27;)}}&quot;&gt;
+        &lt;mat-label&gt;{{ t(&#x27;trip&#x27;) }}&lt;/mat-label&gt;
+        &lt;mat-select (selectionChange)&#x3D;&quot;updateStops($event)&quot; formControlName&#x3D;&quot;tripId&quot;&gt;
+          &lt;mat-option *ngFor&#x3D;&quot;let entry of tripsStopsMap | keyvalue&quot; [value]&#x3D;&quot;entry.key&quot;&gt;{{ entry.key.tripHeadsign }} - {{ getTimeOfStopTimeList(entry.value)}}&lt;/mat-option&gt;
+        &lt;/mat-select&gt;
+      &lt;/mat-form-field&gt;
+      &lt;div id&#x3D;&quot;trip-buttons&quot;&gt;
+        &lt;button mat-raised-button class&#x3D;&quot;button&quot; routerLink&#x3D;&quot;/trip-create/{{ route.routeId }}&quot; matTooltip&#x3D;&quot;{{t(&#x27;help-button-create-trip&#x27;)}}&quot;&gt;{{ t(&#x27;create-trip&#x27;) }}&lt;/button&gt;
+        &lt;div *ngIf&#x3D;&quot;selectedTrip&quot;&gt;
+          &lt;button mat-raised-button class&#x3D;&quot;button&quot; routerLink&#x3D;&quot;/trip-edit/{{ selectedTrip.tripId }}&quot; matTooltip&#x3D;&quot;{{t(&#x27;help-button-edit-trip&#x27;)}}&quot;&gt;{{ t(&#x27;edit-trip&#x27;) }}&lt;/button&gt;
+
+          &lt;!--&lt;td mat-cell class&#x3D;&quot;link&quot; *matCellDef&#x3D;&quot;let route&quot; routerLink&#x3D;&quot;/route-details/{{route.routeId}}&quot;&gt;&lt;a&gt;{{ t(&#x27;route-details&#x27;) }}&lt;/a&gt;&lt;/td&gt;--&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/section&gt;
+
+    &lt;mat-divider class&#x3D;&quot;divider&quot;&gt;&lt;/mat-divider&gt;
+
     &lt;section id&#x3D;&quot;route-stop-list&quot;&gt;
-      &lt;table class&#x3D;&#x27;table table-striped&#x27; aria-labelledby&#x3D;&quot;tableLabel&quot; *ngIf&#x3D;&quot;route&quot;&gt;
-        &lt;thead&gt;
-          &lt;tr&gt;
-            &lt;th matTooltip&#x3D;&quot;{{t(&#x27;help-route-stop&#x27;)}}&quot; [matTooltipPosition]&#x3D;&quot;&#x27;left&#x27;&quot;&gt;{{ t(&#x27;route-stop&#x27;) }}&lt;/th&gt;
-            &lt;th matTooltip&#x3D;&quot;{{t(&#x27;help-route-departure&#x27;)}}&quot; [matTooltipPosition]&#x3D;&quot;&#x27;right&#x27;&quot;&gt;{{ t(&#x27;route-departure&#x27;) }}&lt;/th&gt;
-          &lt;/tr&gt;
-        &lt;/thead&gt;
-        &lt;tbody&gt;
-          &lt;tr *ngFor&#x3D;&quot;let stop of route.stops&quot;&gt;
-            &lt;td&gt;{{ stop.stop?.name }} {{ stop.stop?.location?.latitude }}, {{ stop.stop?.location?.longitude }}&lt;/td&gt;
-            &lt;td&gt;{{ stop.time | date: &#x27;HH:mm&#x27;}}&lt;/td&gt;
-          &lt;/tr&gt;
-        &lt;/tbody&gt;
-      &lt;/table&gt;
+      &lt;div id&#x3D;&quot;trip-details&quot; *ngIf&#x3D;&quot;route &amp;&amp; tripsStopsMap.size !&#x3D; 0 else NoTripsLabel&quot;&gt;
+        &lt;div id&#x3D;&quot;trip-stops&quot;&gt;
+          &lt;table class&#x3D;&#x27;table table-striped&#x27; aria-labelledby&#x3D;&quot;tableLabel&quot;&gt;
+            &lt;thead&gt;
+              &lt;tr&gt;
+                &lt;th matTooltip&#x3D;&quot;{{t(&#x27;help-route-stop&#x27;)}}&quot; [matTooltipPosition]&#x3D;&quot;&#x27;left&#x27;&quot;&gt;{{ t(&#x27;route-stop&#x27;) }}&lt;/th&gt;
+                &lt;th matTooltip&#x3D;&quot;{{t(&#x27;help-route-departure&#x27;)}}&quot; [matTooltipPosition]&#x3D;&quot;&#x27;right&#x27;&quot;&gt;{{ t(&#x27;route-departure&#x27;) }}&lt;/th&gt;
+              &lt;/tr&gt;
+            &lt;/thead&gt;
+            &lt;tbody&gt;
+              &lt;tr *ngFor&#x3D;&quot;let stop of tripStops&quot;&gt;
+                &lt;td&gt;{{ stop.stop.stopName }} - {{ stop.stop.stopLat }}, {{ stop.stop.stopLon }}&lt;/td&gt;
+                &lt;td&gt;{{ stop.arrivalTime | date: &#x27;HH:mm&#x27;}}&lt;/td&gt;
+              &lt;/tr&gt;
+            &lt;/tbody&gt;
+          &lt;/table&gt;
+        &lt;/div&gt;
+        &lt;google-map [zoom]&#x3D;&quot;zoom&quot;
+                    [center]&#x3D;&quot;center&quot;
+                    [options]&#x3D;&quot;mapOptions&quot;
+                    width&#x3D;&quot;100%&quot;&gt;
+          &lt;map-directions-renderer *ngIf&#x3D;&quot;(directionsResults$ | async) as directionsResults&quot;
+                                   [directions]&#x3D;&quot;directionsResults&quot;
+                                   [options]&#x3D;&quot;directionsOptions&quot;&gt;&lt;/map-directions-renderer&gt;
+          &lt;map-marker *ngFor&#x3D;&quot;let marker of markers&quot;
+                      [position]&#x3D;&quot;marker&quot;
+                      [options]&#x3D;&quot;markerOptions&quot;&gt;
+          &lt;/map-marker&gt;
+        &lt;/google-map&gt;
+      &lt;/div&gt;
+      &lt;ng-template #NoTripsLabel&gt;
+        &lt;div id&#x3D;&quot;no-trips-label&quot;&gt;
+          &lt;h2&gt;{{t(&#x27;no-trips&#x27;)}}&lt;/h2&gt;
+        &lt;/div&gt;
+      &lt;/ng-template&gt;
     &lt;/section&gt;
   &lt;/ng-template&gt;
 &lt;/ng-container&gt;
@@ -476,7 +1382,27 @@ export class RouteDetailsComponent implements OnInit {
     align-items: center;
 }
 
-.edit-button {
+#route-label {
+  overflow: hidden;
+  width: 80%;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+
+#route-name {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+#trip{
+    display: flex;
+    align-items: center;
+
+}
+
+.button {
   width: 140px;
   display: flex;
   height: 40px;
@@ -494,11 +1420,45 @@ export class RouteDetailsComponent implements OnInit {
   align-items: center;
   justify-content: space-between;
 }
+
 .info-icon {
   height: 20px;
   cursor: pointer;
+}
 
-}</code></pre>
+#trip-selector {
+  width: 100%;
+  margin-top: 15px;
+}
+
+#trip-buttons{
+    display: flex;
+    gap: 10px;
+    padding: 0 0 0 15px;
+}
+
+#trip-details {
+  padding: 10px 0 0 0;
+  display: flex;
+  gap: 2%;
+}
+
+#trip-stops {
+  width: 63%;
+  max-height: 500px;
+  overflow: auto;
+}
+
+google-map {
+  width: 35%;
+}
+
+#no-trips-label{
+    display: flex;
+    justify-content: center;
+    padding: 50px 0 0 0;
+}
+</code></pre>
     </div>
 
     <div class="tab-pane fade " id="c-tree">
@@ -526,8 +1486,8 @@ export class RouteDetailsComponent implements OnInit {
 <script src="../js/libs/htmlparser.js"></script>
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
-        var COMPONENT_TEMPLATE = '<div><ng-container *transloco="let t; read: \'route-management.details\';">  <p *ngIf="!route else elseBlock"><em>{{ t(\'loading\') }}</em></p>  <ng-template #elseBlock>    <section id="route-header">      <h1 id="tableLabel" *ngIf="route.transportNumber else elseBlockLabel">{{ route.transportNumber }} - {{ route.name }}</h1>      <ng-template #elseBlockLabel><h1 id="tableLabel">{{ route.name }}</h1></ng-template>      <button mat-raised-button class="edit-button" routerLink="/route-edit/{{route.routeId}}" matTooltip="{{t(\'help-button-edit-route\')}}">{{ t(\'edit\') }}</button>      <mat-icon class="material-symbols-outlined" matTooltip="{{t(\'help-message\')}}" [matTooltipPosition]="\'above\'">        info      </mat-icon>    </section>    <section id="route-stop-list">      <table class=\'table table-striped\' aria-labelledby="tableLabel" *ngIf="route">        <thead>          <tr>            <th matTooltip="{{t(\'help-route-stop\')}}" [matTooltipPosition]="\'left\'">{{ t(\'route-stop\') }}</th>            <th matTooltip="{{t(\'help-route-departure\')}}" [matTooltipPosition]="\'right\'">{{ t(\'route-departure\') }}</th>          </tr>        </thead>        <tbody>          <tr *ngFor="let stop of route.stops">            <td>{{ stop.stop?.name }} {{ stop.stop?.location?.latitude }}, {{ stop.stop?.location?.longitude }}</td>            <td>{{ stop.time | date: \'HH:mm\'}}</td>          </tr>        </tbody>      </table>    </section>  </ng-template></ng-container></div>'
-    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'CounterComponent', 'selector': 'app-counter-component'},{'name': 'FetchDataComponent', 'selector': 'app-fetch-data'},{'name': 'HomeComponent', 'selector': 'app-home'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'NavMenuComponent', 'selector': 'app-nav-menu'},{'name': 'RouteCreateComponent', 'selector': 'app-route-create'},{'name': 'RouteDetailsComponent', 'selector': 'app-route-details'},{'name': 'RouteEditComponent', 'selector': 'app-route-edit'},{'name': 'RouteManagementComponent', 'selector': 'app-route-management'},{'name': 'StatisticsComponent', 'selector': 'app-statistics'},{'name': 'StopCreateComponent', 'selector': 'app-stop-create'},{'name': 'UserDetailsComponent', 'selector': 'app-user-details'},{'name': 'UsersManagementComponent', 'selector': 'app-users-management'}];
+        var COMPONENT_TEMPLATE = '<div><ng-container *transloco="let t; read: \'route-management.details\';">  <p *ngIf="!route else elseBlock"><em>{{ t(\'loading\') }}</em></p>  <ng-template #elseBlock>    <section id="route-header">      <div id="route-name">        <h1 id="route-label" *ngIf="route.routeShortName else elseBlockLabel">{{ route.routeShortName }} - {{ route.routeLongName }}</h1>        <ng-template #elseBlockLabel><h1 id="route-label">{{ route.routeLongName }}</h1></ng-template>        <button mat-raised-button class="button" routerLink="/route-edit/{{route.routeId}}" matTooltip="{{t(\'help-button-edit-route\')}}">{{ t(\'edit\') }}</button>      </div>      <mat-icon class="material-symbols-outlined" matTooltip="{{t(\'help-message\')}}" [matTooltipPosition]="\'above\'">        info      </mat-icon>    </section>    <mat-divider class="divider"></mat-divider>    <section id="trip">      <mat-form-field id="trip-selector" appearance="fill" matTooltip="{{t(\'help-input-trip-name\')}}">        <mat-label>{{ t(\'trip\') }}</mat-label>        <mat-select (selectionChange)="updateStops($event)" formControlName="tripId">          <mat-option *ngFor="let entry of tripsStopsMap | keyvalue" [value]="entry.key">{{ entry.key.tripHeadsign }} - {{ getTimeOfStopTimeList(entry.value)}}</mat-option>        </mat-select>      </mat-form-field>      <div id="trip-buttons">        <button mat-raised-button class="button" routerLink="/trip-create/{{ route.routeId }}" matTooltip="{{t(\'help-button-create-trip\')}}">{{ t(\'create-trip\') }}</button>        <div *ngIf="selectedTrip">          <button mat-raised-button class="button" routerLink="/trip-edit/{{ selectedTrip.tripId }}" matTooltip="{{t(\'help-button-edit-trip\')}}">{{ t(\'edit-trip\') }}</button>          <!--<td mat-cell class="link" *matCellDef="let route" routerLink="/route-details/{{route.routeId}}"><a>{{ t(\'route-details\') }}</a></td>-->        </div>      </div>    </section>    <mat-divider class="divider"></mat-divider>    <section id="route-stop-list">      <div id="trip-details" *ngIf="route && tripsStopsMap.size != 0 else NoTripsLabel">        <div id="trip-stops">          <table class=\'table table-striped\' aria-labelledby="tableLabel">            <thead>              <tr>                <th matTooltip="{{t(\'help-route-stop\')}}" [matTooltipPosition]="\'left\'">{{ t(\'route-stop\') }}</th>                <th matTooltip="{{t(\'help-route-departure\')}}" [matTooltipPosition]="\'right\'">{{ t(\'route-departure\') }}</th>              </tr>            </thead>            <tbody>              <tr *ngFor="let stop of tripStops">                <td>{{ stop.stop.stopName }} - {{ stop.stop.stopLat }}, {{ stop.stop.stopLon }}</td>                <td>{{ stop.arrivalTime | date: \'HH:mm\'}}</td>              </tr>            </tbody>          </table>        </div>        <google-map [zoom]="zoom"                    [center]="center"                    [options]="mapOptions"                    width="100%">          <map-directions-renderer *ngIf="(directionsResults$ | async) as directionsResults"                                   [directions]="directionsResults"                                   [options]="directionsOptions"></map-directions-renderer>          <map-marker *ngFor="let marker of markers"                      [position]="marker"                      [options]="markerOptions">          </map-marker>        </google-map>      </div>      <ng-template #NoTripsLabel>        <div id="no-trips-label">          <h2>{{t(\'no-trips\')}}</h2>        </div>      </ng-template>    </section>  </ng-template></ng-container></div>'
+    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'NavMenuComponent', 'selector': 'app-nav-menu'},{'name': 'RouteCreateComponent', 'selector': 'app-route-create'},{'name': 'RouteDetailsComponent', 'selector': 'app-route-details'},{'name': 'RouteEditComponent', 'selector': 'app-route-edit'},{'name': 'RouteManagementComponent', 'selector': 'app-route-management'},{'name': 'StatisticsComponent', 'selector': 'app-statistics'},{'name': 'StopCreateComponent', 'selector': 'app-stop-create'},{'name': 'TripCreateComponent', 'selector': 'app-trip-create'},{'name': 'TripEditComponent', 'selector': 'app-trip-edit'},{'name': 'UserDetailsComponent', 'selector': 'app-user-details'},{'name': 'UsersManagementComponent', 'selector': 'app-users-management'}];
     var DIRECTIVES = [];
     var ACTUAL_COMPONENT = {'name': 'RouteDetailsComponent'};
 </script>

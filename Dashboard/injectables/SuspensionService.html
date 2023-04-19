@@ -58,7 +58,7 @@
             <h3>File</h3>
         </p>
         <p class="comment">
-            <code>src/app/suspension.service.ts</code>
+            <code>src/app/services/suspension.service.ts</code>
         </p>
 
 
@@ -114,7 +114,7 @@
                 </tr>
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="14" class="link-to-prism">src/app/suspension.service.ts:14</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="14" class="link-to-prism">src/app/services/suspension.service.ts:14</a></div>
                             </td>
                         </tr>
 
@@ -185,7 +185,7 @@
             <tr>
                 <td class="col-md-4">
                     <div class="io-line">Defined in <a href="" data-line="27"
-                            class="link-to-prism">src/app/suspension.service.ts:27</a></div>
+                            class="link-to-prism">src/app/services/suspension.service.ts:27</a></div>
                 </td>
             </tr>
 
@@ -264,7 +264,7 @@
             <tr>
                 <td class="col-md-4">
                     <div class="io-line">Defined in <a href="" data-line="65"
-                            class="link-to-prism">src/app/suspension.service.ts:65</a></div>
+                            class="link-to-prism">src/app/services/suspension.service.ts:65</a></div>
                 </td>
             </tr>
 
@@ -341,7 +341,7 @@ Prints the error to the console.</p>
             <tr>
                 <td class="col-md-4">
                     <div class="io-line">Defined in <a href="" data-line="41"
-                            class="link-to-prism">src/app/suspension.service.ts:41</a></div>
+                            class="link-to-prism">src/app/services/suspension.service.ts:41</a></div>
                 </td>
             </tr>
 
@@ -481,7 +481,7 @@ Prints the error to the console.</p>
             <tr>
                 <td class="col-md-4">
                     <div class="io-line">Defined in <a href="" data-line="54"
-                            class="link-to-prism">src/app/suspension.service.ts:54</a></div>
+                            class="link-to-prism">src/app/services/suspension.service.ts:54</a></div>
                 </td>
             </tr>
 
@@ -545,7 +545,7 @@ Prints the error to the console.</p>
         <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { HttpClient, HttpErrorResponse } from &#x27;@angular/common/http&#x27;;
 import { Injectable } from &#x27;@angular/core&#x27;;
 import { catchError, Observable, throwError } from &#x27;rxjs&#x27;;
-import { Suspension } from &#x27;./suspension&#x27;;
+import { Suspension } from &#x27;../models/suspension&#x27;;
 import { Guid } from &#x27;guid-typescript&#x27;;
 
 @Injectable({
@@ -569,8 +569,8 @@ export class SuspensionService {
    * @returns A list of suspensions of a user obtained from the database.
    */
   getSuspensionsOfUser(userId: string): Observable&lt;Suspension[]&gt; {
-    return this.http.get&lt;Suspension[]&gt;(&#x60;api/UserSuspensionsApi/user/${userId}&#x60;)
-    //return this.http.get&lt;Suspension[]&gt;(&#x60;https://traveller-server.azurewebsites.net/api/UserSuspensionsApi/user/${userId}&#x60;)
+    //return this.http.get&lt;Suspension[]&gt;(&#x60;api/UserSuspensionsApi/user/${userId}&#x60;)
+    return this.http.get&lt;Suspension[]&gt;(&#x60;https://traveller-server.azurewebsites.net/api/UserSuspensionsApi/user/${userId}&#x60;)
       .pipe(catchError(this.handleError));
   }
 
@@ -586,8 +586,8 @@ export class SuspensionService {
     if (reason &#x3D;&#x3D; &quot;&quot;) {
       reason &#x3D; &quot;No reason provided.&quot;;
     }
-    return this.http.post&lt;Suspension&gt;(&#x60;api/UserSuspensionsApi&#x60;, new Suspension(Guid.create().toString(), userId, startDate, endDate, reason, permanent))
-    //return this.http.post&lt;Suspension&gt;(&#x60;https://traveller-server.azurewebsites.net/api/UserSuspensionsApi&#x60;, new Suspension(Guid.create().toString(), userId, startDate, endDate, reason, permanent))
+    //return this.http.post&lt;Suspension&gt;(&#x60;api/UserSuspensionsApi&#x60;, new Suspension(Guid.create().toString(), userId, startDate, endDate, reason, permanent))
+    return this.http.post&lt;Suspension&gt;(&#x60;https://traveller-server.azurewebsites.net/api/UserSuspensionsApi&#x60;, new Suspension(Guid.create().toString(), userId, startDate, endDate, reason, permanent))
       .pipe(catchError(this.handleError));
   }
 
@@ -596,8 +596,8 @@ export class SuspensionService {
    * @param userId Id of the user to unban.
    */
   unbanUser(userId: string) {
-    return this.http.get&lt;Suspension&gt;(&#x60;api/UserSuspensionsApi/unban/${userId}&#x60;)
-    //return this.http.get&lt;Suspension&gt;(&#x60;https://traveller-server.azurewebsites.net/api/UserSuspensionsApi/unban/${userId}&#x60;)
+    //return this.http.get&lt;Suspension&gt;(&#x60;api/UserSuspensionsApi/unban/${userId}&#x60;)
+    return this.http.get&lt;Suspension&gt;(&#x60;https://traveller-server.azurewebsites.net/api/UserSuspensionsApi/unban/${userId}&#x60;)
       .pipe(catchError(this.handleError));
   }
 

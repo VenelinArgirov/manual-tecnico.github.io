@@ -64,7 +64,7 @@
     <h3>File</h3>
 </p>
 <p class="comment">
-    <code>src/app/route-create/route-create.component.ts</code>
+    <code>src/app/components/route-create/route-create.component.ts</code>
 </p>
 
 
@@ -134,46 +134,17 @@
                     <td class="col-md-4">
                         <ul class="index-list">
                             <li>
-                                <a href="#AllStops" >AllStops</a>
-                            </li>
-                            <li>
-                                <a href="#center" >center</a>
+                                    <span class="modifier">Public</span>
+                                <a href="#agencies" >agencies</a>
                             </li>
                             <li>
                                 <a href="#createRouteForm" >createRouteForm</a>
-                            </li>
-                            <li>
-                                <a href="#days" >days</a>
-                            </li>
-                            <li>
-                                <a href="#DayType" >DayType</a>
-                            </li>
-                            <li>
-                                <a href="#directionsOptions" >directionsOptions</a>
-                            </li>
-                            <li>
-                                <a href="#directionsResults$" >directionsResults$</a>
-                            </li>
-                            <li>
-                                <a href="#mapOptions" >mapOptions</a>
-                            </li>
-                            <li>
-                                <a href="#markerOptions" >markerOptions</a>
-                            </li>
-                            <li>
-                                <a href="#markers" >markers</a>
-                            </li>
-                            <li>
-                                <a href="#toFormGroup" >toFormGroup</a>
                             </li>
                             <li>
                                 <a href="#transports" >transports</a>
                             </li>
                             <li>
                                 <a href="#TransportType" >TransportType</a>
-                            </li>
-                            <li>
-                                <a href="#zoom" >zoom</a>
                             </li>
                         </ul>
                     </td>
@@ -188,30 +159,13 @@
                     <td class="col-md-4">
                         <ul class="index-list">
                             <li>
-                                    <span class="modifier">Private</span>
-                                <a href="#addMarkers" >addMarkers</a>
-                            </li>
-                            <li>
-                                <a href="#addStop" >addStop</a>
-                            </li>
-                            <li>
                                 <a href="#cancel" >cancel</a>
-                            </li>
-                            <li>
-                                    <span class="modifier">Private</span>
-                                <a href="#linkMarkers" >linkMarkers</a>
                             </li>
                             <li>
                                 <a href="#ngOnInit" >ngOnInit</a>
                             </li>
                             <li>
                                 <a href="#onSubmit" >onSubmit</a>
-                            </li>
-                            <li>
-                                <a href="#removeStop" >removeStop</a>
-                            </li>
-                            <li>
-                                <a href="#updateMap" >updateMap</a>
                             </li>
                         </ul>
                     </td>
@@ -221,20 +175,6 @@
 
 
 
-                    <tr>
-                        <td class="col-md-4">
-                            <h6><b>Accessors</b></h6>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="col-md-4">
-                            <ul class="index-list">
-                                <li>
-                                    <a href="#stops" >stops</a>
-                                </li>
-                            </ul>
-                        </td>
-                    </tr>
         </tbody>
     </table>
 </section>
@@ -245,12 +185,12 @@
             <tbody>
                 <tr>
                     <td class="col-md-4">
-<code>constructor(routeService: <a href="../injectables/RouteService.html" target="_self">RouteService</a>, stopService: <a href="../injectables/StopService.html" target="_self">StopService</a>, linkedStopService: <a href="../injectables/LinkedStopService.html" target="_self">LinkedStopService</a>, formBuilder: <a href="https://angular.io/api/forms/FormBuilder" target="_blank">FormBuilder</a>, mapDirectionsService: MapDirectionsService, router: <a href="../classes/Route.html" target="_self">Router</a>)</code>
+<code>constructor(routeService: <a href="../injectables/RouteService.html" target="_self">RouteService</a>, agencyService: <a href="../injectables/AgencyService.html" target="_self">AgencyService</a>, formBuilder: <a href="https://angular.io/api/forms/FormBuilder" target="_blank">FormBuilder</a>, router: <a href="../classes/Route.html" target="_self">Router</a>)</code>
                     </td>
                 </tr>
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="97" class="link-to-prism">src/app/route-create/route-create.component.ts:97</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="42" class="link-to-prism">src/app/components/route-create/route-create.component.ts:42</a></div>
                             </td>
                         </tr>
 
@@ -289,10 +229,10 @@ Also gets all the existent stops.</p>
                                                         </td>
                                                 </tr>
                                                 <tr>
-                                                        <td>stopService</td>
+                                                        <td>agencyService</td>
                                                   
                                                         <td>
-                                                                        <code><a href="../injectables/StopService.html" target="_self" >StopService</a></code>
+                                                                        <code><a href="../injectables/AgencyService.html" target="_self" >AgencyService</a></code>
                                                         </td>
                                                   
                                                     <td>
@@ -300,23 +240,7 @@ Also gets all the existent stops.</p>
                                                     </td>
                                                     
                                                         <td>
-                                                                <p>Service that communicates with the server and has various operations about Stops.</p>
-
-                                                        </td>
-                                                </tr>
-                                                <tr>
-                                                        <td>linkedStopService</td>
-                                                  
-                                                        <td>
-                                                                        <code><a href="../injectables/LinkedStopService.html" target="_self" >LinkedStopService</a></code>
-                                                        </td>
-                                                  
-                                                    <td>
-                                                            No
-                                                    </td>
-                                                    
-                                                        <td>
-                                                                <p>Service that communicates with the server and has various operations about LinkedStops.</p>
+                                                                <p>Service that communicates with the server and has various operations about Agencies.</p>
 
                                                         </td>
                                                 </tr>
@@ -333,22 +257,6 @@ Also gets all the existent stops.</p>
                                                     
                                                         <td>
                                                                 <p>Builds form data.</p>
-
-                                                        </td>
-                                                </tr>
-                                                <tr>
-                                                        <td>mapDirectionsService</td>
-                                                  
-                                                        <td>
-                                                                    <code>MapDirectionsService</code>
-                                                        </td>
-                                                  
-                                                    <td>
-                                                            No
-                                                    </td>
-                                                    
-                                                        <td>
-                                                                <p>Google service of the Directions API.</p>
 
                                                         </td>
                                                 </tr>
@@ -390,86 +298,6 @@ Also gets all the existent stops.</p>
         <tbody>
             <tr>
                 <td class="col-md-4">
-                    <a name="addMarkers"></a>
-                    <span class="name">
-                        <span class="modifier">Private</span>
-                        <span ><b>addMarkers</b></span>
-                        <a href="#addMarkers"><span class="icon ion-ios-link"></span></a>
-                    </span>
-                </td>
-            </tr>
-            <tr>
-                <td class="col-md-4">
-                    <span class="modifier-icon icon ion-ios-reset"></span>
-                    <code>addMarkers()</code>
-                </td>
-            </tr>
-
-
-            <tr>
-                <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="164"
-                            class="link-to-prism">src/app/route-create/route-create.component.ts:164</a></div>
-                </td>
-            </tr>
-
-
-            <tr>
-                <td class="col-md-4">
-                    <div class="io-description"><p>Iterates through the list of stop forms and creates a new marker from the corresponding stop and its coordinates.</p>
-</div>
-
-                    <div class="io-description">
-                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
-
-                    </div>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-    <table class="table table-sm table-bordered">
-        <tbody>
-            <tr>
-                <td class="col-md-4">
-                    <a name="addStop"></a>
-                    <span class="name">
-                        <span ><b>addStop</b></span>
-                        <a href="#addStop"><span class="icon ion-ios-link"></span></a>
-                    </span>
-                </td>
-            </tr>
-            <tr>
-                <td class="col-md-4">
-<code>addStop()</code>
-                </td>
-            </tr>
-
-
-            <tr>
-                <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="123"
-                            class="link-to-prism">src/app/route-create/route-create.component.ts:123</a></div>
-                </td>
-            </tr>
-
-
-            <tr>
-                <td class="col-md-4">
-                    <div class="io-description"><p>Adds a form to the page that lets the user select the details for a stop in the route.</p>
-</div>
-
-                    <div class="io-description">
-                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
-
-                    </div>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-    <table class="table table-sm table-bordered">
-        <tbody>
-            <tr>
-                <td class="col-md-4">
                     <a name="cancel"></a>
                     <span class="name">
                         <span ><b>cancel</b></span>
@@ -486,8 +314,8 @@ Also gets all the existent stops.</p>
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="215"
-                            class="link-to-prism">src/app/route-create/route-create.component.ts:215</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="74"
+                            class="link-to-prism">src/app/components/route-create/route-create.component.ts:74</a></div>
                 </td>
             </tr>
 
@@ -495,47 +323,6 @@ Also gets all the existent stops.</p>
             <tr>
                 <td class="col-md-4">
                     <div class="io-description"><p>Cancels the creation of a new stop. Redirects back to the previous page.</p>
-</div>
-
-                    <div class="io-description">
-                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
-
-                    </div>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-    <table class="table table-sm table-bordered">
-        <tbody>
-            <tr>
-                <td class="col-md-4">
-                    <a name="linkMarkers"></a>
-                    <span class="name">
-                        <span class="modifier">Private</span>
-                        <span ><b>linkMarkers</b></span>
-                        <a href="#linkMarkers"><span class="icon ion-ios-link"></span></a>
-                    </span>
-                </td>
-            </tr>
-            <tr>
-                <td class="col-md-4">
-                    <span class="modifier-icon icon ion-ios-reset"></span>
-                    <code>linkMarkers()</code>
-                </td>
-            </tr>
-
-
-            <tr>
-                <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="182"
-                            class="link-to-prism">src/app/route-create/route-create.component.ts:182</a></div>
-                </td>
-            </tr>
-
-
-            <tr>
-                <td class="col-md-4">
-                    <div class="io-description"><p>Using the Google Directions API, shows the path the route takes using the first and last marker in the route.</p>
 </div>
 
                     <div class="io-description">
@@ -566,8 +353,8 @@ Also gets all the existent stops.</p>
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="114"
-                            class="link-to-prism">src/app/route-create/route-create.component.ts:114</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="57"
+                            class="link-to-prism">src/app/components/route-create/route-create.component.ts:57</a></div>
                 </td>
             </tr>
 
@@ -603,8 +390,8 @@ Also gets all the existent stops.</p>
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="194"
-                            class="link-to-prism">src/app/route-create/route-create.component.ts:194</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="64"
+                            class="link-to-prism">src/app/components/route-create/route-create.component.ts:64</a></div>
                 </td>
             </tr>
 
@@ -612,121 +399,6 @@ Also gets all the existent stops.</p>
             <tr>
                 <td class="col-md-4">
                     <div class="io-description"><p>Creates a route object and sends it to the database using the routeService</p>
-</div>
-
-                    <div class="io-description">
-                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
-
-                    </div>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-    <table class="table table-sm table-bordered">
-        <tbody>
-            <tr>
-                <td class="col-md-4">
-                    <a name="removeStop"></a>
-                    <span class="name">
-                        <span ><b>removeStop</b></span>
-                        <a href="#removeStop"><span class="icon ion-ios-link"></span></a>
-                    </span>
-                </td>
-            </tr>
-            <tr>
-                <td class="col-md-4">
-<code>removeStop(stopIndex: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
-                </td>
-            </tr>
-
-
-            <tr>
-                <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="136"
-                            class="link-to-prism">src/app/route-create/route-create.component.ts:136</a></div>
-                </td>
-            </tr>
-
-
-            <tr>
-                <td class="col-md-4">
-                    <div class="io-description"><p>Removes the form of one of the route stops.</p>
-</div>
-
-                    <div class="io-description">
-                        <b>Parameters :</b>
-                        
-                        <table class="params">
-                            <thead>
-                                <tr>
-                                    <td>Name</td>
-                                    <td>Type</td>
-                                    <td>Optional</td>
-                                    <td>Description</td>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>stopIndex</td>
-                                    <td>
-                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
-                                    </td>
-
-                                    <td>
-                                        No
-                                    </td>
-
-
-                                    <td>
-                                        <p>The form index to delete.</p>
-
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div>
-                    </div>
-                    <div class="io-description">
-                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
-
-                    </div>
-                    <div class="io-description">
-                        
-                    </div>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-    <table class="table table-sm table-bordered">
-        <tbody>
-            <tr>
-                <td class="col-md-4">
-                    <a name="updateMap"></a>
-                    <span class="name">
-                        <span ><b>updateMap</b></span>
-                        <a href="#updateMap"><span class="icon ion-ios-link"></span></a>
-                    </span>
-                </td>
-            </tr>
-            <tr>
-                <td class="col-md-4">
-<code>updateMap()</code>
-                </td>
-            </tr>
-
-
-            <tr>
-                <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="156"
-                            class="link-to-prism">src/app/route-create/route-create.component.ts:156</a></div>
-                </td>
-            </tr>
-
-
-            <tr>
-                <td class="col-md-4">
-                    <div class="io-description"><p>Updates the map in the page by adding/removing markers and linking them together in one route.</p>
 </div>
 
                     <div class="io-description">
@@ -747,65 +419,29 @@ Also gets all the existent stops.</p>
         <tbody>
             <tr>
                 <td class="col-md-4">
-                    <a name="AllStops"></a>
+                    <a name="agencies"></a>
                     <span class="name">
-                        <span ><b>AllStops</b></span>
-                        <a href="#AllStops"><span class="icon ion-ios-link"></span></a>
+                            <span class="modifier">Public</span>
+                        <span ><b>agencies</b></span>
+                        <a href="#agencies"><span class="icon ion-ios-link"></span></a>
                     </span>
                 </td>
             </tr>
                 <tr>
                     <td class="col-md-4">
-                        <i>Type : </i>        <code><a href="../injectables/Stop.html" target="_self" >Stop[]</a></code>
-
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <i>Default value : </i><code>[]</code>
-                    </td>
-                </tr>
-                    <tr>
-                        <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="76" class="link-to-prism">src/app/route-create/route-create.component.ts:76</a></div>
-                        </td>
-                    </tr>
-
-            <tr>
-                <td class="col-md-4">
-                    <div class="io-description"><p>All the existent stops.</p>
-</div>
-                </td>
-            </tr>
-
-        </tbody>
-    </table>
-    <table class="table table-sm table-bordered">
-        <tbody>
-            <tr>
-                <td class="col-md-4">
-                    <a name="center"></a>
-                    <span class="name">
-                        <span ><b>center</b></span>
-                        <a href="#center"><span class="icon ion-ios-link"></span></a>
-                    </span>
-                </td>
-            </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <i>Type : </i>    <code>google.maps.LatLngLiteral</code>
+                        <i>Type : </i>        <code><a href="../classes/Agency.html" target="_self" >Array&lt;Agency&gt;</a></code>
 
                     </td>
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="54" class="link-to-prism">src/app/route-create/route-create.component.ts:54</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="32" class="link-to-prism">src/app/components/route-create/route-create.component.ts:32</a></div>
                         </td>
                     </tr>
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-description"><p>Coordinates for the map to be centered on.</p>
+                    <div class="io-description"><p>List of all the existent agencies.</p>
 </div>
                 </td>
             </tr>
@@ -826,314 +462,22 @@ Also gets all the existent stops.</p>
                 <tr>
                     <td class="col-md-4">
                         <i>Default value : </i><code>this.formBuilder.group({
-    transportNumber: this.formBuilder.control&lt;number | null&gt;(null),
+    number: [&#x27;&#x27;, Validators.required],
     name: [&#x27;&#x27;, Validators.required],
-    companyName: [&#x27;&#x27;, Validators.required],
     transportType: this.formBuilder.control&lt;number | null&gt;(null, Validators.required),
-    description: &#x27;&#x27;,
-    stops: this.formBuilder.array([]),
-    day: this.formBuilder.control&lt;number | null&gt;(null, Validators.required)
+    agency: this.formBuilder.control&lt;string | null&gt;(null, Validators.required),
   })</code>
                     </td>
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="89" class="link-to-prism">src/app/route-create/route-create.component.ts:89</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="37" class="link-to-prism">src/app/components/route-create/route-create.component.ts:37</a></div>
                         </td>
                     </tr>
 
             <tr>
                 <td class="col-md-4">
                     <div class="io-description"><p>Form data to be viewed in the page</p>
-</div>
-                </td>
-            </tr>
-
-        </tbody>
-    </table>
-    <table class="table table-sm table-bordered">
-        <tbody>
-            <tr>
-                <td class="col-md-4">
-                    <a name="days"></a>
-                    <span class="name">
-                        <span ><b>days</b></span>
-                        <a href="#days"><span class="icon ion-ios-link"></span></a>
-                    </span>
-                </td>
-            </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <i>Type : </i>    <code>number[]</code>
-
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <i>Default value : </i><code>Object.keys(DayType).map(v &#x3D;&gt; Number(v)).filter(v &#x3D;&gt; Number.isFinite(v))</code>
-                    </td>
-                </tr>
-                    <tr>
-                        <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="84" class="link-to-prism">src/app/route-create/route-create.component.ts:84</a></div>
-                        </td>
-                    </tr>
-
-            <tr>
-                <td class="col-md-4">
-                    <div class="io-description"><p>All the values of the DayType enum.</p>
-</div>
-                </td>
-            </tr>
-
-        </tbody>
-    </table>
-    <table class="table table-sm table-bordered">
-        <tbody>
-            <tr>
-                <td class="col-md-4">
-                    <a name="DayType"></a>
-                    <span class="name">
-                        <span ><b>DayType</b></span>
-                        <a href="#DayType"><span class="icon ion-ios-link"></span></a>
-                    </span>
-                </td>
-            </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <i>Default value : </i><code>DayType</code>
-                    </td>
-                </tr>
-                    <tr>
-                        <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="71" class="link-to-prism">src/app/route-create/route-create.component.ts:71</a></div>
-                        </td>
-                    </tr>
-
-            <tr>
-                <td class="col-md-4">
-                    <div class="io-description"><p>DayType for reverse mapping in the html.</p>
-</div>
-                </td>
-            </tr>
-
-        </tbody>
-    </table>
-    <table class="table table-sm table-bordered">
-        <tbody>
-            <tr>
-                <td class="col-md-4">
-                    <a name="directionsOptions"></a>
-                    <span class="name">
-                        <span ><b>directionsOptions</b></span>
-                        <a href="#directionsOptions"><span class="icon ion-ios-link"></span></a>
-                    </span>
-                </td>
-            </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <i>Type : </i>    <code>google.maps.DirectionsRendererOptions</code>
-
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <i>Default value : </i><code>{
-    suppressMarkers: true,
-    suppressInfoWindows: true,
-  }</code>
-                    </td>
-                </tr>
-                    <tr>
-                        <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="39" class="link-to-prism">src/app/route-create/route-create.component.ts:39</a></div>
-                        </td>
-                    </tr>
-
-            <tr>
-                <td class="col-md-4">
-                    <div class="io-description"><p>Options to be used by the Directions-Renderer field.</p>
-</div>
-                </td>
-            </tr>
-
-        </tbody>
-    </table>
-    <table class="table table-sm table-bordered">
-        <tbody>
-            <tr>
-                <td class="col-md-4">
-                    <a name="directionsResults$"></a>
-                    <span class="name">
-                        <span ><b>directionsResults$</b></span>
-                        <a href="#directionsResults$"><span class="icon ion-ios-link"></span></a>
-                    </span>
-                </td>
-            </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <i>Type : </i>    <code>Observable&lt;google.maps.DirectionsResult | undefined&gt;</code>
-
-                    </td>
-                </tr>
-                    <tr>
-                        <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="62" class="link-to-prism">src/app/route-create/route-create.component.ts:62</a></div>
-                        </td>
-                    </tr>
-
-            <tr>
-                <td class="col-md-4">
-                    <div class="io-description"><p>Holds the result from the call of the Directions API made from the list of markers.</p>
-</div>
-                </td>
-            </tr>
-
-        </tbody>
-    </table>
-    <table class="table table-sm table-bordered">
-        <tbody>
-            <tr>
-                <td class="col-md-4">
-                    <a name="mapOptions"></a>
-                    <span class="name">
-                        <span ><b>mapOptions</b></span>
-                        <a href="#mapOptions"><span class="icon ion-ios-link"></span></a>
-                    </span>
-                </td>
-            </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <i>Type : </i>    <code>google.maps.MapOptions</code>
-
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <i>Default value : </i><code>{
-    mapTypeId: &#x27;roadmap&#x27;,
-    disableDefaultUI: true,
-    zoomControl: true,
-    clickableIcons: false,
-    disableDoubleClickZoom: true,
-    draggable: false,
-  }</code>
-                    </td>
-                </tr>
-                    <tr>
-                        <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="28" class="link-to-prism">src/app/route-create/route-create.component.ts:28</a></div>
-                        </td>
-                    </tr>
-
-            <tr>
-                <td class="col-md-4">
-                    <div class="io-description"><p>Options to be used by the Google-Map field.</p>
-</div>
-                </td>
-            </tr>
-
-        </tbody>
-    </table>
-    <table class="table table-sm table-bordered">
-        <tbody>
-            <tr>
-                <td class="col-md-4">
-                    <a name="markerOptions"></a>
-                    <span class="name">
-                        <span ><b>markerOptions</b></span>
-                        <a href="#markerOptions"><span class="icon ion-ios-link"></span></a>
-                    </span>
-                </td>
-            </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <i>Type : </i>    <code>google.maps.MarkerOptions</code>
-
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <i>Default value : </i><code>{ draggable: false }</code>
-                    </td>
-                </tr>
-                    <tr>
-                        <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="46" class="link-to-prism">src/app/route-create/route-create.component.ts:46</a></div>
-                        </td>
-                    </tr>
-
-            <tr>
-                <td class="col-md-4">
-                    <div class="io-description"><p>Options to be used by the Map-Marker field.</p>
-</div>
-                </td>
-            </tr>
-
-        </tbody>
-    </table>
-    <table class="table table-sm table-bordered">
-        <tbody>
-            <tr>
-                <td class="col-md-4">
-                    <a name="markers"></a>
-                    <span class="name">
-                        <span ><b>markers</b></span>
-                        <a href="#markers"><span class="icon ion-ios-link"></span></a>
-                    </span>
-                </td>
-            </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <i>Type : </i>    <code>Array&lt;google.maps.LatLng&gt;</code>
-
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <i>Default value : </i><code>new Array&lt;google.maps.LatLng&gt;()</code>
-                    </td>
-                </tr>
-                    <tr>
-                        <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="58" class="link-to-prism">src/app/route-create/route-create.component.ts:58</a></div>
-                        </td>
-                    </tr>
-
-            <tr>
-                <td class="col-md-4">
-                    <div class="io-description"><p>List of markers that represents the stops of the route to edit.</p>
-</div>
-                </td>
-            </tr>
-
-        </tbody>
-    </table>
-    <table class="table table-sm table-bordered">
-        <tbody>
-            <tr>
-                <td class="col-md-4">
-                    <a name="toFormGroup"></a>
-                    <span class="name">
-                        <span ><b>toFormGroup</b></span>
-                        <a href="#toFormGroup"><span class="icon ion-ios-link"></span></a>
-                    </span>
-                </td>
-            </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <i>Default value : </i><code>() &#x3D;&gt; {...}</code>
-                    </td>
-                </tr>
-                    <tr>
-                        <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="151" class="link-to-prism">src/app/route-create/route-create.component.ts:151</a></div>
-                        </td>
-                    </tr>
-
-            <tr>
-                <td class="col-md-4">
-                    <div class="io-description"><p>Casts a AbstractControl form to a FormGroup.</p>
 </div>
                 </td>
             </tr>
@@ -1164,7 +508,7 @@ Also gets all the existent stops.</p>
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="80" class="link-to-prism">src/app/route-create/route-create.component.ts:80</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="28" class="link-to-prism">src/app/components/route-create/route-create.component.ts:28</a></div>
                         </td>
                     </tr>
 
@@ -1195,7 +539,7 @@ Also gets all the existent stops.</p>
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="67" class="link-to-prism">src/app/route-create/route-create.component.ts:67</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="24" class="link-to-prism">src/app/components/route-create/route-create.component.ts:24</a></div>
                         </td>
                     </tr>
 
@@ -1208,97 +552,22 @@ Also gets all the existent stops.</p>
 
         </tbody>
     </table>
-    <table class="table table-sm table-bordered">
-        <tbody>
-            <tr>
-                <td class="col-md-4">
-                    <a name="zoom"></a>
-                    <span class="name">
-                        <span ><b>zoom</b></span>
-                        <a href="#zoom"><span class="icon ion-ios-link"></span></a>
-                    </span>
-                </td>
-            </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
-
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <i>Default value : </i><code>11</code>
-                    </td>
-                </tr>
-                    <tr>
-                        <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="50" class="link-to-prism">src/app/route-create/route-create.component.ts:50</a></div>
-                        </td>
-                    </tr>
-
-            <tr>
-                <td class="col-md-4">
-                    <div class="io-description"><p>Zoom level for the map to use at the start.</p>
-</div>
-                </td>
-            </tr>
-
-        </tbody>
-    </table>
 </section>
 
-    <section>
-    <h3 id="accessors">
-        Accessors
-    </h3>
-        <table class="table table-sm table-bordered">
-            <tbody>
-                <tr>
-                    <td class="col-md-4">
-                        <a name="stops"></a>
-                        <span class="name"><b>stops</b><a href="#stops"><span class="icon ion-ios-link"></span></a></span>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td class="col-md-4">
-                        <span class="accessor"><b>get</b><code>stops()</code></span>
-                    </td>
-                </tr>
-                            <tr>
-                                <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="144" class="link-to-prism">src/app/route-create/route-create.component.ts:144</a></div>
-                                </td>
-                            </tr>
-                    <tr>
-                        <td class="col-md-4">
-                                <div class="io-description"><p>Gets all the stop forms in the page.</p>
-</div>
-
-                        </td>
-                    </tr>
-
-            </tbody>
-        </table>
-</section>
 </div>
 
 
     <div class="tab-pane fade  tab-source-code" id="c-source">
         <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit } from &#x27;@angular/core&#x27;;
-import { RouteService } from &#x27;../route.service&#x27;;
+import { RouteService } from &#x27;../../services/route.service&#x27;;
 import { AbstractControl, FormArray, FormBuilder, FormGroup, Validators } from &#x27;@angular/forms&#x27;;
-import { Route } from &#x27;../route&#x27;;
-import { Stop } from &#x27;../stop&#x27;;
-import { TransportType } from &#x27;../transport-type&#x27;;
-import { StopService } from &#x27;../stop.service&#x27;;
-import { DayType } from &#x27;../day-type&#x27;;
-import { LinkedStop } from &quot;../linked-stop&quot;;
-import { LinkedStopService } from &#x27;../linked-stop.service&#x27;;
-import { Guid } from &#x27;guid-typescript&#x27;;
-import { map, Observable } from &#x27;rxjs&#x27;;
-import { MapDirectionsService } from &#x27;@angular/google-maps&#x27;;
+import { Route } from &#x27;../../models/route&#x27;;
+import { TransportType } from &#x27;../../enums/transport-type&#x27;;
+import { map } from &#x27;rxjs&#x27;;
 import { Router } from &#x27;@angular/router&#x27;;
+import { Agency } from &#x27;../../models/agency&#x27;;
+import { AgencyService } from &#x27;../../services/agency.service&#x27;;
+import { Guid } from &#x27;guid-typescript&#x27;;
 
 @Component({
   selector: &#x27;app-route-create&#x27;,
@@ -1310,77 +579,26 @@ import { Router } from &#x27;@angular/router&#x27;;
  */
 export class RouteCreateComponent implements OnInit {
   /**
-   * Options to be used by the Google-Map field.
-   */
-  mapOptions: google.maps.MapOptions &#x3D; {
-    mapTypeId: &#x27;roadmap&#x27;,
-    disableDefaultUI: true,
-    zoomControl: true,
-    clickableIcons: false,
-    disableDoubleClickZoom: true,
-    draggable: false,
-  };
-  /**
-   * Options to be used by the Directions-Renderer field.
-   */
-  directionsOptions: google.maps.DirectionsRendererOptions &#x3D; {
-    suppressMarkers: true,
-    suppressInfoWindows: true,
-  };
-  /**
-   * Options to be used by the Map-Marker field.
-   */
-  markerOptions: google.maps.MarkerOptions &#x3D; { draggable: false };
-  /**
-   * Zoom level for the map to use at the start.
-   */
-  zoom &#x3D; 11;
-  /**
-   * Coordinates for the map to be centered on.
-   */
-  center!: google.maps.LatLngLiteral;
-  /**
-   * List of markers that represents the stops of the route to edit.
-   */
-  markers: Array&lt;google.maps.LatLng&gt; &#x3D; new Array&lt;google.maps.LatLng&gt;();
-  /**
-   * Holds the result from the call of the Directions API made from the list of markers.
-   */
-  directionsResults$!: Observable&lt;google.maps.DirectionsResult | undefined&gt;;
-
-  /**
    * TransportType for reverse mapping in the html.
    */
   TransportType &#x3D; TransportType;
-  /**
-   * DayType for reverse mapping in the html.
-   */
-  DayType &#x3D; DayType;
-
-  /**
-   * All the existent stops.
-   */
-  AllStops: Stop[] &#x3D; [];
   /**
    * All the values of the TransportType enum.
    */
   transports: number[] &#x3D; Object.keys(TransportType).map(v &#x3D;&gt; Number(v)).filter(v &#x3D;&gt; Number.isFinite(v));
   /**
-   * All the values of the DayType enum.
+   * List of all the existent agencies.
    */
-  days: number[] &#x3D; Object.keys(DayType).map(v &#x3D;&gt; Number(v)).filter(v &#x3D;&gt; Number.isFinite(v));
+  public agencies!: Array&lt;Agency&gt;;
 
   /**
    * Form data to be viewed in the page
    */
   createRouteForm &#x3D; this.formBuilder.group({
-    transportNumber: this.formBuilder.control&lt;number | null&gt;(null),
+    number: [&#x27;&#x27;, Validators.required],
     name: [&#x27;&#x27;, Validators.required],
-    companyName: [&#x27;&#x27;, Validators.required],
     transportType: this.formBuilder.control&lt;number | null&gt;(null, Validators.required),
-    description: &#x27;&#x27;,
-    stops: this.formBuilder.array([]),
-    day: this.formBuilder.control&lt;number | null&gt;(null, Validators.required)
+    agency: this.formBuilder.control&lt;string | null&gt;(null, Validators.required),
   });
 
   /**
@@ -1388,112 +606,26 @@ export class RouteCreateComponent implements OnInit {
    * Gets the route whose Id matches the one in the URL and passes its info to the form.
    * Also gets all the existent stops.
    * @param {RouteService} routeService Service that communicates with the server and has various operations about Routes.
-   * @param {LinkedStopService} linkedStopService Service that communicates with the server and has various operations about LinkedStops.
-   * @param {StopService} stopService Service that communicates with the server and has various operations about Stops.
-   * @param {MapDirectionsService} mapDirectionsService Google service of the Directions API.
+   * @param {AgencyService} agencyService Service that communicates with the server and has various operations about Agencies.
    * @param {FormBuilder} formBuilder Builds form data.
    * @param {Router} router Router.
    */
-  constructor(private routeService: RouteService, private stopService: StopService,
-    private linkedStopService: LinkedStopService, private formBuilder: FormBuilder,
-    private mapDirectionsService: MapDirectionsService, private router: Router) { }
+  constructor(private routeService: RouteService, private agencyService: AgencyService,
+    private formBuilder: FormBuilder, private router: Router) {
+  }
 
   ngOnInit(): void {
-    this.stopService.getStops().subscribe(result &#x3D;&gt; {
-      this.AllStops &#x3D; result;
-    }, error &#x3D;&gt; console.error(error));
-  }
-
-  /**
-   * Adds a form to the page that lets the user select the details for a stop in the route.
-   */
-  addStop() {
-    const stopForm &#x3D; this.formBuilder.group({
-      stopId: &#x27;&#x27;,
-      stopTime: &#x27;&#x27;
-    });
-
-    this.stops.push(stopForm);
-  }
-
-  /**
-   * Removes the form of one of the route stops.
-   * @param {number} stopIndex The form index to delete.
-   */
-  removeStop(stopIndex: number) {
-    this.stops.removeAt(stopIndex);
-    this.updateMap();
-  }
-
-  /**
-   * Gets all the stop forms in the page.
-   */
-  get stops() {
-    return this.createRouteForm.controls[&quot;stops&quot;] as FormArray;
-  }
-
-  /**
-   * Casts a AbstractControl form to a FormGroup.
-   */
-  toFormGroup &#x3D; (form: AbstractControl) &#x3D;&gt; form as FormGroup;
-
-  /**
-   * Updates the map in the page by adding/removing markers and linking them together in one route.
-   */
-  updateMap() {
-    this.addMarkers();
-    this.linkMarkers();
-  }
-
-  /**
-   * Iterates through the list of stop forms and creates a new marker from the corresponding stop and its coordinates.
-   */
-  private addMarkers() {
-    this.markers.splice(0);
-
-    this.createRouteForm.value.stops?.forEach(s &#x3D;&gt; {
-      var stop &#x3D; (s as formStop);
-      this.AllStops.forEach(compStop &#x3D;&gt; {
-        if (compStop.stopId &#x3D;&#x3D; stop.stopId) this.markers.push(new google.maps.LatLng(compStop.location.latitude, compStop.location.longitude));
-      });
-    });
-    this.center &#x3D; {
-      lat: this.markers[Math.floor(this.markers.length / 2)].lat(),
-      lng: this.markers[Math.floor(this.markers.length / 2)].lng()
-    }
-  }
-
-  /**
-   * Using the Google Directions API, shows the path the route takes using the first and last marker in the route.
-   */
-  private linkMarkers() {
-    const request: google.maps.DirectionsRequest &#x3D; {
-      origin: this.markers[0],
-      destination: this.markers[this.markers.length - 1],
-      travelMode: google.maps.TravelMode.TRANSIT,
-    };
-    this.directionsResults$ &#x3D; this.mapDirectionsService.route(request).pipe(map(response &#x3D;&gt; response.result));
+    this.agencyService.getAgencies().subscribe((agencies) &#x3D;&gt; { this.agencies &#x3D; agencies; });
   }
 
   /**
    * Creates a route object and sends it to the database using the routeService
    */
   onSubmit(): void {
-    let route: Route &#x3D; new Route(Guid.create().toString(), this.createRouteForm.controls.transportNumber.value!,
-      this.createRouteForm.controls.name.value!, this.createRouteForm.controls.description.value!,
-      Number(this.createRouteForm.controls.transportType.value!), this.createRouteForm.controls.companyName.value!
-    );
-    this.routeService.addRoute(route).subscribe();
-
-    this.createRouteForm.value.stops?.forEach(s &#x3D;&gt; {
-      var stop &#x3D; (s as formStop);
-      var date &#x3D; new Date();
-      date.setHours(Number(stop.stopTime.substring(0, 2)));
-      date.setMinutes(Number(stop.stopTime.substring(3, 5)));
-      let linkedStop: LinkedStop &#x3D; new LinkedStop(Guid.create().toString(), stop.stopId, route.routeId, date, Number(this.createRouteForm.controls.day.value!));
-      this.linkedStopService.addLinkedStop(linkedStop).subscribe();
-    });
-    this.router.navigate([&#x27;/&#x27;, &#x27;route-management&#x27;]);
+    let route: Route &#x3D; new Route(Guid.create().toString(), this.createRouteForm.controls.agency.value!,
+      this.createRouteForm.controls.number.value!, this.createRouteForm.controls.name.value!,
+      Number(this.createRouteForm.controls.transportType.value!));
+    this.routeService.addRoute(route).subscribe(() &#x3D;&gt; { this.router.navigate([&#x27;/&#x27;, &#x27;route-management&#x27;]); });
   }
 
   /**
@@ -1503,101 +635,43 @@ export class RouteCreateComponent implements OnInit {
     window.history.back();
   }
 }
-
-/**
- * Interface for the stop form
- */
-interface formStop {
-  stopId: string,
-  stopTime: string
-}
 </code></pre>
     </div>
 
     <div class="tab-pane fade " id="c-templateData">
-        <pre class="line-numbers"><code class="language-html">&lt;ng-container *transloco&#x3D;&quot;let t; read: &#x27;route-management.create-edit&#x27;&quot;&gt;
+        <pre class="line-numbers"><code class="language-html">&lt;ng-container *transloco&#x3D;&quot;let t; read: &#x27;route-management.create-edit-route&#x27;&quot;&gt;
   &lt;h1 id&#x3D;&quot;pageTitle&quot;&gt;{{ t(&#x27;title-create&#x27;) }}&lt;/h1&gt;
 
+  &lt;mat-divider&gt;&lt;/mat-divider&gt;
+
   &lt;form [formGroup]&#x3D;&quot;createRouteForm&quot; (ngSubmit)&#x3D;&quot;onSubmit()&quot;&gt;
-    &lt;section id&#x3D;&quot;route-data&quot;&gt;
-      &lt;div id&#x3D;&quot;route-forms&quot;&gt;
-        &lt;mat-form-field appearance&#x3D;&quot;fill&quot; matTooltip&#x3D;&quot;{{t(&#x27;help-input-transport-number&#x27;)}}&quot;&gt;
-          &lt;mat-label&gt;{{ t(&#x27;label-number&#x27;) }}&lt;/mat-label&gt;
-          &lt;input matInput type&#x3D;&quot;text&quot; formControlName&#x3D;&quot;transportNumber&quot;&gt;
-        &lt;/mat-form-field&gt;
-        &lt;mat-form-field appearance&#x3D;&quot;fill&quot; matTooltip&#x3D;&quot;{{t(&#x27;help-input-name&#x27;)}}&quot;&gt;
-          &lt;mat-label&gt;{{ t(&#x27;label-name&#x27;) }}&lt;/mat-label&gt;
-          &lt;input matInput type&#x3D;&quot;text&quot; formControlName&#x3D;&quot;name&quot;&gt;
-        &lt;/mat-form-field&gt;
-        &lt;mat-form-field appearance&#x3D;&quot;fill&quot; matTooltip&#x3D;&quot;{{t(&#x27;help-input-company-name&#x27;)}}&quot;&gt;
-          &lt;mat-label&gt;{{ t(&#x27;label-company&#x27;) }}&lt;/mat-label&gt;
-          &lt;input matInput type&#x3D;&quot;text&quot; formControlName&#x3D;&quot;companyName&quot;&gt;
-        &lt;/mat-form-field&gt;
-        &lt;mat-form-field appearance&#x3D;&quot;fill&quot; matTooltip&#x3D;&quot;{{t(&#x27;help-input-transport-type&#x27;)}}&quot;&gt;
-          &lt;mat-label&gt;{{ t(&#x27;label-type&#x27;) }}&lt;/mat-label&gt;
-          &lt;mat-select formControlName&#x3D;&quot;transportType&quot;&gt;
-            &lt;mat-option *ngFor&#x3D;&quot;let transport of transports&quot; [value]&#x3D;&quot;transport&quot;&gt;{{ TransportType[transport] }}&lt;/mat-option&gt;
-          &lt;/mat-select&gt;
-        &lt;/mat-form-field&gt;
-        &lt;mat-form-field class&#x3D;&quot;last-form&quot; appearance&#x3D;&quot;fill&quot; matTooltip&#x3D;&quot;{{t(&#x27;help-input-description&#x27;)}}&quot;&gt;
-          &lt;mat-label&gt;{{ t(&#x27;label-description&#x27;) }}&lt;/mat-label&gt;
-          &lt;input matInput type&#x3D;&quot;text&quot; formControlName&#x3D;&quot;description&quot;&gt;
-        &lt;/mat-form-field&gt;
-      &lt;/div&gt;
-      &lt;google-map [zoom]&#x3D;&quot;zoom&quot;
-                  [center]&#x3D;&quot;center&quot;
-                  [options]&#x3D;&quot;mapOptions&quot;
-                  width&#x3D;&quot;100%&quot;&gt;
-        &lt;map-directions-renderer *ngIf&#x3D;&quot;(directionsResults$ | async) as directionsResults&quot;
-                                 [directions]&#x3D;&quot;directionsResults&quot;
-                                 [options]&#x3D;&quot;directionsOptions&quot;&gt;&lt;/map-directions-renderer&gt;
-        &lt;map-marker *ngFor&#x3D;&quot;let marker of markers&quot;
-                    [position]&#x3D;&quot;marker&quot;
-                    [options]&#x3D;&quot;markerOptions&quot;&gt;
-        &lt;/map-marker&gt;
-      &lt;/google-map&gt;
-    &lt;/section&gt;
-    &lt;mat-divider&gt;&lt;/mat-divider&gt;
-    &lt;section id&#x3D;&quot;stops&quot;&gt;
-      &lt;div id&#x3D;&quot;scheduleTitle&quot;&gt;
-        &lt;h5&gt;{{ t(&#x27;schedules&#x27; ) }}&lt;/h5&gt;
-        &lt;button mat-raised-button id&#x3D;&quot;create-stop-button&quot; class&#x3D;&quot;button&quot; routerLink&#x3D;&quot;/stop-create&quot; matTooltip&#x3D;&quot;{{t(&#x27;help-button-create-stop&#x27;)}}&quot;&gt;{{ t(&#x27;create-stop&#x27;) }}&lt;/button&gt;
-      &lt;/div&gt;
-      &lt;mat-form-field appearance&#x3D;&quot;fill&quot;&gt;
-        &lt;mat-label&gt;{{ t(&#x27;label-day&#x27;) }}&lt;/mat-label&gt;
-        &lt;mat-select formControlName&#x3D;&quot;day&quot;&gt;
-          &lt;mat-option *ngFor&#x3D;&quot;let day of days&quot; [value]&#x3D;&quot;day&quot; matTooltip&#x3D;&quot;{{t(&#x27;help-input-day&#x27;)}}&quot;&gt;{{ DayType[day] }}&lt;/mat-option&gt;
+    &lt;div id&#x3D;&quot;form-fields&quot;&gt;
+      &lt;mat-form-field appearance&#x3D;&quot;fill&quot; matTooltip&#x3D;&quot;{{t(&#x27;help-input-number&#x27;)}}&quot;&gt;
+        &lt;mat-label&gt;{{ t(&#x27;label-number&#x27;) }}&lt;/mat-label&gt;
+        &lt;input matInput type&#x3D;&quot;text&quot; formControlName&#x3D;&quot;number&quot;&gt;
+        &lt;mat-error *ngIf&#x3D;&quot;!createRouteForm.value.name&quot;&gt;{{ t(&#x27;error-number&#x27;) }}&lt;/mat-error&gt;
+      &lt;/mat-form-field&gt;
+      &lt;mat-form-field appearance&#x3D;&quot;fill&quot; matTooltip&#x3D;&quot;{{t(&#x27;help-input-name&#x27;)}}&quot;&gt;
+        &lt;mat-label&gt;{{ t(&#x27;label-name&#x27;) }}&lt;/mat-label&gt;
+        &lt;input matInput type&#x3D;&quot;text&quot; formControlName&#x3D;&quot;name&quot;&gt;
+        &lt;mat-error *ngIf&#x3D;&quot;!createRouteForm.value.name&quot;&gt;{{ t(&#x27;error-name&#x27;) }}&lt;/mat-error&gt;
+      &lt;/mat-form-field&gt;
+      &lt;mat-form-field appearance&#x3D;&quot;fill&quot; matTooltip&#x3D;&quot;{{t(&#x27;help-input-transport-type&#x27;)}}&quot;&gt;
+        &lt;mat-label&gt;{{ t(&#x27;label-type&#x27;) }}&lt;/mat-label&gt;
+        &lt;mat-select formControlName&#x3D;&quot;transportType&quot;&gt;
+          &lt;mat-option *ngFor&#x3D;&quot;let transport of transports&quot; [value]&#x3D;&quot;transport&quot;&gt;{{ TransportType[transport] }}&lt;/mat-option&gt;
         &lt;/mat-select&gt;
       &lt;/mat-form-field&gt;
-      &lt;ng-container formArrayName&#x3D;&quot;stops&quot;&gt;
-        &lt;ng-container *ngFor&#x3D;&quot;let stopForm of stops.controls; let i &#x3D; index&quot;&gt;
-          &lt;div class&#x3D;&quot;stop-form-row&quot; [formGroup]&#x3D;&quot;toFormGroup(stopForm)&quot;&gt;
-            &lt;mat-form-field class&#x3D;&quot;stop-name&quot; appearance&#x3D;&quot;fill&quot; matTooltip&#x3D;&quot;{{t(&#x27;help-input-stop-name&#x27;)}}&quot;&gt;
-              &lt;mat-label&gt;{{ t(&#x27;stop&#x27;) }}&lt;/mat-label&gt;
-              &lt;mat-select (selectionChange)&#x3D;&quot;updateMap()&quot; formControlName&#x3D;&quot;stopId&quot;&gt;
-                &lt;mat-option *ngFor&#x3D;&quot;let stop of AllStops&quot; [value]&#x3D;&quot;stop.stopId&quot;&gt;{{ stop.name }}&lt;/mat-option&gt;
-              &lt;/mat-select&gt;
-            &lt;/mat-form-field&gt;
-            &lt;mat-form-field class&#x3D;&quot;stop-time&quot; appearance&#x3D;&quot;fill&quot; matTooltip&#x3D;&quot;{{t(&#x27;help-input-stop-time&#x27;)}}&quot;&gt;
-              &lt;mat-label&gt;{{ t(&#x27;departure&#x27;) }}&lt;/mat-label&gt;
-              &lt;input matInput type&#x3D;&quot;time&quot; formControlName&#x3D;&quot;stopTime&quot; placeholder&#x3D;&quot;00:00&quot;&gt;
-            &lt;/mat-form-field&gt;
-            &lt;button mat-button type&#x3D;&quot;button&quot; class&#x3D;&quot;remove-stop-button&quot; (click)&#x3D;&quot;removeStop(i)&quot; matTooltip&#x3D;&quot;{{t(&#x27;help-button-remove-stop&#x27;)}}&quot;&gt;
-              &lt;mat-icon&gt;delete_forever&lt;/mat-icon&gt;
-            &lt;/button&gt;
-          &lt;/div&gt;
-        &lt;/ng-container&gt;
-      &lt;/ng-container&gt;
-
-      &lt;div id&#x3D;&quot;add-stop-button&quot;&gt;
-        &lt;button mat-mini-fab type&#x3D;&quot;button&quot; (click)&#x3D;&quot;addStop()&quot; matTooltip&#x3D;&quot;{{t(&#x27;help-button-add-stop&#x27;)}}&quot;&gt;
-          &lt;mat-icon&gt;add&lt;/mat-icon&gt;
-        &lt;/button&gt;
+      &lt;mat-form-field id&#x3D;&quot;last-form&quot; appearance&#x3D;&quot;fill&quot; matTooltip&#x3D;&quot;{{t(&#x27;help-input-agency&#x27;)}}&quot;&gt;
+        &lt;mat-label&gt;{{ t(&#x27;label-agency&#x27;) }}&lt;/mat-label&gt;
+        &lt;mat-select formControlName&#x3D;&quot;agency&quot;&gt;
+          &lt;mat-option *ngFor&#x3D;&quot;let agency of agencies&quot; [value]&#x3D;&quot;agency.agencyId&quot;&gt;{{ agency.agencyName }}&lt;/mat-option&gt;
+        &lt;/mat-select&gt;
+      &lt;/mat-form-field&gt;
+      &lt;div id&#x3D;&quot;form-buttons&quot;&gt;
+        &lt;button mat-raised-button id&#x3D;&quot;submit-button&quot; class&#x3D;&quot;button&quot; type&#x3D;&quot;submit&quot; matTooltip&#x3D;&quot;{{ t(&#x27;help-button-submit&#x27;) }}&quot;&gt;{{ t(&#x27;create-button&#x27;) }}&lt;/button&gt;
+        &lt;button mat-raised-button id&#x3D;&quot;cancel-button&quot; class&#x3D;&quot;button&quot; type&#x3D;&quot;button&quot; (click)&#x3D;&quot;cancel()&quot; matTooltip&#x3D;&quot;{{ t(&#x27;help-button-cancel&#x27;) }}&quot;&gt;{{ t(&#x27;cancel&#x27;) }}&lt;/button&gt;
       &lt;/div&gt;
-    &lt;/section&gt;
-    &lt;div id&#x3D;&quot;form-buttons&quot;&gt;
-      &lt;button mat-raised-button id&#x3D;&quot;submit-button&quot; class&#x3D;&quot;button&quot; type&#x3D;&quot;submit&quot; matTooltip&#x3D;&quot;{{t(&#x27;help-button-submit&#x27;)}}&quot;&gt;{{ t(&#x27;create-button&#x27;) }}&lt;/button&gt;
-      &lt;button mat-raised-button id&#x3D;&quot;cancel-button&quot; class&#x3D;&quot;button&quot; type&#x3D;&quot;button&quot; (click)&#x3D;&quot;cancel()&quot; matTooltip&#x3D;&quot;{{t(&#x27;help-button-cancel&#x27;)}}&quot;&gt;{{ t(&#x27;cancel&#x27;) }}&lt;/button&gt;
     &lt;/div&gt;
   &lt;/form&gt;
 &lt;/ng-container&gt;
@@ -1612,56 +686,26 @@ interface formStop {
   display: flex;
 }
 
-#route-forms {
+#form-fields {
   display: flex;
   flex-flow: column;
   width: 40%;
   margin-right: 50px;
-  justify-content: space-between;
 }
 
-google-map {
-  width: 730px;
+form{
+    display: flex;
+    justify-content: center;
 }
 
-.last-form {
-  padding: 0px;
-}
-
-#schedule-label {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+#last-form{
+    padding: 0 0 15px 0;
 }
 
 mat-divider {
-  margin: 20px 0;
+  margin: 0 10px 20px 0;
 }
 
-#scheduleTitle {
-  display: flex;
-  justify-content: space-between;
-}
-
-.stop-form-row {
-  display: flex;
-  width: 100%;
-}
-
-#add-stop-button {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 40px;
-}
-
-.stop-name {
-  flex-grow: 1;
-}
-
-.remove-stop-button {
-  align-self: center;
-  margin-bottom: 21.5px;
-}
 
 .button {
   width: 140px;
@@ -1673,10 +717,6 @@ mat-divider {
   justify-content: center;
   align-items: center;
   font-size: 18px;
-}
-
-#create-stop-button {
-  width: 200px;
 }
 
 #form-buttons {
@@ -1712,8 +752,8 @@ mat-divider {
 <script src="../js/libs/htmlparser.js"></script>
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
-        var COMPONENT_TEMPLATE = '<div><ng-container *transloco="let t; read: \'route-management.create-edit\'">  <h1 id="pageTitle">{{ t(\'title-create\') }}</h1>  <form [formGroup]="createRouteForm" (ngSubmit)="onSubmit()">    <section id="route-data">      <div id="route-forms">        <mat-form-field appearance="fill" matTooltip="{{t(\'help-input-transport-number\')}}">          <mat-label>{{ t(\'label-number\') }}</mat-label>          <input matInput type="text" formControlName="transportNumber">        </mat-form-field>        <mat-form-field appearance="fill" matTooltip="{{t(\'help-input-name\')}}">          <mat-label>{{ t(\'label-name\') }}</mat-label>          <input matInput type="text" formControlName="name">        </mat-form-field>        <mat-form-field appearance="fill" matTooltip="{{t(\'help-input-company-name\')}}">          <mat-label>{{ t(\'label-company\') }}</mat-label>          <input matInput type="text" formControlName="companyName">        </mat-form-field>        <mat-form-field appearance="fill" matTooltip="{{t(\'help-input-transport-type\')}}">          <mat-label>{{ t(\'label-type\') }}</mat-label>          <mat-select formControlName="transportType">            <mat-option *ngFor="let transport of transports" [value]="transport">{{ TransportType[transport] }}</mat-option>          </mat-select>        </mat-form-field>        <mat-form-field class="last-form" appearance="fill" matTooltip="{{t(\'help-input-description\')}}">          <mat-label>{{ t(\'label-description\') }}</mat-label>          <input matInput type="text" formControlName="description">        </mat-form-field>      </div>      <google-map [zoom]="zoom"                  [center]="center"                  [options]="mapOptions"                  width="100%">        <map-directions-renderer *ngIf="(directionsResults$ | async) as directionsResults"                                 [directions]="directionsResults"                                 [options]="directionsOptions"></map-directions-renderer>        <map-marker *ngFor="let marker of markers"                    [position]="marker"                    [options]="markerOptions">        </map-marker>      </google-map>    </section>    <mat-divider></mat-divider>    <section id="stops">      <div id="scheduleTitle">        <h5>{{ t(\'schedules\' ) }}</h5>        <button mat-raised-button id="create-stop-button" class="button" routerLink="/stop-create" matTooltip="{{t(\'help-button-create-stop\')}}">{{ t(\'create-stop\') }}</button>      </div>      <mat-form-field appearance="fill">        <mat-label>{{ t(\'label-day\') }}</mat-label>        <mat-select formControlName="day">          <mat-option *ngFor="let day of days" [value]="day" matTooltip="{{t(\'help-input-day\')}}">{{ DayType[day] }}</mat-option>        </mat-select>      </mat-form-field>      <ng-container formArrayName="stops">        <ng-container *ngFor="let stopForm of stops.controls; let i = index">          <div class="stop-form-row" [formGroup]="toFormGroup(stopForm)">            <mat-form-field class="stop-name" appearance="fill" matTooltip="{{t(\'help-input-stop-name\')}}">              <mat-label>{{ t(\'stop\') }}</mat-label>              <mat-select (selectionChange)="updateMap()" formControlName="stopId">                <mat-option *ngFor="let stop of AllStops" [value]="stop.stopId">{{ stop.name }}</mat-option>              </mat-select>            </mat-form-field>            <mat-form-field class="stop-time" appearance="fill" matTooltip="{{t(\'help-input-stop-time\')}}">              <mat-label>{{ t(\'departure\') }}</mat-label>              <input matInput type="time" formControlName="stopTime" placeholder="00:00">            </mat-form-field>            <button mat-button type="button" class="remove-stop-button" (click)="removeStop(i)" matTooltip="{{t(\'help-button-remove-stop\')}}">              <mat-icon>delete_forever</mat-icon>            </button>          </div>        </ng-container>      </ng-container>      <div id="add-stop-button">        <button mat-mini-fab type="button" (click)="addStop()" matTooltip="{{t(\'help-button-add-stop\')}}">          <mat-icon>add</mat-icon>        </button>      </div>    </section>    <div id="form-buttons">      <button mat-raised-button id="submit-button" class="button" type="submit" matTooltip="{{t(\'help-button-submit\')}}">{{ t(\'create-button\') }}</button>      <button mat-raised-button id="cancel-button" class="button" type="button" (click)="cancel()" matTooltip="{{t(\'help-button-cancel\')}}">{{ t(\'cancel\') }}</button>    </div>  </form></ng-container></div>'
-    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'CounterComponent', 'selector': 'app-counter-component'},{'name': 'FetchDataComponent', 'selector': 'app-fetch-data'},{'name': 'HomeComponent', 'selector': 'app-home'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'NavMenuComponent', 'selector': 'app-nav-menu'},{'name': 'RouteCreateComponent', 'selector': 'app-route-create'},{'name': 'RouteDetailsComponent', 'selector': 'app-route-details'},{'name': 'RouteEditComponent', 'selector': 'app-route-edit'},{'name': 'RouteManagementComponent', 'selector': 'app-route-management'},{'name': 'StatisticsComponent', 'selector': 'app-statistics'},{'name': 'StopCreateComponent', 'selector': 'app-stop-create'},{'name': 'UserDetailsComponent', 'selector': 'app-user-details'},{'name': 'UsersManagementComponent', 'selector': 'app-users-management'}];
+        var COMPONENT_TEMPLATE = '<div><ng-container *transloco="let t; read: \'route-management.create-edit-route\'">  <h1 id="pageTitle">{{ t(\'title-create\') }}</h1>  <mat-divider></mat-divider>  <form [formGroup]="createRouteForm" (ngSubmit)="onSubmit()">    <div id="form-fields">      <mat-form-field appearance="fill" matTooltip="{{t(\'help-input-number\')}}">        <mat-label>{{ t(\'label-number\') }}</mat-label>        <input matInput type="text" formControlName="number">        <mat-error *ngIf="!createRouteForm.value.name">{{ t(\'error-number\') }}</mat-error>      </mat-form-field>      <mat-form-field appearance="fill" matTooltip="{{t(\'help-input-name\')}}">        <mat-label>{{ t(\'label-name\') }}</mat-label>        <input matInput type="text" formControlName="name">        <mat-error *ngIf="!createRouteForm.value.name">{{ t(\'error-name\') }}</mat-error>      </mat-form-field>      <mat-form-field appearance="fill" matTooltip="{{t(\'help-input-transport-type\')}}">        <mat-label>{{ t(\'label-type\') }}</mat-label>        <mat-select formControlName="transportType">          <mat-option *ngFor="let transport of transports" [value]="transport">{{ TransportType[transport] }}</mat-option>        </mat-select>      </mat-form-field>      <mat-form-field id="last-form" appearance="fill" matTooltip="{{t(\'help-input-agency\')}}">        <mat-label>{{ t(\'label-agency\') }}</mat-label>        <mat-select formControlName="agency">          <mat-option *ngFor="let agency of agencies" [value]="agency.agencyId">{{ agency.agencyName }}</mat-option>        </mat-select>      </mat-form-field>      <div id="form-buttons">        <button mat-raised-button id="submit-button" class="button" type="submit" matTooltip="{{ t(\'help-button-submit\') }}">{{ t(\'create-button\') }}</button>        <button mat-raised-button id="cancel-button" class="button" type="button" (click)="cancel()" matTooltip="{{ t(\'help-button-cancel\') }}">{{ t(\'cancel\') }}</button>      </div>    </div>  </form></ng-container></div>'
+    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'NavMenuComponent', 'selector': 'app-nav-menu'},{'name': 'RouteCreateComponent', 'selector': 'app-route-create'},{'name': 'RouteDetailsComponent', 'selector': 'app-route-details'},{'name': 'RouteEditComponent', 'selector': 'app-route-edit'},{'name': 'RouteManagementComponent', 'selector': 'app-route-management'},{'name': 'StatisticsComponent', 'selector': 'app-statistics'},{'name': 'StopCreateComponent', 'selector': 'app-stop-create'},{'name': 'TripCreateComponent', 'selector': 'app-trip-create'},{'name': 'TripEditComponent', 'selector': 'app-trip-edit'},{'name': 'UserDetailsComponent', 'selector': 'app-user-details'},{'name': 'UsersManagementComponent', 'selector': 'app-users-management'}];
     var DIRECTIVES = [];
     var ACTUAL_COMPONENT = {'name': 'RouteCreateComponent'};
 </script>

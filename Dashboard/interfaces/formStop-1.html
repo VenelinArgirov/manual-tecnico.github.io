@@ -65,7 +65,7 @@
             <h3>File</h3>
         </p>
         <p class="comment">
-            <code>src/app/route-edit/route-edit.component.ts</code>
+            <code>src/app/components/trip-edit/trip-edit.component.ts</code>
         </p>
 
 
@@ -91,15 +91,15 @@
                         <td class="col-md-4">
                             <ul class="index-list">
                                 <li>
-                                        <a href="#stopId" 
+                                        <a href="#departureTime" 
 >
-                                            stopId
+                                            departureTime
                                         </a>
                                 </li>
                                 <li>
-                                        <a href="#stopTime" 
+                                        <a href="#stopId" 
 >
-                                            stopTime
+                                            stopId
                                         </a>
                                 </li>
                             </ul>
@@ -113,6 +113,39 @@
 
             <section>
                 <h3 id="inputs">Properties</h3>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <a name="departureTime"></a>
+                                        <span class="name "><b>departureTime</b>
+                                            <a href="#departureTime">
+                                                <span class="icon ion-ios-link"></span>
+                                            </a>
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <code>departureTime:         <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+</code>
+                                    </td>
+                                </tr>
+
+
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                                        </td>
+                                    </tr>
+
+
+
+
+
+                        </tbody>
+                    </table>
                     <table class="table table-sm table-bordered">
                         <tbody>
                                 <tr>
@@ -146,69 +179,38 @@
 
                         </tbody>
                     </table>
-                    <table class="table table-sm table-bordered">
-                        <tbody>
-                                <tr>
-                                    <td class="col-md-4">
-                                        <a name="stopTime"></a>
-                                        <span class="name "><b>stopTime</b>
-                                            <a href="#stopTime">
-                                                <span class="icon ion-ios-link"></span>
-                                            </a>
-                                        </span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="col-md-4">
-                                        <code>stopTime:         <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
-</code>
-                                    </td>
-                                </tr>
-
-
-                                    <tr>
-                                        <td class="col-md-4">
-                                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
-
-                                        </td>
-                                    </tr>
-
-
-
-
-
-                        </tbody>
-                    </table>
             </section>
     </div>
 
 
     <div class="tab-pane fade  tab-source-code" id="c-source">
-        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnDestroy, OnInit } from &#x27;@angular/core&#x27;;
-import { RouteService } from &#x27;../route.service&#x27;;
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit } from &#x27;@angular/core&#x27;;
+import { ActivatedRoute } from &#x27;@angular/router&#x27;;
+import { Route } from &#x27;../../models/route&#x27;;
+import { StopTime } from &#x27;../../models/stop-time&#x27;;
+import { Trip } from &#x27;../../models/trip&#x27;;
+import { RouteService } from &#x27;../../services/route.service&#x27;;
+import { StopTimeService } from &#x27;../../services/stop-time.service&#x27;;
+import { TripService } from &#x27;../../services/trip.service&#x27;;
 import { AbstractControl, FormArray, FormBuilder, FormGroup, Validators } from &#x27;@angular/forms&#x27;;
-import { Route } from &#x27;../route&#x27;;
-import { ActivatedRoute, convertToParamMap } from &#x27;@angular/router&#x27;;
-import { Stop } from &#x27;../stop&#x27;;
-import { TransportType } from &#x27;../transport-type&#x27;;
-import { StopService } from &#x27;../stop.service&#x27;;
-import { DayType } from &#x27;../day-type&#x27;;
-import { LinkedStop } from &quot;../linked-stop&quot;;
-import { LinkedStopService } from &#x27;../linked-stop.service&#x27;;
-import { Guid } from &#x27;guid-typescript&#x27;;
-import { map, Observable } from &#x27;rxjs&#x27;;
-import { MapDirectionsService } from &#x27;@angular/google-maps&#x27;;
 import { Router } from &#x27;@angular/router&#x27;;
+import { TravelDirection } from &#x27;../../enums/travel-direction&#x27;;
+import { map, Observable } from &#x27;rxjs&#x27;;
+import { Stop } from &#x27;../../models/stop&#x27;;
+import { MapDirectionsService } from &#x27;@angular/google-maps&#x27;;
+import { Console } from &#x27;console&#x27;;
+import { StopService } from &#x27;../../services/stop.service&#x27;;
+import Snackbar from &#x27;awesome-snackbar&#x27;;
+import { TranslocoService } from &#x27;@ngneat/transloco&#x27;;
+
 
 @Component({
-  selector: &#x27;app-route-edit&#x27;,
-  templateUrl: &#x27;./route-edit.component.html&#x27;,
-  styleUrls: [&#x27;./route-edit.component.css&#x27;]
+  selector: &#x27;app-trip-edit&#x27;,
+  templateUrl: &#x27;./trip-edit.component.html&#x27;,
+  styleUrls: [&#x27;./trip-edit.component.css&#x27;]
 })
-/**
- * Class for the component of the page of Route Editing.
- */
-export class RouteEditComponent implements OnInit, OnDestroy {
+export class TripEditComponent implements OnInit {
+
   /**
    * Options to be used by the Google-Map field.
    */
@@ -231,7 +233,6 @@ export class RouteEditComponent implements OnInit, OnDestroy {
    * Options to be used by the Map-Marker field.
    */
   markerOptions: google.maps.MarkerOptions &#x3D; { draggable: false };
-
   /**
    * Zoom level for the map to use at the start.
    */
@@ -252,20 +253,7 @@ export class RouteEditComponent implements OnInit, OnDestroy {
   /**
    * TransportType for reverse mapping in the html.
    */
-  TransportType &#x3D; TransportType;
-  /**
-   * DayType for reverse mapping in the html.
-   */
-  DayType &#x3D; DayType;
-
-  /**
-   * Id of the route.
-   */
-  id: string &#x3D; &#x27;&#x27;;
-  /**
-   * Route to edit.
-   */
-  route!: Route;
+  TravelDirection &#x3D; TravelDirection;
   /**
    * All the existent stops.
    */
@@ -273,99 +261,94 @@ export class RouteEditComponent implements OnInit, OnDestroy {
   /**
    * All the values of the TransportType enum.
    */
-  transports: number[] &#x3D; Object.keys(TransportType).map(v &#x3D;&gt; Number(v)).filter(v &#x3D;&gt; Number.isFinite(v));
-  /**
-   * All the values of the DayType enum.
-   */
-  days: number[] &#x3D; Object.keys(DayType).map(v &#x3D;&gt; Number(v)).filter(v &#x3D;&gt; Number.isFinite(v));
-  /**
-   * @ignore
-   */
-  private sub: any;
+  directions: number[] &#x3D; Object.keys(TravelDirection).map(v &#x3D;&gt; Number(v)).filter(v &#x3D;&gt; Number.isFinite(v));
 
   /**
-   * Form data to be viewed in the page.
+   * Form data to be viewed in the page
    */
   editRouteForm &#x3D; this.formBuilder.group({
-    transportNumber: this.formBuilder.control&lt;number | null&gt;(null),
-    name: [&#x27;&#x27;, Validators.required],
-    companyName: [&#x27;&#x27;, Validators.required],
-    transportType: this.formBuilder.control&lt;number | null&gt;(null, Validators.required),
-    description: &#x27;&#x27;,
+    tripName: [&#x27;&#x27;, Validators.required],
+    tripTransportDirection: this.formBuilder.control&lt;number | null&gt;(null, Validators.required),
     stops: this.formBuilder.array([]),
-    day: this.formBuilder.control&lt;number | null&gt;(null, Validators.required)
   });
 
   /**
-   * Constructor for the component.
-   * Gets the route whose Id matches the one in the URL and passes its info to the form.
-   * Also gets all the existent stops.
-   * @param {ActivatedRoute} actRoute Gives information about the current route.
-   * @param {RouteService} routeService Service that communicates with the server and has various operations about Routes.
-   * @param {StopService} stopService Service that communicates with the server and has various operations about Stops.
-   * @param {LinkedStopService} linkedStopService Service that communicates with the server and has various operations about LinkedStops.
-   * @param {MapDirectionsService} mapDirectionsService Google service of the Directions API.
-   * @param {FormBuilder} formBuilder Builds form data.
-   * @param {Router} router Router.
+   * The trip the user has currently selected.
    */
-  constructor(private routeService: RouteService, private stopService: StopService,
-    private linkedStopService: LinkedStopService, private formBuilder: FormBuilder,
-    private actRoute: ActivatedRoute, private mapDirectionsService: MapDirectionsService,
-    private router: Router) { }
+  public selectedTrip!: Trip;
+  /**
+   * The stops belonging to the current selected trip.
+   */
+  public tripStops: StopTime[] &#x3D; [];
+  /**
+   * A map with the all the trips of the route, with a list of their stop times.
+   */
+  public tripsStopsMap: Map&lt;Trip, StopTime[]&gt; &#x3D; new Map&lt;Trip, StopTime[]&gt;();
+
+  /**
+ * Constructor for the component.
+ * Gets the route whose Id matches the one in the URL and passes its info to the form.
+ * Also gets all the existent stops.
+ * @param {ActivatedRoute} actRoute Gives information about the current route.
+ * @param {TripService} tripService Service that communicates with the server and has various operations about Trips.
+ * @param {StopTimeService} stopTimeService Service that communicates with the server and has various operations about StopTimes.
+ * @param {FormBuilder} formBuilder Builds form data. 
+ * @param {Router} router Router.
+ * @param {MapDirectionsService} mapDirectionsService Google service of the Directions API.
+ * @param {StopService} stopService Service that communicates with the server and has various operations about Stops.
+ * @param {TranslocoService} translocoService Service that perform the translation of the text.
+ */
+  constructor(private urlRoute: ActivatedRoute, private tripService: TripService, private stopTimeService: StopTimeService,
+    private formBuilder: FormBuilder, private router: Router, private mapDirectionsService: MapDirectionsService,
+    private stopService: StopService, private translocoService: TranslocoService) { }
 
   ngOnInit(): void {
-    this.sub &#x3D; this.actRoute.params.subscribe(async params &#x3D;&gt; {
-      this.id &#x3D; String(params[&#x27;id&#x27;]);
-      let p1 &#x3D; new Promise&lt;void&gt;((resolve, reject) &#x3D;&gt; {
-        this.routeService.getRoute(this.id).subscribe(result &#x3D;&gt; {
-          var stops &#x3D; new Array&lt;LinkedStop&gt;;
-          result.stops?.forEach(stop &#x3D;&gt; {
-            stops.push(new LinkedStop(stop.id, stop.stopId, stop.routeId, stop.time, stop.day, stop.stop, stop.route));
-          });
-          this.route &#x3D; new Route(result.routeId, result.transportNumber, result.name, result.description, result.transportType, result.companyName, stops);
-          if (this.route) {
-            this.editRouteForm.controls.transportNumber.patchValue(this.route.transportNumber);
-            this.editRouteForm.controls.name.patchValue(this.route.name);
-            this.editRouteForm.controls.companyName.patchValue(this.route.companyName);
-            this.editRouteForm.controls.transportType.patchValue(this.route.transportType);
-            this.editRouteForm.controls.description.patchValue(this.route.description);
-            if (this.route.stops) {
-              this.editRouteForm.controls.stops.patchValue(this.route.stops);
-              this.editRouteForm.controls.day.patchValue(this.route.stops[0].day);
-            }
-            stops.forEach(stop &#x3D;&gt; {
-              const stopForm &#x3D; this.formBuilder.group({
-                stopId: [stop.stop?.stopId, Validators.required],
-                stopTime: [stop.getHoursAndMinutesString(), Validators.required]
+    const id &#x3D; String(this.urlRoute.snapshot.paramMap.get(&quot;id&quot;));
+    this.tripService.getTrip(id)
+      .subscribe((trip) &#x3D;&gt; {
+        this.stopTimeService.getStopsOfTrip(trip.tripId).subscribe((stops) &#x3D;&gt; {
+          stops.forEach(stop &#x3D;&gt; {
+            this.tripStops!.push(new StopTime(stop.tripId, stop.arrivalTime, stop.departureTime, stop.stopId, stop.stopSequence, stop.shapeDistTraveled, stop.trip, stop.stop));
+          })
+
+          this.selectedTrip &#x3D; new Trip(trip.tripId, trip.tripHeadsign, trip.routeId, trip.serviceId, trip.direction, trip.shapeId);
+          this.editRouteForm.controls.tripName.patchValue(this.selectedTrip.tripHeadsign);
+          this.editRouteForm.controls.tripTransportDirection.patchValue(this.selectedTrip.direction);
+          this.editRouteForm.controls.stops.patchValue(this.tripStops!);
+
+
+          this.tripStops!.forEach(stopTime &#x3D;&gt; {
+            const stopForm &#x3D; this.formBuilder.group({
+              stopId: [stopTime.stopId, Validators.required],
+              departureTime: [stopTime.getHoursAndMinutesString(), Validators.required]
               });
-              this.stops.push(stopForm);
-            });
-            resolve();
-          }
-        }, error &#x3D;&gt; console.error(error));
+            this.stops.push(stopForm);
+          });
+
+          console.log(this.tripStops!);
+          
+        }, (error) &#x3D;&gt; { console.log(error) }, () &#x3D;&gt; {
+          this.stopService.getStops().subscribe(result &#x3D;&gt; {
+            this.AllStops &#x3D; result;
+            this.updateMap();
+        });
+        });
+
+        
       });
-      let p2 &#x3D; new Promise&lt;void&gt;((resolve, reject) &#x3D;&gt; {
-        this.stopService.getStops().subscribe(result &#x3D;&gt; {
-          this.AllStops &#x3D; result;
-          resolve();
-        }, error &#x3D;&gt; console.error(error));
-      });
-      await Promise.all([p1, p2])
-      this.updateMap();
-    });
   }
 
-  ngOnDestroy() {
-    this.sub.unsubscribe();
+  get stops() {
+    return this.editRouteForm.controls[&quot;stops&quot;] as FormArray;
   }
 
   /**
-   * Adds a form to the page that lets the user select the details for a stop in the route.
-   */
+ * Adds a form to the page that lets the user select the details for a stop in the route.
+ */
   addStop() {
     const stopForm &#x3D; this.formBuilder.group({
-      stopId: [&#x27;&#x27;, Validators.required],
-      stopTime: [&#x27;&#x27;, Validators.required]
+      stopId: &#x27;&#x27;,
+      departureTime: &#x27;&#x27;
     });
 
     this.stops.push(stopForm);
@@ -378,13 +361,6 @@ export class RouteEditComponent implements OnInit, OnDestroy {
   removeStop(stopIndex: number) {
     this.stops.removeAt(stopIndex);
     this.updateMap();
-  }
-
-  /**
-   * Gets all the stop forms in the page.
-   */
-  get stops() {
-    return this.editRouteForm.controls[&quot;stops&quot;] as FormArray;
   }
 
   /**
@@ -408,9 +384,8 @@ export class RouteEditComponent implements OnInit, OnDestroy {
 
     this.editRouteForm.value.stops?.forEach(s &#x3D;&gt; {
       var stop &#x3D; (s as formStop);
-      
       this.AllStops.forEach(compStop &#x3D;&gt; {
-        if (compStop.stopId &#x3D;&#x3D; stop.stopId) this.markers.push(new google.maps.LatLng(compStop.location.latitude, compStop.location.longitude));
+        if (compStop.stopId &#x3D;&#x3D; stop.stopId) this.markers.push(new google.maps.LatLng(compStop.stopLat, compStop.stopLon));
       });
     });
     this.center &#x3D; {
@@ -425,34 +400,84 @@ export class RouteEditComponent implements OnInit, OnDestroy {
   private linkMarkers() {
     const request: google.maps.DirectionsRequest &#x3D; {
       origin: this.markers[0],
-      destination: this.markers[this.markers.length-1],
-      travelMode: google.maps.TravelMode.TRANSIT,
+      waypoints: this.createWaypoints(),
+      destination: this.markers[this.markers.length - 1],
+      travelMode: google.maps.TravelMode.DRIVING,
     };
     this.directionsResults$ &#x3D; this.mapDirectionsService.route(request).pipe(map(response &#x3D;&gt; response.result));
   }
 
-  /**
-   * Creates a route object and sends it to the database using the routeService.
-   */
-  onSubmit(): void {
-    let route: Route &#x3D; new Route(this.route.routeId, this.editRouteForm.controls.transportNumber.value!,
-      this.editRouteForm.controls.name.value!, this.editRouteForm.controls.description.value!,
-      Number(this.editRouteForm.controls.transportType.value!), this.editRouteForm.controls.companyName.value!
-    );
-
-    //existe problema em que nos detalhes pode aparecer mais ou menos paragens, mas na bd está sempre o numero correto
-    this.routeService.editRoute(route).subscribe();
-    this.route.stops?.forEach(linkedStop &#x3D;&gt; this.linkedStopService.deleteLinkedStop(linkedStop.id).subscribe());
-
-    this.editRouteForm.value.stops?.forEach(s &#x3D;&gt; {
-      var stop &#x3D; (s as formStop);
-      var date &#x3D; new Date();
-      date.setHours(Number(stop.stopTime.substring(0, 2)));
-      date.setMinutes(Number(stop.stopTime.substring(3, 5)));
-      let linkedStop: LinkedStop &#x3D; new LinkedStop(Guid.create().toString(), stop.stopId, route.routeId, date, Number(this.editRouteForm.controls.day.value!));
-      this.linkedStopService.addLinkedStop(linkedStop).subscribe();
+  private createWaypoints(): google.maps.DirectionsWaypoint[] {
+    var waypoints: google.maps.DirectionsWaypoint[] &#x3D; [];
+    const MAX_WAYPOINTS: number &#x3D; 25
+    var addWaypoint: boolean &#x3D; true;
+    this.tripStops?.slice(1, this.tripStops.length - 1).forEach((stopTime) &#x3D;&gt; {
+      if (waypoints.length &lt; 25 &amp;&amp; addWaypoint) {
+        waypoints.push({
+          location: new google.maps.LatLng(stopTime.stop.stopLat, stopTime.stop.stopLon),
+          stopover: true,
+        });
+      }
+      addWaypoint &#x3D; !addWaypoint;
     });
-    this.router.navigate([&#x27;/&#x27;, &#x27;route-details&#x27;, this.route.routeId]);
+
+    return waypoints;
+  }
+
+  /**
+ * Creates a trip object and sends it to the database using the tripService
+ */
+  onSubmit() {
+    if (this.editRouteForm.value.stops !&#x3D; null) {
+      if (this.editRouteForm.value.stops.length &gt; 2) {
+        const stops &#x3D; this.editRouteForm.value.stops as formStop[];
+        if (stops.every(s &#x3D;&gt; s.stopId.length !&#x3D; 0 &amp;&amp; s.departureTime.length !&#x3D; 0)) {
+          let trip: Trip &#x3D; new Trip(this.selectedTrip.tripId, this.editRouteForm.controls.tripName.value!, this.selectedTrip.routeId,
+            this.selectedTrip.serviceId, Number(this.editRouteForm.controls.tripTransportDirection.value!), this.selectedTrip.shapeId)
+
+          this.tripService.editTrip(trip).subscribe();
+
+          let idx &#x3D; 1;
+          this.editRouteForm.value.stops.forEach(s &#x3D;&gt; {
+            var stop &#x3D; (s as formStop);
+            var date &#x3D; new Date();
+            date.setUTCHours(Number(stop.departureTime.substring(0, 2)));
+            date.setUTCMinutes(Number(stop.departureTime.substring(3, 5)));
+            let stopTime: StopTime &#x3D; new StopTime(trip.tripId, date, date, stop.stopId, idx, 0.0);
+            this.stopTimeService.editStopTime(stopTime.tripId, idx, stopTime).subscribe(() &#x3D;&gt; { }, () &#x3D;&gt; {
+              this.stopTimeService.addStopTime(stopTime).subscribe();
+            });
+            idx++;
+          });
+
+          this.router.navigate([&#x27;/&#x27;, &#x27;route-management&#x27;]);
+        } else {
+          new Snackbar(this.translocoService.translate(&#x27;route-management.create-edit-trip.error-message-empty-stops&#x27;), {
+            position: &#x27;bottom-center&#x27;,
+            actionText: this.translocoService.translate(&#x27;login.list.hide&#x27;),
+            style: {
+              container: [
+                [&#x27;background-color&#x27;, &#x27;#003F91&#x27;]
+              ]
+            }
+          });
+        }
+      } else {
+        new Snackbar(this.translocoService.translate(&#x27;route-management.create-edit-trip.error-message&#x27;), {
+          position: &#x27;bottom-center&#x27;,
+          actionText: this.translocoService.translate(&#x27;login.list.hide&#x27;),
+          style: {
+            container: [
+              [&#x27;background-color&#x27;, &#x27;#003F91&#x27;]
+            ]
+          }
+        });
+      }
+    }
+     
+
+
+
   }
 
   /**
@@ -468,8 +493,10 @@ export class RouteEditComponent implements OnInit, OnDestroy {
  */
 interface formStop {
   stopId: string,
-  stopTime: string
+  departureTime: string
 }
+
+
 </code></pre>
     </div>
 </div>

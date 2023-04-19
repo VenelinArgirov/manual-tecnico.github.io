@@ -60,7 +60,7 @@
             <h3>File</h3>
             </p>
             <p class="comment">
-                <code>src/app/auth/auth.guard.ts</code>
+                <code>src/app/guards/auth.guard.ts</code>
             </p>
 
 
@@ -107,7 +107,7 @@
                 </tr>
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="13" class="link-to-prism">src/app/auth/auth.guard.ts:13</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="13" class="link-to-prism">src/app/guards/auth.guard.ts:13</a></div>
                             </td>
                         </tr>
 
@@ -194,7 +194,7 @@
             <tr>
                 <td class="col-md-4">
                     <div class="io-line">Defined in <a href="" data-line="29"
-                            class="link-to-prism">src/app/auth/auth.guard.ts:29</a></div>
+                            class="link-to-prism">src/app/guards/auth.guard.ts:29</a></div>
                 </td>
             </tr>
 
@@ -273,7 +273,7 @@
             <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Injectable } from &#x27;@angular/core&#x27;;
 import { CanActivate, ActivatedRouteSnapshot, RouterStateSnapshot, Router, UrlTree } from &#x27;@angular/router&#x27;;
 import { Observable } from &#x27;rxjs&#x27;;
-import { AuthService } from &#x27;./auth.service&#x27;;
+import { AuthService } from &#x27;../services/auth.service&#x27;;
 
 @Injectable({
   providedIn: &#x27;root&#x27;
@@ -303,7 +303,7 @@ export class AuthGuard implements CanActivate {
     state: RouterStateSnapshot): Observable&lt;boolean | UrlTree&gt; | Promise&lt;boolean | UrlTree&gt; | boolean | UrlTree {
 
     if (!this.authService.isLoggedIn(localStorage.getItem(&#x27;token&#x27;)!.toString())) {
-      this.router.navigate([&#x27;/api/UserApi/LoginDashboard&#x27;]); // go to login if not authenticated
+      this.router.navigate([&#x27;/api/AuthApi/LoginDashboard&#x27;]); // go to login if not authenticated
       return false;
     }
     return true;

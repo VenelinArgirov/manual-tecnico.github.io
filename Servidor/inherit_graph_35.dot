@@ -5,5 +5,5 @@ digraph "Graphical Class Hierarchy"
   edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
   node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
   rankdir="LR";
-  Node0 [label="Traveller_Server.Models.\lDataClasses.Route",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_traveller___server_1_1_models_1_1_data_classes_1_1_route.html",tooltip="Data class of a route. Represents a route in which a transport goes from A to B while stopping multip..."];
+  Node0 [label="Traveller_Server.Models.\lDataClasses.CurrentlyBoardedUser",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_traveller___server_1_1_models_1_1_data_classes_1_1_currently_boarded_user.html",tooltip="Class to check if the specified user is currently travelling on a route and which one is that."];
 }

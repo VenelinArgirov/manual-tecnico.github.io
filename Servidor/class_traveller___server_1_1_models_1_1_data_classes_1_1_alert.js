@@ -7,5 +7,8 @@ var class_traveller___server_1_1_models_1_1_data_classes_1_1_alert =
     [ "Description", "class_traveller___server_1_1_models_1_1_data_classes_1_1_alert.html#abe16487f3576ecfc185fd81898324a93", null ],
     [ "Location", "class_traveller___server_1_1_models_1_1_data_classes_1_1_alert.html#a0d8b7071ba2212a4e9c26ca7c66fb47a", null ],
     [ "LocationId", "class_traveller___server_1_1_models_1_1_data_classes_1_1_alert.html#a34873f7b629409ff2fe165b333049bd2", null ],
+    [ "NegativeRatings", "class_traveller___server_1_1_models_1_1_data_classes_1_1_alert.html#a0e41c93912f5504896ed9f53bc6330d8", null ],
+    [ "NotValidRatings", "class_traveller___server_1_1_models_1_1_data_classes_1_1_alert.html#a843caefb3af6b31a4a62758b18ba37c9", null ],
+    [ "PositiveRatings", "class_traveller___server_1_1_models_1_1_data_classes_1_1_alert.html#a2a54a15df78a9033bd28d853e18499ad", null ],
     [ "TransportType", "class_traveller___server_1_1_models_1_1_data_classes_1_1_alert.html#aa30c1130aac858488e42b9c40b3cf517", null ]
 ];

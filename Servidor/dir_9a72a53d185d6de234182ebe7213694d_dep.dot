@@ -11,6 +11,7 @@ digraph "E:/Users/venel/Desktop/TravellerV2/traveller/Traveller-Server/Models"
     graph [ bgcolor="#edf0f7", pencolor="grey25", label="", fontname=Helvetica,fontsize=10 style="filled,bold", URL="dir_9a72a53d185d6de234182ebe7213694d.html",tooltip=""]
     dir_9a72a53d185d6de234182ebe7213694d [shape=plaintext, label="Models"];
   dir_982f816bf159fbb6509074d5470c19ac [label="DataClasses", fillcolor="#a2b4d6", color="grey25", style="filled", URL="dir_982f816bf159fbb6509074d5470c19ac.html",tooltip=""];
+  dir_2067838a462620941919c5805b429ae1 [label="Enums", fillcolor="#a2b4d6", color="grey25", style="filled", URL="dir_2067838a462620941919c5805b429ae1.html",tooltip=""];
   }
   }
 }

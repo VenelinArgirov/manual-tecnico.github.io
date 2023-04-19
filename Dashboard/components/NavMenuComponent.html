@@ -64,7 +64,7 @@
     <h3>File</h3>
 </p>
 <p class="comment">
-    <code>src/app/nav-menu/nav-menu.component.ts</code>
+    <code>src/app/components/nav-menu/nav-menu.component.ts</code>
 </p>
 
 
@@ -184,7 +184,7 @@
                 </tr>
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="34" class="link-to-prism">src/app/nav-menu/nav-menu.component.ts:34</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="34" class="link-to-prism">src/app/components/nav-menu/nav-menu.component.ts:34</a></div>
                             </td>
                         </tr>
 
@@ -264,7 +264,7 @@
             <tr>
                 <td class="col-md-4">
                     <div class="io-line">Defined in <a href="" data-line="53"
-                            class="link-to-prism">src/app/nav-menu/nav-menu.component.ts:53</a></div>
+                            class="link-to-prism">src/app/components/nav-menu/nav-menu.component.ts:53</a></div>
                 </td>
             </tr>
 
@@ -340,7 +340,7 @@
             <tr>
                 <td class="col-md-4">
                     <div class="io-line">Defined in <a href="" data-line="45"
-                            class="link-to-prism">src/app/nav-menu/nav-menu.component.ts:45</a></div>
+                            class="link-to-prism">src/app/components/nav-menu/nav-menu.component.ts:45</a></div>
                 </td>
             </tr>
 
@@ -384,7 +384,7 @@
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="23" class="link-to-prism">src/app/nav-menu/nav-menu.component.ts:23</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="23" class="link-to-prism">src/app/components/nav-menu/nav-menu.component.ts:23</a></div>
                         </td>
                     </tr>
 
@@ -417,7 +417,7 @@
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="19" class="link-to-prism">src/app/nav-menu/nav-menu.component.ts:19</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="19" class="link-to-prism">src/app/components/nav-menu/nav-menu.component.ts:19</a></div>
                         </td>
                     </tr>
 
@@ -450,7 +450,7 @@
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="27" class="link-to-prism">src/app/nav-menu/nav-menu.component.ts:27</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="27" class="link-to-prism">src/app/components/nav-menu/nav-menu.component.ts:27</a></div>
                         </td>
                     </tr>
 
@@ -483,7 +483,7 @@
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="34" class="link-to-prism">src/app/nav-menu/nav-menu.component.ts:34</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="34" class="link-to-prism">src/app/components/nav-menu/nav-menu.component.ts:34</a></div>
                         </td>
                     </tr>
 
@@ -526,10 +526,10 @@
 
 
     <div class="tab-pane fade  tab-source-code" id="c-source">
-        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { UserForAuthentication } from &#x27;src/app/login/login.component&#x27;;
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { UserForAuthentication } from &#x27;../login/login.component&#x27;;
 import { Component } from &#x27;@angular/core&#x27;;
 import { TranslocoService } from &#x27;@ngneat/transloco&#x27;;
-import { AuthService } from &#x27;../auth/auth.service&#x27;;
+import { AuthService } from &#x27;../../services/auth.service&#x27;;
 
 @Component({
   selector: &#x27;app-nav-menu&#x27;,
@@ -687,12 +687,12 @@ a.nav-link {
 }
 
 #en-lang {
-  background-image: url(&quot;../../assets/img/nav-menu/enLang.png&quot;);
+  background-image: url(&quot;../../../assets/img/nav-menu/enLang.png&quot;);
   background-size: 100% 100%;
 }
 
 #pt-lang {
-  background-image: url(&quot;../../assets/img/nav-menu/ptLang.png&quot;);
+  background-image: url(&quot;../../../assets/img/nav-menu/ptLang.png&quot;);
   background-size: 100% 100%;
 }
 
@@ -729,7 +729,7 @@ a.nav-link {
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
         var COMPONENT_TEMPLATE = '<div><ul class="navbar-nav">  <ng-container *transloco="let t; read: \'nav-menu.list\'">    <div>      <div class="nav-logo-img">        <img src="../../assets/img/nav-menu/logo.png" alt="Logo" style="width:125px;height:125px;">        <p>{{ t(\'welcome\') }}, {{userEmail}}</p>      </div>    <li class="nav-item" [routerLinkActive]="[\'link-active\']">      <img src="../../assets/img/nav-menu/stats.png" alt="HTML tutorial" style="width:25px;height:25px;">      <a class="nav-link" [routerLink]="[\'statistics\']">{{ t(\'stats-text\') }}</a>    </li>    <li class="nav-item" [routerLinkActive]="[\'link-active\']">      <img src="../../assets/img/nav-menu/routes-management.png" alt="HTML tutorial" style="width:25px;height:25px;">      <a class="nav-link" [routerLink]="[\'route-management\']">{{ t(\'routes-management-text\') }}</a>    </li>    <li class="nav-item" [routerLinkActive]="[\'link-active\']">      <img src="../../assets/img/nav-menu/users-management.png" alt="HTML tutorial" style="width:25px;height:25px;">      <a class="nav-link" [routerLink]="[\'users-management\']">{{ t(\'users-management-text\') }}</a>    </li>    <li>      <div id="language-selector">        <button mat-button id="en-lang" (click)="changeLang(\'en\')"></button>        <button mat-button id="pt-lang" (click)="changeLang(\'pt\')"></button>      </div>    </li>    </div>    <div class="logout-section">    <li class="nav-item" [routerLinkActive]="[\'link-active\']">      <img src="../../assets/img/nav-menu/logout.png" alt="HTML tutorial" style="width:25px;height:25px;">      <button mat-button [routerLink]="[\'\']" id="logout" (click)="logOut()">{{ t(\'logout-text\') }}</button>    </li>    </div>  </ng-container></ul></div>'
-    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'CounterComponent', 'selector': 'app-counter-component'},{'name': 'FetchDataComponent', 'selector': 'app-fetch-data'},{'name': 'HomeComponent', 'selector': 'app-home'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'NavMenuComponent', 'selector': 'app-nav-menu'},{'name': 'RouteCreateComponent', 'selector': 'app-route-create'},{'name': 'RouteDetailsComponent', 'selector': 'app-route-details'},{'name': 'RouteEditComponent', 'selector': 'app-route-edit'},{'name': 'RouteManagementComponent', 'selector': 'app-route-management'},{'name': 'StatisticsComponent', 'selector': 'app-statistics'},{'name': 'StopCreateComponent', 'selector': 'app-stop-create'},{'name': 'UserDetailsComponent', 'selector': 'app-user-details'},{'name': 'UsersManagementComponent', 'selector': 'app-users-management'}];
+    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'NavMenuComponent', 'selector': 'app-nav-menu'},{'name': 'RouteCreateComponent', 'selector': 'app-route-create'},{'name': 'RouteDetailsComponent', 'selector': 'app-route-details'},{'name': 'RouteEditComponent', 'selector': 'app-route-edit'},{'name': 'RouteManagementComponent', 'selector': 'app-route-management'},{'name': 'StatisticsComponent', 'selector': 'app-statistics'},{'name': 'StopCreateComponent', 'selector': 'app-stop-create'},{'name': 'TripCreateComponent', 'selector': 'app-trip-create'},{'name': 'TripEditComponent', 'selector': 'app-trip-edit'},{'name': 'UserDetailsComponent', 'selector': 'app-user-details'},{'name': 'UsersManagementComponent', 'selector': 'app-users-management'}];
     var DIRECTIVES = [];
     var ACTUAL_COMPONENT = {'name': 'NavMenuComponent'};
 </script>

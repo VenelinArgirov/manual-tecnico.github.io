@@ -64,7 +64,7 @@
     <h3>File</h3>
 </p>
 <p class="comment">
-    <code>src/app/login/login.component.ts</code>
+    <code>src/app/components/login/login.component.ts</code>
 </p>
 
 
@@ -195,7 +195,7 @@
                 </tr>
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="38" class="link-to-prism">src/app/login/login.component.ts:38</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="38" class="link-to-prism">src/app/components/login/login.component.ts:38</a></div>
                             </td>
                         </tr>
 
@@ -318,7 +318,7 @@
             <tr>
                 <td class="col-md-4">
                     <div class="io-line">Defined in <a href="" data-line="108"
-                            class="link-to-prism">src/app/login/login.component.ts:108</a></div>
+                            class="link-to-prism">src/app/components/login/login.component.ts:108</a></div>
                 </td>
             </tr>
 
@@ -394,7 +394,7 @@
             <tr>
                 <td class="col-md-4">
                     <div class="io-line">Defined in <a href="" data-line="72"
-                            class="link-to-prism">src/app/login/login.component.ts:72</a></div>
+                            class="link-to-prism">src/app/components/login/login.component.ts:72</a></div>
                 </td>
             </tr>
 
@@ -472,7 +472,7 @@ service if they are correct login was done correctly.</p>
             <tr>
                 <td class="col-md-4">
                     <div class="io-line">Defined in <a href="" data-line="54"
-                            class="link-to-prism">src/app/login/login.component.ts:54</a></div>
+                            class="link-to-prism">src/app/components/login/login.component.ts:54</a></div>
                 </td>
             </tr>
 
@@ -514,7 +514,7 @@ service if they are correct login was done correctly.</p>
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="38" class="link-to-prism">src/app/login/login.component.ts:38</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="38" class="link-to-prism">src/app/components/login/login.component.ts:38</a></div>
                         </td>
                     </tr>
 
@@ -547,7 +547,7 @@ service if they are correct login was done correctly.</p>
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="34" class="link-to-prism">src/app/login/login.component.ts:34</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="34" class="link-to-prism">src/app/components/login/login.component.ts:34</a></div>
                         </td>
                     </tr>
 
@@ -579,7 +579,7 @@ service if they are correct login was done correctly.</p>
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="30" class="link-to-prism">src/app/login/login.component.ts:30</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="30" class="link-to-prism">src/app/components/login/login.component.ts:30</a></div>
                         </td>
                     </tr>
 
@@ -605,7 +605,7 @@ service if they are correct login was done correctly.</p>
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="26" class="link-to-prism">src/app/login/login.component.ts:26</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="26" class="link-to-prism">src/app/components/login/login.component.ts:26</a></div>
                         </td>
                     </tr>
 
@@ -632,7 +632,7 @@ service if they are correct login was done correctly.</p>
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="22" class="link-to-prism">src/app/login/login.component.ts:22</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="22" class="link-to-prism">src/app/components/login/login.component.ts:22</a></div>
                         </td>
                     </tr>
 
@@ -654,7 +654,7 @@ service if they are correct login was done correctly.</p>
         <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit } from &#x27;@angular/core&#x27;;
 import { FormControl, FormGroup, Validators } from &#x27;@angular/forms&#x27;;
 import { Router, ActivatedRoute } from &#x27;@angular/router&#x27;;
-import { AuthService } from &#x27;src/app/auth/auth.service&#x27;;
+import { AuthService } from &#x27;../../services/auth.service&#x27;;
 import { HttpErrorResponse } from &#x27;@angular/common/http&#x27;;
 import { TranslocoService } from &#x27;@ngneat/transloco&#x27;;
 import Snackbar from &#x27;awesome-snackbar&#x27;;
@@ -965,12 +965,12 @@ mat-spinner {
 }
 
 #en-lang {
-  background-image: url(&quot;../../assets/img/nav-menu/enLang.png&quot;);
+  background-image: url(&quot;../../../assets/img/nav-menu/enLang.png&quot;);
   background-size: 100% 100%;
 }
 
 #pt-lang {
-  background-image: url(&quot;../../assets/img/nav-menu/ptLang.png&quot;);
+  background-image: url(&quot;../../../assets/img/nav-menu/ptLang.png&quot;);
   background-size: 100% 100%;
 }
 
@@ -1006,7 +1006,7 @@ mat-spinner {
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
         var COMPONENT_TEMPLATE = '<div><ng-container *transloco="let t; read: \'login.list\'">  <div id="spinner" *ngIf="isLoading; else elseBlock">    <h2>{{t(\'login-page-loading\')}}</h2>    <mat-spinner></mat-spinner>  </div>  <ng-template #elseBlock>    <div id="container">      <form class="login-card" [formGroup]="loginForm" (ngSubmit)="loginCredentials(loginForm)">        <mat-card-header>          <mat-card-title class="login-card-title">{{t(\'title-card-login\')}}</mat-card-title>          <mat-icon class="material-symbols-outlined" matTooltip="{{t(\'help-login-page\')}}" [matTooltipPosition]="\'above\'">            help          </mat-icon>        </mat-card-header>        <mat-card-content>          <!-- Input field for email -->          <mat-form-field appearance="fill" class="input-email" matTooltip="{{t(\'help-input-email\')}}">            <mat-label>{{t(\'input-email-label\')}}</mat-label>            <input matInput type="email" placeholder="{{t(\'input-email-placeholder\')}}" [required]=true formControlName="email">            <mat-hint *ngIf="loginForm.controls.email.errors?.[\'required\']">{{t(\'input-email-error-required\')}}</mat-hint>            <mat-hint *ngIf="loginForm.controls.email.errors?.[\'email\']">{{t(\'input-email-error-validation\')}}</mat-hint>          </mat-form-field>          <!-- Input field for password -->          <mat-form-field appearance="fill" class="input-password" matTooltip="{{t(\'help-input-password\')}}">            <mat-label>{{t(\'input-password-label\')}}</mat-label>            <input matInput type="password" [required]=true formControlName="password">            <mat-hint *ngIf="loginForm.controls.password.errors?.[\'required\']">{{t(\'input-password-error-required\')}}</mat-hint>          </mat-form-field>          <!-- Button for the submit -->        </mat-card-content>        <mat-card-footer>          <button id="loginButton" mat-button type="submit" [disabled]="!loginForm.valid"> Login </button>        </mat-card-footer>      </form>      <div id="languageSelection">        <button mat-button id="en-lang" (click)="changeLang(\'en\')"></button>        <button mat-button id="pt-lang" (click)="changeLang(\'pt\')"></button>      </div>    </div>  </ng-template></ng-container></div>'
-    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'CounterComponent', 'selector': 'app-counter-component'},{'name': 'FetchDataComponent', 'selector': 'app-fetch-data'},{'name': 'HomeComponent', 'selector': 'app-home'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'NavMenuComponent', 'selector': 'app-nav-menu'},{'name': 'RouteCreateComponent', 'selector': 'app-route-create'},{'name': 'RouteDetailsComponent', 'selector': 'app-route-details'},{'name': 'RouteEditComponent', 'selector': 'app-route-edit'},{'name': 'RouteManagementComponent', 'selector': 'app-route-management'},{'name': 'StatisticsComponent', 'selector': 'app-statistics'},{'name': 'StopCreateComponent', 'selector': 'app-stop-create'},{'name': 'UserDetailsComponent', 'selector': 'app-user-details'},{'name': 'UsersManagementComponent', 'selector': 'app-users-management'}];
+    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'NavMenuComponent', 'selector': 'app-nav-menu'},{'name': 'RouteCreateComponent', 'selector': 'app-route-create'},{'name': 'RouteDetailsComponent', 'selector': 'app-route-details'},{'name': 'RouteEditComponent', 'selector': 'app-route-edit'},{'name': 'RouteManagementComponent', 'selector': 'app-route-management'},{'name': 'StatisticsComponent', 'selector': 'app-statistics'},{'name': 'StopCreateComponent', 'selector': 'app-stop-create'},{'name': 'TripCreateComponent', 'selector': 'app-trip-create'},{'name': 'TripEditComponent', 'selector': 'app-trip-edit'},{'name': 'UserDetailsComponent', 'selector': 'app-user-details'},{'name': 'UsersManagementComponent', 'selector': 'app-users-management'}];
     var DIRECTIVES = [];
     var ACTUAL_COMPONENT = {'name': 'LoginComponent'};
 </script>

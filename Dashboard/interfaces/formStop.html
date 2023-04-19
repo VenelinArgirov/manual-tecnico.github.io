@@ -65,7 +65,7 @@
             <h3>File</h3>
         </p>
         <p class="comment">
-            <code>src/app/route-create/route-create.component.ts</code>
+            <code>src/app/components/trip-create/trip-create.component.ts</code>
         </p>
 
 
@@ -185,29 +185,32 @@
 
     <div class="tab-pane fade  tab-source-code" id="c-source">
         <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit } from &#x27;@angular/core&#x27;;
-import { RouteService } from &#x27;../route.service&#x27;;
+import { RouteService } from &#x27;../../services/route.service&#x27;;
 import { AbstractControl, FormArray, FormBuilder, FormGroup, Validators } from &#x27;@angular/forms&#x27;;
-import { Route } from &#x27;../route&#x27;;
-import { Stop } from &#x27;../stop&#x27;;
-import { TransportType } from &#x27;../transport-type&#x27;;
-import { StopService } from &#x27;../stop.service&#x27;;
-import { DayType } from &#x27;../day-type&#x27;;
-import { LinkedStop } from &quot;../linked-stop&quot;;
-import { LinkedStopService } from &#x27;../linked-stop.service&#x27;;
+import { Route } from &#x27;../../models/route&#x27;;
+import { Stop } from &#x27;../../models/stop&#x27;;
+import { StopService } from &#x27;../../services/stop.service&#x27;;
+import { StopTime } from &quot;../../models/stop-time&quot;;
 import { Guid } from &#x27;guid-typescript&#x27;;
 import { map, Observable } from &#x27;rxjs&#x27;;
 import { MapDirectionsService } from &#x27;@angular/google-maps&#x27;;
-import { Router } from &#x27;@angular/router&#x27;;
+import { ActivatedRoute, Router } from &#x27;@angular/router&#x27;;
+import { TravelDirection } from &#x27;../../enums/travel-direction&#x27;;
+import { Trip } from &#x27;../../models/trip&#x27;;
+import { TripService } from &#x27;../../services/trip.service&#x27;;
+import { StopTimeService } from &#x27;../../services/stop-time.service&#x27;;
+import Snackbar from &#x27;awesome-snackbar&#x27;;
+import { TranslocoService } from &#x27;@ngneat/transloco&#x27;;
 
 @Component({
-  selector: &#x27;app-route-create&#x27;,
-  templateUrl: &#x27;./route-create.component.html&#x27;,
-  styleUrls: [&#x27;./route-create.component.css&#x27;]
+  selector: &#x27;app-trip-create&#x27;,
+  templateUrl: &#x27;./trip-create.component.html&#x27;,
+  styleUrls: [&#x27;./trip-create.component.css&#x27;]
 })
 /**
  * Class for the component of the page of Route Editing
  */
-export class RouteCreateComponent implements OnInit {
+export class TripCreateComponent implements OnInit {
   /**
    * Options to be used by the Google-Map field.
    */
@@ -248,56 +251,76 @@ export class RouteCreateComponent implements OnInit {
   directionsResults$!: Observable&lt;google.maps.DirectionsResult | undefined&gt;;
 
   /**
+ * Id of the route.
+ */
+  routeId: string &#x3D; &#x27;&#x27;;
+  /**
+   * Route to edit.
+   */
+  route!: Route;
+  /**
    * TransportType for reverse mapping in the html.
    */
-  TransportType &#x3D; TransportType;
-  /**
-   * DayType for reverse mapping in the html.
-   */
-  DayType &#x3D; DayType;
-
+  TravelDirection &#x3D; TravelDirection;
   /**
    * All the existent stops.
    */
   AllStops: Stop[] &#x3D; [];
+
+  /**
+ * All the existent trips.
+ */
+  AllTrips: Trip[] &#x3D; [];
   /**
    * All the values of the TransportType enum.
    */
-  transports: number[] &#x3D; Object.keys(TransportType).map(v &#x3D;&gt; Number(v)).filter(v &#x3D;&gt; Number.isFinite(v));
-  /**
-   * All the values of the DayType enum.
-   */
-  days: number[] &#x3D; Object.keys(DayType).map(v &#x3D;&gt; Number(v)).filter(v &#x3D;&gt; Number.isFinite(v));
+  directions: number[] &#x3D; Object.keys(TravelDirection).map(v &#x3D;&gt; Number(v)).filter(v &#x3D;&gt; Number.isFinite(v));
 
   /**
    * Form data to be viewed in the page
    */
   createRouteForm &#x3D; this.formBuilder.group({
-    transportNumber: this.formBuilder.control&lt;number | null&gt;(null),
-    name: [&#x27;&#x27;, Validators.required],
-    companyName: [&#x27;&#x27;, Validators.required],
-    transportType: this.formBuilder.control&lt;number | null&gt;(null, Validators.required),
-    description: &#x27;&#x27;,
+    tripName: [&#x27;&#x27;, Validators.required],
+    tripTransportDirection: this.formBuilder.control&lt;number | null&gt;(null, Validators.required),
     stops: this.formBuilder.array([]),
-    day: this.formBuilder.control&lt;number | null&gt;(null, Validators.required)
   });
 
   /**
    * Constructor for the component.
    * Gets the route whose Id matches the one in the URL and passes its info to the form.
    * Also gets all the existent stops.
+   * @param {ActivatedRoute} actRoute Gives information about the current route.
    * @param {RouteService} routeService Service that communicates with the server and has various operations about Routes.
-   * @param {LinkedStopService} linkedStopService Service that communicates with the server and has various operations about LinkedStops.
    * @param {StopService} stopService Service that communicates with the server and has various operations about Stops.
-   * @param {MapDirectionsService} mapDirectionsService Google service of the Directions API.
    * @param {FormBuilder} formBuilder Builds form data.
+   * @param {MapDirectionsService} mapDirectionsService Google service of the Directions API.
+   * @param {TripService} tripService Service that communicates with the server and has various operations about Trips.
    * @param {Router} router Router.
+   * @param {StopTimeService} stopTimeService Service that communicates with the server and has various operations about StopTimes.
+   * @param {TranslocoService} translocoService Service that perform the translation of the text.
    */
-  constructor(private routeService: RouteService, private stopService: StopService,
-    private linkedStopService: LinkedStopService, private formBuilder: FormBuilder,
-    private mapDirectionsService: MapDirectionsService, private router: Router) { }
+  constructor(private urlRoute: ActivatedRoute, private routeService: RouteService, private stopService: StopService,
+    private formBuilder: FormBuilder, private mapDirectionsService: MapDirectionsService, private tripService: TripService,
+    private router: Router, private stopTimeService: StopTimeService, private translocoService: TranslocoService) { }
 
   ngOnInit(): void {
+    this.routeId &#x3D; String(this.urlRoute.snapshot.paramMap.get(&quot;id&quot;));
+    this.routeService.getRoute(this.routeId)
+      .subscribe((route) &#x3D;&gt; {
+        this.stopTimeService.getStopsOfRoute(route.routeId).subscribe((stops) &#x3D;&gt; {
+          this.route &#x3D; new Route(route.routeId, route.agencyId, route.routeShortName, route.routeLongName,
+            route.routeTransportType, route.agency, stops);
+        });
+      });
+
+    this.tripService.getTripsOfRoute(this.routeId).subscribe((trips) &#x3D;&gt; {
+      trips.forEach((trip) &#x3D;&gt; {
+        this.AllTrips!.push(new Trip(trip.tripId, trip.tripHeadsign, trip.routeId, trip.serviceId, trip.direction, trip.shapeId));
+      });
+      
+    });
+
+
     this.stopService.getStops().subscribe(result &#x3D;&gt; {
       this.AllStops &#x3D; result;
     }, error &#x3D;&gt; console.error(error));
@@ -353,7 +376,7 @@ export class RouteCreateComponent implements OnInit {
     this.createRouteForm.value.stops?.forEach(s &#x3D;&gt; {
       var stop &#x3D; (s as formStop);
       this.AllStops.forEach(compStop &#x3D;&gt; {
-        if (compStop.stopId &#x3D;&#x3D; stop.stopId) this.markers.push(new google.maps.LatLng(compStop.location.latitude, compStop.location.longitude));
+        if (compStop.stopId &#x3D;&#x3D; stop.stopId) this.markers.push(new google.maps.LatLng(compStop.stopLat, compStop.stopLon));
       });
     });
     this.center &#x3D; {
@@ -369,30 +392,62 @@ export class RouteCreateComponent implements OnInit {
     const request: google.maps.DirectionsRequest &#x3D; {
       origin: this.markers[0],
       destination: this.markers[this.markers.length - 1],
-      travelMode: google.maps.TravelMode.TRANSIT,
+      travelMode: google.maps.TravelMode.DRIVING,
     };
     this.directionsResults$ &#x3D; this.mapDirectionsService.route(request).pipe(map(response &#x3D;&gt; response.result));
   }
 
   /**
-   * Creates a route object and sends it to the database using the routeService
+   * Creates a trip object and sends it to the database using the tripService
    */
   onSubmit(): void {
-    let route: Route &#x3D; new Route(Guid.create().toString(), this.createRouteForm.controls.transportNumber.value!,
-      this.createRouteForm.controls.name.value!, this.createRouteForm.controls.description.value!,
-      Number(this.createRouteForm.controls.transportType.value!), this.createRouteForm.controls.companyName.value!
-    );
-    this.routeService.addRoute(route).subscribe();
+    if (this.createRouteForm.value.stops !&#x3D; null) {
+      if (this.createRouteForm.value.stops.length &gt; 2) {
+        const stops &#x3D; this.createRouteForm.value.stops as formStop[];
+        if (stops.every(s &#x3D;&gt; s.stopId.length !&#x3D; 0 &amp;&amp; s.stopTime.length !&#x3D; 0)) {
+          const tripId &#x3D; Guid.create().toString();
+          let trip: Trip &#x3D; new Trip(tripId, this.createRouteForm.controls.tripName.value!, this.routeId,
+            &quot;1&quot;, Number(this.createRouteForm.controls.tripTransportDirection.value!), &quot;4560_0_1_a&quot;)
 
-    this.createRouteForm.value.stops?.forEach(s &#x3D;&gt; {
-      var stop &#x3D; (s as formStop);
-      var date &#x3D; new Date();
-      date.setHours(Number(stop.stopTime.substring(0, 2)));
-      date.setMinutes(Number(stop.stopTime.substring(3, 5)));
-      let linkedStop: LinkedStop &#x3D; new LinkedStop(Guid.create().toString(), stop.stopId, route.routeId, date, Number(this.createRouteForm.controls.day.value!));
-      this.linkedStopService.addLinkedStop(linkedStop).subscribe();
-    });
-    this.router.navigate([&#x27;/&#x27;, &#x27;route-management&#x27;]);
+          this.tripService.addTrip(trip).subscribe(() &#x3D;&gt; { }, () &#x3D;&gt; { }, () &#x3D;&gt; {
+            let idx &#x3D; 1;
+            this.createRouteForm.value.stops!.forEach(s &#x3D;&gt; {
+              var stop &#x3D; (s as formStop);
+              var date &#x3D; new Date();
+              date.setUTCHours(Number(stop.stopTime.substring(0, 2)));
+              date.setUTCMinutes(Number(stop.stopTime.substring(3, 5)));
+              let stopTime: StopTime &#x3D; new StopTime(tripId, date, date, stop.stopId, idx, 0.0);
+              this.stopTimeService.addStopTime(stopTime).subscribe();
+              idx++;
+            });
+            this.router.navigate([&#x27;/&#x27;, &#x27;route-management&#x27;]);
+          });
+        }
+        else {
+          new Snackbar(this.translocoService.translate(&#x27;route-management.create-edit-trip.error-message-empty-stops&#x27;), {
+            position: &#x27;bottom-center&#x27;,
+            actionText: this.translocoService.translate(&#x27;login.list.hide&#x27;),
+            style: {
+              container: [
+                [&#x27;background-color&#x27;, &#x27;#003F91&#x27;]
+              ]
+            }
+          });
+        }
+      } else {
+        new Snackbar(this.translocoService.translate(&#x27;route-management.create-edit-trip.error-message&#x27;), {
+          position: &#x27;bottom-center&#x27;,
+          actionText: this.translocoService.translate(&#x27;login.list.hide&#x27;),
+          style: {
+            container: [
+              [&#x27;background-color&#x27;, &#x27;#003F91&#x27;]
+            ]
+          }
+        });
+      }
+    }
+
+    
   }
 
   /**
@@ -410,6 +465,7 @@ interface formStop {
   stopId: string,
   stopTime: string
 }
+
 </code></pre>
     </div>
 </div>

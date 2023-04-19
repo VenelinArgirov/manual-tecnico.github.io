@@ -58,7 +58,7 @@
             <h3>File</h3>
         </p>
         <p class="comment">
-            <code>src/app/user.service.ts</code>
+            <code>src/app/services/user.service.ts</code>
         </p>
 
 
@@ -114,7 +114,7 @@
                 </tr>
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="14" class="link-to-prism">src/app/user.service.ts:14</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="14" class="link-to-prism">src/app/services/user.service.ts:14</a></div>
                             </td>
                         </tr>
 
@@ -185,7 +185,7 @@
             <tr>
                 <td class="col-md-4">
                     <div class="io-line">Defined in <a href="" data-line="27"
-                            class="link-to-prism">src/app/user.service.ts:27</a></div>
+                            class="link-to-prism">src/app/services/user.service.ts:27</a></div>
                 </td>
             </tr>
 
@@ -262,7 +262,7 @@
             <tr>
                 <td class="col-md-4">
                     <div class="io-line">Defined in <a href="" data-line="33"
-                            class="link-to-prism">src/app/user.service.ts:33</a></div>
+                            class="link-to-prism">src/app/services/user.service.ts:33</a></div>
                 </td>
             </tr>
 
@@ -331,7 +331,7 @@
             <tr>
                 <td class="col-md-4">
                     <div class="io-line">Defined in <a href="" data-line="43"
-                            class="link-to-prism">src/app/user.service.ts:43</a></div>
+                            class="link-to-prism">src/app/services/user.service.ts:43</a></div>
                 </td>
             </tr>
 
@@ -378,7 +378,7 @@
             <tr>
                 <td class="col-md-4">
                     <div class="io-line">Defined in <a href="" data-line="54"
-                            class="link-to-prism">src/app/user.service.ts:54</a></div>
+                            class="link-to-prism">src/app/services/user.service.ts:54</a></div>
                 </td>
             </tr>
 
@@ -443,7 +443,7 @@ Prints the error to the console.</p>
         <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { HttpClient, HttpErrorResponse } from &#x27;@angular/common/http&#x27;;
 import { Injectable } from &#x27;@angular/core&#x27;;
 import { catchError, Observable, throwError } from &#x27;rxjs&#x27;;
-import { User } from &#x27;./user&#x27;;
+import { User } from &#x27;../models/user&#x27;;
 
 
 @Injectable({
@@ -467,14 +467,14 @@ export class UserService {
    * @returns A specific user from the database.
    */
   getUser(userId: string): Observable&lt;User&gt; {
-    return this.http.get&lt;User&gt;(&#x60;api/Users/${userId}&#x60;)
-    //return this.http.get&lt;User&gt;(&#x60;https://traveller-server.azurewebsites.net/api/Users/${userId}&#x60;)
+    //return this.http.get&lt;User&gt;(&#x60;api/UserApi/${userId}&#x60;)
+    return this.http.get&lt;User&gt;(&#x60;https://traveller-server.azurewebsites.net/api/UserApi/${userId}&#x60;)
       .pipe(catchError(this.handleError));
   }
 
   getUserFromEmail(email: string): Observable&lt;User&gt; {
-    return this.http.get&lt;User&gt;(&#x60;api/Users/email/${email}&#x60;)
-    //return this.http.get&lt;User&gt;(&#x60;https://traveller-server.azurewebsites.net/api/Users/email/${email}&#x60;)
+    //return this.http.get&lt;User&gt;(&#x60;api/UserApi/email/${email}&#x60;)
+    return this.http.get&lt;User&gt;(&#x60;https://traveller-server.azurewebsites.net/api/UserApi/email/${email}&#x60;)
       .pipe(catchError(this.handleError));
   }
 
@@ -483,8 +483,8 @@ export class UserService {
  * @returns All users from the database.
  */
   getUsers(): Observable&lt;User[]&gt; {
-    return this.http.get&lt;User[]&gt;(&#x60;api/Users&#x60;)
-    //return this.http.get&lt;User[]&gt;(&#x60;https://traveller-server.azurewebsites.net/api/Users&#x60;)
+    //return this.http.get&lt;User[]&gt;(&#x60;api/UserApi&#x60;)
+    return this.http.get&lt;User[]&gt;(&#x60;https://traveller-server.azurewebsites.net/api/UserApi&#x60;)
       .pipe(catchError(this.handleError));
   }
 

@@ -1,6 +1,7 @@
 var namespace_traveller___server =
 [
     [ "Areas", "namespace_traveller___server_1_1_areas.html", "namespace_traveller___server_1_1_areas" ],
+    [ "AzureKeyVault", "namespace_traveller___server_1_1_azure_key_vault.html", "namespace_traveller___server_1_1_azure_key_vault" ],
     [ "Controllers", "namespace_traveller___server_1_1_controllers.html", "namespace_traveller___server_1_1_controllers" ],
     [ "Data", "namespace_traveller___server_1_1_data.html", "namespace_traveller___server_1_1_data" ],
     [ "JwtFeatures", "namespace_traveller___server_1_1_jwt_features.html", "namespace_traveller___server_1_1_jwt_features" ],

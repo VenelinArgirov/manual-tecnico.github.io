@@ -7,6 +7,11 @@ digraph "E:/Users/venel/Desktop/TravellerV2/traveller/Traveller-Server/Controlle
   compound=true
   subgraph clusterdir_ed192440a2dd0f1688028b93feb9c1fd {
     graph [ bgcolor="#edf0f7", pencolor="grey50", label="Traveller-Server", fontname=Helvetica,fontsize=10 style="filled,dashed", URL="dir_ed192440a2dd0f1688028b93feb9c1fd.html",tooltip=""]
-  dir_f3bd1644b7d21c59fff7ebecc90954c7 [label="Controllers", fillcolor="#edf0f7", color="grey25", style="filled,bold", URL="dir_f3bd1644b7d21c59fff7ebecc90954c7.html",tooltip=""];
+  subgraph clusterdir_f3bd1644b7d21c59fff7ebecc90954c7 {
+    graph [ bgcolor="#edf0f7", pencolor="grey25", label="", fontname=Helvetica,fontsize=10 style="filled,bold", URL="dir_f3bd1644b7d21c59fff7ebecc90954c7.html",tooltip=""]
+    dir_f3bd1644b7d21c59fff7ebecc90954c7 [shape=plaintext, label="Controllers"];
+  dir_70b1e15ef683c3713ea4be19ba868d01 [label="GTFSControllers", fillcolor="#a2b4d6", color="grey25", style="filled", URL="dir_70b1e15ef683c3713ea4be19ba868d01.html",tooltip=""];
+  dir_8c563af6b09372d353dbaa3a43d4487d [label="GTFSRealtime", fillcolor="#a2b4d6", color="grey25", style="filled", URL="dir_8c563af6b09372d353dbaa3a43d4487d.html",tooltip=""];
+  }
   }
 }

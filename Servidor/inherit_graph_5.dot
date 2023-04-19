@@ -8,6 +8,4 @@ digraph "Graphical Class Hierarchy"
   Node0 [label="Migration",height=0.2,width=0.4,color="grey60", fillcolor="#E0E0E0", style="filled",tooltip=" "];
   Node0 -> Node1 [dir="back",color="steelblue1",style="solid"];
   Node1 [label="Traveller_Server.Migrations.\lInitial",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_traveller___server_1_1_migrations_1_1_initial.html",tooltip=" "];
-  Node0 -> Node2 [dir="back",color="steelblue1",style="solid"];
-  Node2 [label="Traveller_Server.Migrations.cenas\lVenelin1",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_traveller___server_1_1_migrations_1_1cenas_venelin1.html",tooltip=" "];
 }

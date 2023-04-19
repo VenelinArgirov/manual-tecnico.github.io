@@ -58,7 +58,7 @@
             <h3>File</h3>
         </p>
         <p class="comment">
-            <code>src/app/route.service.ts</code>
+            <code>src/app/services/route.service.ts</code>
         </p>
 
 
@@ -120,7 +120,7 @@
                 </tr>
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="13" class="link-to-prism">src/app/route.service.ts:13</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="13" class="link-to-prism">src/app/services/route.service.ts:13</a></div>
                             </td>
                         </tr>
 
@@ -191,7 +191,7 @@
             <tr>
                 <td class="col-md-4">
                     <div class="io-line">Defined in <a href="" data-line="47"
-                            class="link-to-prism">src/app/route.service.ts:47</a></div>
+                            class="link-to-prism">src/app/services/route.service.ts:47</a></div>
                 </td>
             </tr>
 
@@ -268,7 +268,7 @@
             <tr>
                 <td class="col-md-4">
                     <div class="io-line">Defined in <a href="" data-line="58"
-                            class="link-to-prism">src/app/route.service.ts:58</a></div>
+                            class="link-to-prism">src/app/services/route.service.ts:58</a></div>
                 </td>
             </tr>
 
@@ -345,7 +345,7 @@
             <tr>
                 <td class="col-md-4">
                     <div class="io-line">Defined in <a href="" data-line="69"
-                            class="link-to-prism">src/app/route.service.ts:69</a></div>
+                            class="link-to-prism">src/app/services/route.service.ts:69</a></div>
                 </td>
             </tr>
 
@@ -422,7 +422,7 @@
             <tr>
                 <td class="col-md-4">
                     <div class="io-line">Defined in <a href="" data-line="36"
-                            class="link-to-prism">src/app/route.service.ts:36</a></div>
+                            class="link-to-prism">src/app/services/route.service.ts:36</a></div>
                 </td>
             </tr>
 
@@ -499,7 +499,7 @@
             <tr>
                 <td class="col-md-4">
                     <div class="io-line">Defined in <a href="" data-line="25"
-                            class="link-to-prism">src/app/route.service.ts:25</a></div>
+                            class="link-to-prism">src/app/services/route.service.ts:25</a></div>
                 </td>
             </tr>
 
@@ -546,7 +546,7 @@
             <tr>
                 <td class="col-md-4">
                     <div class="io-line">Defined in <a href="" data-line="80"
-                            class="link-to-prism">src/app/route.service.ts:80</a></div>
+                            class="link-to-prism">src/app/services/route.service.ts:80</a></div>
                 </td>
             </tr>
 
@@ -611,7 +611,7 @@ Prints the error to the console.</p>
         <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Injectable } from &#x27;@angular/core&#x27;;
 import { HttpClient, HttpErrorResponse } from &#x27;@angular/common/http&#x27;;
 import { catchError, Observable, throwError } from &#x27;rxjs&#x27;;
-import { Route } from &#x27;./route&#x27;;
+import { Route } from &#x27;../models/route&#x27;;
 
 @Injectable({
   providedIn: &#x27;root&#x27;
@@ -633,8 +633,8 @@ export class RouteService {
    * @returns A list of routes obtained from the database.
    */
   getRoutes(): Observable&lt;Route[]&gt; {
-    return this.http.get&lt;Route[]&gt;(&#x27;api/RoutesApi&#x27;)
-    //return this.http.get&lt;Route[]&gt;(&#x27;https://traveller-server.azurewebsites.net/api/RoutesApi&#x27;)
+    //return this.http.get&lt;Route[]&gt;(&#x27;api/RoutesApi&#x27;)
+    return this.http.get&lt;Route[]&gt;(&#x27;https://traveller-server.azurewebsites.net/api/RoutesApi&#x27;)
       .pipe(catchError(this.handleError));
   }
 
@@ -644,8 +644,8 @@ export class RouteService {
    * @returns A route obtained from the database with a specific id.
    */
   getRoute(routeId: string): Observable&lt;Route&gt; {
-    return this.http.get&lt;Route&gt;(&#x60;api/RoutesApi/${routeId}&#x60;)
-    //return this.http.get&lt;Route&gt;(&#x60;https://traveller-server.azurewebsites.net/api/RoutesApi/${routeId}&#x60;)
+    //return this.http.get&lt;Route&gt;(&#x60;api/RoutesApi/${routeId}&#x60;)
+    return this.http.get&lt;Route&gt;(&#x60;https://traveller-server.azurewebsites.net/api/RoutesApi/${routeId}&#x60;)
       .pipe(catchError(this.handleError));
   }
 
@@ -655,8 +655,8 @@ export class RouteService {
    * @returns The created route.
    */
   addRoute(route: Route): Observable&lt;Route&gt; {
-    return this.http.post&lt;Route&gt;(&#x60;api/RoutesApi&#x60;, route)
-    //return this.http.post&lt;Route&gt;(&#x60;https://traveller-server.azurewebsites.net/api/RoutesApi&#x60;, route)
+    //return this.http.post&lt;Route&gt;(&#x60;api/RoutesApi&#x60;, route)
+    return this.http.post&lt;Route&gt;(&#x60;https://traveller-server.azurewebsites.net/api/RoutesApi&#x60;, route)
       .pipe(catchError(this.handleError));
   }
 
@@ -666,8 +666,8 @@ export class RouteService {
    * @returns The deleted route
    */
   deleteRoute(routeId: string): Observable&lt;Route&gt; {
-    return this.http.delete&lt;Route&gt;(&#x60;api/RoutesApi/${routeId}&#x60;)
-    //return this.http.delete&lt;Route&gt;(&#x60;https://traveller-server.azurewebsites.net/api/RoutesApi/${routeId}&#x60;)
+    //return this.http.delete&lt;Route&gt;(&#x60;api/RoutesApi/${routeId}&#x60;)
+    return this.http.delete&lt;Route&gt;(&#x60;https://traveller-server.azurewebsites.net/api/RoutesApi/${routeId}&#x60;)
       .pipe(catchError(this.handleError));
   }
 
@@ -677,8 +677,8 @@ export class RouteService {
    * @returns The edited route
    */
   editRoute(route: Route): Observable&lt;Route&gt; {
-    return this.http.put&lt;Route&gt;(&#x60;api/RoutesApi/${route.routeId}&#x60;, route)
-    //return this.http.put&lt;Route&gt;(&#x60;https://traveller-server.azurewebsites.net/api/RoutesApi/${route.routeId}&#x60;, route)
+    //return this.http.put&lt;Route&gt;(&#x60;api/RoutesApi/${route.routeId}&#x60;, route)
+    return this.http.put&lt;Route&gt;(&#x60;https://traveller-server.azurewebsites.net/api/RoutesApi/${route.routeId}&#x60;, route)
       .pipe(catchError(this.handleError));
   }
 

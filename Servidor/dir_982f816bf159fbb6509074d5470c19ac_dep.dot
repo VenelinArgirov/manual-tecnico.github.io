@@ -7,6 +7,11 @@ digraph "E:/Users/venel/Desktop/TravellerV2/traveller/Traveller-Server/Models/Da
   compound=true
   subgraph clusterdir_9a72a53d185d6de234182ebe7213694d {
     graph [ bgcolor="#edf0f7", pencolor="grey50", label="Models", fontname=Helvetica,fontsize=10 style="filled,dashed", URL="dir_9a72a53d185d6de234182ebe7213694d.html",tooltip=""]
-  dir_982f816bf159fbb6509074d5470c19ac [label="DataClasses", fillcolor="#edf0f7", color="grey25", style="filled,bold", URL="dir_982f816bf159fbb6509074d5470c19ac.html",tooltip=""];
+  subgraph clusterdir_982f816bf159fbb6509074d5470c19ac {
+    graph [ bgcolor="#edf0f7", pencolor="grey25", label="", fontname=Helvetica,fontsize=10 style="filled,bold", URL="dir_982f816bf159fbb6509074d5470c19ac.html",tooltip=""]
+    dir_982f816bf159fbb6509074d5470c19ac [shape=plaintext, label="DataClasses"];
+  dir_83818499b9f341b7641fe0015a8e1f5f [label="GTFS", fillcolor="#a2b4d6", color="grey25", style="filled", URL="dir_83818499b9f341b7641fe0015a8e1f5f.html",tooltip=""];
+  dir_648784b4784e634dc78373eb96576e10 [label="GTFSRealtime", fillcolor="#a2b4d6", color="grey25", style="filled", URL="dir_648784b4784e634dc78373eb96576e10.html",tooltip=""];
+  }
   }
 }
