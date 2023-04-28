@@ -70,10 +70,17 @@
 <section class="summary source-code" id="source">
   <h2><span>Implementation</span></h2>
   <pre class="language-dart"><code class="language-dart">ThemeData lightTheme = ThemeData(
-  brightness: Brightness.light,
   primaryColor: LIGHTTHEME_COLOR_PRIMARY,
+  secondaryHeaderColor: const Color(0xffB8F4E0),
   primarySwatch: generateMaterialColor(color: LIGHTTHEME_COLOR_PRIMARY),
+  dividerColor: const Color.fromARGB(255, 191, 191, 191),
+  snackBarTheme: const SnackBarThemeData(
+      backgroundColor: LIGHTTHEME_COLOR_PRIMARY,
+      contentTextStyle: TextStyle(fontSize: 16, color: Colors.black, fontWeight: FontWeight.w500)),
   scaffoldBackgroundColor: LIGHTTHEME_COLOR_BACKGROUND,
+  bottomSheetTheme: const BottomSheetThemeData(
+    backgroundColor: Color.fromARGB(255, 235, 235, 235),
+  ),
   elevatedButtonTheme: ElevatedButtonThemeData(
     style: ElevatedButton.styleFrom(
         fixedSize: const Size(150, 50),
@@ -89,6 +96,10 @@
   floatingActionButtonTheme: const FloatingActionButtonThemeData(
     backgroundColor: LIGHTTHEME_COLOR_SECONDARY,
   ),
+  dropdownMenuTheme: DropdownMenuThemeData(
+      menuStyle: MenuStyle(
+    backgroundColor: MaterialStateProperty.all&lt;Color&gt;(LIGHTTHEME_COLOR_BACKGROUND),
+  )),
   textButtonTheme: TextButtonThemeData(
       style: TextButton.styleFrom(
     foregroundColor: Colors.black,
@@ -180,16 +191,9 @@
   dialogTheme: const DialogTheme(
     backgroundColor: LIGHTTHEME_COLOR_BACKGROUND,
   ),
-  bottomSheetTheme: const BottomSheetThemeData(
-    shape: RoundedRectangleBorder(borderRadius: BorderRadiusDirectional.only(topEnd: Radius.circular(50), topStart: Radius.circular(50))),
-    backgroundColor: Color(0x00ebebeb),
-    modalBackgroundColor: Color(0x00ebebeb),
-    surfaceTintColor: Color(0x00ebebeb),
-    modalBarrierColor: Color(0x00ebebeb),
-  ),
   listTileTheme: const ListTileThemeData(
-    iconColor: Colors.black
-  )
+    iconColor: Colors.black,
+  ),
 );</code></pre>
 </section>
 

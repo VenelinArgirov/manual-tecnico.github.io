@@ -8,6 +8,10 @@ var hierarchy =
     [ "Traveller_Server.Models.DataClasses.AuthResponse", "class_traveller___server_1_1_models_1_1_data_classes_1_1_auth_response.html", null ],
     [ "Traveller_Server.Models.DataClasses.GTFS.CalendarDate", "class_traveller___server_1_1_models_1_1_data_classes_1_1_g_t_f_s_1_1_calendar_date.html", null ],
     [ "Traveller_Server.Controllers.GTFSRealtime.FeedMessagesApiController.ConfirmFeedMessage", "class_traveller___server_1_1_controllers_1_1_g_t_f_s_realtime_1_1_feed_messages_api_controller_1_1_confirm_feed_message.html", null ],
+    [ "Controller", null, [
+      [ "Traveller_Server.Controllers.HomeController", "class_traveller___server_1_1_controllers_1_1_home_controller.html", null ],
+      [ "Traveller_Server.Controllers.UserApiController", "class_traveller___server_1_1_controllers_1_1_user_api_controller.html", null ]
+    ] ],
     [ "ControllerBase", null, [
       [ "Traveller_Server.Controllers.ActivityLogsApiController", "class_traveller___server_1_1_controllers_1_1_activity_logs_api_controller.html", null ],
       [ "Traveller_Server.Controllers.AlertVotesController", "class_traveller___server_1_1_controllers_1_1_alert_votes_controller.html", null ],
@@ -54,6 +58,7 @@ var hierarchy =
     [ "Traveller_Server.Models.DataClasses.GTFSRealtime.FeedHeader", "class_traveller___server_1_1_models_1_1_data_classes_1_1_g_t_f_s_realtime_1_1_feed_header.html", null ],
     [ "Traveller_Server.Models.DataClasses.GTFS.FeedInfo", "class_traveller___server_1_1_models_1_1_data_classes_1_1_g_t_f_s_1_1_feed_info.html", null ],
     [ "Traveller_Server.Models.DataClasses.GTFSRealtime.FeedMessage", "class_traveller___server_1_1_models_1_1_data_classes_1_1_g_t_f_s_realtime_1_1_feed_message.html", null ],
+    [ "Traveller_Server.Controllers.GTFSControllers.TripsApiController.GoogleTripInfoMessage", "class_traveller___server_1_1_controllers_1_1_g_t_f_s_controllers_1_1_trips_api_controller_1_1_google_trip_info_message.html", null ],
     [ "IdentityDbContext", null, [
       [ "Traveller_Server.Data.Traveller_ServerContext", "class_traveller___server_1_1_data_1_1_traveller___server_context.html", null ]
     ] ],
@@ -124,6 +129,7 @@ var hierarchy =
     [ "Traveller_Server.Program", "class_traveller___server_1_1_program.html", null ],
     [ "Traveller_Server.Models.DataClasses.ResetPasswordLog", "class_traveller___server_1_1_models_1_1_data_classes_1_1_reset_password_log.html", null ],
     [ "Traveller_Server.Models.DataClasses.GTFS.Route", "class_traveller___server_1_1_models_1_1_data_classes_1_1_g_t_f_s_1_1_route.html", null ],
+    [ "Traveller_Server.Controllers.GTFSRealtime.FeedMessagesApiController.RouteTripInfoMessage", "class_traveller___server_1_1_controllers_1_1_g_t_f_s_realtime_1_1_feed_messages_api_controller_1_1_route_trip_info_message.html", null ],
     [ "Traveller_Server.Models.DataClasses.GTFS.Shape", "class_traveller___server_1_1_models_1_1_data_classes_1_1_g_t_f_s_1_1_shape.html", null ],
     [ "Traveller_Server.Models.DataClasses.GTFS.Stop", "class_traveller___server_1_1_models_1_1_data_classes_1_1_g_t_f_s_1_1_stop.html", null ],
     [ "Traveller_Server.Models.StopLinker", "class_traveller___server_1_1_models_1_1_stop_linker.html", null ],
@@ -135,6 +141,7 @@ var hierarchy =
     [ "Traveller_Server.Models.DataClasses.GTFSRealtime.TripUpdate", "class_traveller___server_1_1_models_1_1_data_classes_1_1_g_t_f_s_realtime_1_1_trip_update.html", null ],
     [ "Traveller_Server.Models.DataClasses.User_Course", "class_traveller___server_1_1_models_1_1_data_classes_1_1_user___course.html", null ],
     [ "Traveller_Server.Models.DataClasses.UserBoardedInfo", "class_traveller___server_1_1_models_1_1_data_classes_1_1_user_boarded_info.html", null ],
+    [ "Traveller_Server.Controllers.UserBoardedInfoesApiController.UserBoardedInfoMessage", "class_traveller___server_1_1_controllers_1_1_user_boarded_infoes_api_controller_1_1_user_boarded_info_message.html", null ],
     [ "Traveller_Server.Models.DataClasses.UserBoardingInfo", "class_traveller___server_1_1_models_1_1_data_classes_1_1_user_boarding_info.html", null ],
     [ "Traveller_Server.Models.DataClasses.UserChangeState", "class_traveller___server_1_1_models_1_1_data_classes_1_1_user_change_state.html", null ],
     [ "Traveller_Server.Models.DataClasses.UserForAuthentication", "class_traveller___server_1_1_models_1_1_data_classes_1_1_user_for_authentication.html", null ],
@@ -146,9 +153,5 @@ var hierarchy =
     [ "Traveller_Server.Models.DataClasses.UserStopInfo", "class_traveller___server_1_1_models_1_1_data_classes_1_1_user_stop_info.html", null ],
     [ "Traveller_Server.Controllers.UserStopInfoesApiController.UserStopInfoMessage", "class_traveller___server_1_1_controllers_1_1_user_stop_infoes_api_controller_1_1_user_stop_info_message.html", null ],
     [ "Traveller_Server.Models.DataClasses.UserSuspension", "class_traveller___server_1_1_models_1_1_data_classes_1_1_user_suspension.html", null ],
-    [ "Traveller_Server.Models.DataClasses.GTFSRealtime.VehiclePosition", "class_traveller___server_1_1_models_1_1_data_classes_1_1_g_t_f_s_realtime_1_1_vehicle_position.html", null ],
-    [ "Controller", null, [
-      [ "Traveller_Server.Controllers.HomeController", "class_traveller___server_1_1_controllers_1_1_home_controller.html", null ],
-      [ "Traveller_Server.Controllers.UserApiController", "class_traveller___server_1_1_controllers_1_1_user_api_controller.html", null ]
-    ] ]
+    [ "Traveller_Server.Models.DataClasses.GTFSRealtime.VehiclePosition", "class_traveller___server_1_1_models_1_1_data_classes_1_1_g_t_f_s_realtime_1_1_vehicle_position.html", null ]
 ];

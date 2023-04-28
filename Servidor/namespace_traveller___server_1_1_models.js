@@ -35,9 +35,10 @@ var namespace_traveller___server_1_1_models =
       ] ],
       [ "UserRank", "namespace_traveller___server_1_1_models_1_1_enums.html#abb66bc35351f64201785a20e20e76079", [
         [ "Admin", "namespace_traveller___server_1_1_models_1_1_enums.html#abb66bc35351f64201785a20e20e76079ae3afed0047b08059d0fada10f400c1e5", null ],
-        [ "Regular", "namespace_traveller___server_1_1_models_1_1_enums.html#abb66bc35351f64201785a20e20e76079ad2203cb1237cb6460cbad94564e39345", null ]
+        [ "Regular", "namespace_traveller___server_1_1_models_1_1_enums.html#abb66bc35351f64201785a20e20e76079ad2203cb1237cb6460cbad94564e39345", null ],
+        [ "Guest", "namespace_traveller___server_1_1_models_1_1_enums.html#abb66bc35351f64201785a20e20e76079aadb831a7fdd83dd1e2a309ce7591dff8", null ]
       ] ]
     ] ],
     [ "ErrorViewModel", "class_traveller___server_1_1_models_1_1_error_view_model.html", null ],
-    [ "StopLinker", "class_traveller___server_1_1_models_1_1_stop_linker.html", null ]
+    [ "StopLinker", "class_traveller___server_1_1_models_1_1_stop_linker.html", "class_traveller___server_1_1_models_1_1_stop_linker" ]
 ];

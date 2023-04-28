@@ -67,6 +67,7 @@
     
 <section class="desc markdown">
   <p>Function to get the specified user information from the back-end using the user's email</p>
+<p><code>email</code>, user email.</p>
 </section>
 
 
@@ -75,8 +76,7 @@
   <h2><span>Implementation</span></h2>
   <pre class="language-dart"><code class="language-dart">Future&lt;http.Response&gt; getUserInfoWithEmailFromAPI(String email) async {
 &#47;&#47; Defining the URL for the users API with the email parameter
-  final url = Uri.parse(
-      &#39;https:&#47;&#47;traveller-server.azurewebsites.net&#47;api&#47;UserApi&#47;email&#47;$email&#39;);
+  final url = Uri.parse(&#39;https:&#47;&#47;traveller-server.azurewebsites.net&#47;api&#47;UserApi&#47;email&#47;$email&#39;);
 
 &#47;&#47; Defining the headers required for the API request
   final headers = {&#39;Content-Type&#39;: &#39;application&#47;json&#39;};

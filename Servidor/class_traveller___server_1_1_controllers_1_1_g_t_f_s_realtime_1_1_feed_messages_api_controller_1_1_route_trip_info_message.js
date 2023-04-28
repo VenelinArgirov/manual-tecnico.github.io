@@ -1,0 +1,7 @@
+var class_traveller___server_1_1_controllers_1_1_g_t_f_s_realtime_1_1_feed_messages_api_controller_1_1_route_trip_info_message =
+[
+    [ "RouteId", "class_traveller___server_1_1_controllers_1_1_g_t_f_s_realtime_1_1_feed_messages_api_controller_1_1_route_trip_info_message.html#ac680a6f939cd0e92e8a2fff678481991", null ],
+    [ "RouteLongName", "class_traveller___server_1_1_controllers_1_1_g_t_f_s_realtime_1_1_feed_messages_api_controller_1_1_route_trip_info_message.html#adb2e8f18e9bee115e9b9b18e9c305672", null ],
+    [ "RouteShortName", "class_traveller___server_1_1_controllers_1_1_g_t_f_s_realtime_1_1_feed_messages_api_controller_1_1_route_trip_info_message.html#a4246b6e388ed138069358e4ac4ae286c", null ],
+    [ "TripId", "class_traveller___server_1_1_controllers_1_1_g_t_f_s_realtime_1_1_feed_messages_api_controller_1_1_route_trip_info_message.html#a4503e8257fba291284194aa66b732b0c", null ]
+];

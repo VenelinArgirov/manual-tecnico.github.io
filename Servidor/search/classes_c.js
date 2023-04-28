@@ -8,5 +8,6 @@ var searchData=
   ['resetpasswordlog_5',['ResetPasswordLog',['../class_traveller___server_1_1_models_1_1_data_classes_1_1_reset_password_log.html',1,'Traveller_Server::Models::DataClasses']]],
   ['resetpasswordmodel_6',['ResetPasswordModel',['../class_traveller___server_1_1_areas_1_1_identity_1_1_pages_1_1_account_1_1_reset_password_model.html',1,'Traveller_Server::Areas::Identity::Pages::Account']]],
   ['route_7',['Route',['../class_traveller___server_1_1_models_1_1_data_classes_1_1_g_t_f_s_1_1_route.html',1,'Traveller_Server::Models::DataClasses::GTFS']]],
-  ['routesapicontroller_8',['RoutesApiController',['../class_traveller___server_1_1_controllers_1_1_g_t_f_s_controllers_1_1_routes_api_controller.html',1,'Traveller_Server::Controllers::GTFSControllers']]]
+  ['routesapicontroller_8',['RoutesApiController',['../class_traveller___server_1_1_controllers_1_1_g_t_f_s_controllers_1_1_routes_api_controller.html',1,'Traveller_Server::Controllers::GTFSControllers']]],
+  ['routetripinfomessage_9',['RouteTripInfoMessage',['../class_traveller___server_1_1_controllers_1_1_g_t_f_s_realtime_1_1_feed_messages_api_controller_1_1_route_trip_info_message.html',1,'Traveller_Server::Controllers::GTFSRealtime::FeedMessagesApiController']]]
 ];

@@ -1,0 +1,17 @@
+digraph "Traveller_Server.Controllers.UserStopInfoesApiController.Update"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [label="Traveller_Server.Controllers.\lUserStopInfoesApiController.Update",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="One of the main methods of user trackings, used to update the user stop locations in the database...."];
+  Node1 -> Node2 [color="steelblue1",style="solid"];
+  Node2 [label="Traveller_Server.Models.\lStopLinker.GetClosestTripFrom\lRouteAndUSI",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_traveller___server_1_1_models_1_1_stop_linker.html#afbfe1ec47eb7b115d933b479b9848ede",tooltip="Get the closest trip for the given route and user stop info."];
+  Node2 -> Node3 [color="steelblue1",style="solid"];
+  Node3 [label="Traveller_Server.Models.\lStopLinker.GetStopFromLocation",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_traveller___server_1_1_models_1_1_stop_linker.html#af41d2705319359a722105ec1e6b3d2ca",tooltip="Get a GTFS Stop from a Location."];
+  Node3 -> Node4 [color="steelblue1",style="solid"];
+  Node4 [label="Traveller_Server.Models.\lStopLinker.GetStop",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_traveller___server_1_1_models_1_1_stop_linker.html#a061ad69b5a542103ac2ad7c251ece1ca",tooltip="Function to get a GTFS stop from latitude and longitude."];
+  Node1 -> Node5 [color="steelblue1",style="solid"];
+  Node5 [label="Traveller_Server.Models.\lStopLinker.GetRoutesForGivenStops",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_traveller___server_1_1_models_1_1_stop_linker.html#a9e4db6618436c631fde6bfa4ee1ebb24",tooltip="Get a list of possible routes with the given User Stop Infos in the sequence."];
+}

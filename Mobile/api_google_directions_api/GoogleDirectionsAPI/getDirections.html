@@ -57,10 +57,10 @@
     <section class="multi-line-signature">
       
 
-<span class="returntype"><a href="https://api.flutter.dev/flutter/dart-async/Future-class.html">Future</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://pub.dev/documentation/google_maps_webservice/0.0.20-nullsafety.5/google_maps_webservice.directions/DirectionsResponse-class.html">DirectionsResponse</a></span>&gt;</span></span>
-<span class="name ">getDirections</span>(<wbr><ol class="parameter-list"><li><span class="parameter" id="getDirections-param-origin"><span class="type-annotation"><a href="https://pub.dev/documentation/google_maps_webservice/0.0.20-nullsafety.5/google_maps_webservice.timezone/Location-class.html">Location</a></span> <span class="parameter-name">origin</span>, </span></li>
-<li><span class="parameter" id="getDirections-param-destination"><span class="type-annotation"><a href="https://pub.dev/documentation/google_maps_webservice/0.0.20-nullsafety.5/google_maps_webservice.timezone/Location-class.html">Location</a></span> <span class="parameter-name">destination</span>, </span></li>
-<li><span class="parameter" id="getDirections-param-transitModes"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/List-class.html">List</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://pub.dev/documentation/google_maps_webservice/0.0.20-nullsafety.5/google_maps_webservice.timezone/TransitMode.html">TransitMode</a></span>&gt;</span>?</span> <span class="parameter-name">transitModes</span>, </span></li>
+<span class="returntype"><a href="https://api.flutter.dev/flutter/dart-async/Future-class.html">Future</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../../api_google_directions_api_directions/DirectionsResponse-class.html">DirectionsResponse</a></span>&gt;</span></span>
+<span class="name ">getDirections</span>(<wbr><ol class="parameter-list"><li><span class="parameter" id="getDirections-param-origin"><span class="type-annotation"><a href="../../api_google_directions_api_core/Location-class.html">Location</a></span> <span class="parameter-name">origin</span>, </span></li>
+<li><span class="parameter" id="getDirections-param-destination"><span class="type-annotation"><a href="../../api_google_directions_api_core/Location-class.html">Location</a></span> <span class="parameter-name">destination</span>, </span></li>
+<li><span class="parameter" id="getDirections-param-transitModes"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/List-class.html">List</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../../api_google_directions_api_core/TransitMode.html">TransitMode</a></span>&gt;</span>?</span> <span class="parameter-name">transitModes</span>, </span></li>
 <li><span class="parameter" id="getDirections-param-departureTime"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/DateTime-class.html">DateTime</a>?</span> <span class="parameter-name">departureTime</span>, </span></li>
 <li><span class="parameter" id="getDirections-param-arrivalTime"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/DateTime-class.html">DateTime</a>?</span> <span class="parameter-name">arrivalTime</span></span></li>
 </ol>)
@@ -74,16 +74,38 @@
     
 <section class="summary source-code" id="source">
   <h2><span>Implementation</span></h2>
-  <pre class="language-dart"><code class="language-dart">Future&lt;DirectionsResponse&gt; getDirections(Location origin, Location destination, List&lt;TransitMode&gt;? transitModes, DateTime? departureTime, DateTime? arrivalTime) async {
-  GoogleMapsDirections directions = GoogleMapsDirections(apiKey: &quot;AIzaSyAqMhg4PuP-7eZIl52DePKQHSqS5t2M1L4&quot;);
+  <pre class="language-dart"><code class="language-dart">Future&lt;local_directions.DirectionsResponse&gt; getDirections(local_core.Location origin, local_core.Location destination,List&lt;local_core.TransitMode&gt;? transitModes,DateTime? departureTime,DateTime? arrivalTime) async {
+  String apiKey = await getKeyFromKeyVault(&quot;GoogleMapsKey&quot;);
 
-  DirectionsResponse dResponse;
-  if(departureTime == null || arrivalTime == null &amp;&amp; transitModes == null) {
-    dResponse = await directions.directions(origin, destination, travelMode: TravelMode.transit, language: &#39;pt-PT&#39;, alternatives: true);
-  } else if (transitModes == null) {
-    dResponse = await directions.directions(origin, destination, travelMode: TravelMode.transit, departureTime: departureTime, arrivalTime: arrivalTime, language: &#39;pt-PT&#39;, alternatives: true);
+  local_directions.GoogleMapsDirections directions = local_directions.GoogleMapsDirections(apiKey: apiKey);
+
+  local_directions.DirectionsResponse dResponse;
+  Locale _locale = const Locale(&#39;en&#39;);
+  SharedPreferences _prefs = await SharedPreferences.getInstance();
+
+
+    if (_prefs.getBool(&#39;isLanguageChanged&#39;) ?? false) {
+      _locale = const Locale(&#39;pt&#39;);
+    } else {
+      _locale = const Locale(&#39;en&#39;);
+    }
+
+  if(_locale.toString().contains(&#39;pt&#39;)){
+    if (departureTime == null || arrivalTime == null &amp;&amp; transitModes == null) {
+      dResponse = await directions.directions(origin, destination,travelMode: local_core.TravelMode.transit,language: &#39;pt-PT&#39;,alternatives: true);
+    } else if (transitModes == null) {
+      dResponse = await directions.directions(origin, destination, travelMode: local_core.TravelMode.transit, departureTime: departureTime, arrivalTime: arrivalTime, language: &#39;pt-PT&#39;, alternatives: true);
+    } else {
+      dResponse = await directions.directions(origin, destination,travelMode: local_core.TravelMode.transit,departureTime: departureTime,arrivalTime: arrivalTime,transitMode: transitModes,language: &#39;pt-PT&#39;,alternatives: true);
+    }
   } else {
-    dResponse = await directions.directions(origin, destination, travelMode: TravelMode.transit, departureTime: departureTime, arrivalTime: arrivalTime, transitMode: transitModes, language: &#39;pt-PT&#39;, alternatives: true);
+    if (departureTime == null || arrivalTime == null &amp;&amp; transitModes == null) {
+      dResponse = await directions.directions(origin, destination,travelMode: local_core.TravelMode.transit,alternatives: true);
+    } else if (transitModes == null) {
+      dResponse = await directions.directions(origin, destination, travelMode: local_core.TravelMode.transit, departureTime: departureTime, arrivalTime: arrivalTime, language: &#39;pt-PT&#39;, alternatives: true);
+    } else {
+      dResponse = await directions.directions(origin, destination,travelMode: local_core.TravelMode.transit,departureTime: departureTime,arrivalTime: arrivalTime,transitMode: transitModes,language: &#39;pt-PT&#39;,alternatives: true);
+    }
   }
 
   return dResponse;

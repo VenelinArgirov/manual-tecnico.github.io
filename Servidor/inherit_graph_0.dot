@@ -7,7 +7,7 @@ digraph "Graphical Class Hierarchy"
   rankdir="LR";
   Node0 [label="Controller",height=0.2,width=0.4,color="grey60", fillcolor="#E0E0E0", style="filled",tooltip=" "];
   Node0 -> Node1 [dir="back",color="steelblue1",style="solid"];
-  Node1 [label="Traveller_Server.Controllers.\lHomeController",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_traveller___server_1_1_controllers_1_1_home_controller.html",tooltip=" "];
+  Node1 [label="Traveller_Server.Controllers.\lHomeController",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_traveller___server_1_1_controllers_1_1_home_controller.html",tooltip="Controller for accessing the starting pages of the server website."];
   Node0 -> Node2 [dir="back",color="steelblue1",style="solid"];
-  Node2 [label="Traveller_Server.Controllers.\lUserApiController",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_traveller___server_1_1_controllers_1_1_user_api_controller.html",tooltip=" "];
+  Node2 [label="Traveller_Server.Controllers.\lUserApiController",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_traveller___server_1_1_controllers_1_1_user_api_controller.html",tooltip="API Controller for CRUD actions for Users."];
 }

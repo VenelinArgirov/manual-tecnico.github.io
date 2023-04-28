@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+  <meta name="description" content="API docs for the buildUrl method from the GoogleDistanceMatrix class, for the Dart programming language.">
+  <title>buildUrl method - GoogleDistanceMatrix class - distance library - Dart API</title>
+
+
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" rel="stylesheet">
+  
+  <link rel="stylesheet" href="../../static-assets/github.css?v1">
+  <link rel="stylesheet" href="../../static-assets/styles.css?v1">
+  <link rel="icon" href="../../static-assets/favicon.png?v1">
+
+  
+</head>
+
+
+<body data-base-href="../../" data-using-base-href="false" class="light-theme">
+
+<div id="overlay-under-drawer"></div>
+
+<header id="title">
+  <span id="sidenav-left-toggle" class="material-symbols-outlined" role="button" tabindex="0">menu</span>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="../../index.html">traveller_app</a></li>
+    <li><a href="../../api_google_directions_api_distance/api_google_directions_api_distance-library.html">distance</a></li>
+    <li><a href="../../api_google_directions_api_distance/GoogleDistanceMatrix-class.html">GoogleDistanceMatrix</a></li>
+    <li class="self-crumb">buildUrl method</li>
+  </ol>
+  <div class="self-name">buildUrl</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+  <div class="toggle" id="theme-button">
+    <label for="theme">
+      <input type="checkbox" id="theme" value="light-theme">
+      <span class="material-symbols-outlined">
+        brightness_4
+      </span>
+    </label>
+  </div>
+</header>
+<main>
+
+  <div id="dartdoc-main-content" class="main-content">
+      <div>
+<h1><span class="kind-method">buildUrl</span> method 
+    <a href="https://dart.dev/null-safety" class="feature feature-null-safety" title="Supports the null safety language feature.">Null safety</a>
+</h1></div>
+
+    <section class="multi-line-signature">
+      
+
+<span class="returntype"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>
+<span class="name ">buildUrl</span>(<wbr><ol class="parameter-list"><li><span class="parameter" id="buildUrl-param-origin">{<span>required</span> <span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/List-class.html">List</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/Object-class.html">Object</a></span>&gt;</span></span> <span class="parameter-name">origin</span>, </span></li>
+<li><span class="parameter" id="buildUrl-param-destination"><span>required</span> <span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/List-class.html">List</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/Object-class.html">Object</a></span>&gt;</span></span> <span class="parameter-name">destination</span>, </span></li>
+<li><span class="parameter" id="buildUrl-param-travelMode"><span class="type-annotation"><a href="../../api_google_directions_api_core/TravelMode.html">TravelMode</a>?</span> <span class="parameter-name">travelMode</span>, </span></li>
+<li><span class="parameter" id="buildUrl-param-languageCode"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a>?</span> <span class="parameter-name">languageCode</span>, </span></li>
+<li><span class="parameter" id="buildUrl-param-alternative"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span> <span class="parameter-name">alternative</span> = <span class="default-value">false</span>, </span></li>
+<li><span class="parameter" id="buildUrl-param-region"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a>?</span> <span class="parameter-name">region</span>, </span></li>
+<li><span class="parameter" id="buildUrl-param-avoids"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/List-class.html">List</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../../api_google_directions_api_core/RouteType.html">RouteType</a></span>&gt;</span></span> <span class="parameter-name">avoids</span> = <span class="default-value">const &lt;RouteType&gt;[]</span>, </span></li>
+<li><span class="parameter" id="buildUrl-param-unit"><span class="type-annotation"><a href="../../api_google_directions_api_core/Unit.html">Unit</a>?</span> <span class="parameter-name">unit</span>, </span></li>
+<li><span class="parameter" id="buildUrl-param-arrivalTime"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/Object-class.html">Object</a>?</span> <span class="parameter-name">arrivalTime</span>, </span></li>
+<li><span class="parameter" id="buildUrl-param-departureTime"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/Object-class.html">Object</a>?</span> <span class="parameter-name">departureTime</span>, </span></li>
+<li><span class="parameter" id="buildUrl-param-transitMode"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/List-class.html">List</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../../api_google_directions_api_core/TransitMode.html">TransitMode</a></span>&gt;</span></span> <span class="parameter-name">transitMode</span> = <span class="default-value">const []</span>, </span></li>
+<li><span class="parameter" id="buildUrl-param-trafficModel"><span class="type-annotation"><a href="../../api_google_directions_api_core/TrafficModel.html">TrafficModel</a>?</span> <span class="parameter-name">trafficModel</span>, </span></li>
+<li><span class="parameter" id="buildUrl-param-transitRoutingPreference"><span class="type-annotation"><a href="../../api_google_directions_api_core/TransitRoutingPreferences.html">TransitRoutingPreferences</a>?</span> <span class="parameter-name">transitRoutingPreference</span>}</span></li>
+</ol>)
+
+      
+
+    </section>
+    
+
+
+    
+<section class="summary source-code" id="source">
+  <h2><span>Implementation</span></h2>
+  <pre class="language-dart"><code class="language-dart">String buildUrl({
+  required List&lt;Object &#47;*Location|String*&#47; &gt; origin,
+  required List&lt;Object &#47;*Location|String*&#47; &gt; destination,
+  TravelMode? travelMode,
+  String? languageCode,
+  bool alternative = false,
+  String? region,
+  List&lt;RouteType&gt; avoids = const &lt;RouteType&gt;[],
+  Unit? unit,
+  Object? &#47;*DateTime|num*&#47; arrivalTime,
+  Object? &#47;*DateTime|num|String(&#39;now&#39;)*&#47; departureTime,
+  List&lt;TransitMode&gt; transitMode = const [],
+  TrafficModel? trafficModel,
+  TransitRoutingPreferences? transitRoutingPreference,
+}) {
+  final params = &lt;String, String&gt;{};
+
+  if (origin is! List&lt;Location&gt; &amp;&amp; origin is! List&lt;String&gt;) {
+    throw ArgumentError(&quot;&#39;origin&#39; must be a &#39;$String&#39; or a &#39;$Location&#39;&quot;);
+  }
+  params[&#39;origins&#39;] = origin.join(&#39;|&#39;);
+
+  if (destination is! List&lt;Location&gt; &amp;&amp; destination is! List&lt;String&gt;) {
+    throw ArgumentError(&quot;&#39;destination&#39; must be a &#39;$String&#39; or a &#39;$Location&#39;&quot;);
+  }
+  params[&#39;destinations&#39;] = destination.join(&#39;|&#39;);
+
+  if (destination is! List&lt;Location&gt; &amp;&amp; destination is! List&lt;String&gt;) {
+    throw ArgumentError(&quot;&#39;destination&#39; must be a &#39;$String&#39; or a &#39;$Location&#39;&quot;);
+  }
+  if (departureTime != null &amp;&amp;
+      departureTime is! DateTime &amp;&amp;
+      departureTime is! num &amp;&amp;
+      departureTime != &#39;now&#39;) {
+    throw ArgumentError(&quot;&#39;departureTime&#39; must be a &#39;$num&#39; or a &#39;$DateTime&#39;&quot;);
+  }
+  if (arrivalTime != null &amp;&amp;
+      arrivalTime is! DateTime &amp;&amp;
+      arrivalTime is! num) {
+    throw ArgumentError(&quot;&#39;arrivalTime&#39; must be a &#39;$num&#39; or a &#39;$DateTime&#39;&quot;);
+  }
+
+  if (departureTime != null) {
+    if (departureTime is! DateTime &amp;&amp;
+        departureTime is! num &amp;&amp;
+        departureTime != &#39;now&#39;) {
+      throw ArgumentError(
+          &quot;&#39;departureTime&#39; must be a &#39;$num&#39; or a &#39;$DateTime&#39;&quot;);
+    }
+
+    params[&#39;departure_time&#39;] = departureTime is DateTime
+        ? (departureTime.millisecondsSinceEpoch ~&#47; 1000).toString()
+        : departureTime.toString();
+  }
+
+  if (arrivalTime != null) {
+    if (arrivalTime is! DateTime &amp;&amp; arrivalTime is! num) {
+      throw ArgumentError(&quot;&#39;arrivalTime&#39; must be a &#39;$num&#39; or a &#39;$DateTime&#39;&quot;);
+    }
+
+    params[&#39;arrival_time&#39;] = arrivalTime is DateTime
+        ? (arrivalTime.millisecondsSinceEpoch ~&#47; 1000).toString()
+        : arrivalTime.toString();
+  }
+
+  if (travelMode != null) {
+    params[&#39;mode&#39;] = travelMode.toApiString();
+  }
+
+  if (alternative) {
+    params[&#39;alternative&#39;] = alternative.toString();
+  }
+
+  if (avoids.isNotEmpty) {
+    params[&#39;avoid&#39;] = avoids.map((t) =&gt; t.toApiString()).join(&#39;|&#39;);
+  }
+
+  if (languageCode != null) {
+    params[&#39;language&#39;] = languageCode;
+  }
+
+  if (unit != null) {
+    params[&#39;units&#39;] = unit.toApiString();
+  }
+
+  if (region != null) {
+    params[&#39;region&#39;] = region;
+  }
+
+  if (trafficModel != null) {
+    params[&#39;traffic_model&#39;] = trafficModel.toApiString();
+  }
+
+  if (transitMode.isNotEmpty) {
+    params[&#39;transit_mode&#39;] =
+        transitMode.map((t) =&gt; t.toApiString()).join(&#39;|&#39;);
+  }
+
+  if (transitRoutingPreference != null) {
+    params[&#39;transit_routing_preference&#39;] =
+        transitRoutingPreference.toApiString();
+  }
+
+  if (apiKey != null) {
+    params[&#39;key&#39;] = apiKey!;
+  }
+
+  return url.replace(queryParameters: params).toString();
+}</code></pre>
+</section>
+
+
+  </div> <!-- /.main-content -->
+
+  <div id="dartdoc-sidebar-left" class="sidebar sidebar-offcanvas-left">
+    <header id="header-search-sidebar" class="hidden-l">
+  <form class="search-sidebar" role="search">
+    <input type="text" id="search-sidebar" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
+  <li><a href="../../index.html">traveller_app</a></li>
+  <li><a href="../../api_google_directions_api_distance/api_google_directions_api_distance-library.html">distance</a></li>
+  <li><a href="../../api_google_directions_api_distance/GoogleDistanceMatrix-class.html">GoogleDistanceMatrix</a></li>
+  <li class="self-crumb">buildUrl method</li>
+</ol>
+
+
+    <h5>GoogleDistanceMatrix class</h5>
+    <ol>
+
+        <li class="section-title"><a href="../../api_google_directions_api_distance/GoogleDistanceMatrix-class.html#constructors">Constructors</a></li>
+          <li><a href="../../api_google_directions_api_distance/GoogleDistanceMatrix/GoogleDistanceMatrix.html">GoogleDistanceMatrix</a></li>
+
+
+        <li class="section-title inherited">
+          <a href="../../api_google_directions_api_distance/GoogleDistanceMatrix-class.html#instance-properties">Properties</a>
+        </li>
+          <li class="inherited"><a href="../../google_maps_webservice.utils/GoogleWebService/apiHeaders.html">apiHeaders</a></li>
+          <li class="inherited"><a href="../../google_maps_webservice.utils/GoogleWebService/apiKey.html">apiKey</a></li>
+          <li class="inherited"><a href="https://api.flutter.dev/flutter/dart-core/Object/hashCode.html">hashCode</a></li>
+          <li class="inherited"><a href="../../google_maps_webservice.utils/GoogleWebService/httpClient.html">httpClient</a></li>
+          <li class="inherited"><a href="https://api.flutter.dev/flutter/dart-core/Object/runtimeType.html">runtimeType</a></li>
+          <li class="inherited"><a href="../../google_maps_webservice.utils/GoogleWebService/url.html">url</a></li>
+
+        <li class="section-title"><a href="../../api_google_directions_api_distance/GoogleDistanceMatrix-class.html#instance-methods">Methods</a></li>
+          <li class="inherited"><a href="../../google_maps_webservice.utils/GoogleWebService/buildQuery.html">buildQuery</a></li>
+          <li><a href="../../api_google_directions_api_distance/GoogleDistanceMatrix/buildUrl.html">buildUrl</a></li>
+          <li class="inherited"><a href="../../google_maps_webservice.utils/GoogleWebService/dispose.html">dispose</a></li>
+          <li><a href="../../api_google_directions_api_distance/GoogleDistanceMatrix/distanceWithAddress.html">distanceWithAddress</a></li>
+          <li><a href="../../api_google_directions_api_distance/GoogleDistanceMatrix/distanceWithLocation.html">distanceWithLocation</a></li>
+          <li class="inherited"><a href="../../google_maps_webservice.utils/GoogleWebService/doGet.html">doGet</a></li>
+          <li class="inherited"><a href="../../google_maps_webservice.utils/GoogleWebService/doPost.html">doPost</a></li>
+          <li class="inherited"><a href="https://api.flutter.dev/flutter/dart-core/Object/noSuchMethod.html">noSuchMethod</a></li>
+          <li class="inherited"><a href="https://api.flutter.dev/flutter/dart-core/Object/toString.html">toString</a></li>
+
+        <li class="section-title inherited"><a href="../../api_google_directions_api_distance/GoogleDistanceMatrix-class.html#operators">Operators</a></li>
+          <li class="inherited"><a href="https://api.flutter.dev/flutter/dart-core/Object/operator_equals.html">operator ==</a></li>
+
+
+
+
+</ol>
+
+  </div><!--/.sidebar-offcanvas-->
+
+  <div id="dartdoc-sidebar-right" class="sidebar sidebar-offcanvas-right">
+  </div><!--/.sidebar-offcanvas-->
+
+</main>
+
+<footer>
+  <span class="no-break">
+    traveller_app
+      1.0.0+1
+  </span>
+
+  
+</footer>
+
+
+
+<script src="../../static-assets/highlight.pack.js?v1"></script>
+<script src="../../static-assets/docs.dart.js"></script>
+
+
+
+</body>
+
+</html>
+

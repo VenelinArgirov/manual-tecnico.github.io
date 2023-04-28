@@ -6,8 +6,13 @@ var searchData=
   ['personaldatamodel_3',['PersonalDataModel',['../class_traveller___server_1_1_areas_1_1_identity_1_1_pages_1_1_account_1_1_manage_1_1_personal_data_model.html',1,'Traveller_Server::Areas::Identity::Pages::Account::Manage']]],
   ['phonenumber_4',['PhoneNumber',['../class_traveller___server_1_1_areas_1_1_identity_1_1_pages_1_1_account_1_1_manage_1_1_index_model_1_1_input_model.html#aa3fba083181a2458f9e2eb043d7ce014',1,'Traveller_Server::Areas::Identity::Pages::Account::Manage::IndexModel::InputModel']]],
   ['positiveratings_5',['PositiveRatings',['../class_traveller___server_1_1_models_1_1_data_classes_1_1_alert.html#a2a54a15df78a9033bd28d853e18499ad',1,'Traveller_Server::Models::DataClasses::Alert']]],
-  ['previousstoplocationid_6',['PreviousStopLocationId',['../class_traveller___server_1_1_models_1_1_data_classes_1_1_user_boarding_info.html#addc72a41f10cec6bc410ceea4b6e5bc6',1,'Traveller_Server::Models::DataClasses::UserBoardingInfo']]],
-  ['profileimage_7',['profileImage',['../class_traveller___server_1_1_models_1_1_data_classes_1_1_user.html#a64b6773b38343cc684f226c78a070ff0',1,'Traveller_Server::Models::DataClasses::User']]],
-  ['program_8',['Program',['../class_traveller___server_1_1_program.html',1,'Traveller_Server']]],
-  ['providerdisplayname_9',['ProviderDisplayName',['../class_traveller___server_1_1_areas_1_1_identity_1_1_pages_1_1_account_1_1_external_login_model.html#a22ecf673e7a4e35c676919f004237061',1,'Traveller_Server::Areas::Identity::Pages::Account::ExternalLoginModel']]]
+  ['postlogoutactivitylog_6',['PostLogoutActivityLog',['../class_traveller___server_1_1_controllers_1_1_activity_logs_api_controller.html#af9d94492ffbd8e7b39121d3ea964499c',1,'Traveller_Server::Controllers::ActivityLogsApiController']]],
+  ['postubiwhenontrip_7',['PostUBIWhenOnTrip',['../class_traveller___server_1_1_controllers_1_1_user_boarded_infoes_api_controller.html#a787016a23b19fd402450eff5f841acc3',1,'Traveller_Server::Controllers::UserBoardedInfoesApiController']]],
+  ['postusersuspension_8',['PostUserSuspension',['../class_traveller___server_1_1_controllers_1_1_user_suspensions_api_controller.html#a5b22c66cf6b3298d1e4946f868906720',1,'Traveller_Server::Controllers::UserSuspensionsApiController']]],
+  ['previousstoplocationid_9',['PreviousStopLocationId',['../class_traveller___server_1_1_models_1_1_data_classes_1_1_user_boarding_info.html#addc72a41f10cec6bc410ceea4b6e5bc6',1,'Traveller_Server::Models::DataClasses::UserBoardingInfo']]],
+  ['privacy_10',['Privacy',['../class_traveller___server_1_1_controllers_1_1_home_controller.html#a9ef01430107d5332479884e8e619a1c6',1,'Traveller_Server::Controllers::HomeController']]],
+  ['profileimage_11',['profileImage',['../class_traveller___server_1_1_models_1_1_data_classes_1_1_user.html#a64b6773b38343cc684f226c78a070ff0',1,'Traveller_Server::Models::DataClasses::User']]],
+  ['program_12',['Program',['../class_traveller___server_1_1_program.html',1,'Traveller_Server']]],
+  ['providerdisplayname_13',['ProviderDisplayName',['../class_traveller___server_1_1_areas_1_1_identity_1_1_pages_1_1_account_1_1_external_login_model.html#a22ecf673e7a4e35c676919f004237061',1,'Traveller_Server::Areas::Identity::Pages::Account::ExternalLoginModel']]],
+  ['putuserstatus_14',['PutUserStatus',['../class_traveller___server_1_1_controllers_1_1_user_status_api_controller.html#abd3f7285d3f0726424cd21b8abfa1700',1,'Traveller_Server::Controllers::UserStatusApiController']]]
 ];

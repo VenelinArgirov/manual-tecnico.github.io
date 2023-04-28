@@ -76,7 +76,7 @@
   <h2><span>Implementation</span></h2>
   <pre class="language-dart"><code class="language-dart">Alert.normal(this.alertId, this.creatorId, this.locationId, this.description,
     this.transportType, this.alertType) {
-  creationDate = DateTime.now().toString();
+  creationDate = DateTime.now().toUtc().toString();
 }</code></pre>
 </section>
 

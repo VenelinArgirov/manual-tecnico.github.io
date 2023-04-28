@@ -54,8 +54,8 @@ var annotated_dup =
           [ "RoutesApiController", "class_traveller___server_1_1_controllers_1_1_g_t_f_s_controllers_1_1_routes_api_controller.html", null ],
           [ "ShapesApiController", "class_traveller___server_1_1_controllers_1_1_g_t_f_s_controllers_1_1_shapes_api_controller.html", null ],
           [ "StopsApiController", "class_traveller___server_1_1_controllers_1_1_g_t_f_s_controllers_1_1_stops_api_controller.html", null ],
-          [ "StopTimesApiController", "class_traveller___server_1_1_controllers_1_1_g_t_f_s_controllers_1_1_stop_times_api_controller.html", null ],
-          [ "TripsApiController", "class_traveller___server_1_1_controllers_1_1_g_t_f_s_controllers_1_1_trips_api_controller.html", null ]
+          [ "StopTimesApiController", "class_traveller___server_1_1_controllers_1_1_g_t_f_s_controllers_1_1_stop_times_api_controller.html", "class_traveller___server_1_1_controllers_1_1_g_t_f_s_controllers_1_1_stop_times_api_controller" ],
+          [ "TripsApiController", "class_traveller___server_1_1_controllers_1_1_g_t_f_s_controllers_1_1_trips_api_controller.html", "class_traveller___server_1_1_controllers_1_1_g_t_f_s_controllers_1_1_trips_api_controller" ]
         ] ],
         [ "GTFSRealtime", "namespace_traveller___server_1_1_controllers_1_1_g_t_f_s_realtime.html", [
           [ "FeedEntitiesApiController", "class_traveller___server_1_1_controllers_1_1_g_t_f_s_realtime_1_1_feed_entities_api_controller.html", null ],
@@ -66,20 +66,20 @@ var annotated_dup =
           [ "TripUpdatesApiController", "class_traveller___server_1_1_controllers_1_1_g_t_f_s_realtime_1_1_trip_updates_api_controller.html", null ],
           [ "VehiclePositionsApiController", "class_traveller___server_1_1_controllers_1_1_g_t_f_s_realtime_1_1_vehicle_positions_api_controller.html", null ]
         ] ],
-        [ "ActivityLogsApiController", "class_traveller___server_1_1_controllers_1_1_activity_logs_api_controller.html", null ],
+        [ "ActivityLogsApiController", "class_traveller___server_1_1_controllers_1_1_activity_logs_api_controller.html", "class_traveller___server_1_1_controllers_1_1_activity_logs_api_controller" ],
         [ "AlertsApiController", "class_traveller___server_1_1_controllers_1_1_alerts_api_controller.html", "class_traveller___server_1_1_controllers_1_1_alerts_api_controller" ],
-        [ "AlertVotesController", "class_traveller___server_1_1_controllers_1_1_alert_votes_controller.html", null ],
+        [ "AlertVotesController", "class_traveller___server_1_1_controllers_1_1_alert_votes_controller.html", "class_traveller___server_1_1_controllers_1_1_alert_votes_controller" ],
         [ "AuthApiController", "class_traveller___server_1_1_controllers_1_1_auth_api_controller.html", "class_traveller___server_1_1_controllers_1_1_auth_api_controller" ],
         [ "CoursesApiController", "class_traveller___server_1_1_controllers_1_1_courses_api_controller.html", null ],
         [ "CurrentlyBoardedUsersApiController", "class_traveller___server_1_1_controllers_1_1_currently_boarded_users_api_controller.html", null ],
-        [ "FavoritePlacesApiController", "class_traveller___server_1_1_controllers_1_1_favorite_places_api_controller.html", null ],
-        [ "HomeController", "class_traveller___server_1_1_controllers_1_1_home_controller.html", null ],
-        [ "KeyVaultController", "class_traveller___server_1_1_controllers_1_1_key_vault_controller.html", null ],
+        [ "FavoritePlacesApiController", "class_traveller___server_1_1_controllers_1_1_favorite_places_api_controller.html", "class_traveller___server_1_1_controllers_1_1_favorite_places_api_controller" ],
+        [ "HomeController", "class_traveller___server_1_1_controllers_1_1_home_controller.html", "class_traveller___server_1_1_controllers_1_1_home_controller" ],
+        [ "KeyVaultController", "class_traveller___server_1_1_controllers_1_1_key_vault_controller.html", "class_traveller___server_1_1_controllers_1_1_key_vault_controller" ],
         [ "LocationsApiController", "class_traveller___server_1_1_controllers_1_1_locations_api_controller.html", null ],
         [ "StatisticsApiController", "class_traveller___server_1_1_controllers_1_1_statistics_api_controller.html", "class_traveller___server_1_1_controllers_1_1_statistics_api_controller" ],
         [ "User_CourseApiController", "class_traveller___server_1_1_controllers_1_1_user___course_api_controller.html", null ],
-        [ "UserApiController", "class_traveller___server_1_1_controllers_1_1_user_api_controller.html", null ],
-        [ "UserBoardedInfoesApiController", "class_traveller___server_1_1_controllers_1_1_user_boarded_infoes_api_controller.html", null ],
+        [ "UserApiController", "class_traveller___server_1_1_controllers_1_1_user_api_controller.html", "class_traveller___server_1_1_controllers_1_1_user_api_controller" ],
+        [ "UserBoardedInfoesApiController", "class_traveller___server_1_1_controllers_1_1_user_boarded_infoes_api_controller.html", "class_traveller___server_1_1_controllers_1_1_user_boarded_infoes_api_controller" ],
         [ "UserBoardingInfoesApiController", "class_traveller___server_1_1_controllers_1_1_user_boarding_infoes_api_controller.html", null ],
         [ "UserLocationsApiController", "class_traveller___server_1_1_controllers_1_1_user_locations_api_controller.html", "class_traveller___server_1_1_controllers_1_1_user_locations_api_controller" ],
         [ "UserRouteTrackingsApiController", "class_traveller___server_1_1_controllers_1_1_user_route_trackings_api_controller.html", "class_traveller___server_1_1_controllers_1_1_user_route_trackings_api_controller" ],
@@ -145,7 +145,7 @@ var annotated_dup =
           [ "UserSuspension", "class_traveller___server_1_1_models_1_1_data_classes_1_1_user_suspension.html", "class_traveller___server_1_1_models_1_1_data_classes_1_1_user_suspension" ]
         ] ],
         [ "ErrorViewModel", "class_traveller___server_1_1_models_1_1_error_view_model.html", null ],
-        [ "StopLinker", "class_traveller___server_1_1_models_1_1_stop_linker.html", null ]
+        [ "StopLinker", "class_traveller___server_1_1_models_1_1_stop_linker.html", "class_traveller___server_1_1_models_1_1_stop_linker" ]
       ] ],
       [ "Services", "namespace_traveller___server_1_1_services.html", [
         [ "EmailSender", "class_traveller___server_1_1_services_1_1_email_sender.html", null ]

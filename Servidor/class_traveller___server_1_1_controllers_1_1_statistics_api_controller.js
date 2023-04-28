@@ -8,5 +8,6 @@ var class_traveller___server_1_1_controllers_1_1_statistics_api_controller =
     [ "GetTimeSpent", "class_traveller___server_1_1_controllers_1_1_statistics_api_controller.html#a9cfe239bb309c67788d6d29134eeb66d", null ],
     [ "GetTimeSpentWeekDateTime", "class_traveller___server_1_1_controllers_1_1_statistics_api_controller.html#aa45a02e14e28ed1b501355879f4e6044", null ],
     [ "GetTotalNumberOfUsers", "class_traveller___server_1_1_controllers_1_1_statistics_api_controller.html#a2c52f2d844a96ac86abbbddb833a3d5b", null ],
-    [ "GetTotalOfNewUsers", "class_traveller___server_1_1_controllers_1_1_statistics_api_controller.html#ad93d0f68eb02dfbd742173700c4a5ba8", null ]
+    [ "GetTotalOfNewUsers", "class_traveller___server_1_1_controllers_1_1_statistics_api_controller.html#ad93d0f68eb02dfbd742173700c4a5ba8", null ],
+    [ "ReverseGeocode", "class_traveller___server_1_1_controllers_1_1_statistics_api_controller.html#a2c3e401a164172bcc3881ae9c2422698", null ]
 ];

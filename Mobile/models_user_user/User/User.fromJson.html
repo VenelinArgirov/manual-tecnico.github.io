@@ -61,6 +61,10 @@
     </section>
 
     
+<section class="desc markdown">
+  <p>Constructor to parse JSON information from the API into
+an user status object.</p>
+</section>
 
 
     
@@ -74,7 +78,9 @@
     rating: json[&#39;rating&#39;],
     creationDate: DateTime.parse(json[&#39;creationDate&#39;]),
     email: json[&#39;email&#39;],
-    profileImage: (json[&#39;profileImage&#39;] != null) ? json[&#39;profileImage&#39;] : &quot;https:&#47;&#47;i.ibb.co&#47;jgyQypT&#47;placeholder.png&quot;,
+    profileImage: (json[&#39;profileImage&#39;] != null)
+        ? json[&#39;profileImage&#39;]
+        : &quot;https:&#47;&#47;i.ibb.co&#47;jgyQypT&#47;placeholder.png&quot;,
   );
 }</code></pre>
 </section>

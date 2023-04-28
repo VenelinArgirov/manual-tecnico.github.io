@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Sprint 5: Traveller_Server.Controllers.UserApiController Class Reference</title>
+<title>Sprint 6: Traveller_Server.Controllers.UserApiController Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -30,7 +30,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Sprint 5
+   <div id="projectname">Sprint 6
    </div>
   </td>
  </tr>
@@ -117,6 +117,9 @@ $(document).ready(function(){initNavTree('class_traveller___server_1_1_controlle
   <div class="headertitle"><div class="title">Traveller_Server.Controllers.UserApiController Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>API Controller for CRUD actions for Users.  
+ <a href="class_traveller___server_1_1_controllers_1_1_user_api_controller.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for Traveller_Server.Controllers.UserApiController:</div>
 <div class="dyncontent">
@@ -139,14 +142,14 @@ async Task&lt; ActionResult&lt; IEnumerable&lt; <a class="el" href="class_travel
 <tr class="memitem:a56fde0d2676671145a132035ee086304"><td class="memItemLeft" align="right" valign="top"><a id="a56fde0d2676671145a132035ee086304" name="a56fde0d2676671145a132035ee086304"></a>
 async Task&lt; ActionResult&lt; <a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_user.html">User</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetUser</b> (string id)</td></tr>
 <tr class="separator:a56fde0d2676671145a132035ee086304"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5c683abfbc930857286745fa2168b5d3"><td class="memItemLeft" align="right" valign="top"><a id="a5c683abfbc930857286745fa2168b5d3" name="a5c683abfbc930857286745fa2168b5d3"></a>
-async Task&lt; ActionResult&lt; <a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_user.html">User</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetUserFromEmail</b> (string email)</td></tr>
+<tr class="memitem:a5c683abfbc930857286745fa2168b5d3"><td class="memItemLeft" align="right" valign="top">async Task&lt; ActionResult&lt; <a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_user.html">User</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_traveller___server_1_1_controllers_1_1_user_api_controller.html#a5c683abfbc930857286745fa2168b5d3">GetUserFromEmail</a> (string email)</td></tr>
+<tr class="memdesc:a5c683abfbc930857286745fa2168b5d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the user associated with an email.  <br /></td></tr>
 <tr class="separator:a5c683abfbc930857286745fa2168b5d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4ab14bcf128f30df005f7300fa703b54"><td class="memItemLeft" align="right" valign="top"><a id="a4ab14bcf128f30df005f7300fa703b54" name="a4ab14bcf128f30df005f7300fa703b54"></a>
 async Task&lt; IActionResult &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>PutUser</b> (string id, <a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_user.html">User</a> user)</td></tr>
 <tr class="separator:a4ab14bcf128f30df005f7300fa703b54"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adf6ec1698a6f9de350745d95f5aee6bd"><td class="memItemLeft" align="right" valign="top"><a id="adf6ec1698a6f9de350745d95f5aee6bd" name="adf6ec1698a6f9de350745d95f5aee6bd"></a>
-async Task&lt; IActionResult &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>ChangeProfileImage</b> (string id, string profileImage)</td></tr>
+<tr class="memitem:adf6ec1698a6f9de350745d95f5aee6bd"><td class="memItemLeft" align="right" valign="top">async Task&lt; IActionResult &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_traveller___server_1_1_controllers_1_1_user_api_controller.html#adf6ec1698a6f9de350745d95f5aee6bd">ChangeProfileImage</a> (string id, string profileImage)</td></tr>
+<tr class="memdesc:adf6ec1698a6f9de350745d95f5aee6bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change the user's profile image from the specified User ID with a new profile image URL.  <br /></td></tr>
 <tr class="separator:adf6ec1698a6f9de350745d95f5aee6bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a988531cb3a45e4959c7a60638bb362aa"><td class="memItemLeft" align="right" valign="top"><a id="a988531cb3a45e4959c7a60638bb362aa" name="a988531cb3a45e4959c7a60638bb362aa"></a>
 async Task&lt; ActionResult&lt; <a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_user.html">User</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>PostUser</b> (<a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_user.html">User</a> user)</td></tr>
@@ -155,6 +158,74 @@ async Task&lt; ActionResult&lt; <a class="el" href="class_traveller___server_1_1
 async Task&lt; IActionResult &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>DeleteUser</b> (string id)</td></tr>
 <tr class="separator:af5964ab1e2e51332454a0c6fe998dd94"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>API Controller for CRUD actions for Users. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="adf6ec1698a6f9de350745d95f5aee6bd" name="adf6ec1698a6f9de350745d95f5aee6bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf6ec1698a6f9de350745d95f5aee6bd">&#9670;&#160;</a></span>ChangeProfileImage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">async Task&lt; IActionResult &gt; Traveller_Server.Controllers.UserApiController.ChangeProfileImage </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>profileImage</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Change the user's profile image from the specified User ID with a new profile image URL. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td>The id of the user</td></tr>
+    <tr><td class="paramname">profileImage</td><td>The image the user is changing to</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+
+</div>
+</div>
+<a id="a5c683abfbc930857286745fa2168b5d3" name="a5c683abfbc930857286745fa2168b5d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c683abfbc930857286745fa2168b5d3">&#9670;&#160;</a></span>GetUserFromEmail()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">async Task&lt; ActionResult&lt; <a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_user.html">User</a> &gt; &gt; Traveller_Server.Controllers.UserApiController.GetUserFromEmail </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>email</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the user associated with an email. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">email</td><td>The email to search for</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The user</dd></dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>E:/Users/venel/Desktop/TravellerV2/traveller/Traveller-Server/Controllers/UserApiController.cs</li>
 </ul>

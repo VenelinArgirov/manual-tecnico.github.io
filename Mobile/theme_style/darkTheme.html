@@ -70,10 +70,17 @@
 <section class="summary source-code" id="source">
   <h2><span>Implementation</span></h2>
   <pre class="language-dart"><code class="language-dart">ThemeData darkTheme = ThemeData(
-  brightness: Brightness.dark,
   primaryColor: DARKTHEME_COLOR_PRIMARY,
+  secondaryHeaderColor: const Color(0xffc0ade1),
   primarySwatch: generateMaterialColor(color: DARKTHEME_COLOR_PRIMARY),
+  dividerColor: const Color.fromARGB(255, 191, 191, 191),
+  snackBarTheme: const SnackBarThemeData(
+      backgroundColor: DARKTHEME_COLOR_PRIMARY,
+      contentTextStyle: TextStyle(fontSize: 16, color: Colors.white, fontWeight: FontWeight.w500)),
   scaffoldBackgroundColor: DARKTHEME_COLOR_BACKGROUND,
+  bottomSheetTheme: const BottomSheetThemeData(
+    backgroundColor: DARKTHEME_COLOR_BACKGROUND,
+  ),
   elevatedButtonTheme: ElevatedButtonThemeData(
     style: ElevatedButton.styleFrom(
         fixedSize: const Size(150, 50),
@@ -92,6 +99,10 @@
   textButtonTheme: TextButtonThemeData(
       style: TextButton.styleFrom(
     foregroundColor: Colors.white,
+  )),
+  dropdownMenuTheme: DropdownMenuThemeData(
+      menuStyle: MenuStyle(
+    backgroundColor: MaterialStateProperty.all&lt;Color&gt;(DARKTHEME_COLOR_BACKGROUND),
   )),
   switchTheme: SwitchThemeData(
     trackColor: MaterialStateProperty.all&lt;Color&gt;(const Color(0xffE1BEE7)),
@@ -178,7 +189,7 @@
       ))),
   unselectedWidgetColor: DARKTHEME_COLOR_PRIMARY,
   listTileTheme: const ListTileThemeData(
-    iconColor: Colors.white
+    iconColor: Colors.white,
   ),
 );</code></pre>
 </section>

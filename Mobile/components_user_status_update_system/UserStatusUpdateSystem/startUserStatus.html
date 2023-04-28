@@ -64,6 +64,9 @@
 
     </section>
     
+<section class="desc markdown">
+  <p>Start the user status update system</p>
+</section>
 
 
     
@@ -76,7 +79,7 @@
       Timer.periodic(
           _interval,
           (Timer t) =&gt; {
-                if (!toggled) {t.cancel()} else {updateLocation(_id!)}
+                if (!toggled) {t.cancel()} else {updateStatus(_id!)}
               });
     }
   } else {
@@ -124,7 +127,7 @@
           <li><a href="../../components_user_status_update_system/UserStatusUpdateSystem/startUserStatus.html">startUserStatus</a></li>
           <li><a href="../../components_user_status_update_system/UserStatusUpdateSystem/toggle.html">toggle</a></li>
           <li class="inherited"><a href="https://api.flutter.dev/flutter/dart-core/Object/toString.html">toString</a></li>
-          <li><a href="../../components_user_status_update_system/UserStatusUpdateSystem/updateLocation.html">updateLocation</a></li>
+          <li><a href="../../components_user_status_update_system/UserStatusUpdateSystem/updateStatus.html">updateStatus</a></li>
 
         <li class="section-title inherited"><a href="../../components_user_status_update_system/UserStatusUpdateSystem-class.html#operators">Operators</a></li>
           <li class="inherited"><a href="https://api.flutter.dev/flutter/dart-core/Object/operator_equals.html">operator ==</a></li>

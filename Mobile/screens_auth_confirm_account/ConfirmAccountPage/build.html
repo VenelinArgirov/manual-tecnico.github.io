@@ -112,83 +112,15 @@ and</li>
   <h2><span>Implementation</span></h2>
   <pre class="language-dart"><code class="language-dart">@override
 Widget build(BuildContext context) {
-  if (Theme.of(context).primaryColor == Color(0xff3BE2AB)) {
-    circleImage = &#39;lib&#47;assets&#47;images&#47;circle.png&#39;;
-  } else if (Theme.of(context).primaryColor == Color(0xff7E57C2)) {
-    circleImage = &#39;lib&#47;assets&#47;images&#47;circle_dark.png&#39;;
-  }
-
   return Scaffold(
     body: Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       mainAxisSize: MainAxisSize.max,
       mainAxisAlignment: MainAxisAlignment.start,
       children: [
-        SizedBox(
-          height: 140,
-          width: 255,
-          child: Stack(
-            children: &lt;Widget&gt;[
-              Container(
-                alignment: Alignment.center,
-                child: Image.asset(
-                  circleImage,
-                  height: 140,
-                  width: 255,
-                ),
-              ),
-              Container(
-                  alignment: const Alignment(-0.5, -0.5),
-                  child: Text(loc.confirmAccount,
-                      style: const TextStyle(fontSize: 35))),
-              Container(
-                alignment: const Alignment(1.5, -0.5),
-                child: IconButton(
-                  icon: const Icon(Icons.info_outline, size: 32),
-                  onPressed: () =&gt; showDialog(
-                      context: context,
-                      builder: (context) =&gt; HelpDialog(
-                          title: loc.help,
-                          content: loc.confirmAccountHelp)
-                        ),
-                ),
-              ),
-            ],
-          ),
-        ),
-        Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 32, vertical: 100),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Text(
-                loc.emailSent,
-                style: const TextStyle(fontSize: 24),
-              ),
-              const SizedBox(height: 54),
-            ],
-          ),
-        ),
-        Center(
-          child: Column(children: [
-            const SizedBox(height: 62),
-            ElevatedButton(
-              style: ElevatedButton.styleFrom(
-                fixedSize: const Size(180, 65),
-              ),
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) =&gt; const MainPage()),
-                );
-              },
-              child: Text(
-                loc.returnHome,
-                textAlign: TextAlign.center,
-              ),
-            ),
-          ]),
-        ),
+        topSectionContainer(context),
+        screenMessage(context),
+        returnHomeButton(context),
       ],
     ),
   );
@@ -225,7 +157,6 @@ Widget build(BuildContext context) {
         </li>
           <li class="inherited"><a href="https://api.flutter.dev/flutter/widgets/Widget/hashCode.html">hashCode</a></li>
           <li class="inherited"><a href="https://api.flutter.dev/flutter/widgets/Widget/key.html">key</a></li>
-          <li class="inherited"><a href="../../l10n_localization/Localization/loc.html">loc</a></li>
           <li class="inherited"><a href="https://api.flutter.dev/flutter/dart-core/Object/runtimeType.html">runtimeType</a></li>
 
         <li class="section-title"><a href="../../screens_auth_confirm_account/ConfirmAccountPage-class.html#instance-methods">Methods</a></li>
@@ -233,8 +164,12 @@ Widget build(BuildContext context) {
           <li class="inherited"><a href="https://api.flutter.dev/flutter/widgets/StatelessWidget/createElement.html">createElement</a></li>
           <li class="inherited"><a href="https://api.flutter.dev/flutter/foundation/DiagnosticableTree/debugDescribeChildren.html">debugDescribeChildren</a></li>
           <li class="inherited"><a href="https://api.flutter.dev/flutter/widgets/Widget/debugFillProperties.html">debugFillProperties</a></li>
+          <li><a href="../../screens_auth_confirm_account/ConfirmAccountPage/helpContainer.html">helpContainer</a></li>
           <li class="inherited"><a href="https://api.flutter.dev/flutter/dart-core/Object/noSuchMethod.html">noSuchMethod</a></li>
+          <li><a href="../../screens_auth_confirm_account/ConfirmAccountPage/returnHomeButton.html">returnHomeButton</a></li>
+          <li><a href="../../screens_auth_confirm_account/ConfirmAccountPage/screenMessage.html">screenMessage</a></li>
           <li class="inherited"><a href="https://api.flutter.dev/flutter/foundation/DiagnosticableTree/toDiagnosticsNode.html">toDiagnosticsNode</a></li>
+          <li><a href="../../screens_auth_confirm_account/ConfirmAccountPage/topSectionContainer.html">topSectionContainer</a></li>
           <li class="inherited"><a href="https://api.flutter.dev/flutter/foundation/Diagnosticable/toString.html">toString</a></li>
           <li class="inherited"><a href="https://api.flutter.dev/flutter/foundation/DiagnosticableTree/toStringDeep.html">toStringDeep</a></li>
           <li class="inherited"><a href="https://api.flutter.dev/flutter/foundation/DiagnosticableTree/toStringShallow.html">toStringShallow</a></li>

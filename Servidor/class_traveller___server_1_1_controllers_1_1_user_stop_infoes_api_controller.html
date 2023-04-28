@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Sprint 5: Traveller_Server.Controllers.UserStopInfoesApiController Class Reference</title>
+<title>Sprint 6: Traveller_Server.Controllers.UserStopInfoesApiController Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -30,7 +30,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Sprint 5
+   <div id="projectname">Sprint 6
    </div>
   </td>
  </tr>
@@ -118,6 +118,9 @@ $(document).ready(function(){initNavTree('class_traveller___server_1_1_controlle
   <div class="headertitle"><div class="title">Traveller_Server.Controllers.UserStopInfoesApiController Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>API Controller for CRUD actions for UserStopInfoes.  
+ <a href="class_traveller___server_1_1_controllers_1_1_user_stop_infoes_api_controller.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for Traveller_Server.Controllers.UserStopInfoesApiController:</div>
 <div class="dyncontent">
@@ -140,15 +143,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a35718c9377a639484f695ecdde596355"><td class="memItemLeft" align="right" valign="top"><a id="a35718c9377a639484f695ecdde596355" name="a35718c9377a639484f695ecdde596355"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>UserStopInfoesApiController</b> (<a class="el" href="class_traveller___server_1_1_data_1_1_traveller___server_context.html">Traveller_ServerContext</a> context)</td></tr>
 <tr class="separator:a35718c9377a639484f695ecdde596355"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a586c1aefda0d9b2cda7eb23304edf538"><td class="memItemLeft" align="right" valign="top">async Task&lt; IActionResult &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_traveller___server_1_1_controllers_1_1_user_stop_infoes_api_controller.html#a586c1aefda0d9b2cda7eb23304edf538">Update</a> (<a class="el" href="class_traveller___server_1_1_controllers_1_1_user_stop_infoes_api_controller_1_1_user_stop_info_message.html">UserStopInfoMessage</a> userStopInfoMessage)</td></tr>
-<tr class="memdesc:a586c1aefda0d9b2cda7eb23304edf538"><td class="mdescLeft">&#160;</td><td class="mdescRight">One of the main methods of user trackings, used to update the user stop locations in the database. Either updates or creates a new user route tracking with the new info given.  <br /></td></tr>
-<tr class="separator:a586c1aefda0d9b2cda7eb23304edf538"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab8213945570fc525efb7bf478d4dff7e"><td class="memItemLeft" align="right" valign="top">async Task&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_traveller___server_1_1_controllers_1_1_user_stop_infoes_api_controller.html#ab8213945570fc525efb7bf478d4dff7e">checkIfLocationNearStop</a> (float lat, float lon)</td></tr>
-<tr class="memdesc:ab8213945570fc525efb7bf478d4dff7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Verifies is the given coordinate with latitude and longitude is near any transit stop in the GTFS database.  <br /></td></tr>
-<tr class="separator:ab8213945570fc525efb7bf478d4dff7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a84e58fcc486c85ab7451f4eb106b3a6e"><td class="memItemLeft" align="right" valign="top"><a id="a84e58fcc486c85ab7451f4eb106b3a6e" name="a84e58fcc486c85ab7451f4eb106b3a6e"></a>
-async Task&lt; ActionResult&lt; IEnumerable&lt; <a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_g_t_f_s_1_1_route.html">Models.DataClasses.GTFS.Route</a> &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>Test</b> ()</td></tr>
-<tr class="separator:a84e58fcc486c85ab7451f4eb106b3a6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add143e7440c3519dd77c6939362dad5c"><td class="memItemLeft" align="right" valign="top">async Task&lt; ActionResult&lt; IEnumerable&lt; <a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_g_t_f_s_realtime_1_1_feed_message.html">FeedMessage</a> &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_traveller___server_1_1_controllers_1_1_user_stop_infoes_api_controller.html#add143e7440c3519dd77c6939362dad5c">Update</a> (<a class="el" href="class_traveller___server_1_1_controllers_1_1_user_stop_infoes_api_controller_1_1_user_stop_info_message.html">UserStopInfoMessage</a> userStopInfoMessage)</td></tr>
+<tr class="memdesc:add143e7440c3519dd77c6939362dad5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">One of the main methods of user trackings, used to update the user stop locations in the database. Either updates or creates a new user route tracking with the new info given.  <br /></td></tr>
+<tr class="separator:add143e7440c3519dd77c6939362dad5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64396eb1cc10236d6cc92efb1ab9551e"><td class="memItemLeft" align="right" valign="top">async Task&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_traveller___server_1_1_controllers_1_1_user_stop_infoes_api_controller.html#a64396eb1cc10236d6cc92efb1ab9551e">CheckIfLocationNearStop</a> (float lat, float lon)</td></tr>
+<tr class="memdesc:a64396eb1cc10236d6cc92efb1ab9551e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Verifies is the given coordinate with latitude and longitude is near any transit stop in the GTFS database.  <br /></td></tr>
+<tr class="separator:a64396eb1cc10236d6cc92efb1ab9551e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa3a0c24380929f62963acca6387a9a80"><td class="memItemLeft" align="right" valign="top"><a id="aa3a0c24380929f62963acca6387a9a80" name="aa3a0c24380929f62963acca6387a9a80"></a>
 async Task&lt; ActionResult&lt; IEnumerable&lt; <a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_user_stop_info.html">UserStopInfo</a> &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetUserStopInfo</b> ()</td></tr>
 <tr class="separator:aa3a0c24380929f62963acca6387a9a80"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -165,15 +165,17 @@ async Task&lt; ActionResult&lt; <a class="el" href="class_traveller___server_1_1
 async Task&lt; IActionResult &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>DeleteUserStopInfo</b> (Guid id)</td></tr>
 <tr class="separator:a4b55393b8c1099dce8d2317dcabe7016"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="ab8213945570fc525efb7bf478d4dff7e" name="ab8213945570fc525efb7bf478d4dff7e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab8213945570fc525efb7bf478d4dff7e">&#9670;&#160;</a></span>checkIfLocationNearStop()</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>API Controller for CRUD actions for UserStopInfoes. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a64396eb1cc10236d6cc92efb1ab9551e" name="a64396eb1cc10236d6cc92efb1ab9551e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a64396eb1cc10236d6cc92efb1ab9551e">&#9670;&#160;</a></span>CheckIfLocationNearStop()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">async Task&lt; bool &gt; Traveller_Server.Controllers.UserStopInfoesApiController.checkIfLocationNearStop </td>
+          <td class="memname">async Task&lt; bool &gt; Traveller_Server.Controllers.UserStopInfoesApiController.CheckIfLocationNearStop </td>
           <td>(</td>
           <td class="paramtype">float&#160;</td>
           <td class="paramname"><em>lat</em>, </td>
@@ -201,17 +203,22 @@ async Task&lt; IActionResult &gt;&#160;</td><td class="memItemRight" valign="bot
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if a stop near the location, false if not</dd></dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_traveller___server_1_1_controllers_1_1_user_stop_infoes_api_controller_a64396eb1cc10236d6cc92efb1ab9551e_cgraph.png" border="0" usemap="#aclass_traveller___server_1_1_controllers_1_1_user_stop_infoes_api_controller_a64396eb1cc10236d6cc92efb1ab9551e_cgraph" alt=""/></div>
+</div>
 
 </div>
 </div>
-<a id="a586c1aefda0d9b2cda7eb23304edf538" name="a586c1aefda0d9b2cda7eb23304edf538"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a586c1aefda0d9b2cda7eb23304edf538">&#9670;&#160;</a></span>Update()</h2>
+<a id="add143e7440c3519dd77c6939362dad5c" name="add143e7440c3519dd77c6939362dad5c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add143e7440c3519dd77c6939362dad5c">&#9670;&#160;</a></span>Update()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">async Task&lt; IActionResult &gt; Traveller_Server.Controllers.UserStopInfoesApiController.Update </td>
+          <td class="memname">async Task&lt; ActionResult&lt; IEnumerable&lt; <a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_g_t_f_s_realtime_1_1_feed_message.html">FeedMessage</a> &gt; &gt; &gt; Traveller_Server.Controllers.UserStopInfoesApiController.Update </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_traveller___server_1_1_controllers_1_1_user_stop_infoes_api_controller_1_1_user_stop_info_message.html">UserStopInfoMessage</a>&#160;</td>
           <td class="paramname"><em>userStopInfoMessage</em></td><td>)</td>
@@ -222,6 +229,11 @@ async Task&lt; IActionResult &gt;&#160;</td><td class="memItemRight" valign="bot
 
 <p>One of the main methods of user trackings, used to update the user stop locations in the database. Either updates or creates a new user route tracking with the new info given. </p>
 <dl class="section return"><dt>Returns</dt><dd></dd></dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_traveller___server_1_1_controllers_1_1_user_stop_infoes_api_controller_add143e7440c3519dd77c6939362dad5c_cgraph.png" border="0" usemap="#aclass_traveller___server_1_1_controllers_1_1_user_stop_infoes_api_controller_add143e7440c3519dd77c6939362dad5c_cgraph" alt=""/></div>
+</div>
 
 </div>
 </div>

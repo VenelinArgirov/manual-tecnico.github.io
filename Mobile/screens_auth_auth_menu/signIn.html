@@ -69,7 +69,9 @@
 <section class="desc markdown">
   <p>Sign in with Google.</p>
 <p>If user is logged in, display a welcome dialog and navigate to TravellerMap screen.
-Otherwise, display an error dialog.</p>
+Otherwise, display an error dialog.
+<code>context</code> screen context,
+<code>prefs</code> shared preferences to store data into the phone cache.</p>
 </section>
 
 
@@ -80,14 +82,24 @@ Otherwise, display an error dialog.</p>
   final user = await GoogleSignInApi.login();
   if (user != null) {
     final email = user.email.toString();
-    final username = user.displayName.toString();
-    final result = await loginWithGoogle(email, &quot;Admin_123&quot;, username);
+    final username = user.displayName.toString().replaceAll(&#39; &#39;, &#39;&#39;);
+    final result = await loginWithGoogle(email, &quot;&quot;, username);
 
     if (result.statusCode == 200) {
       prefs.setBool(&#39;rememberMe&#39;, true);
       prefs.setBool(&#39;isLoggedIn&#39;, true);
       prefs.setString(&#39;email&#39;, user.email.toString());
       prefs.setString(&#39;id&#39;, (await getUserInfo(user.email.toString())).id);
+
+      await changeUserStatus((await getUserInfo(email)).id, true);
+
+      await UserStatusUpdateSystem().toggle(true);
+      UserStatusUpdateSystem().startUserStatus();
+
+      &#47;&#47; Start the user location system that updates the user location every 10 seconds
+      await UserLocationSystem().toggle(true);
+      UserLocationSystem().startUserLocation();
+
       Navigator.push(
         context,
         MaterialPageRoute(builder: (context) =&gt; const TravellerMap()),
@@ -122,8 +134,6 @@ Otherwise, display an error dialog.</p>
 
 
 
-      <li class="section-title"><a href="../screens_auth_auth_menu/screens_auth_auth_menu-library.html#properties">Properties</a></li>
-        <li><a href="../screens_auth_auth_menu/logoImage.html">logoImage</a></li>
 
       <li class="section-title"><a href="../screens_auth_auth_menu/screens_auth_auth_menu-library.html#functions">Functions</a></li>
         <li><a href="../screens_auth_auth_menu/signIn.html">signIn</a></li>

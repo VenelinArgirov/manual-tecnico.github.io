@@ -112,27 +112,13 @@ and</li>
   <h2><span>Implementation</span></h2>
   <pre class="language-dart"><code class="language-dart">@override
 Widget build(BuildContext context) {
-  var colorScheme = Theme.of(context).colorScheme;
-  String logoImage = &#39;&#39;;
-
-  if(Theme.of(context).primaryColor == Color(0xff3BE2AB)){
-    logoImage = &#39;lib&#47;assets&#47;images&#47;logo.png&#39;;
-  }
-  else if(Theme.of(context).primaryColor == Color(0xff7E57C2)){
-    logoImage = &#39;lib&#47;assets&#47;images&#47;logo_dark.png&#39;;
-  }
-
   return Scaffold(
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
         Container(
           alignment: Alignment.center,
-          child: Image.asset(
-            logoImage,
-            height: 140,
-            width: 255,
-          ),
+          child: switchLogoImage(Theme.of(context).primaryColor)
         ),
         const SizedBox(height: 20),
         const CircularProgressIndicator(),

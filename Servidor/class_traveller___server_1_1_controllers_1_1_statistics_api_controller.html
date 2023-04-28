@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Sprint 5: Traveller_Server.Controllers.StatisticsApiController Class Reference</title>
+<title>Sprint 6: Traveller_Server.Controllers.StatisticsApiController Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -30,7 +30,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Sprint 5
+   <div id="projectname">Sprint 6
    </div>
   </td>
  </tr>
@@ -117,6 +117,9 @@ $(document).ready(function(){initNavTree('class_traveller___server_1_1_controlle
   <div class="headertitle"><div class="title">Traveller_Server.Controllers.StatisticsApiController Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>API Controller for querying the database and getting statistics from the queries.  
+ <a href="class_traveller___server_1_1_controllers_1_1_statistics_api_controller.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for Traveller_Server.Controllers.StatisticsApiController:</div>
 <div class="dyncontent">
@@ -145,8 +148,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ac35de52799f153d6129657431fb092d5"><td class="memItemLeft" align="right" valign="top">async Task&lt; IActionResult &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_traveller___server_1_1_controllers_1_1_statistics_api_controller.html#ac35de52799f153d6129657431fb092d5">GetMostActiveZones</a> ()</td></tr>
 <tr class="memdesc:ac35de52799f153d6129657431fb092d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the five most active zones based on the number of courses that start in each zone.  <br /></td></tr>
 <tr class="separator:ac35de52799f153d6129657431fb092d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2c3e401a164172bcc3881ae9c2422698"><td class="memItemLeft" align="right" valign="top"><a id="a2c3e401a164172bcc3881ae9c2422698" name="a2c3e401a164172bcc3881ae9c2422698"></a>
-string&#160;</td><td class="memItemRight" valign="bottom"><b>ReverseGeocode</b> (Guid? coordinates)</td></tr>
+<tr class="memitem:a2c3e401a164172bcc3881ae9c2422698"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_traveller___server_1_1_controllers_1_1_statistics_api_controller.html#a2c3e401a164172bcc3881ae9c2422698">ReverseGeocode</a> (Guid? coordinates)</td></tr>
+<tr class="memdesc:a2c3e401a164172bcc3881ae9c2422698"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transforms coordinates into the name of a location via geocoding.  <br /></td></tr>
 <tr class="separator:a2c3e401a164172bcc3881ae9c2422698"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a76385e84b634958aab4286cdd8d88a8d"><td class="memItemLeft" align="right" valign="top">IActionResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_traveller___server_1_1_controllers_1_1_statistics_api_controller.html#a76385e84b634958aab4286cdd8d88a8d">GetMostUsedTransport</a> (Guid userId)</td></tr>
 <tr class="memdesc:a76385e84b634958aab4286cdd8d88a8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the most frequently used transport type by a given user.  <br /></td></tr>
@@ -164,7 +167,9 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>ReverseGeocode</b> 
 <tr class="memdesc:a281b8c23ce11672fda1db66cff1ebb04"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the average time spent per day by a given user on all courses they have taken in the last week.  <br /></td></tr>
 <tr class="separator:a281b8c23ce11672fda1db66cff1ebb04"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>API Controller for querying the database and getting statistics from the queries. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a281b8c23ce11672fda1db66cff1ebb04" name="a281b8c23ce11672fda1db66cff1ebb04"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a281b8c23ce11672fda1db66cff1ebb04">&#9670;&#160;</a></span>AverageTimeSpentPerDay()</h2>
 
@@ -249,6 +254,11 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>ReverseGeocode</b> 
 
 <p>Retrieves the five most active zones based on the number of courses that start in each zone. </p>
 <dl class="section return"><dt>Returns</dt><dd>A list of the five most active zones and the number of courses that start in each zone</dd></dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_traveller___server_1_1_controllers_1_1_statistics_api_controller_ac35de52799f153d6129657431fb092d5_cgraph.png" border="0" usemap="#aclass_traveller___server_1_1_controllers_1_1_statistics_api_controller_ac35de52799f153d6129657431fb092d5_cgraph" alt=""/></div>
+</div>
 
 </div>
 </div>
@@ -370,6 +380,38 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>ReverseGeocode</b> 
 
 <p>Retrieves the number of new users that joined the system in the past week. </p>
 <dl class="section return"><dt>Returns</dt><dd>The number of new users</dd></dl>
+
+</div>
+</div>
+<a id="a2c3e401a164172bcc3881ae9c2422698" name="a2c3e401a164172bcc3881ae9c2422698"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c3e401a164172bcc3881ae9c2422698">&#9670;&#160;</a></span>ReverseGeocode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string Traveller_Server.Controllers.StatisticsApiController.ReverseGeocode </td>
+          <td>(</td>
+          <td class="paramtype">Guid?&#160;</td>
+          <td class="paramname"><em>coordinates</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Transforms coordinates into the name of a location via geocoding. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">coordinates</td><td>The coordinates to transform</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The name of the place from the coordinates</dd></dl>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_traveller___server_1_1_controllers_1_1_statistics_api_controller_a2c3e401a164172bcc3881ae9c2422698_icgraph.png" border="0" usemap="#aclass_traveller___server_1_1_controllers_1_1_statistics_api_controller_a2c3e401a164172bcc3881ae9c2422698_icgraph" alt=""/></div>
+</div>
 
 </div>
 </div>

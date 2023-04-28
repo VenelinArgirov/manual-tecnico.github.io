@@ -69,6 +69,9 @@
     
 <section class="desc markdown">
   <p>Function to handle user login with Google</p>
+<p><code>email</code>, user email.
+<code>password</code> password of the user.
+<code>userName</code> user name defined by default in the google accounts api.</p>
 </section>
 
 
@@ -83,7 +86,7 @@
   final headers = {&#39;Content-Type&#39;: &#39;application&#47;json&#39;};
 
   &#47;&#47;&#47; Encoding the login credentials and user name into a JSON body
-  final jsonBody = json.encode({&#39;email&#39;: email, &#39;password&#39;: password, &#39;userName&#39;: userName});
+  final jsonBody = json.encode({&#39;email&#39;: email, &#39;password&#39;: password, &#39;username&#39;: userName});
 
   &#47;&#47;&#47; Making a POST request to the login with Google API with the encoded JSON body and headers
   final response = await http.post(url, headers: headers, body: jsonBody);

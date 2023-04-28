@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Sprint 5: Traveller_Server.Controllers.GTFSRealtime.FeedMessagesApiController Class Reference</title>
+<title>Sprint 6: Traveller_Server.Controllers.GTFSRealtime.FeedMessagesApiController Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -30,7 +30,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Sprint 5
+   <div id="projectname">Sprint 6
    </div>
   </td>
  </tr>
@@ -118,6 +118,9 @@ $(document).ready(function(){initNavTree('class_traveller___server_1_1_controlle
   <div class="headertitle"><div class="title">Traveller_Server.Controllers.GTFSRealtime.FeedMessagesApiController Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>API Controller for CRUD actions for FeedMessages.  
+ <a href="class_traveller___server_1_1_controllers_1_1_g_t_f_s_realtime_1_1_feed_messages_api_controller.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for Traveller_Server.Controllers.GTFSRealtime.FeedMessagesApiController:</div>
 <div class="dyncontent">
@@ -132,8 +135,13 @@ Collaboration diagram for Traveller_Server.Controllers.GTFSRealtime.FeedMessages
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_traveller___server_1_1_controllers_1_1_g_t_f_s_realtime_1_1_feed_messages_api_controller_1_1_confirm_feed_message.html">ConfirmFeedMessage</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Confirm Feed Message used as an interface to communicate with the front-end. Includes the ID of the User and the trip.  <a href="class_traveller___server_1_1_controllers_1_1_g_t_f_s_realtime_1_1_feed_messages_api_controller_1_1_confirm_feed_message.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_traveller___server_1_1_controllers_1_1_g_t_f_s_realtime_1_1_feed_messages_api_controller_1_1_delay_message_response.html">DelayMessageResponse</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delay message response used to communicate with the front-end.  <a href="class_traveller___server_1_1_controllers_1_1_g_t_f_s_realtime_1_1_feed_messages_api_controller_1_1_delay_message_response.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_traveller___server_1_1_controllers_1_1_g_t_f_s_realtime_1_1_feed_messages_api_controller_1_1_route_trip_info_message.html">RouteTripInfoMessage</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Message that contains the route and trip info to faciltiate communication with the front-end.  <a href="class_traveller___server_1_1_controllers_1_1_g_t_f_s_realtime_1_1_feed_messages_api_controller_1_1_route_trip_info_message.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -141,20 +149,23 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a777c0e7631556e1743cdb0944f60991c"><td class="memItemLeft" align="right" valign="top"><a id="a777c0e7631556e1743cdb0944f60991c" name="a777c0e7631556e1743cdb0944f60991c"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>FeedMessagesApiController</b> (<a class="el" href="class_traveller___server_1_1_data_1_1_traveller___server_context.html">Traveller_ServerContext</a> context)</td></tr>
 <tr class="separator:a777c0e7631556e1743cdb0944f60991c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3aa63960319bf36883da14927b080162"><td class="memItemLeft" align="right" valign="top"><a id="a3aa63960319bf36883da14927b080162" name="a3aa63960319bf36883da14927b080162"></a>
-async Task&lt; <a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_g_t_f_s_realtime_1_1_feed_message.html">FeedMessage</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>CreateFeedMessageFromUserRouteTracking</b> (string userRouteTrackingId, int certainty, string tripId)</td></tr>
-<tr class="separator:a3aa63960319bf36883da14927b080162"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac86c5744b9511c943b06f0c04db9e70e"><td class="memItemLeft" align="right" valign="top"><a id="ac86c5744b9511c943b06f0c04db9e70e" name="ac86c5744b9511c943b06f0c04db9e70e"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>GetDelayForTripFromMessage</b> (<a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_g_t_f_s_realtime_1_1_feed_message.html">FeedMessage</a> message)</td></tr>
+<tr class="memitem:a6ec33da05186dc1738880173cbac2581"><td class="memItemLeft" align="right" valign="top">async Task&lt; <a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_g_t_f_s_realtime_1_1_feed_message.html">FeedMessage</a>?&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_traveller___server_1_1_controllers_1_1_g_t_f_s_realtime_1_1_feed_messages_api_controller.html#a6ec33da05186dc1738880173cbac2581">CreateFeedMessageFromUserRouteTracking</a> (string userRouteTrackingId, int certainty, string tripId)</td></tr>
+<tr class="memdesc:a6ec33da05186dc1738880173cbac2581"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new Feed Message for the specified User Route Tracking.  <br /></td></tr>
+<tr class="separator:a6ec33da05186dc1738880173cbac2581"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac86c5744b9511c943b06f0c04db9e70e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_traveller___server_1_1_controllers_1_1_g_t_f_s_realtime_1_1_feed_messages_api_controller.html#ac86c5744b9511c943b06f0c04db9e70e">GetDelayForTripFromMessage</a> (<a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_g_t_f_s_realtime_1_1_feed_message.html">FeedMessage</a> message)</td></tr>
+<tr class="memdesc:ac86c5744b9511c943b06f0c04db9e70e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the delay of the trip by giving a feed message.  <br /></td></tr>
 <tr class="separator:ac86c5744b9511c943b06f0c04db9e70e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aedf73efef804dc5dc8e7df3caa50e1b4"><td class="memItemLeft" align="right" valign="top"><a id="aedf73efef804dc5dc8e7df3caa50e1b4" name="aedf73efef804dc5dc8e7df3caa50e1b4"></a>
-async Task&lt; ActionResult&lt; List&lt; <a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_g_t_f_s_realtime_1_1_feed_message.html">FeedMessage</a> &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetTripFeedMessages</b> (string tripId)</td></tr>
+<tr class="memitem:aedf73efef804dc5dc8e7df3caa50e1b4"><td class="memItemLeft" align="right" valign="top">async Task&lt; ActionResult&lt; List&lt; <a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_g_t_f_s_realtime_1_1_feed_message.html">FeedMessage</a> &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_traveller___server_1_1_controllers_1_1_g_t_f_s_realtime_1_1_feed_messages_api_controller.html#aedf73efef804dc5dc8e7df3caa50e1b4">GetTripFeedMessages</a> (string tripId)</td></tr>
+<tr class="memdesc:aedf73efef804dc5dc8e7df3caa50e1b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get all the feed messages from the associated Trip.  <br /></td></tr>
 <tr class="separator:aedf73efef804dc5dc8e7df3caa50e1b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a32f6b291fada85403a4ac0d1977ec42a"><td class="memItemLeft" align="right" valign="top"><a id="a32f6b291fada85403a4ac0d1977ec42a" name="a32f6b291fada85403a4ac0d1977ec42a"></a>
-async Task&lt; ActionResult&lt; List&lt; <a class="el" href="class_traveller___server_1_1_controllers_1_1_g_t_f_s_realtime_1_1_feed_messages_api_controller_1_1_delay_message_response.html">DelayMessageResponse</a> &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetTripDelay</b> (string tripId)</td></tr>
-<tr class="separator:a32f6b291fada85403a4ac0d1977ec42a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adab557e4f05772e47d22b0912d39baf7"><td class="memItemLeft" align="right" valign="top"><a id="adab557e4f05772e47d22b0912d39baf7" name="adab557e4f05772e47d22b0912d39baf7"></a>
-async Task&lt; IActionResult &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>ConfirmTripOfMessage</b> (<a class="el" href="class_traveller___server_1_1_controllers_1_1_g_t_f_s_realtime_1_1_feed_messages_api_controller_1_1_confirm_feed_message.html">ConfirmFeedMessage</a> message)</td></tr>
+<tr class="memitem:a43e05149626146db6203aa01eb85091c"><td class="memItemLeft" align="right" valign="top">async Task&lt; ActionResult&lt; <a class="el" href="class_traveller___server_1_1_controllers_1_1_g_t_f_s_realtime_1_1_feed_messages_api_controller_1_1_route_trip_info_message.html">RouteTripInfoMessage</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_traveller___server_1_1_controllers_1_1_g_t_f_s_realtime_1_1_feed_messages_api_controller.html#a43e05149626146db6203aa01eb85091c">GetRouteTripInfo</a> (string feedMessageId)</td></tr>
+<tr class="memdesc:a43e05149626146db6203aa01eb85091c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to get the only essential information about the feed message trip so the user can easily indicate if he's travelling on it or not.  <br /></td></tr>
+<tr class="separator:a43e05149626146db6203aa01eb85091c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab91f7fc1d8363bcb18fc2739b16a9ba6"><td class="memItemLeft" align="right" valign="top">async Task&lt; ActionResult&lt; <a class="el" href="class_traveller___server_1_1_controllers_1_1_g_t_f_s_realtime_1_1_feed_messages_api_controller_1_1_delay_message_response.html">DelayMessageResponse</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_traveller___server_1_1_controllers_1_1_g_t_f_s_realtime_1_1_feed_messages_api_controller.html#ab91f7fc1d8363bcb18fc2739b16a9ba6">GetTripDelay</a> (string tripId)</td></tr>
+<tr class="memdesc:ab91f7fc1d8363bcb18fc2739b16a9ba6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to get the delay of the specified trip.  <br /></td></tr>
+<tr class="separator:ab91f7fc1d8363bcb18fc2739b16a9ba6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adab557e4f05772e47d22b0912d39baf7"><td class="memItemLeft" align="right" valign="top">async Task&lt; IActionResult &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_traveller___server_1_1_controllers_1_1_g_t_f_s_realtime_1_1_feed_messages_api_controller.html#adab557e4f05772e47d22b0912d39baf7">ConfirmTripOfMessage</a> (<a class="el" href="class_traveller___server_1_1_controllers_1_1_g_t_f_s_realtime_1_1_feed_messages_api_controller_1_1_confirm_feed_message.html">ConfirmFeedMessage</a> message)</td></tr>
+<tr class="memdesc:adab557e4f05772e47d22b0912d39baf7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to confirm the tracking of a trip. The specified user that started the User Route Tracking then confirms the trip by sending the TripId Used to delete all other feed messages by the User Route Tracking that aren't this trip and then raise the certainty to 1.  <br /></td></tr>
 <tr class="separator:adab557e4f05772e47d22b0912d39baf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac275abb833f169882a0371ab92458c3d"><td class="memItemLeft" align="right" valign="top"><a id="ac275abb833f169882a0371ab92458c3d" name="ac275abb833f169882a0371ab92458c3d"></a>
 async Task&lt; ActionResult&lt; IEnumerable&lt; <a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_g_t_f_s_realtime_1_1_feed_message.html">FeedMessage</a> &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetFeedMessage</b> ()</td></tr>
@@ -172,6 +183,210 @@ async Task&lt; ActionResult&lt; <a class="el" href="class_traveller___server_1_1
 async Task&lt; IActionResult &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>DeleteFeedMessage</b> (string id)</td></tr>
 <tr class="separator:a01162b0c6c40b85d09ef29bc927b3029"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>API Controller for CRUD actions for FeedMessages. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="adab557e4f05772e47d22b0912d39baf7" name="adab557e4f05772e47d22b0912d39baf7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adab557e4f05772e47d22b0912d39baf7">&#9670;&#160;</a></span>ConfirmTripOfMessage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">async Task&lt; IActionResult &gt; Traveller_Server.Controllers.GTFSRealtime.FeedMessagesApiController.ConfirmTripOfMessage </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_traveller___server_1_1_controllers_1_1_g_t_f_s_realtime_1_1_feed_messages_api_controller_1_1_confirm_feed_message.html">ConfirmFeedMessage</a>&#160;</td>
+          <td class="paramname"><em>message</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Function to confirm the tracking of a trip. The specified user that started the User Route Tracking then confirms the trip by sending the TripId Used to delete all other feed messages by the User Route Tracking that aren't this trip and then raise the certainty to 1. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">message</td><td>ConfirmFeedMessage with the UserId and the TripId</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Action result that informs if the action was properly executed</dd></dl>
+
+</div>
+</div>
+<a id="a6ec33da05186dc1738880173cbac2581" name="a6ec33da05186dc1738880173cbac2581"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ec33da05186dc1738880173cbac2581">&#9670;&#160;</a></span>CreateFeedMessageFromUserRouteTracking()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">async Task&lt; <a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_g_t_f_s_realtime_1_1_feed_message.html">FeedMessage</a>?&gt; Traveller_Server.Controllers.GTFSRealtime.FeedMessagesApiController.CreateFeedMessageFromUserRouteTracking </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>userRouteTrackingId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>certainty</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>tripId</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Creates a new Feed Message for the specified User Route Tracking. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">userRouteTrackingId</td><td>User Route Tracking that originatd this Feed Message</td></tr>
+    <tr><td class="paramname">certainty</td><td>Certainty of the message being correct (Check FeedHeader Class to see more about certainty)</td></tr>
+    <tr><td class="paramname">tripId</td><td>Trip that is being followed by this feed message</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+
+</div>
+</div>
+<a id="ac86c5744b9511c943b06f0c04db9e70e" name="ac86c5744b9511c943b06f0c04db9e70e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac86c5744b9511c943b06f0c04db9e70e">&#9670;&#160;</a></span>GetDelayForTripFromMessage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Traveller_Server.Controllers.GTFSRealtime.FeedMessagesApiController.GetDelayForTripFromMessage </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_g_t_f_s_realtime_1_1_feed_message.html">FeedMessage</a>&#160;</td>
+          <td class="paramname"><em>message</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the delay of the trip by giving a feed message. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">message</td><td>Feed message</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Delay in seconds</dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">Exception</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_traveller___server_1_1_controllers_1_1_g_t_f_s_realtime_1_1_feed_messages_api_controller_ac86c5744b9511c943b06f0c04db9e70e_icgraph.png" border="0" usemap="#aclass_traveller___server_1_1_controllers_1_1_g_t_f_s_realtime_1_1_feed_messages_api_controller_ac86c5744b9511c943b06f0c04db9e70e_icgraph" alt=""/></div>
+</div>
+
+</div>
+</div>
+<a id="a43e05149626146db6203aa01eb85091c" name="a43e05149626146db6203aa01eb85091c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a43e05149626146db6203aa01eb85091c">&#9670;&#160;</a></span>GetRouteTripInfo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">async Task&lt; ActionResult&lt; <a class="el" href="class_traveller___server_1_1_controllers_1_1_g_t_f_s_realtime_1_1_feed_messages_api_controller_1_1_route_trip_info_message.html">RouteTripInfoMessage</a> &gt; &gt; Traveller_Server.Controllers.GTFSRealtime.FeedMessagesApiController.GetRouteTripInfo </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>feedMessageId</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Function to get the only essential information about the feed message trip so the user can easily indicate if he's travelling on it or not. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">feedMessageId</td><td>ID of the Feed Message</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>RouteTripInfoMessage with the trip id, route id and it's short and long name</dd></dl>
+
+</div>
+</div>
+<a id="ab91f7fc1d8363bcb18fc2739b16a9ba6" name="ab91f7fc1d8363bcb18fc2739b16a9ba6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab91f7fc1d8363bcb18fc2739b16a9ba6">&#9670;&#160;</a></span>GetTripDelay()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">async Task&lt; ActionResult&lt; <a class="el" href="class_traveller___server_1_1_controllers_1_1_g_t_f_s_realtime_1_1_feed_messages_api_controller_1_1_delay_message_response.html">DelayMessageResponse</a> &gt; &gt; Traveller_Server.Controllers.GTFSRealtime.FeedMessagesApiController.GetTripDelay </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>tripId</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Function to get the delay of the specified trip. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tripId</td><td>ID of the Trip that the delay will be seen</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>DelayMessageResponse with the delay in seconds and the level of certainty</dd></dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_traveller___server_1_1_controllers_1_1_g_t_f_s_realtime_1_1_feed_messages_api_controller_ab91f7fc1d8363bcb18fc2739b16a9ba6_cgraph.png" border="0" usemap="#aclass_traveller___server_1_1_controllers_1_1_g_t_f_s_realtime_1_1_feed_messages_api_controller_ab91f7fc1d8363bcb18fc2739b16a9ba6_cgraph" alt=""/></div>
+</div>
+
+</div>
+</div>
+<a id="aedf73efef804dc5dc8e7df3caa50e1b4" name="aedf73efef804dc5dc8e7df3caa50e1b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aedf73efef804dc5dc8e7df3caa50e1b4">&#9670;&#160;</a></span>GetTripFeedMessages()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">async Task&lt; ActionResult&lt; List&lt; <a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_g_t_f_s_realtime_1_1_feed_message.html">FeedMessage</a> &gt; &gt; &gt; Traveller_Server.Controllers.GTFSRealtime.FeedMessagesApiController.GetTripFeedMessages </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>tripId</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get all the feed messages from the associated Trip. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tripId</td><td>Trip id of the trip that is being looked upon</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>List of FeedMessages of the specified trip</dd></dl>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_traveller___server_1_1_controllers_1_1_g_t_f_s_realtime_1_1_feed_messages_api_controller_aedf73efef804dc5dc8e7df3caa50e1b4_icgraph.png" border="0" usemap="#aclass_traveller___server_1_1_controllers_1_1_g_t_f_s_realtime_1_1_feed_messages_api_controller_aedf73efef804dc5dc8e7df3caa50e1b4_icgraph" alt=""/></div>
+</div>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>E:/Users/venel/Desktop/TravellerV2/traveller/Traveller-Server/Controllers/GTFSRealtime/FeedMessagesApiController.cs</li>
 </ul>

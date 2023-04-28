@@ -5,5 +5,5 @@ digraph "Graphical Class Hierarchy"
   edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
   node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
   rankdir="LR";
-  Node0 [label="Traveller_Server.Controllers.\lUserStopInfoesApiController.User\lStopInfoMessage",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_traveller___server_1_1_controllers_1_1_user_stop_infoes_api_controller_1_1_user_stop_info_message.html",tooltip="User stop info message class, used as an interface between front-end and back-end."];
+  Node0 [label="Traveller_Server.Controllers.\lGTFSRealtime.FeedMessagesApiController.\lRouteTripInfoMessage",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_traveller___server_1_1_controllers_1_1_g_t_f_s_realtime_1_1_feed_messages_api_controller_1_1_route_trip_info_message.html",tooltip="Message that contains the route and trip info to faciltiate communication with the front-end."];
 }

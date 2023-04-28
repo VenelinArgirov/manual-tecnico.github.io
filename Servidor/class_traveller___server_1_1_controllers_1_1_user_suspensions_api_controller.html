@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Sprint 5: Traveller_Server.Controllers.UserSuspensionsApiController Class Reference</title>
+<title>Sprint 6: Traveller_Server.Controllers.UserSuspensionsApiController Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -30,7 +30,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Sprint 5
+   <div id="projectname">Sprint 6
    </div>
   </td>
  </tr>
@@ -117,6 +117,9 @@ $(document).ready(function(){initNavTree('class_traveller___server_1_1_controlle
   <div class="headertitle"><div class="title">Traveller_Server.Controllers.UserSuspensionsApiController Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>API Controller for CRUD actions for UserSuspensions.  
+ <a href="class_traveller___server_1_1_controllers_1_1_user_suspensions_api_controller.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for Traveller_Server.Controllers.UserSuspensionsApiController:</div>
 <div class="dyncontent">
@@ -139,22 +142,84 @@ async Task&lt; ActionResult&lt; IEnumerable&lt; <a class="el" href="class_travel
 <tr class="memitem:a32e3d83e2137de4a9ef077033c30f440"><td class="memItemLeft" align="right" valign="top"><a id="a32e3d83e2137de4a9ef077033c30f440" name="a32e3d83e2137de4a9ef077033c30f440"></a>
 async Task&lt; ActionResult&lt; <a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_user_suspension.html">UserSuspension</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetUserSuspension</b> (Guid id)</td></tr>
 <tr class="separator:a32e3d83e2137de4a9ef077033c30f440"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8f7df746b4db908733dae040b481e0ba"><td class="memItemLeft" align="right" valign="top"><a id="a8f7df746b4db908733dae040b481e0ba" name="a8f7df746b4db908733dae040b481e0ba"></a>
-async Task&lt; List&lt; <a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_user_suspension.html">UserSuspension</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetSuspensionsOfUser</b> (Guid id)</td></tr>
+<tr class="memitem:a8f7df746b4db908733dae040b481e0ba"><td class="memItemLeft" align="right" valign="top">async Task&lt; List&lt; <a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_user_suspension.html">UserSuspension</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_traveller___server_1_1_controllers_1_1_user_suspensions_api_controller.html#a8f7df746b4db908733dae040b481e0ba">GetSuspensionsOfUser</a> (Guid id)</td></tr>
+<tr class="memdesc:a8f7df746b4db908733dae040b481e0ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the suspensions of a user.  <br /></td></tr>
 <tr class="separator:a8f7df746b4db908733dae040b481e0ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6ca9b3c62b0e6a6c4a8345f807e56465"><td class="memItemLeft" align="right" valign="top"><a id="a6ca9b3c62b0e6a6c4a8345f807e56465" name="a6ca9b3c62b0e6a6c4a8345f807e56465"></a>
 async Task&lt; IActionResult &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>PutUserSuspension</b> (Guid id, <a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_user_suspension.html">UserSuspension</a> userSuspension)</td></tr>
 <tr class="separator:a6ca9b3c62b0e6a6c4a8345f807e56465"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5b22c66cf6b3298d1e4946f868906720"><td class="memItemLeft" align="right" valign="top"><a id="a5b22c66cf6b3298d1e4946f868906720" name="a5b22c66cf6b3298d1e4946f868906720"></a>
-async Task&lt; ActionResult&lt; <a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_user_suspension.html">UserSuspension</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>PostUserSuspension</b> (<a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_user_suspension.html">UserSuspension</a> userSuspension)</td></tr>
+<tr class="memitem:a5b22c66cf6b3298d1e4946f868906720"><td class="memItemLeft" align="right" valign="top">async Task&lt; ActionResult&lt; <a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_user_suspension.html">UserSuspension</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_traveller___server_1_1_controllers_1_1_user_suspensions_api_controller.html#a5b22c66cf6b3298d1e4946f868906720">PostUserSuspension</a> (<a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_user_suspension.html">UserSuspension</a> userSuspension)</td></tr>
+<tr class="memdesc:a5b22c66cf6b3298d1e4946f868906720"><td class="mdescLeft">&#160;</td><td class="mdescRight">Suspends a user, as long as the user isn't an admin.  <br /></td></tr>
 <tr class="separator:a5b22c66cf6b3298d1e4946f868906720"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a01ec41de219b571a828c3f2089390377"><td class="memItemLeft" align="right" valign="top">async Task&lt; IActionResult &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_traveller___server_1_1_controllers_1_1_user_suspensions_api_controller.html#a01ec41de219b571a828c3f2089390377">UnbanUser</a> (Guid id)</td></tr>
+<tr class="memdesc:a01ec41de219b571a828c3f2089390377"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes the active ban on the specified user.  <br /></td></tr>
 <tr class="separator:a01ec41de219b571a828c3f2089390377"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4fa6d39d302cf073ae038153a6882147"><td class="memItemLeft" align="right" valign="top"><a id="a4fa6d39d302cf073ae038153a6882147" name="a4fa6d39d302cf073ae038153a6882147"></a>
 async Task&lt; IActionResult &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>DeleteUserSuspension</b> (Guid id)</td></tr>
 <tr class="separator:a4fa6d39d302cf073ae038153a6882147"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>API Controller for CRUD actions for UserSuspensions. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a8f7df746b4db908733dae040b481e0ba" name="a8f7df746b4db908733dae040b481e0ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f7df746b4db908733dae040b481e0ba">&#9670;&#160;</a></span>GetSuspensionsOfUser()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">async Task&lt; List&lt; <a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_user_suspension.html">UserSuspension</a> &gt; &gt; Traveller_Server.Controllers.UserSuspensionsApiController.GetSuspensionsOfUser </td>
+          <td>(</td>
+          <td class="paramtype">Guid&#160;</td>
+          <td class="paramname"><em>id</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets the suspensions of a user. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td>The id of the user</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>List with the suspensions of the user</dd></dl>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_traveller___server_1_1_controllers_1_1_user_suspensions_api_controller_a8f7df746b4db908733dae040b481e0ba_icgraph.png" border="0" usemap="#aclass_traveller___server_1_1_controllers_1_1_user_suspensions_api_controller_a8f7df746b4db908733dae040b481e0ba_icgraph" alt=""/></div>
+</div>
+
+</div>
+</div>
+<a id="a5b22c66cf6b3298d1e4946f868906720" name="a5b22c66cf6b3298d1e4946f868906720"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b22c66cf6b3298d1e4946f868906720">&#9670;&#160;</a></span>PostUserSuspension()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">async Task&lt; ActionResult&lt; <a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_user_suspension.html">UserSuspension</a> &gt; &gt; Traveller_Server.Controllers.UserSuspensionsApiController.PostUserSuspension </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_user_suspension.html">UserSuspension</a>&#160;</td>
+          <td class="paramname"><em>userSuspension</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Suspends a user, as long as the user isn't an admin. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">userSuspension</td><td>User suspension</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The result of the suspension, BadRequest if it failed, CreatedAtAction if successful</dd></dl>
+
+</div>
+</div>
 <a id="a01ec41de219b571a828c3f2089390377" name="a01ec41de219b571a828c3f2089390377"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a01ec41de219b571a828c3f2089390377">&#9670;&#160;</a></span>UnbanUser()</h2>
 
@@ -170,7 +235,20 @@ async Task&lt; IActionResult &gt;&#160;</td><td class="memItemRight" valign="bot
         </tr>
       </table>
 </div><div class="memdoc">
-<p>GET: api/UserSuspensionsApi/unban/5 Removes the active ban on the specified user </p>
+
+<p>Removes the active ban on the specified user. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td>The id of the user</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_traveller___server_1_1_controllers_1_1_user_suspensions_api_controller_a01ec41de219b571a828c3f2089390377_cgraph.png" border="0" usemap="#aclass_traveller___server_1_1_controllers_1_1_user_suspensions_api_controller_a01ec41de219b571a828c3f2089390377_cgraph" alt=""/></div>
+</div>
 
 </div>
 </div>

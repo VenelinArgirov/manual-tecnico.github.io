@@ -5,5 +5,5 @@ digraph "Graphical Class Hierarchy"
   edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
   node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
   rankdir="LR";
-  Node0 [label="Traveller_Server.JwtFeatures.\lJwtHandler",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_traveller___server_1_1_jwt_features_1_1_jwt_handler.html",tooltip="Class used to configurate the JWT token and help with the authentication process."];
+  Node0 [label="Traveller_Server.Controllers.\lUserBoardedInfoesApiController.User\lBoardedInfoMessage",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_traveller___server_1_1_controllers_1_1_user_boarded_infoes_api_controller_1_1_user_boarded_info_message.html",tooltip=" "];
 }

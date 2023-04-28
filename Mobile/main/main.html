@@ -71,6 +71,16 @@
   <h2><span>Implementation</span></h2>
   <pre class="language-dart"><code class="language-dart">void main() async {
   WidgetsFlutterBinding.ensureInitialized();
+  await EasyLocalization.ensureInitialized();
+  SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);
+  &#47;&#47;&#47; Set the system UI to manual mode and hide the bottom system overlay
+  SystemChrome.setEnabledSystemUIMode(SystemUiMode.manual, overlays: [SystemUiOverlay.bottom]);
+
+    &#47;&#47;&#47; Set a callback to restore the system overlays after 1 second delay
+  SystemChrome.setSystemUIChangeCallback((systemOverlaysAreVisible) async {
+    await Future.delayed(const Duration(seconds: 1));
+    SystemChrome.restoreSystemUIOverlays();
+  });
   SharedPreferences prefs = await SharedPreferences.getInstance();
   bool rememberMe = prefs.getBool(&#39;rememberMe&#39;) ?? false;
   bool isDarkTheme = prefs.getBool(&#39;isDarkTheme&#39;) ?? false;
@@ -82,12 +92,15 @@
     themeManager.toggleTheme(false);
   }
 
-  runApp(
-    ChangeNotifierProvider&lt;ThemeManager&gt;(
+  runApp(EasyLocalization(
+    supportedLocales: const [Locale(&#39;en&#39;), Locale(&#39;pt&#39;)],
+    path: &#39;lib&#47;assets&#47;translations&#39;,
+    fallbackLocale: const Locale(&#39;en&#39;),
+    child: ChangeNotifierProvider&lt;ThemeManager&gt;(
       create: (_) =&gt; themeManager,
       child: MyApp(rememberMe),
     ),
-  );
+  ));
 }</code></pre>
 </section>
 
@@ -112,11 +125,12 @@
     <ol>
       <li class="section-title"><a href="../main/main-library.html#classes">Classes</a></li>
         <li><a href="../main/MyApp-class.html">MyApp</a></li>
-        <li><a href="../main/MyHomePage-class.html">MyHomePage</a></li>
 
 
 
 
+      <li class="section-title"><a href="../main/main-library.html#properties">Properties</a></li>
+        <li><a href="../main/navigatorKey.html">navigatorKey</a></li>
 
       <li class="section-title"><a href="../main/main-library.html#functions">Functions</a></li>
         <li><a href="../main/main.html">main</a></li>

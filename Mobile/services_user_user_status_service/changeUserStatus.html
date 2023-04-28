@@ -66,6 +66,11 @@
 
     </section>
     
+<section class="desc markdown">
+  <p>Function to update the user status in the database.</p>
+<p><code>userId</code> user identifier.
+<code>status</code> boolean to know id the user is online or not.</p>
+</section>
 
 
     
@@ -73,8 +78,7 @@
   <h2><span>Implementation</span></h2>
   <pre class="language-dart"><code class="language-dart">Future&lt;http.Response&gt; changeUserStatus(String userId, bool status) async {
   &#47;&#47;&#47; Defining the URL for the login API
-  final url = Uri.parse(
-      &#39;https:&#47;&#47;traveller-server.azurewebsites.net&#47;api&#47;UserStatusApi&#47;PutUserStatus&#47;${userId}&#39;);
+  final url = Uri.parse(&#39;https:&#47;&#47;traveller-server.azurewebsites.net&#47;api&#47;UserStatusApi&#47;PutUserStatus&#47;${userId}&#39;);
 
   &#47;&#47;&#47; Defining the headers required for the API request
   final headers = {&#39;Content-Type&#39;: &#39;application&#47;json&#39;};

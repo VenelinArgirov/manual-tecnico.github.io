@@ -1,0 +1,11 @@
+digraph "Traveller_Server.Controllers.UserStopInfoesApiController.CheckIfLocationNearStop"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [label="Traveller_Server.Controllers.\lUserStopInfoesApiController.Check\lIfLocationNearStop",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Verifies is the given coordinate with latitude and longitude is near any transit stop in the GTFS dat..."];
+  Node1 -> Node2 [color="steelblue1",style="solid"];
+  Node2 [label="Traveller_Server.Models.\lStopLinker.GetStop",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_traveller___server_1_1_models_1_1_stop_linker.html#a061ad69b5a542103ac2ad7c251ece1ca",tooltip="Function to get a GTFS stop from latitude and longitude."];
+}

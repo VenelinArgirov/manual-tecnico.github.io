@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Sprint 5: Traveller_Server.Controllers.ActivityLogsApiController Class Reference</title>
+<title>Sprint 6: Traveller_Server.Controllers.ActivityLogsApiController Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -30,7 +30,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Sprint 5
+   <div id="projectname">Sprint 6
    </div>
   </td>
  </tr>
@@ -117,6 +117,9 @@ $(document).ready(function(){initNavTree('class_traveller___server_1_1_controlle
   <div class="headertitle"><div class="title">Traveller_Server.Controllers.ActivityLogsApiController Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>API Controller for CRUD actions for ActivityLogs.  
+ <a href="class_traveller___server_1_1_controllers_1_1_activity_logs_api_controller.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for Traveller_Server.Controllers.ActivityLogsApiController:</div>
 <div class="dyncontent">
@@ -145,13 +148,43 @@ async Task&lt; IActionResult &gt;&#160;</td><td class="memItemRight" valign="bot
 <tr class="memitem:ad34d6a5e6d4d096eab6d450caf677243"><td class="memItemLeft" align="right" valign="top"><a id="ad34d6a5e6d4d096eab6d450caf677243" name="ad34d6a5e6d4d096eab6d450caf677243"></a>
 async Task&lt; ActionResult&lt; <a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_activity_log.html">ActivityLog</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>PostActivityLog</b> (Guid userId)</td></tr>
 <tr class="separator:ad34d6a5e6d4d096eab6d450caf677243"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af9d94492ffbd8e7b39121d3ea964499c"><td class="memItemLeft" align="right" valign="top"><a id="af9d94492ffbd8e7b39121d3ea964499c" name="af9d94492ffbd8e7b39121d3ea964499c"></a>
-async Task&lt; ActionResult&lt; <a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_activity_log.html">ActivityLog</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>PostLogoutActivityLog</b> (Guid userId)</td></tr>
+<tr class="memitem:af9d94492ffbd8e7b39121d3ea964499c"><td class="memItemLeft" align="right" valign="top">async Task&lt; ActionResult&lt; <a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_activity_log.html">ActivityLog</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_traveller___server_1_1_controllers_1_1_activity_logs_api_controller.html#af9d94492ffbd8e7b39121d3ea964499c">PostLogoutActivityLog</a> (Guid userId)</td></tr>
+<tr class="memdesc:af9d94492ffbd8e7b39121d3ea964499c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Posts an activity log of the user logging out.  <br /></td></tr>
 <tr class="separator:af9d94492ffbd8e7b39121d3ea964499c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abb81f76095f5f67f0a2b00efe6acd9a1"><td class="memItemLeft" align="right" valign="top"><a id="abb81f76095f5f67f0a2b00efe6acd9a1" name="abb81f76095f5f67f0a2b00efe6acd9a1"></a>
 async Task&lt; IActionResult &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>DeleteActivityLog</b> (Guid id)</td></tr>
 <tr class="separator:abb81f76095f5f67f0a2b00efe6acd9a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>API Controller for CRUD actions for ActivityLogs. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="af9d94492ffbd8e7b39121d3ea964499c" name="af9d94492ffbd8e7b39121d3ea964499c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9d94492ffbd8e7b39121d3ea964499c">&#9670;&#160;</a></span>PostLogoutActivityLog()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">async Task&lt; ActionResult&lt; <a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_activity_log.html">ActivityLog</a> &gt; &gt; Traveller_Server.Controllers.ActivityLogsApiController.PostLogoutActivityLog </td>
+          <td>(</td>
+          <td class="paramtype">Guid&#160;</td>
+          <td class="paramname"><em>userId</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Posts an activity log of the user logging out. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">userId</td><td>The id of the user the log is about</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The activity log</dd></dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>E:/Users/venel/Desktop/TravellerV2/traveller/Traveller-Server/Controllers/ActivityLogsApiController.cs</li>
 </ul>

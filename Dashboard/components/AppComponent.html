@@ -136,7 +136,10 @@
                     <td class="col-md-4">
                         <ul class="index-list">
                             <li>
-                                <a href="#isLoginPage" >isLoginPage</a>
+                                <a href="#isLandingPage" >isLandingPage</a>
+                            </li>
+                            <li>
+                                <a href="#isLoginPageOrLandingPage" >isLoginPageOrLandingPage</a>
                             </li>
                         </ul>
                     </td>
@@ -212,16 +215,53 @@
         <tbody>
             <tr>
                 <td class="col-md-4">
-                    <a name="isLoginPage"></a>
+                    <a name="isLandingPage"></a>
                     <span class="name">
-                        <span ><b>isLoginPage</b></span>
-                        <a href="#isLoginPage"><span class="icon ion-ios-link"></span></a>
+                        <span ><b>isLandingPage</b></span>
+                        <a href="#isLandingPage"><span class="icon ion-ios-link"></span></a>
                     </span>
                 </td>
             </tr>
             <tr>
                 <td class="col-md-4">
-<code>isLoginPage()</code>
+<code>isLandingPage()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="17"
+                            class="link-to-prism">src/app/app.component.ts:17</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="isLoginPageOrLandingPage"></a>
+                    <span class="name">
+                        <span ><b>isLoginPageOrLandingPage</b></span>
+                        <a href="#isLoginPageOrLandingPage"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>isLoginPageOrLandingPage()</code>
                 </td>
             </tr>
 
@@ -300,24 +340,34 @@ export class AppComponent {
 
   constructor(private router: Router) { }
 
-  isLoginPage() {
-    return this.router.url &#x3D;&#x3D;&#x3D; &#x27;/&#x27;;
+  isLoginPageOrLandingPage() {
+    return this.router.url &#x3D;&#x3D;&#x3D; &#x27;/login&#x27; || this.router.url &#x3D;&#x3D;&#x3D; &quot;/&quot;;
+  }
+
+  isLandingPage() {
+    return this.router.url &#x3D;&#x3D;&#x3D; &quot;/&quot;;
   }
 }
 </code></pre>
     </div>
 
     <div class="tab-pane fade " id="c-templateData">
-        <pre class="line-numbers"><code class="language-html">&lt;mat-sidenav-container class&#x3D;&quot;example-container&quot; [autosize]&#x3D;&quot;true&quot;&gt;
-  &lt;mat-sidenav class&#x3D;&quot;a&quot; mode&#x3D;&quot;side&quot; [opened]&#x3D;&quot;true&quot; *ngIf&#x3D;&quot;!isLoginPage()&quot;&gt;
-    &lt;app-nav-menu&gt;&lt;/app-nav-menu&gt;
-  &lt;/mat-sidenav&gt;
-  &lt;mat-sidenav-content style&#x3D;&quot;padding-top: 5%; margin-top:0px&quot;&gt;
-    &lt;div class&#x3D;&quot;container&quot;&gt;
-      &lt;router-outlet&gt;&lt;/router-outlet&gt;
-    &lt;/div&gt;
-  &lt;/mat-sidenav-content&gt;
-&lt;/mat-sidenav-container&gt;
+        <pre class="line-numbers"><code class="language-html">&lt;div *ngIf&#x3D;&quot;!isLandingPage()&quot;&gt;
+  &lt;mat-sidenav-container class&#x3D;&quot;example-container&quot; [autosize]&#x3D;&quot;true&quot;&gt;
+    &lt;mat-sidenav class&#x3D;&quot;a&quot; mode&#x3D;&quot;side&quot; [opened]&#x3D;&quot;true&quot; *ngIf&#x3D;&quot;!isLoginPageOrLandingPage()&quot;&gt;
+      &lt;app-nav-menu&gt;&lt;/app-nav-menu&gt;
+    &lt;/mat-sidenav&gt;
+    &lt;mat-sidenav-content style&#x3D;&quot;padding-top: 5%; margin-top:0px&quot;&gt;
+      &lt;div class&#x3D;&quot;container&quot;&gt;
+        &lt;router-outlet&gt;&lt;/router-outlet&gt;
+      &lt;/div&gt;
+    &lt;/mat-sidenav-content&gt;
+  &lt;/mat-sidenav-container&gt;
+&lt;/div&gt;
+&lt;div *ngIf&#x3D;&quot;isLandingPage()&quot;&gt;
+   &lt;router-outlet&gt;&lt;/router-outlet&gt;
+&lt;/div&gt;
+
 
 </code></pre>
     </div>
@@ -348,8 +398,8 @@ export class AppComponent {
 <script src="../js/libs/htmlparser.js"></script>
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
-        var COMPONENT_TEMPLATE = '<div><mat-sidenav-container class="example-container" [autosize]="true">  <mat-sidenav class="a" mode="side" [opened]="true" *ngIf="!isLoginPage()">    <app-nav-menu></app-nav-menu>  </mat-sidenav>  <mat-sidenav-content style="padding-top: 5%; margin-top:0px">    <div class="container">      <router-outlet></router-outlet>    </div>  </mat-sidenav-content></mat-sidenav-container></div>'
-    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'NavMenuComponent', 'selector': 'app-nav-menu'},{'name': 'RouteCreateComponent', 'selector': 'app-route-create'},{'name': 'RouteDetailsComponent', 'selector': 'app-route-details'},{'name': 'RouteEditComponent', 'selector': 'app-route-edit'},{'name': 'RouteManagementComponent', 'selector': 'app-route-management'},{'name': 'StatisticsComponent', 'selector': 'app-statistics'},{'name': 'StopCreateComponent', 'selector': 'app-stop-create'},{'name': 'TripCreateComponent', 'selector': 'app-trip-create'},{'name': 'TripEditComponent', 'selector': 'app-trip-edit'},{'name': 'UserDetailsComponent', 'selector': 'app-user-details'},{'name': 'UsersManagementComponent', 'selector': 'app-users-management'}];
+        var COMPONENT_TEMPLATE = '<div><div *ngIf="!isLandingPage()">  <mat-sidenav-container class="example-container" [autosize]="true">    <mat-sidenav class="a" mode="side" [opened]="true" *ngIf="!isLoginPageOrLandingPage()">      <app-nav-menu></app-nav-menu>    </mat-sidenav>    <mat-sidenav-content style="padding-top: 5%; margin-top:0px">      <div class="container">        <router-outlet></router-outlet>      </div>    </mat-sidenav-content>  </mat-sidenav-container></div><div *ngIf="isLandingPage()">   <router-outlet></router-outlet></div></div>'
+    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'LandingPageComponent', 'selector': 'app-landing-page'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'NavMenuComponent', 'selector': 'app-nav-menu'},{'name': 'RouteCreateComponent', 'selector': 'app-route-create'},{'name': 'RouteDetailsComponent', 'selector': 'app-route-details'},{'name': 'RouteEditComponent', 'selector': 'app-route-edit'},{'name': 'RouteManagementComponent', 'selector': 'app-route-management'},{'name': 'StatisticsComponent', 'selector': 'app-statistics'},{'name': 'StopCreateComponent', 'selector': 'app-stop-create'},{'name': 'TripCreateComponent', 'selector': 'app-trip-create'},{'name': 'TripEditComponent', 'selector': 'app-trip-edit'},{'name': 'UserDetailsComponent', 'selector': 'app-user-details'},{'name': 'UsersManagementComponent', 'selector': 'app-users-management'}];
     var DIRECTIVES = [];
     var ACTUAL_COMPONENT = {'name': 'AppComponent'};
 </script>

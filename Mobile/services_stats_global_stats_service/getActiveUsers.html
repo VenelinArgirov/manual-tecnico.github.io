@@ -74,13 +74,12 @@
   <h2><span>Implementation</span></h2>
   <pre class="language-dart"><code class="language-dart">Future&lt;int&gt; getActiveUsers() async {
   &#47;&#47;&#47; Defining the URL for the login API
-  final url = Uri.parse(
-      &#39;https:&#47;&#47;traveller-server.azurewebsites.net&#47;api&#47;StatisticsApi&#47;GetActiveUsers&#39;);
+  final url = Uri.parse(&#39;https:&#47;&#47;traveller-server.azurewebsites.net&#47;api&#47;StatisticsApi&#47;GetActiveUsers&#39;);
 
   &#47;&#47;&#47; Defining the headers required for the API request
   final headers = {&#39;Content-Type&#39;: &#39;application&#47;json&#39;};
 
-  &#47;&#47;&#47; Making a POST request to the login API with the encoded JSON body and headers
+  &#47;&#47;&#47; Making a GET request to the login API with the encoded JSON body and headers
   final response = await http.get(url, headers: headers);
 
   if (response.statusCode == 200) {

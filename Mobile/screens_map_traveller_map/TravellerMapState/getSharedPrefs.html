@@ -64,6 +64,9 @@
 
     </section>
     
+<section class="desc markdown">
+  <p>Initializes the <code>_prefs</code> variable with the shared preferences instance.</p>
+</section>
 
 
     
@@ -71,10 +74,14 @@
   <h2><span>Implementation</span></h2>
   <pre class="language-dart"><code class="language-dart">void getSharedPrefs() async {
   _prefs = await SharedPreferences.getInstance();
+
   setState(() {
     currentId = _prefs.getString(&#39;id&#39;) ?? &quot;empty&quot;;
-    isLoggedIn = _prefs.getBool(&#39;isLoggedIn&#39;)!;
+    isLoggedIn = _prefs.getBool(&#39;isLoggedIn&#39;) ?? false;
   });
+  await setupMap();
+  if (_prefs.getBool(&#39;isDarkTheme&#39;) ?? false)
+    _mapStyle.value = await rootBundle.loadString(&#39;lib&#47;assets&#47;map_styles&#47;dark.json&#39;);
 }</code></pre>
 </section>
 
@@ -106,19 +113,23 @@
         <li class="section-title">
           <a href="../../screens_map_traveller_map/TravellerMapState-class.html#instance-properties">Properties</a>
         </li>
+          <li><a href="../../screens_map_traveller_map/TravellerMapState/alertRefreshToggle.html">alertRefreshToggle</a></li>
           <li class="inherited"><a href="https://api.flutter.dev/flutter/widgets/State/context.html">context</a></li>
+          <li><a href="../../screens_map_traveller_map/TravellerMapState/controller.html">controller</a></li>
           <li><a href="../../screens_map_traveller_map/TravellerMapState/currentId.html">currentId</a></li>
           <li class="inherited"><a href="https://api.flutter.dev/flutter/dart-core/Object/hashCode.html">hashCode</a></li>
+          <li><a href="../../screens_map_traveller_map/TravellerMapState/initGooglePlacesApi.html">initGooglePlacesApi</a></li>
           <li><a href="../../screens_map_traveller_map/TravellerMapState/initialCoordenates.html">initialCoordenates</a></li>
+          <li><a href="../../screens_map_traveller_map/TravellerMapState/isBottomSheetOpen.html">isBottomSheetOpen</a></li>
           <li><a href="../../screens_map_traveller_map/TravellerMapState/isInitialized.html">isInitialized</a></li>
           <li><a href="../../screens_map_traveller_map/TravellerMapState/isLoggedIn.html">isLoggedIn</a></li>
           <li><a href="../../screens_map_traveller_map/TravellerMapState/mapMarkers.html">mapMarkers</a></li>
           <li><a href="../../screens_map_traveller_map/TravellerMapState/maps.html">maps</a></li>
           <li><a href="../../screens_map_traveller_map/TravellerMapState/maxDistance.html">maxDistance</a></li>
           <li class="inherited"><a href="https://api.flutter.dev/flutter/widgets/State/mounted.html">mounted</a></li>
-          <li><a href="../../screens_map_traveller_map/TravellerMapState/originLocal.html">originLocal</a></li>
           <li><a href="../../screens_map_traveller_map/TravellerMapState/polyline.html">polyline</a></li>
           <li class="inherited"><a href="https://api.flutter.dev/flutter/dart-core/Object/runtimeType.html">runtimeType</a></li>
+          <li><a href="../../screens_map_traveller_map/TravellerMapState/scaffoldKey.html">scaffoldKey</a></li>
           <li class="inherited"><a href="https://api.flutter.dev/flutter/widgets/State/widget.html">widget</a></li>
 
         <li class="section-title"><a href="../../screens_map_traveller_map/TravellerMapState-class.html#instance-methods">Methods</a></li>
@@ -129,21 +140,23 @@
           <li class="inherited"><a href="https://api.flutter.dev/flutter/widgets/State/debugFillProperties.html">debugFillProperties</a></li>
           <li class="inherited"><a href="https://api.flutter.dev/flutter/widgets/State/didChangeDependencies.html">didChangeDependencies</a></li>
           <li class="inherited"><a href="https://api.flutter.dev/flutter/widgets/State/didUpdateWidget.html">didUpdateWidget</a></li>
-          <li class="inherited"><a href="https://api.flutter.dev/flutter/widgets/State/dispose.html">dispose</a></li>
+          <li><a href="../../screens_map_traveller_map/TravellerMapState/dispose.html">dispose</a></li>
           <li><a href="../../screens_map_traveller_map/TravellerMapState/getAlertMarkers.html">getAlertMarkers</a></li>
           <li><a href="../../screens_map_traveller_map/TravellerMapState/getOnlineUsersAndLocations.html">getOnlineUsersAndLocations</a></li>
           <li><a href="../../screens_map_traveller_map/TravellerMapState/getSharedPrefs.html">getSharedPrefs</a></li>
+          <li><a href="../../screens_map_traveller_map/TravellerMapState/getTransportsMarkers.html">getTransportsMarkers</a></li>
           <li><a href="../../screens_map_traveller_map/TravellerMapState/getUserMarkers.html">getUserMarkers</a></li>
-          <li><a href="../../screens_map_traveller_map/TravellerMapState/iconDataToBitmap.html">iconDataToBitmap</a></li>
           <li><a href="../../screens_map_traveller_map/TravellerMapState/initState.html">initState</a></li>
           <li><a href="../../screens_map_traveller_map/TravellerMapState/markerRefreshTimer.html">markerRefreshTimer</a></li>
           <li class="inherited"><a href="https://api.flutter.dev/flutter/dart-core/Object/noSuchMethod.html">noSuchMethod</a></li>
           <li class="inherited"><a href="https://api.flutter.dev/flutter/widgets/State/reassemble.html">reassemble</a></li>
           <li><a href="../../screens_map_traveller_map/TravellerMapState/refreshMapMarkers.html">refreshMapMarkers</a></li>
+          <li><a href="../../screens_map_traveller_map/TravellerMapState/searchBar.html">searchBar</a></li>
           <li><a href="../../screens_map_traveller_map/TravellerMapState/setCameraPosition.html">setCameraPosition</a></li>
-          <li><a href="../../screens_map_traveller_map/TravellerMapState/setIconColor.html">setIconColor</a></li>
+          <li><a href="../../screens_map_traveller_map/TravellerMapState/setCameraPositionToAlerLocation.html">setCameraPositionToAlerLocation</a></li>
           <li><a href="../../screens_map_traveller_map/TravellerMapState/setPolyline.html">setPolyline</a></li>
           <li class="inherited"><a href="https://api.flutter.dev/flutter/widgets/State/setState.html">setState</a></li>
+          <li><a href="../../screens_map_traveller_map/TravellerMapState/setStopMarkers.html">setStopMarkers</a></li>
           <li><a href="../../screens_map_traveller_map/TravellerMapState/setupMap.html">setupMap</a></li>
           <li class="inherited"><a href="https://api.flutter.dev/flutter/foundation/Diagnosticable/toDiagnosticsNode.html">toDiagnosticsNode</a></li>
           <li class="inherited"><a href="https://api.flutter.dev/flutter/foundation/Diagnosticable/toString.html">toString</a></li>

@@ -76,7 +76,7 @@ the color <code>color</code>.</p>
 <section class="summary source-code" id="source">
   <h2><span>Implementation</span></h2>
   <pre class="language-dart"><code class="language-dart">Future&lt;BitmapDescriptor&gt; iconDataToBitmap(IconData icon, Color color) async {
-  final pictureRecorder = PictureRecorder();
+  final pictureRecorder = ui.PictureRecorder();
   final canvas = Canvas(pictureRecorder);
   final textPainter = TextPainter(textDirection: TextDirection.ltr);
   final iconStr = String.fromCharCode(icon.codePoint);
@@ -92,7 +92,7 @@ the color <code>color</code>.</p>
   textPainter.paint(canvas, Offset(0.0, 0.0));
   final picture = pictureRecorder.endRecording();
   final image = await picture.toImage(130, 130);
-  final bytes = await image.toByteData(format: ImageByteFormat.png);
+  final bytes = await image.toByteData(format: ui.ImageByteFormat.png);
   return BitmapDescriptor.fromBytes(bytes!.buffer.asUint8List());
 }</code></pre>
 </section>
@@ -125,6 +125,7 @@ the color <code>color</code>.</p>
         <li class="section-title">
           <a href="../../screens_map_traveller_map/TravellerMapState-class.html#instance-properties">Properties</a>
         </li>
+          <li><a href="../../screens_map_traveller_map/TravellerMapState/alertRefreshToggle.html">alertRefreshToggle</a></li>
           <li class="inherited"><a href="https://api.flutter.dev/flutter/widgets/State/context.html">context</a></li>
           <li><a href="../../screens_map_traveller_map/TravellerMapState/currentId.html">currentId</a></li>
           <li class="inherited"><a href="https://api.flutter.dev/flutter/dart-core/Object/hashCode.html">hashCode</a></li>
@@ -138,6 +139,7 @@ the color <code>color</code>.</p>
           <li><a href="../../screens_map_traveller_map/TravellerMapState/originLocal.html">originLocal</a></li>
           <li><a href="../../screens_map_traveller_map/TravellerMapState/polyline.html">polyline</a></li>
           <li class="inherited"><a href="https://api.flutter.dev/flutter/dart-core/Object/runtimeType.html">runtimeType</a></li>
+          <li><a href="../../screens_map_traveller_map/TravellerMapState/scaffoldKey.html">scaffoldKey</a></li>
           <li class="inherited"><a href="https://api.flutter.dev/flutter/widgets/State/widget.html">widget</a></li>
 
         <li class="section-title"><a href="../../screens_map_traveller_map/TravellerMapState-class.html#instance-methods">Methods</a></li>
@@ -148,10 +150,11 @@ the color <code>color</code>.</p>
           <li class="inherited"><a href="https://api.flutter.dev/flutter/widgets/State/debugFillProperties.html">debugFillProperties</a></li>
           <li class="inherited"><a href="https://api.flutter.dev/flutter/widgets/State/didChangeDependencies.html">didChangeDependencies</a></li>
           <li class="inherited"><a href="https://api.flutter.dev/flutter/widgets/State/didUpdateWidget.html">didUpdateWidget</a></li>
-          <li class="inherited"><a href="https://api.flutter.dev/flutter/widgets/State/dispose.html">dispose</a></li>
+          <li><a href="../../screens_map_traveller_map/TravellerMapState/dispose.html">dispose</a></li>
           <li><a href="../../screens_map_traveller_map/TravellerMapState/getAlertMarkers.html">getAlertMarkers</a></li>
           <li><a href="../../screens_map_traveller_map/TravellerMapState/getOnlineUsersAndLocations.html">getOnlineUsersAndLocations</a></li>
           <li><a href="../../screens_map_traveller_map/TravellerMapState/getSharedPrefs.html">getSharedPrefs</a></li>
+          <li><a href="../../screens_map_traveller_map/TravellerMapState/getTransportsMarkers.html">getTransportsMarkers</a></li>
           <li><a href="../../screens_map_traveller_map/TravellerMapState/getUserMarkers.html">getUserMarkers</a></li>
           <li><a href="../../screens_map_traveller_map/TravellerMapState/iconDataToBitmap.html">iconDataToBitmap</a></li>
           <li><a href="../../screens_map_traveller_map/TravellerMapState/initState.html">initState</a></li>
@@ -159,10 +162,12 @@ the color <code>color</code>.</p>
           <li class="inherited"><a href="https://api.flutter.dev/flutter/dart-core/Object/noSuchMethod.html">noSuchMethod</a></li>
           <li class="inherited"><a href="https://api.flutter.dev/flutter/widgets/State/reassemble.html">reassemble</a></li>
           <li><a href="../../screens_map_traveller_map/TravellerMapState/refreshMapMarkers.html">refreshMapMarkers</a></li>
+          <li><a href="../../screens_map_traveller_map/TravellerMapState/searchBar.html">searchBar</a></li>
           <li><a href="../../screens_map_traveller_map/TravellerMapState/setCameraPosition.html">setCameraPosition</a></li>
           <li><a href="../../screens_map_traveller_map/TravellerMapState/setIconColor.html">setIconColor</a></li>
           <li><a href="../../screens_map_traveller_map/TravellerMapState/setPolyline.html">setPolyline</a></li>
           <li class="inherited"><a href="https://api.flutter.dev/flutter/widgets/State/setState.html">setState</a></li>
+          <li><a href="../../screens_map_traveller_map/TravellerMapState/setStopMarkers.html">setStopMarkers</a></li>
           <li><a href="../../screens_map_traveller_map/TravellerMapState/setupMap.html">setupMap</a></li>
           <li class="inherited"><a href="https://api.flutter.dev/flutter/foundation/Diagnosticable/toDiagnosticsNode.html">toDiagnosticsNode</a></li>
           <li class="inherited"><a href="https://api.flutter.dev/flutter/foundation/Diagnosticable/toString.html">toString</a></li>

@@ -66,6 +66,11 @@
 
     </section>
     
+<section class="desc markdown">
+  <p>Method used to upload the profile image to the api url.</p>
+<p><code>id</code> user identifier.
+<code>newImage</code> the new image file.</p>
+</section>
 
 
     
@@ -75,7 +80,7 @@
   String uploadImageURL = &quot;&quot;;
 
   &#47;&#47;&#47; ImgBB Section
-  final String apiKey = &quot;34e890b3ec3ebf1c7d8d8d2c11bb2484&quot;;
+  final String apiKey = await getKeyFromKeyVault(&quot;ImgBBKey&quot;);
   final String date = DateTime.now().toString();
   final String imageName = &quot;${newImage.name}_${id}_$date&quot;;
   final String urlImg = &quot;https:&#47;&#47;api.imgbb.com&#47;1&#47;upload?key=${apiKey}&quot;;
@@ -94,8 +99,7 @@
 
   &#47;&#47;&#47; BACK-END Section
   &#47;&#47; Defining the URL for the new profile image for the specified user using his ID
-  final url = Uri.parse(
-      &#39;https:&#47;&#47;traveller-server.azurewebsites.net&#47;api&#47;UserApi&#47;ChangeProfileImage&#47;${id}?profileImage=$uploadImageURL&#39;);
+  final url = Uri.parse(&#39;https:&#47;&#47;traveller-server.azurewebsites.net&#47;api&#47;UserApi&#47;ChangeProfileImage&#47;${id}?profileImage=$uploadImageURL&#39;);
 
   &#47;&#47; Making a PATCH request to ask the back-end API to change the user&#39;s profile image
   final response = await http.patch(url);

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Sprint 5: Traveller_Server.Models.StopLinker Class Reference</title>
+<title>Sprint 6: Traveller_Server.Models.StopLinker Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -30,7 +30,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Sprint 5
+   <div id="projectname">Sprint 6
    </div>
   </td>
  </tr>
@@ -132,31 +132,242 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a54152877c1f1bbefba5c9ec8c5eb7c09"><td class="memItemLeft" align="right" valign="top"><a id="a54152877c1f1bbefba5c9ec8c5eb7c09" name="a54152877c1f1bbefba5c9ec8c5eb7c09"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>StopLinker</b> (<a class="el" href="class_traveller___server_1_1_data_1_1_traveller___server_context.html">Traveller_ServerContext</a> context)</td></tr>
 <tr class="separator:a54152877c1f1bbefba5c9ec8c5eb7c09"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af41d2705319359a722105ec1e6b3d2ca"><td class="memItemLeft" align="right" valign="top"><a id="af41d2705319359a722105ec1e6b3d2ca" name="af41d2705319359a722105ec1e6b3d2ca"></a>
-async Task&lt; <a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_g_t_f_s_1_1_stop.html">Stop</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetStopFromLocation</b> (<a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_location.html">Location</a> location)</td></tr>
+<tr class="memitem:af41d2705319359a722105ec1e6b3d2ca"><td class="memItemLeft" align="right" valign="top">async Task&lt; <a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_g_t_f_s_1_1_stop.html">Stop</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_traveller___server_1_1_models_1_1_stop_linker.html#af41d2705319359a722105ec1e6b3d2ca">GetStopFromLocation</a> (<a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_location.html">Location</a> location)</td></tr>
+<tr class="memdesc:af41d2705319359a722105ec1e6b3d2ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a GTFS Stop from a Location.  <br /></td></tr>
 <tr class="separator:af41d2705319359a722105ec1e6b3d2ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac1989d5c9566ca1c52088a55c39edb1d"><td class="memItemLeft" align="right" valign="top"><a id="ac1989d5c9566ca1c52088a55c39edb1d" name="ac1989d5c9566ca1c52088a55c39edb1d"></a>
-async Task&lt; <a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_g_t_f_s_1_1_stop.html">Stop</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetStopFromCoordinates</b> (float lat, float lon)</td></tr>
-<tr class="separator:ac1989d5c9566ca1c52088a55c39edb1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9d8dc183b2a8ed462645ff78b3949ceb"><td class="memItemLeft" align="right" valign="top"><a id="a9d8dc183b2a8ed462645ff78b3949ceb" name="a9d8dc183b2a8ed462645ff78b3949ceb"></a>
-async Task&lt; List&lt; <a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_g_t_f_s_1_1_route.html">Route</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>getRoutesForGivenStops</b> (List&lt; <a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_user_stop_info.html">UserStopInfo</a> &gt; infos)</td></tr>
-<tr class="separator:a9d8dc183b2a8ed462645ff78b3949ceb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af725cf689d7dd0db3b238bdfa4d97604"><td class="memItemLeft" align="right" valign="top"><a id="af725cf689d7dd0db3b238bdfa4d97604" name="af725cf689d7dd0db3b238bdfa4d97604"></a>
-async Task&lt; <a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_g_t_f_s_1_1_trip.html">Trip</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>getClosestTripFromRouteAndUSI</b> (string routeId, <a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_user_stop_info.html">UserStopInfo</a> info)</td></tr>
-<tr class="separator:af725cf689d7dd0db3b238bdfa4d97604"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac8ae5299c2c61f0a8b314d9af31cc330"><td class="memItemLeft" align="right" valign="top"><a id="ac8ae5299c2c61f0a8b314d9af31cc330" name="ac8ae5299c2c61f0a8b314d9af31cc330"></a>
-async Task&lt; <a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_g_t_f_s_realtime_1_1_stop_time_update.html">StopTimeUpdate</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>AddStopTimeUpdateToMessage</b> (<a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_g_t_f_s_realtime_1_1_feed_message.html">FeedMessage</a> message, <a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_user_stop_info.html">UserStopInfo</a> info)</td></tr>
+<tr class="memitem:a061ad69b5a542103ac2ad7c251ece1ca"><td class="memItemLeft" align="right" valign="top">async Task&lt; <a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_g_t_f_s_1_1_stop.html">Stop</a>?&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_traveller___server_1_1_models_1_1_stop_linker.html#a061ad69b5a542103ac2ad7c251ece1ca">GetStop</a> (float lat, float lon)</td></tr>
+<tr class="memdesc:a061ad69b5a542103ac2ad7c251ece1ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to get a GTFS stop from latitude and longitude.  <br /></td></tr>
+<tr class="separator:a061ad69b5a542103ac2ad7c251ece1ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e4db6618436c631fde6bfa4ee1ebb24"><td class="memItemLeft" align="right" valign="top">async Task&lt; List&lt; <a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_g_t_f_s_1_1_route.html">Route</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_traveller___server_1_1_models_1_1_stop_linker.html#a9e4db6618436c631fde6bfa4ee1ebb24">GetRoutesForGivenStops</a> (List&lt; <a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_user_stop_info.html">UserStopInfo</a> &gt; infos)</td></tr>
+<tr class="memdesc:a9e4db6618436c631fde6bfa4ee1ebb24"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a list of possible routes with the given User Stop Infos in the sequence.  <br /></td></tr>
+<tr class="separator:a9e4db6618436c631fde6bfa4ee1ebb24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbfe1ec47eb7b115d933b479b9848ede"><td class="memItemLeft" align="right" valign="top">async Task&lt; <a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_g_t_f_s_1_1_trip.html">Trip</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_traveller___server_1_1_models_1_1_stop_linker.html#afbfe1ec47eb7b115d933b479b9848ede">GetClosestTripFromRouteAndUSI</a> (string routeId, <a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_user_stop_info.html">UserStopInfo</a> info)</td></tr>
+<tr class="memdesc:afbfe1ec47eb7b115d933b479b9848ede"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the closest trip for the given route and user stop info.  <br /></td></tr>
+<tr class="separator:afbfe1ec47eb7b115d933b479b9848ede"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8ae5299c2c61f0a8b314d9af31cc330"><td class="memItemLeft" align="right" valign="top">async Task&lt; <a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_g_t_f_s_realtime_1_1_stop_time_update.html">StopTimeUpdate</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_traveller___server_1_1_models_1_1_stop_linker.html#ac8ae5299c2c61f0a8b314d9af31cc330">AddStopTimeUpdateToMessage</a> (<a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_g_t_f_s_realtime_1_1_feed_message.html">FeedMessage</a> message, <a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_user_stop_info.html">UserStopInfo</a> info)</td></tr>
+<tr class="memdesc:ac8ae5299c2c61f0a8b314d9af31cc330"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a Stop Time Update to the specified Feed Message.  <br /></td></tr>
 <tr class="separator:ac8ae5299c2c61f0a8b314d9af31cc330"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="properties" name="properties"></a>
 Properties</h2></td></tr>
 <tr class="memitem:a74243c5389789efd6c2ea6ad9b5e5ea6"><td class="memItemLeft" align="right" valign="top"><a id="a74243c5389789efd6c2ea6ad9b5e5ea6" name="a74243c5389789efd6c2ea6ad9b5e5ea6"></a>
 double&#160;</td><td class="memItemRight" valign="bottom"><b>MaxDistance</b><code> [get, set]</code></td></tr>
+<tr class="memdesc:a74243c5389789efd6c2ea6ad9b5e5ea6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Error margin given to find a stop from the user coordinates. <br /></td></tr>
 <tr class="separator:a74243c5389789efd6c2ea6ad9b5e5ea6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Utility class to help link information between the Google info coming from the app and the GTFS info in the DB. </p>
-</div><hr/>The documentation for this class was generated from the following file:<ul>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="ac8ae5299c2c61f0a8b314d9af31cc330" name="ac8ae5299c2c61f0a8b314d9af31cc330"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac8ae5299c2c61f0a8b314d9af31cc330">&#9670;&#160;</a></span>AddStopTimeUpdateToMessage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">async Task&lt; <a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_g_t_f_s_realtime_1_1_stop_time_update.html">StopTimeUpdate</a> &gt; Traveller_Server.Models.StopLinker.AddStopTimeUpdateToMessage </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_g_t_f_s_realtime_1_1_feed_message.html">FeedMessage</a>&#160;</td>
+          <td class="paramname"><em>message</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_user_stop_info.html">UserStopInfo</a>&#160;</td>
+          <td class="paramname"><em>info</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Add a Stop Time Update to the specified Feed Message. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">message</td><td>FeedMessage</td></tr>
+    <tr><td class="paramname">info</td><td>User Stop Info that will then be used to get the Delay</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_traveller___server_1_1_models_1_1_stop_linker_ac8ae5299c2c61f0a8b314d9af31cc330_cgraph.png" border="0" usemap="#aclass_traveller___server_1_1_models_1_1_stop_linker_ac8ae5299c2c61f0a8b314d9af31cc330_cgraph" alt=""/></div>
+</div>
+
+</div>
+</div>
+<a id="afbfe1ec47eb7b115d933b479b9848ede" name="afbfe1ec47eb7b115d933b479b9848ede"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afbfe1ec47eb7b115d933b479b9848ede">&#9670;&#160;</a></span>GetClosestTripFromRouteAndUSI()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">async Task&lt; <a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_g_t_f_s_1_1_trip.html">Trip</a> &gt; Traveller_Server.Models.StopLinker.GetClosestTripFromRouteAndUSI </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>routeId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_user_stop_info.html">UserStopInfo</a>&#160;</td>
+          <td class="paramname"><em>info</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the closest trip for the given route and user stop info. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">routeId</td><td>Route ID</td></tr>
+    <tr><td class="paramname">info</td><td>User Stop Info that will then be converted to a GTFS Stop</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Closest Trip with the associated route and stop</dd></dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_traveller___server_1_1_models_1_1_stop_linker_afbfe1ec47eb7b115d933b479b9848ede_cgraph.png" border="0" usemap="#aclass_traveller___server_1_1_models_1_1_stop_linker_afbfe1ec47eb7b115d933b479b9848ede_cgraph" alt=""/></div>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_traveller___server_1_1_models_1_1_stop_linker_afbfe1ec47eb7b115d933b479b9848ede_icgraph.png" border="0" usemap="#aclass_traveller___server_1_1_models_1_1_stop_linker_afbfe1ec47eb7b115d933b479b9848ede_icgraph" alt=""/></div>
+</div>
+
+</div>
+</div>
+<a id="a9e4db6618436c631fde6bfa4ee1ebb24" name="a9e4db6618436c631fde6bfa4ee1ebb24"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e4db6618436c631fde6bfa4ee1ebb24">&#9670;&#160;</a></span>GetRoutesForGivenStops()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">async Task&lt; List&lt; <a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_g_t_f_s_1_1_route.html">Route</a> &gt; &gt; Traveller_Server.Models.StopLinker.GetRoutesForGivenStops </td>
+          <td>(</td>
+          <td class="paramtype">List&lt; <a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_user_stop_info.html">UserStopInfo</a> &gt;&#160;</td>
+          <td class="paramname"><em>infos</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get a list of possible routes with the given User Stop Infos in the sequence. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">infos</td><td>List of User Stop Infoes</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>List of routes that can be associated with the specified order of Stops</dd></dl>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_traveller___server_1_1_models_1_1_stop_linker_a9e4db6618436c631fde6bfa4ee1ebb24_icgraph.png" border="0" usemap="#aclass_traveller___server_1_1_models_1_1_stop_linker_a9e4db6618436c631fde6bfa4ee1ebb24_icgraph" alt=""/></div>
+</div>
+
+</div>
+</div>
+<a id="a061ad69b5a542103ac2ad7c251ece1ca" name="a061ad69b5a542103ac2ad7c251ece1ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a061ad69b5a542103ac2ad7c251ece1ca">&#9670;&#160;</a></span>GetStop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">async Task&lt; <a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_g_t_f_s_1_1_stop.html">Stop</a>?&gt; Traveller_Server.Models.StopLinker.GetStop </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>lat</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>lon</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Function to get a GTFS stop from latitude and longitude. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">lat</td><td>Latitude</td></tr>
+    <tr><td class="paramname">lon</td><td>Longitude</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>GTFS Stop</dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">Exception</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_traveller___server_1_1_models_1_1_stop_linker_a061ad69b5a542103ac2ad7c251ece1ca_icgraph.png" border="0" usemap="#aclass_traveller___server_1_1_models_1_1_stop_linker_a061ad69b5a542103ac2ad7c251ece1ca_icgraph" alt=""/></div>
+</div>
+
+</div>
+</div>
+<a id="af41d2705319359a722105ec1e6b3d2ca" name="af41d2705319359a722105ec1e6b3d2ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af41d2705319359a722105ec1e6b3d2ca">&#9670;&#160;</a></span>GetStopFromLocation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">async Task&lt; <a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_g_t_f_s_1_1_stop.html">Stop</a> &gt; Traveller_Server.Models.StopLinker.GetStopFromLocation </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_location.html">Location</a>&#160;</td>
+          <td class="paramname"><em>location</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get a GTFS Stop from a Location. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">location</td><td>Location object with Latitude and Longitude</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>GTFS Stop</dd></dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_traveller___server_1_1_models_1_1_stop_linker_af41d2705319359a722105ec1e6b3d2ca_cgraph.png" border="0" usemap="#aclass_traveller___server_1_1_models_1_1_stop_linker_af41d2705319359a722105ec1e6b3d2ca_cgraph" alt=""/></div>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_traveller___server_1_1_models_1_1_stop_linker_af41d2705319359a722105ec1e6b3d2ca_icgraph.png" border="0" usemap="#aclass_traveller___server_1_1_models_1_1_stop_linker_af41d2705319359a722105ec1e6b3d2ca_icgraph" alt=""/></div>
+</div>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
 <li>E:/Users/venel/Desktop/TravellerV2/traveller/Traveller-Server/Models/StopLinker.cs</li>
 </ul>
 </div><!-- contents -->

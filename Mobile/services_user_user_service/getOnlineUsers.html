@@ -74,8 +74,7 @@
   <h2><span>Implementation</span></h2>
   <pre class="language-dart"><code class="language-dart">Future&lt;List&lt;UserStatus&gt;&gt; getOnlineUsers() async {
   &#47;&#47; Defining the URL for the user status API
-  final url = Uri.parse(
-      &#39;https:&#47;&#47;traveller-server.azurewebsites.net&#47;api&#47;UserStatusApi&#47;online&#39;);
+  final url = Uri.parse(&#39;https:&#47;&#47;traveller-server.azurewebsites.net&#47;api&#47;UserStatusApi&#47;online&#39;);
 
 &#47;&#47; Defining the headers required for the API request
   final headers = {&#39;Content-Type&#39;: &#39;application&#47;json&#39;};

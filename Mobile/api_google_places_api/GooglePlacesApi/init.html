@@ -72,8 +72,8 @@
     
 <section class="summary source-code" id="source">
   <h2><span>Implementation</span></h2>
-  <pre class="language-dart"><code class="language-dart">init() {
-  places = GoogleMapsPlaces(apiKey: &quot;AIzaSyAqMhg4PuP-7eZIl52DePKQHSqS5t2M1L4&quot;);
+  <pre class="language-dart"><code class="language-dart">init() async {
+  places = GoogleMapsPlaces(apiKey: await getKeyFromKeyVault(&quot;GoogleMapsKey&quot;));
 }</code></pre>
 </section>
 

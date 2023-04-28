@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Sprint 5: Traveller_Server.Controllers.GTFSControllers.TripsApiController Class Reference</title>
+<title>Sprint 6: Traveller_Server.Controllers.GTFSControllers.TripsApiController Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -30,7 +30,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Sprint 5
+   <div id="projectname">Sprint 6
    </div>
   </td>
  </tr>
@@ -113,10 +113,14 @@ $(document).ready(function(){initNavTree('class_traveller___server_1_1_controlle
 
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Data Structures</a> &#124;
 <a href="#pub-methods">Public Member Functions</a>  </div>
   <div class="headertitle"><div class="title">Traveller_Server.Controllers.GTFSControllers.TripsApiController Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>API Controller for CRUD actions for Trips.  
+ <a href="class_traveller___server_1_1_controllers_1_1_g_t_f_s_controllers_1_1_trips_api_controller.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for Traveller_Server.Controllers.GTFSControllers.TripsApiController:</div>
 <div class="dyncontent">
@@ -128,19 +132,28 @@ Collaboration diagram for Traveller_Server.Controllers.GTFSControllers.TripsApiC
 <div class="center"><img src="class_traveller___server_1_1_controllers_1_1_g_t_f_s_controllers_1_1_trips_api_controller__coll__graph.png" border="0" usemap="#a_traveller___server_8_controllers_8_g_t_f_s_controllers_8_trips_api_controller_coll__map" alt="Collaboration graph"/></div>
 </div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Data Structures</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_traveller___server_1_1_controllers_1_1_g_t_f_s_controllers_1_1_trips_api_controller_1_1_google_trip_info_message.html">GoogleTripInfoMessage</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class that represents the TripInfo from the GoogleDirectionsAPI.  <a href="class_traveller___server_1_1_controllers_1_1_g_t_f_s_controllers_1_1_trips_api_controller_1_1_google_trip_info_message.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a9e82fad82d36d1a71d7995ae46e9fa37"><td class="memItemLeft" align="right" valign="top"><a id="a9e82fad82d36d1a71d7995ae46e9fa37" name="a9e82fad82d36d1a71d7995ae46e9fa37"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>TripsApiController</b> (<a class="el" href="class_traveller___server_1_1_data_1_1_traveller___server_context.html">Traveller_ServerContext</a> context)</td></tr>
 <tr class="separator:a9e82fad82d36d1a71d7995ae46e9fa37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64f61fe5bc75cda8412c677cce2f658b"><td class="memItemLeft" align="right" valign="top">async Task&lt; ActionResult&lt; <a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_g_t_f_s_1_1_trip.html">Trip</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_traveller___server_1_1_controllers_1_1_g_t_f_s_controllers_1_1_trips_api_controller.html#a64f61fe5bc75cda8412c677cce2f658b">GetGTFSTrip</a> (<a class="el" href="class_traveller___server_1_1_controllers_1_1_g_t_f_s_controllers_1_1_trips_api_controller_1_1_google_trip_info_message.html">GoogleTripInfoMessage</a> info)</td></tr>
+<tr class="memdesc:a64f61fe5bc75cda8412c677cce2f658b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to get the GTFS Trip from the Database by providing Google information.  <br /></td></tr>
+<tr class="separator:a64f61fe5bc75cda8412c677cce2f658b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a35737de50676c339f16322637b5454bd"><td class="memItemLeft" align="right" valign="top"><a id="a35737de50676c339f16322637b5454bd" name="a35737de50676c339f16322637b5454bd"></a>
 async Task&lt; ActionResult&lt; IEnumerable&lt; <a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_g_t_f_s_1_1_trip.html">Trip</a> &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetTrip</b> ()</td></tr>
 <tr class="separator:a35737de50676c339f16322637b5454bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2e8247d0698116cde87d1a8ba04c39d0"><td class="memItemLeft" align="right" valign="top"><a id="a2e8247d0698116cde87d1a8ba04c39d0" name="a2e8247d0698116cde87d1a8ba04c39d0"></a>
 async Task&lt; ActionResult&lt; <a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_g_t_f_s_1_1_trip.html">Trip</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetTrip</b> (string id)</td></tr>
 <tr class="separator:a2e8247d0698116cde87d1a8ba04c39d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9529da6ea235bc3429aec26acf0a1d3e"><td class="memItemLeft" align="right" valign="top"><a id="a9529da6ea235bc3429aec26acf0a1d3e" name="a9529da6ea235bc3429aec26acf0a1d3e"></a>
-async Task&lt; ActionResult&lt; IEnumerable&lt; <a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_g_t_f_s_1_1_trip.html">Trip</a> &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetTripsOfRoute</b> (string routeId)</td></tr>
+<tr class="memitem:a9529da6ea235bc3429aec26acf0a1d3e"><td class="memItemLeft" align="right" valign="top">async Task&lt; ActionResult&lt; IEnumerable&lt; <a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_g_t_f_s_1_1_trip.html">Trip</a> &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_traveller___server_1_1_controllers_1_1_g_t_f_s_controllers_1_1_trips_api_controller.html#a9529da6ea235bc3429aec26acf0a1d3e">GetTripsOfRoute</a> (string routeId)</td></tr>
+<tr class="memdesc:a9529da6ea235bc3429aec26acf0a1d3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given a route id, gets all the trips of said route.  <br /></td></tr>
 <tr class="separator:a9529da6ea235bc3429aec26acf0a1d3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9a25ac222c049246ff8157ba2ecd6560"><td class="memItemLeft" align="right" valign="top"><a id="a9a25ac222c049246ff8157ba2ecd6560" name="a9a25ac222c049246ff8157ba2ecd6560"></a>
 async Task&lt; IActionResult &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>PutTrip</b> (string id, <a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_g_t_f_s_1_1_trip.html">Trip</a> trip)</td></tr>
@@ -152,6 +165,63 @@ async Task&lt; ActionResult&lt; <a class="el" href="class_traveller___server_1_1
 async Task&lt; IActionResult &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>DeleteTrip</b> (string id)</td></tr>
 <tr class="separator:a51c47a19ce28a5addef81fdfd3c88957"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>API Controller for CRUD actions for Trips. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a64f61fe5bc75cda8412c677cce2f658b" name="a64f61fe5bc75cda8412c677cce2f658b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a64f61fe5bc75cda8412c677cce2f658b">&#9670;&#160;</a></span>GetGTFSTrip()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">async Task&lt; ActionResult&lt; <a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_g_t_f_s_1_1_trip.html">Trip</a> &gt; &gt; Traveller_Server.Controllers.GTFSControllers.TripsApiController.GetGTFSTrip </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_traveller___server_1_1_controllers_1_1_g_t_f_s_controllers_1_1_trips_api_controller_1_1_google_trip_info_message.html">GoogleTripInfoMessage</a>&#160;</td>
+          <td class="paramname"><em>info</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Function to get the GTFS Trip from the Database by providing Google information. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">info</td><td>Google Trip Info with the required info to get the GTFS Trip</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Trip</dd></dl>
+
+</div>
+</div>
+<a id="a9529da6ea235bc3429aec26acf0a1d3e" name="a9529da6ea235bc3429aec26acf0a1d3e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9529da6ea235bc3429aec26acf0a1d3e">&#9670;&#160;</a></span>GetTripsOfRoute()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">async Task&lt; ActionResult&lt; IEnumerable&lt; <a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_g_t_f_s_1_1_trip.html">Trip</a> &gt; &gt; &gt; Traveller_Server.Controllers.GTFSControllers.TripsApiController.GetTripsOfRoute </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>routeId</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Given a route id, gets all the trips of said route. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">routeId</td><td>the route id to search with</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>List with all the trips</dd></dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>E:/Users/venel/Desktop/TravellerV2/traveller/Traveller-Server/Controllers/GTFSControllers/TripsApiController.cs</li>
 </ul>

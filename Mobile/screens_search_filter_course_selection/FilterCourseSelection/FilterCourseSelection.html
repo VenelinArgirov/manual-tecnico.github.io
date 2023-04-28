@@ -57,13 +57,7 @@
     <section class="multi-line-signature">
       const
       <span class="name ">FilterCourseSelection</span>(<wbr><ol class="parameter-list"><li><span class="parameter" id="-param-key">{<span class="type-annotation"><a href="https://api.flutter.dev/flutter/foundation/Key-class.html">Key</a>?</span> <span class="parameter-name">key</span>, </span></li>
-<li><span class="parameter" id="-param-origin"><span>required</span> <span class="type-annotation"><a href="https://pub.dev/documentation/google_maps_webservice/0.0.20-nullsafety.5/google_maps_webservice.places/PlacesSearchResult-class.html">PlacesSearchResult</a></span> <span class="parameter-name">origin</span>, </span></li>
-<li><span class="parameter" id="-param-destination"><span>required</span> <span class="type-annotation"><a href="https://pub.dev/documentation/google_maps_webservice/0.0.20-nullsafety.5/google_maps_webservice.places/PlacesSearchResult-class.html">PlacesSearchResult</a></span> <span class="parameter-name">destination</span>, </span></li>
-<li><span class="parameter" id="-param-notifyParent"><span>required</span> <span class="type-annotation">dynamic</span> <span class="parameter-name">notifyParent</span>(<ol class="parameter-list"><li><span class="parameter" id="param-"><span class="type-annotation"><a href="https://pub.dev/documentation/google_maps_flutter_platform_interface/2.2.6/google_maps_flutter_platform_interface/Polyline-class.html">Polyline</a></span></span></li>
-</ol>
-), </span></li>
-<li><span class="parameter" id="-param-notifyParentCameraPosition"><span>required</span> <span class="type-annotation">dynamic</span> <span class="parameter-name">notifyParentCameraPosition</span>(<ol class="parameter-list"></ol>
-)}</span></li>
+<li><span class="parameter" id="-param-search"><span>required</span> <span class="type-annotation"><a href="../../models_search_search_parameters/SearchParameters-class.html">SearchParameters</a></span> <span class="parameter-name">search</span>}</span></li>
 </ol>)
     </section>
 
@@ -73,7 +67,7 @@
     
 <section class="summary source-code" id="source">
   <h2><span>Implementation</span></h2>
-  <pre class="language-dart"><code class="language-dart">const FilterCourseSelection({super.key, required this.origin, required this.destination, required this.notifyParent, required this.notifyParentCameraPosition});</code></pre>
+  <pre class="language-dart"><code class="language-dart">const FilterCourseSelection({super.key, required this.search,});</code></pre>
 </section>
 
 
@@ -104,13 +98,10 @@
         <li class="section-title">
           <a href="../../screens_search_filter_course_selection/FilterCourseSelection-class.html#instance-properties">Properties</a>
         </li>
-          <li><a href="../../screens_search_filter_course_selection/FilterCourseSelection/destination.html">destination</a></li>
           <li class="inherited"><a href="https://api.flutter.dev/flutter/widgets/Widget/hashCode.html">hashCode</a></li>
           <li class="inherited"><a href="https://api.flutter.dev/flutter/widgets/Widget/key.html">key</a></li>
-          <li><a href="../../screens_search_filter_course_selection/FilterCourseSelection/notifyParent.html">notifyParent</a></li>
-          <li><a href="../../screens_search_filter_course_selection/FilterCourseSelection/notifyParentCameraPosition.html">notifyParentCameraPosition</a></li>
-          <li><a href="../../screens_search_filter_course_selection/FilterCourseSelection/origin.html">origin</a></li>
           <li class="inherited"><a href="https://api.flutter.dev/flutter/dart-core/Object/runtimeType.html">runtimeType</a></li>
+          <li><a href="../../screens_search_filter_course_selection/FilterCourseSelection/search.html">search</a></li>
 
         <li class="section-title"><a href="../../screens_search_filter_course_selection/FilterCourseSelection-class.html#instance-methods">Methods</a></li>
           <li class="inherited"><a href="https://api.flutter.dev/flutter/widgets/StatefulWidget/createElement.html">createElement</a></li>

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Sprint 5: Traveller_Server.Controllers.UserRouteTrackingsApiController Class Reference</title>
+<title>Sprint 6: Traveller_Server.Controllers.UserRouteTrackingsApiController Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -30,7 +30,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Sprint 5
+   <div id="projectname">Sprint 6
    </div>
   </td>
  </tr>
@@ -117,6 +117,9 @@ $(document).ready(function(){initNavTree('class_traveller___server_1_1_controlle
   <div class="headertitle"><div class="title">Traveller_Server.Controllers.UserRouteTrackingsApiController Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>API Controller for CRUD actions for UserRouteTrackings.  
+ <a href="class_traveller___server_1_1_controllers_1_1_user_route_trackings_api_controller.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for Traveller_Server.Controllers.UserRouteTrackingsApiController:</div>
 <div class="dyncontent">
@@ -133,12 +136,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae9ff98a1952a0f33e1b83dfea8a19913"><td class="memItemLeft" align="right" valign="top"><a id="ae9ff98a1952a0f33e1b83dfea8a19913" name="ae9ff98a1952a0f33e1b83dfea8a19913"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>UserRouteTrackingsApiController</b> (<a class="el" href="class_traveller___server_1_1_data_1_1_traveller___server_context.html">Traveller_ServerContext</a> context)</td></tr>
 <tr class="separator:ae9ff98a1952a0f33e1b83dfea8a19913"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa71626c28bfe5357e7439b5fb65165c5"><td class="memItemLeft" align="right" valign="top">async Task&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_traveller___server_1_1_controllers_1_1_user_route_trackings_api_controller.html#aa71626c28bfe5357e7439b5fb65165c5">checkIfUserInRoute</a> (string userId)</td></tr>
-<tr class="memdesc:aa71626c28bfe5357e7439b5fb65165c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the specified user is currently travelling in a tracked route.  <br /></td></tr>
-<tr class="separator:aa71626c28bfe5357e7439b5fb65165c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5e779d5d887f1c9e94a6fdaeb615431d"><td class="memItemLeft" align="right" valign="top">async Task&lt; ActionResult &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_traveller___server_1_1_controllers_1_1_user_route_trackings_api_controller.html#a5e779d5d887f1c9e94a6fdaeb615431d">removeUserFromRoute</a> (string userId)</td></tr>
-<tr class="memdesc:a5e779d5d887f1c9e94a6fdaeb615431d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete the User Route Tracking from the specified user. Used to signal that the user has left the transport and therefore no longer being tracked.  <br /></td></tr>
-<tr class="separator:a5e779d5d887f1c9e94a6fdaeb615431d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88dc4763f346ca6ca08083ae942dcdd6"><td class="memItemLeft" align="right" valign="top">async Task&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_traveller___server_1_1_controllers_1_1_user_route_trackings_api_controller.html#a88dc4763f346ca6ca08083ae942dcdd6">CheckIfUserInRoute</a> (string userId)</td></tr>
+<tr class="memdesc:a88dc4763f346ca6ca08083ae942dcdd6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the specified user is currently travelling in a tracked route.  <br /></td></tr>
+<tr class="separator:a88dc4763f346ca6ca08083ae942dcdd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d8efe184a378382f4c42d2f535a4999"><td class="memItemLeft" align="right" valign="top">async Task&lt; ActionResult &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_traveller___server_1_1_controllers_1_1_user_route_trackings_api_controller.html#a0d8efe184a378382f4c42d2f535a4999">RemoveUserFromRoute</a> (string userId)</td></tr>
+<tr class="memdesc:a0d8efe184a378382f4c42d2f535a4999"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete the User Route Tracking from the specified user. Used to signal that the user has left the transport and therefore no longer being tracked.  <br /></td></tr>
+<tr class="separator:a0d8efe184a378382f4c42d2f535a4999"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a08ba4371c5aba4fc2e15febfcd410d9f"><td class="memItemLeft" align="right" valign="top"><a id="a08ba4371c5aba4fc2e15febfcd410d9f" name="a08ba4371c5aba4fc2e15febfcd410d9f"></a>
 async Task&lt; ActionResult&lt; IEnumerable&lt; <a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_user_route_tracking.html">UserRouteTracking</a> &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetUserRouteTracking</b> ()</td></tr>
 <tr class="separator:a08ba4371c5aba4fc2e15febfcd410d9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -155,15 +158,17 @@ async Task&lt; ActionResult&lt; <a class="el" href="class_traveller___server_1_1
 async Task&lt; IActionResult &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>DeleteUserRouteTracking</b> (Guid id)</td></tr>
 <tr class="separator:a8982eb9b1b7ca972e34a8504486690a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="aa71626c28bfe5357e7439b5fb65165c5" name="aa71626c28bfe5357e7439b5fb65165c5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa71626c28bfe5357e7439b5fb65165c5">&#9670;&#160;</a></span>checkIfUserInRoute()</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>API Controller for CRUD actions for UserRouteTrackings. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a88dc4763f346ca6ca08083ae942dcdd6" name="a88dc4763f346ca6ca08083ae942dcdd6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a88dc4763f346ca6ca08083ae942dcdd6">&#9670;&#160;</a></span>CheckIfUserInRoute()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">async Task&lt; bool &gt; Traveller_Server.Controllers.UserRouteTrackingsApiController.checkIfUserInRoute </td>
+          <td class="memname">async Task&lt; bool &gt; Traveller_Server.Controllers.UserRouteTrackingsApiController.CheckIfUserInRoute </td>
           <td>(</td>
           <td class="paramtype">string&#160;</td>
           <td class="paramname"><em>userId</em></td><td>)</td>
@@ -183,14 +188,14 @@ async Task&lt; IActionResult &gt;&#160;</td><td class="memItemRight" valign="bot
 
 </div>
 </div>
-<a id="a5e779d5d887f1c9e94a6fdaeb615431d" name="a5e779d5d887f1c9e94a6fdaeb615431d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5e779d5d887f1c9e94a6fdaeb615431d">&#9670;&#160;</a></span>removeUserFromRoute()</h2>
+<a id="a0d8efe184a378382f4c42d2f535a4999" name="a0d8efe184a378382f4c42d2f535a4999"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d8efe184a378382f4c42d2f535a4999">&#9670;&#160;</a></span>RemoveUserFromRoute()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">async Task&lt; ActionResult &gt; Traveller_Server.Controllers.UserRouteTrackingsApiController.removeUserFromRoute </td>
+          <td class="memname">async Task&lt; ActionResult &gt; Traveller_Server.Controllers.UserRouteTrackingsApiController.RemoveUserFromRoute </td>
           <td>(</td>
           <td class="paramtype">string&#160;</td>
           <td class="paramname"><em>userId</em></td><td>)</td>

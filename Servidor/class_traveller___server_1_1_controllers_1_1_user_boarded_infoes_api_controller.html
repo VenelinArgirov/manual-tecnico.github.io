@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Sprint 5: Traveller_Server.Controllers.UserBoardedInfoesApiController Class Reference</title>
+<title>Sprint 6: Traveller_Server.Controllers.UserBoardedInfoesApiController Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -30,7 +30,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Sprint 5
+   <div id="projectname">Sprint 6
    </div>
   </td>
  </tr>
@@ -113,10 +113,14 @@ $(document).ready(function(){initNavTree('class_traveller___server_1_1_controlle
 
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Data Structures</a> &#124;
 <a href="#pub-methods">Public Member Functions</a>  </div>
   <div class="headertitle"><div class="title">Traveller_Server.Controllers.UserBoardedInfoesApiController Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>API Controller for CRUD actions for UserBoardedInfoes.  
+ <a href="class_traveller___server_1_1_controllers_1_1_user_boarded_infoes_api_controller.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for Traveller_Server.Controllers.UserBoardedInfoesApiController:</div>
 <div class="dyncontent">
@@ -128,6 +132,11 @@ Collaboration diagram for Traveller_Server.Controllers.UserBoardedInfoesApiContr
 <div class="center"><img src="class_traveller___server_1_1_controllers_1_1_user_boarded_infoes_api_controller__coll__graph.png" border="0" usemap="#a_traveller___server_8_controllers_8_user_boarded_infoes_api_controller_coll__map" alt="Collaboration graph"/></div>
 </div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Data Structures</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_traveller___server_1_1_controllers_1_1_user_boarded_infoes_api_controller_1_1_user_boarded_info_message.html">UserBoardedInfoMessage</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ad49f097e42fc091661f02990dac35926"><td class="memItemLeft" align="right" valign="top"><a id="ad49f097e42fc091661f02990dac35926" name="ad49f097e42fc091661f02990dac35926"></a>
@@ -145,13 +154,43 @@ async Task&lt; IActionResult &gt;&#160;</td><td class="memItemRight" valign="bot
 <tr class="memitem:af4253b7aad42dff9fbdfda50ce2c0387"><td class="memItemLeft" align="right" valign="top"><a id="af4253b7aad42dff9fbdfda50ce2c0387" name="af4253b7aad42dff9fbdfda50ce2c0387"></a>
 async Task&lt; ActionResult&lt; <a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_user_boarded_info.html">UserBoardedInfo</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>PostUserBoardedInfo</b> (<a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_user_boarded_info.html">UserBoardedInfo</a> userBoardedInfo)</td></tr>
 <tr class="separator:af4253b7aad42dff9fbdfda50ce2c0387"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad735c1fcdc7ad659e2318c7ee29672ca"><td class="memItemLeft" align="right" valign="top"><a id="ad735c1fcdc7ad659e2318c7ee29672ca" name="ad735c1fcdc7ad659e2318c7ee29672ca"></a>
-async Task&lt; ActionResult&lt; <a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_user_boarded_info.html">UserBoardedInfo</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>PostUBIWhenOnTrip</b> (<a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_user_boarded_info.html">UserBoardedInfo</a> userBoardedInfo)</td></tr>
-<tr class="separator:ad735c1fcdc7ad659e2318c7ee29672ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a787016a23b19fd402450eff5f841acc3"><td class="memItemLeft" align="right" valign="top">async Task&lt; ActionResult&lt; <a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_user_boarded_info.html">UserBoardedInfo</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_traveller___server_1_1_controllers_1_1_user_boarded_infoes_api_controller.html#a787016a23b19fd402450eff5f841acc3">PostUBIWhenOnTrip</a> (<a class="el" href="class_traveller___server_1_1_controllers_1_1_user_boarded_infoes_api_controller_1_1_user_boarded_info_message.html">UserBoardedInfoMessage</a> userBoardedInfoMessage)</td></tr>
+<tr class="memdesc:a787016a23b19fd402450eff5f841acc3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Posts a UBI to the server when a user in on trip.  <br /></td></tr>
+<tr class="separator:a787016a23b19fd402450eff5f841acc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad39dc627b06fffcec75c9492eba25438"><td class="memItemLeft" align="right" valign="top"><a id="ad39dc627b06fffcec75c9492eba25438" name="ad39dc627b06fffcec75c9492eba25438"></a>
 async Task&lt; IActionResult &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>DeleteUserBoardedInfo</b> (Guid id)</td></tr>
 <tr class="separator:ad39dc627b06fffcec75c9492eba25438"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>API Controller for CRUD actions for UserBoardedInfoes. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a787016a23b19fd402450eff5f841acc3" name="a787016a23b19fd402450eff5f841acc3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a787016a23b19fd402450eff5f841acc3">&#9670;&#160;</a></span>PostUBIWhenOnTrip()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">async Task&lt; ActionResult&lt; <a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_user_boarded_info.html">UserBoardedInfo</a> &gt; &gt; Traveller_Server.Controllers.UserBoardedInfoesApiController.PostUBIWhenOnTrip </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_traveller___server_1_1_controllers_1_1_user_boarded_infoes_api_controller_1_1_user_boarded_info_message.html">UserBoardedInfoMessage</a>&#160;</td>
+          <td class="paramname"><em>userBoardedInfoMessage</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Posts a UBI to the server when a user in on trip. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">userBoardedInfo</td><td>The userBoardedInfo</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>UserBoardedInfo</dd></dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>E:/Users/venel/Desktop/TravellerV2/traveller/Traveller-Server/Controllers/UserBoardedInfoesApiController.cs</li>
 </ul>

@@ -24,7 +24,7 @@
 */
 var NAVTREE =
 [
-  [ "Sprint 5", "index.html", [
+  [ "Sprint 6", "index.html", [
     [ "The MIT License (MIT)", "md__e___users_venel__desktop__traveller_v2_traveller__traveller__server_wwwroot_lib_jquery_validation__l_i_c_e_n_s_e.html", null ],
     [ "Packages", "namespaces.html", [
       [ "Package List", "namespaces.html", "namespaces_dup" ],
@@ -51,8 +51,9 @@ var NAVTREEINDEX =
 [
 "annotated.html",
 "class_traveller___server_1_1_areas_1_1_identity_1_1_pages_1_1_account_1_1_reset_password_model.html",
-"class_traveller___server_1_1_models_1_1_data_classes_1_1_course_route.html#a2250ce790813852be90b44b5730547c5",
-"class_traveller___server_1_1_models_1_1_data_classes_1_1_user.html#a64b6773b38343cc684f226c78a070ff0"
+"class_traveller___server_1_1_controllers_1_1_users_api_controller.html",
+"class_traveller___server_1_1_models_1_1_data_classes_1_1_g_t_f_s_realtime_1_1_feed_entity.html#ab162bd4d185005451babe1d788c6f291",
+"functions_m.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

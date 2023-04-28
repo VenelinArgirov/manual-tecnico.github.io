@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Sprint 5: Traveller_Server.Controllers.AuthApiController Class Reference</title>
+<title>Sprint 6: Traveller_Server.Controllers.AuthApiController Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -30,7 +30,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Sprint 5
+   <div id="projectname">Sprint 6
    </div>
   </td>
  </tr>
@@ -117,6 +117,9 @@ $(document).ready(function(){initNavTree('class_traveller___server_1_1_controlle
   <div class="headertitle"><div class="title">Traveller_Server.Controllers.AuthApiController Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>API Controller for managing authentication actions.  
+ <a href="class_traveller___server_1_1_controllers_1_1_auth_api_controller.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for Traveller_Server.Controllers.AuthApiController:</div>
 <div class="dyncontent">
@@ -142,6 +145,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aa679452698d65c3ed82173d0ca3185b6"><td class="memItemLeft" align="right" valign="top">async Task&lt; IActionResult &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_traveller___server_1_1_controllers_1_1_auth_api_controller.html#aa679452698d65c3ed82173d0ca3185b6">Register</a> ([FromBody] <a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_user_for_authentication.html">UserForAuthentication</a> user)</td></tr>
 <tr class="memdesc:aa679452698d65c3ed82173d0ca3185b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">With the register post this creates a new user in the database.  <br /></td></tr>
 <tr class="separator:aa679452698d65c3ed82173d0ca3185b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac195e6a694dede150d4564aa86da03f1"><td class="memItemLeft" align="right" valign="top">async Task&lt; IActionResult &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_traveller___server_1_1_controllers_1_1_auth_api_controller.html#ac195e6a694dede150d4564aa86da03f1">RegisterGuest</a> (String userId)</td></tr>
+<tr class="memdesc:ac195e6a694dede150d4564aa86da03f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">With the register post this creates a new guest user in the database.  <br /></td></tr>
+<tr class="separator:ac195e6a694dede150d4564aa86da03f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a908a99d33b0392feaf5f586c697fe38f"><td class="memItemLeft" align="right" valign="top">async Task&lt; IActionResult &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_traveller___server_1_1_controllers_1_1_auth_api_controller.html#a908a99d33b0392feaf5f586c697fe38f">SendRequestResetPassword</a> (string toEmail)</td></tr>
 <tr class="memdesc:a908a99d33b0392feaf5f586c697fe38f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends an email to the provided email address with a randomly generated code.  <br /></td></tr>
 <tr class="separator:a908a99d33b0392feaf5f586c697fe38f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -158,7 +164,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:adf9d931cb9a65f6ce22ff7b8b3d299be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Logs the user in with their Google account.  <br /></td></tr>
 <tr class="separator:adf9d931cb9a65f6ce22ff7b8b3d299be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>API Controller for managing authentication actions. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a4eab9f523c26e55ba9510dd4854d592f" name="a4eab9f523c26e55ba9510dd4854d592f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4eab9f523c26e55ba9510dd4854d592f">&#9670;&#160;</a></span>ChangePassword()</h2>
 
@@ -298,6 +306,33 @@ Public Member Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">user</td><td>The user credentials</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>An IActionResult indicating the status of the request</dd></dl>
+
+</div>
+</div>
+<a id="ac195e6a694dede150d4564aa86da03f1" name="ac195e6a694dede150d4564aa86da03f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac195e6a694dede150d4564aa86da03f1">&#9670;&#160;</a></span>RegisterGuest()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">async Task&lt; IActionResult &gt; Traveller_Server.Controllers.AuthApiController.RegisterGuest </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>userId</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>With the register post this creates a new guest user in the database. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">userId</td><td>The id of the user that will be created</td></tr>
   </table>
   </dd>
 </dl>

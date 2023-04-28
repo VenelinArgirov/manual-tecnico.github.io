@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Sprint 5: Traveller_Server.Controllers.AlertVotesController Class Reference</title>
+<title>Sprint 6: Traveller_Server.Controllers.AlertVotesController Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -30,7 +30,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Sprint 5
+   <div id="projectname">Sprint 6
    </div>
   </td>
  </tr>
@@ -117,6 +117,9 @@ $(document).ready(function(){initNavTree('class_traveller___server_1_1_controlle
   <div class="headertitle"><div class="title">Traveller_Server.Controllers.AlertVotesController Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>API Controller for CRUD actions for AlertVotes.  
+ <a href="class_traveller___server_1_1_controllers_1_1_alert_votes_controller.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for Traveller_Server.Controllers.AlertVotesController:</div>
 <div class="dyncontent">
@@ -139,8 +142,8 @@ async Task&lt; ActionResult&lt; IEnumerable&lt; <a class="el" href="class_travel
 <tr class="memitem:a6dbe890046ec917a5f57968847394110"><td class="memItemLeft" align="right" valign="top"><a id="a6dbe890046ec917a5f57968847394110" name="a6dbe890046ec917a5f57968847394110"></a>
 async Task&lt; ActionResult&lt; <a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_alert_vote.html">AlertVote</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetAlertVote</b> (Guid id)</td></tr>
 <tr class="separator:a6dbe890046ec917a5f57968847394110"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae2b63f9759a7a74da1e575572ec8a95c"><td class="memItemLeft" align="right" valign="top"><a id="ae2b63f9759a7a74da1e575572ec8a95c" name="ae2b63f9759a7a74da1e575572ec8a95c"></a>
-async Task&lt; ActionResult&lt; <a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_alert_vote.html">AlertVote</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetAlertVoteFromUserAndAlertId</b> (string alertId, string voterId)</td></tr>
+<tr class="memitem:ae2b63f9759a7a74da1e575572ec8a95c"><td class="memItemLeft" align="right" valign="top">async Task&lt; ActionResult&lt; <a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_alert_vote.html">AlertVote</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_traveller___server_1_1_controllers_1_1_alert_votes_controller.html#ae2b63f9759a7a74da1e575572ec8a95c">GetAlertVoteFromUserAndAlertId</a> (string alertId, string voterId)</td></tr>
+<tr class="memdesc:ae2b63f9759a7a74da1e575572ec8a95c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the vote a specific user did on a specific alert.  <br /></td></tr>
 <tr class="separator:ae2b63f9759a7a74da1e575572ec8a95c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abed4414883f83bfc125f1186154d3965"><td class="memItemLeft" align="right" valign="top"><a id="abed4414883f83bfc125f1186154d3965" name="abed4414883f83bfc125f1186154d3965"></a>
 async Task&lt; IActionResult &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>PutAlertVote</b> (Guid id, [FromBody] <a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_alert_vote.html">AlertVote</a> alertVote)</td></tr>
@@ -152,6 +155,47 @@ async Task&lt; ActionResult&lt; <a class="el" href="class_traveller___server_1_1
 async Task&lt; IActionResult &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>DeleteAlertVote</b> (Guid id)</td></tr>
 <tr class="separator:a54a9b320a3da36f24e314a6cc1495933"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>API Controller for CRUD actions for AlertVotes. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="ae2b63f9759a7a74da1e575572ec8a95c" name="ae2b63f9759a7a74da1e575572ec8a95c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2b63f9759a7a74da1e575572ec8a95c">&#9670;&#160;</a></span>GetAlertVoteFromUserAndAlertId()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">async Task&lt; ActionResult&lt; <a class="el" href="class_traveller___server_1_1_models_1_1_data_classes_1_1_alert_vote.html">AlertVote</a> &gt; &gt; Traveller_Server.Controllers.AlertVotesController.GetAlertVoteFromUserAndAlertId </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>alertId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>voterId</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets the vote a specific user did on a specific alert. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">alertId</td><td>The id of the alert</td></tr>
+    <tr><td class="paramname">voterId</td><td>The id of the voter</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The vote</dd></dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>E:/Users/venel/Desktop/TravellerV2/traveller/Traveller-Server/Controllers/AlertVotesController.cs</li>
 </ul>

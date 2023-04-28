@@ -5,5 +5,5 @@ digraph "Graphical Class Hierarchy"
   edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
   node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
   rankdir="LR";
-  Node0 [label="Traveller_Server.Models.\lDataClasses.GTFS.Trip",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_traveller___server_1_1_models_1_1_data_classes_1_1_g_t_f_s_1_1_trip.html",tooltip="Class represents a trip in GTFS format."];
+  Node0 [label="Traveller_Server.Models.\lDataClasses.GTFS.Shape",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_traveller___server_1_1_models_1_1_data_classes_1_1_g_t_f_s_1_1_shape.html",tooltip="Class represents a Shape in GTFS format. Shapes describe the path that a vehicle travels along a rout..."];
 }

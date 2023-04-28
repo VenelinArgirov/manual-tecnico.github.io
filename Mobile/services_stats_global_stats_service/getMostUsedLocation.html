@@ -64,17 +64,23 @@
 
     </section>
     
+<section class="desc markdown">
+  <p>Method used to get the most used location.</p>
+</section>
 
 
     
 <section class="summary source-code" id="source">
   <h2><span>Implementation</span></h2>
   <pre class="language-dart"><code class="language-dart">Future&lt;String&gt; getMostUsedLocation() async {
-  final url = Uri.parse(
-      &#39;https:&#47;&#47;traveller-server.azurewebsites.net&#47;api&#47;StatisticsApi&#47;GetMostActiveZones&#39;);
+  &#47;&#47;&#47; Defining the URL for the login API
+  final url = Uri.parse(&#39;https:&#47;&#47;traveller-server.azurewebsites.net&#47;api&#47;StatisticsApi&#47;GetMostActiveZones&#39;);
+  &#47;&#47;&#47; Defining the headers required for the API request
   final headers = {&#39;Content-Type&#39;: &#39;application&#47;json&#39;};
+  &#47;&#47;&#47; Making a GET request to the login API with the encoded JSON body and headers
   final response = await http.get(url, headers: headers);
 
+  &#47;&#47;&#47; Returning the response from the API
   if (response.statusCode == 200) {
     final jsonResponse = jsonDecode(response.body);
     final location = jsonResponse.keys.first;

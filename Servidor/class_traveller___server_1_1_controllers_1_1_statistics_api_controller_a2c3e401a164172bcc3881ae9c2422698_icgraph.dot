@@ -1,0 +1,11 @@
+digraph "Traveller_Server.Controllers.StatisticsApiController.ReverseGeocode"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="RL";
+  Node1 [label="Traveller_Server.Controllers.\lStatisticsApiController.ReverseGeocode",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Transforms coordinates into the name of a location via geocoding."];
+  Node1 -> Node2 [dir="back",color="steelblue1",style="solid"];
+  Node2 [label="Traveller_Server.Controllers.\lStatisticsApiController.GetMostActiveZones",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_traveller___server_1_1_controllers_1_1_statistics_api_controller.html#ac35de52799f153d6129657431fb092d5",tooltip="Retrieves the five most active zones based on the number of courses that start in each zone."];
+}

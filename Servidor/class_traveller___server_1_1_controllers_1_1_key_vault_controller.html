@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Sprint 5: Traveller_Server.Controllers.KeyVaultController Class Reference</title>
+<title>Sprint 6: Traveller_Server.Controllers.KeyVaultController Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -30,7 +30,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Sprint 5
+   <div id="projectname">Sprint 6
    </div>
   </td>
  </tr>
@@ -117,6 +117,9 @@ $(document).ready(function(){initNavTree('class_traveller___server_1_1_controlle
   <div class="headertitle"><div class="title">Traveller_Server.Controllers.KeyVaultController Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>API Controller for managing the Azure KeyVault.  
+ <a href="class_traveller___server_1_1_controllers_1_1_key_vault_controller.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for Traveller_Server.Controllers.KeyVaultController:</div>
 <div class="dyncontent">
@@ -133,10 +136,40 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:add3eb75c79e835820437384c05c7003e"><td class="memItemLeft" align="right" valign="top"><a id="add3eb75c79e835820437384c05c7003e" name="add3eb75c79e835820437384c05c7003e"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>KeyVaultController</b> (<a class="el" href="interface_traveller___server_1_1_azure_key_vault_1_1_i_key_vault_manager.html">IKeyVaultManager</a> secretManager)</td></tr>
 <tr class="separator:add3eb75c79e835820437384c05c7003e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a26bd0fd8f06dcde6fe6bbc4f4e50e20c"><td class="memItemLeft" align="right" valign="top"><a id="a26bd0fd8f06dcde6fe6bbc4f4e50e20c" name="a26bd0fd8f06dcde6fe6bbc4f4e50e20c"></a>
-async Task&lt; IActionResult &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>Get</b> ([FromQuery] string secretName)</td></tr>
+<tr class="memitem:a26bd0fd8f06dcde6fe6bbc4f4e50e20c"><td class="memItemLeft" align="right" valign="top">async Task&lt; IActionResult &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_traveller___server_1_1_controllers_1_1_key_vault_controller.html#a26bd0fd8f06dcde6fe6bbc4f4e50e20c">Get</a> ([FromQuery] string secretName)</td></tr>
+<tr class="memdesc:a26bd0fd8f06dcde6fe6bbc4f4e50e20c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a secret value from the KeyVault.  <br /></td></tr>
 <tr class="separator:a26bd0fd8f06dcde6fe6bbc4f4e50e20c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>API Controller for managing the Azure KeyVault. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a26bd0fd8f06dcde6fe6bbc4f4e50e20c" name="a26bd0fd8f06dcde6fe6bbc4f4e50e20c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26bd0fd8f06dcde6fe6bbc4f4e50e20c">&#9670;&#160;</a></span>Get()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">async Task&lt; IActionResult &gt; Traveller_Server.Controllers.KeyVaultController.Get </td>
+          <td>(</td>
+          <td class="paramtype">[FromQuery] string&#160;</td>
+          <td class="paramname"><em>secretName</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets a secret value from the KeyVault. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">secretName</td><td>The name of the secret</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>E:/Users/venel/Desktop/TravellerV2/traveller/Traveller-Server/Controllers/KeyVaultController.cs</li>
 </ul>

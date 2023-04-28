@@ -92,7 +92,7 @@ the user profile, global statistics, settings and lets the user log out.</p>
 
     <dl class="constructor-summary-list">
         <dt id="MapMenu" class="callable">
-          <span class="name"><a href="../screens_map_map_menu/MapMenu/MapMenu.html">MapMenu</a></span><span class="signature">(<span class="parameter" id="-param-key">{<span class="type-annotation"><a href="https://api.flutter.dev/flutter/foundation/Key-class.html">Key</a>?</span> <span class="parameter-name">key</span>}</span>)</span>
+          <span class="name"><a href="../screens_map_map_menu/MapMenu/MapMenu.html">MapMenu</a></span><span class="signature">(<span class="parameter" id="-param-key">{<span class="type-annotation"><a href="https://api.flutter.dev/flutter/foundation/Key-class.html">Key</a>?</span> <span class="parameter-name">key</span>, </span><span class="parameter" id="-param-mapStyle"><span>required</span> <span class="type-annotation"><a href="https://api.flutter.dev/flutter/foundation/ValueNotifier-class.html">ValueNotifier</a></span> <span class="parameter-name">mapStyle</span>, </span><span class="parameter" id="-param-setCameraToAlertPosition"><span>required</span> <span class="type-annotation">dynamic</span> <span class="parameter-name">setCameraToAlertPosition</span>(<span class="parameter" id="param-"><span class="type-annotation"><a href="https://pub.dev/documentation/google_maps_flutter_platform_interface/2.2.6/google_maps_flutter_platform_interface/LatLng-class.html">LatLng</a></span></span>)}</span>)</span>
         </dt>
         <dd>
           
@@ -101,7 +101,7 @@ the user profile, global statistics, settings and lets the user log out.</p>
     </dl>
   </section>
 
-    <section class="summary offset-anchor inherited" id="instance-properties">
+    <section class="summary offset-anchor" id="instance-properties">
       <h2>Properties</h2>
 
       <dl class="properties">
@@ -127,6 +127,17 @@ the user profile, global statistics, settings and lets the user log out.</p>
 
 </dd>
 
+        <dt id="mapStyle" class="property">
+  <span class="name"><a href="../screens_map_map_menu/MapMenu/mapStyle.html">mapStyle</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/foundation/ValueNotifier-class.html">ValueNotifier</a></span> 
+
+</dt>
+<dd>
+  Atribute to know the style that the map is using.
+  <div class="features"><span class="feature">final</span></div>
+
+</dd>
+
         <dt id="runtimeType" class="property inherited">
   <span class="name"><a href="https://api.flutter.dev/flutter/dart-core/Object/runtimeType.html">runtimeType</a></span>
   <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/Type-class.html">Type</a></span> 
@@ -135,6 +146,17 @@ the user profile, global statistics, settings and lets the user log out.</p>
 <dd class="inherited">
   A representation of the runtime type of the object.
   <div class="features"><span class="feature">read-only</span><span class="feature">inherited</span></div>
+
+</dd>
+
+        <dt id="setCameraToAlertPosition" class="property">
+  <span class="name"><a href="../screens_map_map_menu/MapMenu/setCameraToAlertPosition.html">setCameraToAlertPosition</a></span>
+  <span class="signature">&#8594; dynamic Function<span class="signature">(<span class="parameter" id="param-"><span class="type-annotation"><a href="https://pub.dev/documentation/google_maps_flutter_platform_interface/2.2.6/google_maps_flutter_platform_interface/LatLng-class.html">LatLng</a></span></span>)</span></span> 
+
+</dt>
+<dd>
+  Function for the call back of the set camera method of the map.
+  <div class="features"><span class="feature">final</span></div>
 
 </dd>
 
@@ -346,12 +368,14 @@ tools and by <a href="https://api.flutter.dev/flutter/foundation/DiagnosticsNode
           <li><a href="../screens_map_map_menu/MapMenu/MapMenu.html">MapMenu</a></li>
 
 
-        <li class="section-title inherited">
+        <li class="section-title">
           <a href="../screens_map_map_menu/MapMenu-class.html#instance-properties">Properties</a>
         </li>
           <li class="inherited"><a href="https://api.flutter.dev/flutter/widgets/Widget/hashCode.html">hashCode</a></li>
           <li class="inherited"><a href="https://api.flutter.dev/flutter/widgets/Widget/key.html">key</a></li>
+          <li><a href="../screens_map_map_menu/MapMenu/mapStyle.html">mapStyle</a></li>
           <li class="inherited"><a href="https://api.flutter.dev/flutter/dart-core/Object/runtimeType.html">runtimeType</a></li>
+          <li><a href="../screens_map_map_menu/MapMenu/setCameraToAlertPosition.html">setCameraToAlertPosition</a></li>
 
         <li class="section-title"><a href="../screens_map_map_menu/MapMenu-class.html#instance-methods">Methods</a></li>
           <li class="inherited"><a href="https://api.flutter.dev/flutter/widgets/StatefulWidget/createElement.html">createElement</a></li>

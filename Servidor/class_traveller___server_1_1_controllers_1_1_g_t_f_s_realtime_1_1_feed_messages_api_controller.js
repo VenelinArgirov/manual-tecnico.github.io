@@ -1,5 +1,12 @@
 var class_traveller___server_1_1_controllers_1_1_g_t_f_s_realtime_1_1_feed_messages_api_controller =
 [
-    [ "ConfirmFeedMessage", "class_traveller___server_1_1_controllers_1_1_g_t_f_s_realtime_1_1_feed_messages_api_controller_1_1_confirm_feed_message.html", null ],
-    [ "DelayMessageResponse", "class_traveller___server_1_1_controllers_1_1_g_t_f_s_realtime_1_1_feed_messages_api_controller_1_1_delay_message_response.html", null ]
+    [ "ConfirmFeedMessage", "class_traveller___server_1_1_controllers_1_1_g_t_f_s_realtime_1_1_feed_messages_api_controller_1_1_confirm_feed_message.html", "class_traveller___server_1_1_controllers_1_1_g_t_f_s_realtime_1_1_feed_messages_api_controller_1_1_confirm_feed_message" ],
+    [ "DelayMessageResponse", "class_traveller___server_1_1_controllers_1_1_g_t_f_s_realtime_1_1_feed_messages_api_controller_1_1_delay_message_response.html", "class_traveller___server_1_1_controllers_1_1_g_t_f_s_realtime_1_1_feed_messages_api_controller_1_1_delay_message_response" ],
+    [ "RouteTripInfoMessage", "class_traveller___server_1_1_controllers_1_1_g_t_f_s_realtime_1_1_feed_messages_api_controller_1_1_route_trip_info_message.html", "class_traveller___server_1_1_controllers_1_1_g_t_f_s_realtime_1_1_feed_messages_api_controller_1_1_route_trip_info_message" ],
+    [ "ConfirmTripOfMessage", "class_traveller___server_1_1_controllers_1_1_g_t_f_s_realtime_1_1_feed_messages_api_controller.html#adab557e4f05772e47d22b0912d39baf7", null ],
+    [ "CreateFeedMessageFromUserRouteTracking", "class_traveller___server_1_1_controllers_1_1_g_t_f_s_realtime_1_1_feed_messages_api_controller.html#a6ec33da05186dc1738880173cbac2581", null ],
+    [ "GetDelayForTripFromMessage", "class_traveller___server_1_1_controllers_1_1_g_t_f_s_realtime_1_1_feed_messages_api_controller.html#ac86c5744b9511c943b06f0c04db9e70e", null ],
+    [ "GetRouteTripInfo", "class_traveller___server_1_1_controllers_1_1_g_t_f_s_realtime_1_1_feed_messages_api_controller.html#a43e05149626146db6203aa01eb85091c", null ],
+    [ "GetTripDelay", "class_traveller___server_1_1_controllers_1_1_g_t_f_s_realtime_1_1_feed_messages_api_controller.html#ab91f7fc1d8363bcb18fc2739b16a9ba6", null ],
+    [ "GetTripFeedMessages", "class_traveller___server_1_1_controllers_1_1_g_t_f_s_realtime_1_1_feed_messages_api_controller.html#aedf73efef804dc5dc8e7df3caa50e1b4", null ]
 ];
